@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "source": "Approved F24.1 IllustratedAtlas output, lossless PNG, no redrawing",
+  "parts": {
+    "pink-head": {
+      "box": {
+        "x": -92,
+        "y": -270,
+        "w": 184,
+        "h": 154
+      },
+      "ink": {
+        "x": -91,
+        "y": -269,
+        "w": 182.5,
+        "h": 152
+      },
+      "cleanup": {
+        "removedCorePixels": 7,
+        "retainedCorePixels": 126107
+      },
+      "width": 368,
+      "height": 308,
+      "normal": {
+        "file": "assets/rig-baked/pink-head-normal.png",
+        "sha256": "64d536ee3606c7ff5eb773d4c04f60c9579c39d3c0081b9778f7a85f6389bbb8"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-head-warm.png",
+        "sha256": "ce9bc958abc2f7c86f94d5c0524f8c1eb3f8e8d9ce71a5b0c936103dac2be177"
+      }
+    },
+    "pink-body": {
+      "box": {
+        "x": -74,
+        "y": -145,
+        "w": 148,
+        "h": 153
+      },
+      "ink": {
+        "x": -74,
+        "y": -144.5,
+        "w": 147.5,
+        "h": 151.5
+      },
+      "cleanup": {
+        "removedCorePixels": 944,
+        "retainedCorePixels": 157366
+      },
+      "width": 296,
+      "height": 306,
+      "normal": {
+        "file": "assets/rig-baked/pink-body-normal.png",
+        "sha256": "d3efc6b43448400eaf7ce8b30e2784bab927e8fed5a788fd131f211b885eab28"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-body-warm.png",
+        "sha256": "911adc57488bed1cf08238b8729f9e24d67403ffab682f07a6844e10b0b6b3d3"
+      }
+    },
+    "pink-upper": {
+      "box": {
+        "x": -19,
+        "y": -10,
+        "w": 38,
+        "h": 70
+      },
+      "ink": {
+        "x": -18.5,
+        "y": -9.5,
+        "w": 37,
+        "h": 69
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 69803
+      },
+      "width": 76,
+      "height": 140,
+      "normal": {
+        "file": "assets/rig-baked/pink-upper-normal.png",
+        "sha256": "1deae2256bec3c6035e4da529219d8ae10d40fcf488ed88a250ec48ef5eb6a46"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-upper-warm.png",
+        "sha256": "6d86ce59afeb15931713a70002977272759c00a678421a3946f4c5a3af288e00"
+      }
+    },
+    "pink-fore": {
+      "box": {
+        "x": -20,
+        "y": -10,
+        "w": 40,
+        "h": 70
+      },
+      "ink": {
+        "x": -19.5,
+        "y": -9.5,
+        "w": 39,
+        "h": 69
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 60364
+      },
+      "width": 80,
+      "height": 140,
+      "normal": {
+        "file": "assets/rig-baked/pink-fore-normal.png",
+        "sha256": "b7b0f75d140f6fd8d522f6bea78dd0e1429a4cdc5298da67a2ea6c546ed7a6b1"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-fore-warm.png",
+        "sha256": "4b07743d869fa78c552dacb75a80aa3cafa9016a5f6660dfdbd62e5140128930"
+      }
+    },
+    "pink-paw-left": {
+      "box": {
+        "x": -23,
+        "y": -21,
+        "w": 46,
+        "h": 44
+      },
+      "ink": {
+        "x": -22.5,
+        "y": -20.5,
+        "w": 45,
+        "h": 43
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 37362
+      },
+      "width": 92,
+      "height": 88,
+      "normal": {
+        "file": "assets/rig-baked/pink-paw-left-normal.png",
+        "sha256": "9e09b0995cff44c9c903f95591fb39bb05b9929cfdd15bd410b5de7dabe62ab8"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-paw-left-warm.png",
+        "sha256": "840a5af9c821d5220e62c03eccbdb40d74e3b6feddb7a6175e9389417ce415e5"
+      }
+    },
+    "pink-paw-right": {
+      "box": {
+        "x": -23,
+        "y": -21,
+        "w": 46,
+        "h": 44
+      },
+      "ink": {
+        "x": -22.5,
+        "y": -20.5,
+        "w": 45,
+        "h": 43
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 32885
+      },
+      "width": 92,
+      "height": 88,
+      "normal": {
+        "file": "assets/rig-baked/pink-paw-right-normal.png",
+        "sha256": "5577e608b100ae79b07f13bf18fa4f181e9cc23668cb1598dafad8eafb2d8d03"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-paw-right-warm.png",
+        "sha256": "d55d76b128d8afa2a5d9fcdfa4463e4fee70714237a438d8dd9f92077b17b2bb"
+      }
+    },
+    "pink-foot": {
+      "box": {
+        "x": -43,
+        "y": -25,
+        "w": 86,
+        "h": 53
+      },
+      "ink": {
+        "x": -42.5,
+        "y": -24.5,
+        "w": 85,
+        "h": 52
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 55639
+      },
+      "width": 172,
+      "height": 106,
+      "normal": {
+        "file": "assets/rig-baked/pink-foot-normal.png",
+        "sha256": "457441b19031b828579e7409ad06fe6cd9a6ed0d9769678c32bba53ea294e90a"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-foot-warm.png",
+        "sha256": "5fb2256cd63cd6fb141e91acc2b756e62dac491528fdbc27aa2e5b4b7ec8276e"
+      }
+    },
+    "pink-ear-left": {
+      "box": {
+        "x": -28,
+        "y": -128,
+        "w": 56,
+        "h": 138
+      },
+      "ink": {
+        "x": -22.5,
+        "y": -127,
+        "w": 45,
+        "h": 136.5
+      },
+      "cleanup": {
+        "removedCorePixels": 1972,
+        "retainedCorePixels": 88469,
+        "axisRotation": 0.5066870571276283,
+        "sourceCell": [
+          873,
+          0,
+          381,
+          556
+        ]
+      },
+      "width": 112,
+      "height": 276,
+      "normal": {
+        "file": "assets/rig-baked/pink-ear-left-normal.png",
+        "sha256": "1ff9d9cc1e69919d66baa1af6a103c45d5a5797df5f1d4bf53c2befc6cad44a6"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-ear-left-warm.png",
+        "sha256": "a46a0730167286fe9f39c98ee81e6227e0de8257d2129e5367d534bd5b0f8e3e"
+      }
+    },
+    "pink-ear-right": {
+      "box": {
+        "x": -30,
+        "y": -87,
+        "w": 60,
+        "h": 97
+      },
+      "ink": {
+        "x": -29.5,
+        "y": -73,
+        "w": 59,
+        "h": 82
+      },
+      "cleanup": {
+        "removedCorePixels": 1,
+        "retainedCorePixels": 64045,
+        "axisRotation": 0.5430710326060058,
+        "sourceCell": [
+          72,
+          559,
+          355,
+          391
+        ]
+      },
+      "width": 120,
+      "height": 194,
+      "normal": {
+        "file": "assets/rig-baked/pink-ear-right-normal.png",
+        "sha256": "079f1f21c5496f6bcf6ca573adf68041f0e062087c0e4a37fcac22393402e8d7"
+      },
+      "warm": {
+        "file": "assets/rig-baked/pink-ear-right-warm.png",
+        "sha256": "1d859447d355eaa719353554416b5095c273f73d395e06a1f9b59b4026364c92"
+      }
+    },
+    "taupe-head": {
+      "box": {
+        "x": -98,
+        "y": -277,
+        "w": 196,
+        "h": 147
+      },
+      "ink": {
+        "x": -97,
+        "y": -276,
+        "w": 194,
+        "h": 145.5
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 108698
+      },
+      "width": 392,
+      "height": 294,
+      "normal": {
+        "file": "assets/rig-baked/taupe-head-normal.png",
+        "sha256": "7ec46d195ce5f796e4f2f962597f9821fea86f4045e08555e43f0d595ed0f90e"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-head-warm.png",
+        "sha256": "bc190f83d7e5cebd845c5931f04c61ecb10270125614e3ceac222cb385cd5d10"
+      }
+    },
+    "taupe-body": {
+      "box": {
+        "x": -87,
+        "y": -159,
+        "w": 174,
+        "h": 178
+      },
+      "ink": {
+        "x": -86.5,
+        "y": -158.5,
+        "w": 172.5,
+        "h": 177
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 132641
+      },
+      "width": 348,
+      "height": 356,
+      "normal": {
+        "file": "assets/rig-baked/taupe-body-normal.png",
+        "sha256": "0c5920a2dce55bade1e32264ad72725f46ca3b1680b3788b0c2c0409e56067cf"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-body-warm.png",
+        "sha256": "22f541c068cda0ab4b80af10cfec6681b51d08f597f6b3e306dc346691ca285c"
+      }
+    },
+    "taupe-upper": {
+      "box": {
+        "x": -19,
+        "y": -10,
+        "w": 38,
+        "h": 70
+      },
+      "ink": {
+        "x": -18.5,
+        "y": -9.5,
+        "w": 37,
+        "h": 69
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 70234
+      },
+      "width": 76,
+      "height": 140,
+      "normal": {
+        "file": "assets/rig-baked/taupe-upper-normal.png",
+        "sha256": "403fee8505dbd484e3e933c84c32ad564d23c84eaf20f369338f1aa65958e3f7"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-upper-warm.png",
+        "sha256": "0bc5980e1780a23095a319c37340142015d855c6f6a15f64c15a9b932ec448ab"
+      }
+    },
+    "taupe-fore": {
+      "box": {
+        "x": -20,
+        "y": -10,
+        "w": 40,
+        "h": 70
+      },
+      "ink": {
+        "x": -19.5,
+        "y": -9.5,
+        "w": 39,
+        "h": 69
+      },
+      "cleanup": {
+        "removedCorePixels": 38,
+        "retainedCorePixels": 61276
+      },
+      "width": 80,
+      "height": 140,
+      "normal": {
+        "file": "assets/rig-baked/taupe-fore-normal.png",
+        "sha256": "45a14ecf5dd6eafe4ee979c18bbbb6e367f9bea4c6fa4aef3c126574a4c40c9b"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-fore-warm.png",
+        "sha256": "da3896a6d36ee9be8ea988f302f25889a3910ee3c053fc37c8102cf7b08e6134"
+      }
+    },
+    "taupe-paw-left": {
+      "box": {
+        "x": -23,
+        "y": -21,
+        "w": 46,
+        "h": 44
+      },
+      "ink": {
+        "x": -22.5,
+        "y": -20.5,
+        "w": 45,
+        "h": 43
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 45058
+      },
+      "width": 92,
+      "height": 88,
+      "normal": {
+        "file": "assets/rig-baked/taupe-paw-left-normal.png",
+        "sha256": "13937a89887006ab1680b0d7963f9d867cea4dc2e3a6473427d102b771ecf7ad"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-paw-left-warm.png",
+        "sha256": "08e5add6311b563e1641dbd26935f96f1ab84f9d3df3f0e136fd70e09933d8ed"
+      }
+    },
+    "taupe-paw-right": {
+      "box": {
+        "x": -23,
+        "y": -21,
+        "w": 46,
+        "h": 44
+      },
+      "ink": {
+        "x": -22.5,
+        "y": -20.5,
+        "w": 45,
+        "h": 43
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 46060
+      },
+      "width": 92,
+      "height": 88,
+      "normal": {
+        "file": "assets/rig-baked/taupe-paw-right-normal.png",
+        "sha256": "c9e5d95ab5aa5fd676fb964c15f90a6b73bcdb2006141386d0468d20215eda62"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-paw-right-warm.png",
+        "sha256": "7a57abce9ecd7aae7fd9c1812bd3d8235770d03ae7177c1066f4c146bcafc4e2"
+      }
+    },
+    "taupe-foot": {
+      "box": {
+        "x": -43,
+        "y": -25,
+        "w": 86,
+        "h": 53
+      },
+      "ink": {
+        "x": -42.5,
+        "y": -25,
+        "w": 85,
+        "h": 52.5
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 76283
+      },
+      "width": 172,
+      "height": 106,
+      "normal": {
+        "file": "assets/rig-baked/taupe-foot-normal.png",
+        "sha256": "ad1b14b5fd95cbebfbc4beb9a74ef1c280c6d592abdfe4fdba9309ab9daee2a5"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-foot-warm.png",
+        "sha256": "195ca05e9f01e4354b43a4c6e21cfccc886374c0f9e994a1a639fe51b3d9a27f"
+      }
+    },
+    "taupe-ear-left": {
+      "box": {
+        "x": -48,
+        "y": -3,
+        "w": 62,
+        "h": 221
+      },
+      "ink": {
+        "x": -47.5,
+        "y": -2,
+        "w": 61,
+        "h": 219
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 72768
+      },
+      "width": 124,
+      "height": 442,
+      "normal": {
+        "file": "assets/rig-baked/taupe-ear-left-normal.png",
+        "sha256": "96cf1a3da789342bf772d4b317612914ce0a20034bc5c6876e4eda4202d0ff28"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-ear-left-warm.png",
+        "sha256": "f164db1c07b96f14307946cb98a294c6c809e0d7d90092972c17a38f91a67573"
+      }
+    },
+    "taupe-ear-right": {
+      "box": {
+        "x": -18,
+        "y": -3,
+        "w": 62,
+        "h": 221
+      },
+      "ink": {
+        "x": -17.5,
+        "y": -2,
+        "w": 61,
+        "h": 219
+      },
+      "cleanup": {
+        "removedCorePixels": 0,
+        "retainedCorePixels": 73293
+      },
+      "width": 124,
+      "height": 442,
+      "normal": {
+        "file": "assets/rig-baked/taupe-ear-right-normal.png",
+        "sha256": "21152f16341bb8184daf4469156ed229ff64026f3244567bb39470b173fb3272"
+      },
+      "warm": {
+        "file": "assets/rig-baked/taupe-ear-right-warm.png",
+        "sha256": "d946c4f47fb802b251a415edb69ac6bc0dc05b8c8f9f11030db9d11f0f458072"
+      }
+    }
+  },
+  "sourceHashes": {
+    "brief/RIG_F24_1_ORIGINAL.js": "b7185d9ab049c2504189c6009f9a6f3d26b6bcd8474ad8192c0f9632e372ed06",
+    "src/character-models.js": "2cdbf3ba3fbbdeb6580995799c39617ec59c96d9041ef5341936e03ea343dac6",
+    "assets/art/pink-atlas.png": "f3a4ec932f219ea6d65ebc198c75b2fb260530be62020f9f3bed13cdcfef5d15",
+    "assets/art/taupe-atlas.png": "dcda7024592ead18c18969f403cfdbc669743db14c6ea13537e323313e17f63e"
+  }
+}

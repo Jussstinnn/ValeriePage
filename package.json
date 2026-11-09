@@ -1,0 +1,34 @@
+{
+  "name": "valerie-illustrated",
+  "version": "24.6.4",
+  "private": true,
+  "description": "Valerie F24.6.4 — ceremonia y paisaje sonoro local",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "phone": "node scripts/serve.mjs --lan",
+    "test": "node --test tests/contracts.test.mjs tests/animation.test.mjs tests/matte.test.mjs tests/root-motion.test.mjs tests/private.test.mjs tests/encoding.test.mjs tests/story-state.test.mjs tests/cinema.test.mjs tests/asset-codec.test.mjs tests/ceremony-2464.test.mjs",
+    "test:browser": "node scripts/verify.mjs",
+    "package": "node scripts/package.mjs",
+    "package:site": "node scripts/package-site.mjs",
+    "test:guardians": "node tests/performances.cjs",
+    "private": "node scripts/private-server.mjs",
+    "test:forest": "node --test tests/forest-action.test.mjs tests/forest-session.test.mjs tests/forest-scene.test.mjs tests/forest-build.test.mjs",
+    "test:forest:browser": "node tests/forest-runtime.spec.cjs",
+    "test:f24": "node --test tests/vertical-cut.test.mjs tests/hud-contract.test.mjs tests/cinema.test.mjs tests/transitions-f24.test.mjs",
+    "test:vertical": "node --test tests/vertical-cut.test.mjs tests/hud-contract.test.mjs tests/cinema.test.mjs tests/transitions-f24.test.mjs",
+    "test:polish": "node --test tests/personal-polish.test.mjs",
+    "test:rig-cache": "node tests/rig-cache.cjs",
+    "test:journey": "node --test tests/journey-migration.test.mjs",
+    "test:cut": "node --test tests/directors-cut.test.mjs tests/journey-migration.test.mjs",
+    "test:tale": "node --test tests/living-tale.test.mjs",
+    "test:refinement": "node --test tests/refinement.test.mjs",
+    "test:stability": "node --test tests/stability.test.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

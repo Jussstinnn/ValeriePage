@@ -1,0 +1,88 @@
+PROMPT MAESTRO PARA CODEX
+VALERIE — DOS CONEJITOS Y EL SECRETO DEL JARDÍN
+FASES F18–F22 · EVOLUCIÓN CINEMATOGRÁFICA, AGENCIA REAL Y FINAL DEFINITIVO
+
+AUTORIZACIÓN
+Te autorizo a trabajar sobre el ZIP VALERIE_DOS_CONEJITOS_F17_COMPLETO.zip y la auditoría independiente adjunta, creando una revisión nueva, aislada y reproducible. Conserva F17 íntegra, además de los respaldos. No esperes otra confirmación por cada microtarea, pero respeta puntos de control artísticos. Construye las fases, guarda checkpoints y entrega proyectos ZIP completos en hitos significativos. No declares versión definitiva sin revisión del autor en un teléfono real.
+
+CONTEXTO INNEGOCIABLE
+Esta es una película/cuento romántico privado para Valerie que culmina con la pregunta EXACTA: «Valerie, ¿quieres ser mi novia?». Sus dos protagonistas son los peluches reales fotografiados: Rosa, pequeño, rosado, orejas erguidas y hocico marfil; Beige, grande, topo/beige, orejas largas y caídas, nariz rosada. Conservar las ilustraciones aprobadas y su aspecto fiel; la cajita rosa real con luces y banderines y el anillo comprado, rosado con piedra central rosa, son la referencia del clímax. No inventar hechos personales ni editar rostros o contenidos de fotografías auténticas. Conserva el texto original de la carta salvo instrucción del autor y deja editable la personalización.
+
+NO REGRESAR A LO ANTERIOR
+No reutilices ASCII como apariencia dominante. No cambies a un motor 3D genérico ni rediseñes personajes. No uses scroll como navegación de la historia: solo controles permanentes Anterior/Siguiente, índice, reproducción, sonido y funciones táctiles optativas. Prioridad MOBILE absoluta, escritorio también trabajado. No pedir capturas al autor, no generar videos, grabaciones, dashboards ni reportes gigantes como entregables. Pruebas técnicas focalizadas sí; la inspección visual se hace internamente y el autor evalúa el resultado final.
+
+DIAGNÓSTICO ACEPTADO
+F17 compila y tiene 18/18 contratos aprobados en QA independiente. Implementa 19 capítulos, 8 decisiones con 16 alternativas, burbujas y ruta neutral. Se comprobaron las ocho primeras opciones en el navegador y se recorrieron carta/anillo/final. La nueva dirección ES BUENA y debe respetarse. La limitación principal ya no es un bug generalizado sino el ritmo de demasiados clics, la repetición de líneas sobre encuadres similares, el peso de la carga y consecuencias a veces demasiado pequeñas. No inventes errores no reproducidos ni conviertas el QA en pretexto para otra entrega puramente interna.
+
+OBJETIVO CENTRAL
+No quiero una colección de 19 pantallas que dependen de pulsar Siguiente para mostrar otra línea. Quiero un cuento vivo donde los conejitos actúen, tengan objetivos y dialoguen con humor y ternura; donde Valerie tome pequeñas decisiones y PRESENCIE una reacción distinta, reconocible, después de cada una. Una escena debe poder resumirse como: «hicieron algo — pasó algo — cambió algo — recordaron algo». La emoción procede de una historia completa, no de partículas decorativas.
+
+FASE F18 — CALIDAD DE INTERACCIÓN Y RITMO
+1. Primero verifica que no haya regresiones en salto, navegación, recuerdos, carta, caja, restauración, carga y opciones. No cambies el rig aprobado a menos que un error esté demostrado.
+2. Audita el número total de pulsaciones para llegar al final en ruta neutral y en dos rutas elegidas. Reduce pasos redundantes, fusiona diálogos que no aporten, simplifica intercambios y permite que UNA actuación real contenga varias frases cuando narrativamente tenga sentido.
+3. Mantén los textos visibles hasta que Valerie continúe. Considera un modo opcional «Ver como película» que reproduzca diálogos con tiempos generosos, pausando INDEFINIDAMENTE para decisiones, fotos, carta, anillo y pregunta; el modo manual será siempre el predeterminado. No imponer autoplay de audio.
+4. Refinar burbujas individuales con carácter propio (pensamiento versus diálogo), cola anclada sin tapar caras, orejas y controles. Conservar la información accesible por lector de pantalla, pero reducir el duplicado visual permanente de burbuja y subtítulo si el usuario ha elegido ver burbujas.
+5. Dejar alternativas accesibles cuando la burbuja no cabe en horizontal corto; paneles de elección con 44px mínimos, área segura, sin desbordamiento ni bloqueo.
+ENTREGA F18: navegación y ritmo perceptiblemente mejores, sin cambiar el arte, ZIP completo y checkpoint.
+
+FASE F19 — DIRECCIÓN DRAMÁTICA, ACCIONES Y PERSONALIDAD
+1. Construye una pequeña trama coherente alrededor de la luz que se escapa y la caja dormida: inicio (problema), búsqueda (obstáculos), cooperación (soluciones), recuerdos (significado), carta (intimidad) y sorpresa final.
+2. Rosa: curiosidad, energía, pequeños saltitos y sorpresas; Beige: cuidado, espera, torpeza tierna ocasional y ayuda. Sus identidades NO deben reducirse a frases repetidas de «vamos juntos». Deben sorprender, disentir suavemente, reconciliarse y cooperar. Nada humanoide o inquietante.
+3. Crear actuaciones que sean físicamente legibles: mirar un objeto, inclinarse, alcanzar con patita, sostener hoja, colocar luz, acercarse al otro, retirarse para que se vea la foto, esperar y reaccionar. No basta con head.rotate pocos grados. Respetar anatomía de peluche; manos y pies unidos, sin saltos de escala.
+4. En cada momento principal debe haber al menos un acontecimiento visual que avance la misión y uno de carácter. Diseñar variedad de composición —plano general, medio, detalle y reacción— y no saturar cada capítulo de diálogos.
+5. Permitir un pequeño interludio nuevo SOLO si tiene una función narrativa poderosa, no por inflar el número de capítulos. Ejemplo: el puente de las dos patitas, un lugar de ayuda mutua, o la noche en que el cielo guarda un secreto.
+ENTREGA F19: dos escenas rediseñadas como estándares de calidad y extensión coherente al recorrido, pruebas focalizadas de movimientos y estados.
+
+FASE F20 — DECISIONES CON CONSECUENCIAS MEMORABLES
+1. Conservar las 8 decisiones actuales y su carácter amable: ningún error, fracaso ni camino bloqueado. Cada opción debe cambiar algo VISUAL, no solo un diálogo o color.
+2. Asegurar que, tras elegir, el gesto se anime, el objeto responda, los personajes se miren y exista una pequeña consecuencia que vuelva a aparecer MÁS ADELANTE. Se recuerda con diálogos, gesto, un objeto, una composición o una acción. No solo motas pequeñas.
+3. Disponer un pequeño inventario visual de recuerdos de la aventura —sin puntos ni interfaz de videojuego— donde se reconozcan los tres destellos y su significado. Siempre hay una ruta neutral completa y válida.
+4. Crear divergencia corta pero genuina en al menos tres situaciones clave: bosque, museo y jardín. No necesitas 16 películas diferentes; sí que Valerie perciba que SU elección importó.
+5. El clímax conservará la pregunta exacta, pero la coreografía de regreso debe incorporar los símbolos y actuaciones correspondientes a la ruta elegida. No revelar antes de tiempo la propuesta.
+6. Comprobar reelección: cambiar opción sustituye efectos anteriores; navegar atrás/adelante o restaurar sesión no mezcla rutas; omitir mantiene ruta neutra.
+ENTREGA F20: matriz de 8 elecciones con prueba observable del resultado inmediato y eco posterior. Nada de afirmar consecuencias solo porque hay una variable de estado.
+
+FASE F21 — TRES RECUERDOS COMO PEQUEÑOS CORTOMETRAJES
+1. «Nuestro retrato»: el perrito se descubre en la fotografía mediante una entrada imaginativa de los dos peluches. La fotografía auténtica, completa, legible y sin deformación facial, recibe su propio momento quieto.
+2. «Dos sonrisas»: escena más luminosa y juguetona. Rosa y Beige se ayudan a descubrir el álbum; no repetir exactamente la misma coreografía de levantar una cubierta de la foto anterior.
+3. «Un instante»: escena íntima y silenciosa. Permitir que los personajes se sienten/acerquen, el silencio tenga sentido y el sobre surja del gesto final. Diferenciar visualmente las tres escenas incluso sin leer el título.
+4. Que cada recuerdo tenga descubrimiento, actuación, diálogo breve, revelación, contemplación a voluntad y salida emotiva. Nada de fotografias minúsculas bajo personajes inertes ni máscaras que cubran la foto en landscape.
+5. Nunca inventar dónde, cuándo ni qué ocurrió en las fotos. Las líneas sobre hechos personales serán editables y vacías por defecto si no fueron provistas por el usuario; la ficción pertenece a los conejitos.
+6. Fotos nítidas, proporciones intactas, protección de privacidad, navegación inversa/restauración sin perder elección ni inventar recuerdos.
+ENTREGA F21: los recuerdos deben ser visualmente diferentes y cada uno aportar un significado narrativo.
+
+FASE F22 — CARTA, REGALO, ANILLO, GRAN FINAL Y PULIDO MÓVIL
+1. Reconstruir el clímax con progresión dramática: los conejitos encuentran el sobre, lo entregan; lectura clara y tranquila; acompañan a la caja real ilustrada; Rosa levanta y Beige sostiene; detalle de luces y banderines; revelación del anillo auténtico; contemplación sin prisa; regreso de los motivos elegidos.
+2. Que la apertura de la caja sea una ceremonia comprensible. Anillo presente como objeto precioso y reconocible, no macro que tape toda la película o parezca flotante. Respetar el diseño comprado, sin inventar productos ni detalles exactos no vistos.
+3. El final debe ser la cumbre emocional: ambos protagonistas más expresivos, los recuerdos retornan delicadamente y las acciones escogidas durante el viaje forman un montaje único, sin saturar la pregunta. Mostrar exactamente «Valerie, ¿quieres ser mi novia?», persistente y sin solicitar respuesta digital.
+4. Optimización responsable: pesar el HTML autónomo y el ZIP, medir inicio, FPS y picos de memoria en un entorno de prueba representativo; reducir recursos repetidos y preparar distribución modular privada con carga diferida cuando sirva, sin eliminar offline ni comprometer la privacidad. Evitar redescarga de imágenes entre capítulos.
+5. Pruebas en 320×568, 390×844, 568×320, 844×390, escritorio, horizontal muy corto, y reduced motion; control de 44px o más, safe areas, sin desbordamiento ni texto oculto. Safari/iPhone físico y Android físico se reportarán PENDIENTES hasta probarlos de verdad.
+6. Mantener el hosting privado con HTTPS y autenticación de HTML, fotos, JS, CSS y assets; nunca publicar el ZIP editable ni fotos como recursos públicos. No generar ni imprimir QR sin confirmación de despliegue final.
+ENTREGA F22: ZIP editable completo, HTML offline, paquete modular privado si corresponde, README Windows, cambios concisos, pruebas útiles, problemas pendientes y checkpoint. No entregar videos ni capturas masivas.
+
+CRITERIOS DE ACEPTACIÓN NO NEGOCIABLES
+A. En 15–20 segundos se percibe una pequeña misión y dos personajes que hacen algo real, no una secuencia de subtítulos.
+B. Se puede señalar una diferencia visible entre cada par de decisiones importantes y su eco al menos una escena después.
+C. Los conejitos siguen pareciéndose a LOS PELUCHES REALES: no cuerpos humanos, miembros separados ni orejas incorrectas.
+D. Las tres fotografías son protagonistas de tres escenas diferentes, no tres marcos con un efecto distinto.
+E. Menos pulsaciones redundantes y mejor ritmo, sin que desaparezcan mensajes ni se precipite a Valerie.
+F. Navegación SIEMPRE por botones. Controles visibles. Accesible con teclado, tacto y movimiento reducido.
+G. Carta, caja, anillo y pregunta final son el clímax, nunca una sucesión de pantallas que se puedan omitir por accidente.
+H. Los textos personales y fotografías originales NO se inventan, sustituyen ni alteran.
+I. Medidas y pruebas honestas. Compilación y tests automáticos nunca equivalen por sí solos a calidad cinematográfica aprobada.
+
+FORMA DE TRABAJAR
+- Antes de modificar, inspecciona el ZIP real; no asumas que otra versión está en la carpeta.
+- Trabaja sobre copia independiente; preserva F17 y manifest de hash de los peluches y fotos.
+- Divide internamente por F18→F22, escribe checkpoints y no comiences de cero tras límite de cuota.
+- Corrige primero fallos reales detectados; no declares bugs sin reproducción. En el QA independiente, 18/18 contratos pasan y el desenlace es alcanzable.
+- No consumas la mayoría de la cuota generando vídeos, cientos de capturas o dashboards; programación, arte, usabilidad y pruebas focalizadas primero.
+- No completes todas las fases superficialmente solo por declarar F22. Si la cuota termina, entrega el máximo sólido y el checkpoint real; no finjas cobertura.
+- Explica qué decisiones generaron diferencias visibles concretas y cómo comprobarlas. Evita descripciones vagas como «más mágico» si no cambió el resultado.
+- Entrega siempre un ZIP completo reconstruible y un HTML autónomo verificado en el estado alcanzado.
+
+ORDEN INMEDIATO
+Comienza por F18: audita ritmo, burbujas, navegación y la escena del primer dilema. A continuación trabaja F19–F22 progresivamente, priorizando primero UNA secuencia claramente distinta en actuación y agencia que pueda convertirse en el patrón para toda la película. No solicites confirmaciones innecesarias; la valoración artística definitiva del autor se hará con el ZIP entregado.
+
+PROPÓSITO ÚLTIMO
+No se trata de escribir más código ni de llegar a F22 por numeración. Quiero un cuento precioso y sorprendente en el que Valerie tenga la sensación de que los conejitos reconocibles de su regalo físico cobraron vida, hablaron entre sí, le pidieron ayuda, recordaron sus elecciones y la acompañaron hasta una sorpresa romántica inolvidable.

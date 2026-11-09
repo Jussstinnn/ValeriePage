@@ -1,0 +1,152 @@
+VALERIE F24.6 — RECONSTRUCCIÓN SERIA, REGRESIONES CERO Y CINE MÓVIL VIVO
+
+## AUTORIZACIÓN
+
+Comienza **ahora** una implementación completa de F24.6 sobre una COPIA INDEPENDIENTE de `VALERIE_F24_5_MOBILE_CINEMATIC_REFINEMENT_COMPLETO.zip`. Conserva F24.5 y las versiones aprobadas anteriores intactas. No es una solicitud de solo revisión o planificación: programar, integrar, probar y entregar ZIP completo.
+
+Adjunto dos documentos obligatorios: `VALERIE_F24_6_AUDITORIA_PROFESIONAL.md` y `VALERIE_F24_6_MATRIZ_QA_ACEPTACION.md`. Debes seguirlos íntegramente, junto a esta especificación. La auditoría distingue observaciones reportadas por el usuario, causas probables y contratos de código verificados; investiga antes de atribuir un bug a una única causa.
+
+**El usuario ya ha dedicado muchas iteraciones y tiempo a correcciones que han introducido nuevas regresiones.** Esta fase exige una mejora efectiva y medible. Ni el número de líneas cambiadas ni que todas las pruebas antiguas pasen son criterios de éxito.
+
+## REGLA PRINCIPAL: MOBILE VERTICAL Y DIRECCIÓN CINEMATOGRÁFICA
+
+Prioridad: celulares modernos iOS y Android, vertical, diferentes proporciones, 320–430 px de ancho de referencia y safe areas / viewport dinámico. No gastar recursos en escritorio/horizontal más allá de no romperlo. La experiencia debe ser interactiva, cálida, fluida y físicamente coherente, como un cuento animado y NO como personajes pegados sobre un fondo. Respeta el estilo aprobado de los peluches y la intimidad del contenido.
+
+**Primero arregla fallos bloqueantes y regresiones; después aumenta la riqueza artística.** No añadas efectos encima de estados o capas rotos.
+
+## P0-A: EL FINAL NUNCA PUEDE QUEDARSE PEGADO
+
+Es un bug crítico reportado: al revelar el anillo la página deja de avanzar. Investiga y corrige la causa real siguiendo el flujo completo:
+
+- `src/director.js`: `ui()`, `contextLabel`, `navigateStep`, `beatChange`, `tick()`, `isResting`, `movie.update`, estados de pausa, `inputPending` y `requestOnly` en fases `revealed`, `macro`, `return`.
+- `src/cinematic-hud.js`: `controlsFor`, `renderContext`, `next`, `assist`, ocultamiento/activación.
+- `src/reveal-director.js`: `CLOSED → UNLATCHED → OPEN_HIDDEN → REVEAL → CONTEMPLATE → QUESTION`, autorizaciones y `nextReady`.
+- `src/ceremony-theatre.js`: render de joya, texto, máscara, capa, composición, memoria; restauración y estados finales.
+
+La solución NO es forzar un salto automáticamente ni revelar el secreto antes. Preservar la decisión táctil de abrir y la de descubrir. Tras revelar, permitir contemplación ilimitada con una forma CLARA, visible y accesible de hacer zoom, volver y llegar a la pregunta. Un usuario nunca puede quedar atrapado en un estado sin control de salida. El final no puede bloquearse tras recarga, pausa, modo reducido, retorno de background, desactivación de audio o doble toque.
+
+**Prueba end-to-end obligatoria:** inicio de ceremonia con tres objetos correctos, apertura, secreto todavía oculto, elección para revelar, zoom, regresar y animación de pregunta. Repetir con recarga tras apertura y tras revelación, en 320/390/430 px. Verificar ausencia de excepciones, freeze de RAF y botones invisibles/deshabilitados indebidamente.
+
+## P0-B: CAJA, BROCHES Y RELIQUIAS — REHACER LA COMPOSICIÓN FÍSICA
+
+La versión actual aún enseña un plano con símbolos anteriores y broches fuera de lugar; además elementos del escenario pueden sobreponerse por delante de las ranuras. Corrígelo de raíz.
+
+- **Una única fuente de verdad** para las tres reliquias ganadas: `VF.RelicJourney` / sesión validada, con variante real elegida por Valerie (bosque, cielo y jardín). El plano muestra exactamente esos tres objetos, una sola vez, sin símbolos antiguos. Que el plano NO tape a Rosa.
+- Diseñar un arte final del plano comprensible y bello, no una tabla flotante de iconos. Si faltan assets, créalos. El plano puede desplegarse desde una hoja de pergamino y recogerse físicamente, con los conejitos aún visibles.
+- Las tres ranuras deben estar registradas en el **espacio local de la caja** y proyectarse con el mismo transform que tapa, cara frontal, broche y objeto; no recalcularlas con offsets ad hoc independientes.
+- Implementar profundidad y oclusión consistentes: entorno detrás de caja, reverso de tapa cuando procede, interior/forro, anillo con su propia máscara y autorización, cara frontal, broches/objetos según plano, manos delante donde corresponda. No confiar en etiquetas como `neverThroughBox:true` o `renderLayers` para asegurar el dibujo.
+- Dejar que los personajes avancen al frente de la caja, saquen sus objetos y los coloquen de verdad en sus ranuras. No deben transparentarse, saltar detrás de la caja ni hacer volar objetos que no estén ligados a una mano.
+- Los tres broches deben alinear en 320, 375, 390, 412 y 430 px, tanto con caja cerrada como al iniciar apertura. Pruebas de superficies, pixel bounds, colisiones y comparación visual interna si el navegador lo permite.
+- Evitar duplicación de capas o assets precargados obsoletos: limpiar motivo anterior cuando cambia la elección/reliquia, tanto en vista de plano como en cierre.
+
+**La caja y el anillo son el clímax**: abrir, descubrir y contemplar deben ser claros, emotivos y diferenciados. No mostrar el anillo antes de autorizarlo. La pregunta final debe permanecer con la misma caja abierta y el anillo visible, y las letras moverse desde sus banderines interiores hasta formar «Valerie, ¿quieres ser mi novia?». Conservar el contenido exacto personal. Sin pantalla ajena al escenario y sin respuesta digital obligatoria.
+
+## P0-C: BURBUJAS DE PENSAMIENTO, ESTILO CARICATURA
+
+Rediseña la presentación de diálogos en TODO el recorrido. La petición concreta es una estética de caricatura suave: burbuja de pensamiento con **tres puntitos** de conexión a la cabeza, diferenciada por protagonista:
+
+- Rosa: rosa pastel cálido legible.
+- Beige: beige pastel cálido legible.
+- Tipografía, contraste, bordes y sombras sobrios y hermosos; paletas coordinadas.
+- Cada diálogo debe permanecer anclado a quien habla, sin tapar caras, orejas, personajes, decisiones, cuadro, foto ni anillo.
+- Tres círculos con tamaño/espaciado natural y posición que siga la cabeza sin deformarse en cámara.
+- No deben alternar al azar entre una burbuja, un subtítulo convencional y silencio. Usa una política única por capítulo/beat y excepciones justificadas (carta, fotografía, pregunta final, accesibilidad).
+- Preservar lectura accesible para VoiceOver/TalkBack mediante etiquetas/aria, sin doble lectura. Adaptar 320px y textos largos.
+- Inspeccionar `bubble-director.js`, `dialogue-layout.js`, `film.css` y `film-script.json`, donde algunos beats siguen en `dialogueStyle:'subtitle'`, otros `kind:'speech'` y los tres círculos aparecen solo en `kind:'thought'`.
+
+NO convertir toda la interfaz en cajas gigantes. El protagonista visual es la actuación.
+
+## P0-D: CONTINUIDAD DESPUÉS DE LA HOJA Y CALIDAD DE SALTOS
+
+La **acción de sostener la hoja para cruzar hacia el fondo ahora sí funciona y está aprobada**. No la reconstruyas ni la empeores. Lo que falla es la posición final/cambio a la siguiente escena.
+
+- Cada variante debe dejar a ambos personajes dentro del sendero con pies apoyados, escala coherente, perspectiva y z-order correcto.
+- El siguiente plano comienza desde una pose compatible con la salida real, no desde la posición genérica de spawn.
+- Revisar `threshold-leaf.js`, `world-path.js`, `vineyard-scene.js` (`blendEntry` y `pose`) y `transition-director.js` (`sourcePose`/`targetPose`).
+- Corregir los saltitos: comprobar escala/zoom, elevación aplicada una sola vez, arco, anticipación, sombra de contacto, aterrizaje y duración. `guardian-acting.js` coincide con F24.4: primero localizar si el cambio malo viene de proyección, `WorldPath`, rig resolver o mezcla, no reescribir la anatomía aprobada.
+- Conservar el cruce del río y su profundidad. Recuperar también la excelente coreografía de **abrir y cruzar la puerta del museo**: estaba mejor antes y no se autoriza degradarla.
+
+## P0-E: TRANSICIONES NUEVAS Y COHERENTES
+
+Las transiciones siguen sin alcanzar el nivel visual deseado. Necesitamos dirección por recorrido, no un gran asset que cubra todo al azar. `transition-director.js` utiliza un `leaf-occlusion` genérico para rutas sin definición. No es aceptable.
+
+- Crear un mapa de continuidad de cada par de capítulos con origen, destino, escala/cámara/actor y motivo de transición.
+- Donde el espacio es el mismo, priorizar continuidad del plano y desplazamiento de cámara, como la galería.
+- Donde cambia el escenario, utilizar oclusiones bien compuestas por objetos físicos (hoja, farol, puerta, vegetación, pétalo, reflejo) o barridos suaves de color/textura que revelen el nuevo lugar.
+- El usuario ha indicado que le gustan los barridos de color bien diseñados del final y la hoja cuando realmente está integrada. Aprovechar esos principios, sin repetir mecánicamente una misma plantilla.
+- Nunca mostrar texturas incorrectas de la escena anterior ni sprites que reaparezcan después del cut.
+- La entrada y salida deben coincidir en dirección, punto de apoyo, profundidad y magnitud de la cámara; transiciones cancelables para retroceso/cambio de capítulo.
+- Crear assets nuevos y animaciones si realmente son necesarios, en vez de simular todo con grandes rectángulos de Canvas.
+
+## P1-A: «DOS SONRISAS» — ARREGLAR REGRESIÓN
+
+El usuario NO pidió que Rosa y Beige cargaran la foto ni el álbum hasta primer plano. Quiere una **revelación bonita y sorprendente en su lugar original**, como cuando aparecía al caminar.
+
+- Durante el recorrido del museo, mostrarlo físicamente integrado sobre el banco, cubierto o parcialmente oculto.
+- Ambos reaccionan y Valerie lo descubre por interacción: un teloncito, cubierta, apertura de álbum, luz y movimiento de cámara que acerque la imagen sin teletransportarla.
+- El álbum **permanece en el banco** hasta la revelación. El cambio de escala de la fotografía es un movimiento de cámara / encuadre, no una reubicación de objeto con los peluches.
+- No reaparecer desde el vacío ni duplicar imagen/sombra; preservar fotografía real e intimidad de contemplación ilimitada.
+- Inspeccionar `src/album-object.js`, `src/gallery-theatre.js` y el orden de draw `background`/`afterActors`.
+
+## P1-B: EXCAVACIÓN DEL RECUERDO — DISEÑARLA DE VERDAD
+
+La idea central es encantadora: siendo conejitos, encuentran el tercer recuerdo semienterrado en el jardín, lo desentierran y lo limpian. La versión actual es insuficiente. Reconstruye esta microaventura como acción física:
+
+1. El hada percibe un destello entre las raíces de unas flores; Rosa lo ve y Beige comprueba el terreno.
+2. Valerie ayuda con una acción táctil natural —arrastrar/rascar suavemente la tierra, tocar distintos montículos o seguir una trayectoria—, con accesibilidad por botón alternativo.
+3. La tierra se desplaza y se acumula a los lados de forma progresiva; aparecen raíces, pequeñas partículas, profundidad y una parte del objeto real, no un icono genérico.
+4. Los conejitos excavan alternadamente; se nota esfuerzo, anticipación, patas y orejas reaccionando. La animación responde al progreso de Valerie y no es un temporizador vacío.
+5. Beige ayuda a levantar el último recuerdo, Rosa lo limpia; queda clara la identidad del objeto y se guarda de forma física y visible.
+
+Puedes y DEBES generar los assets originales que hagan falta (capas de tierra, montículos con alfa correcto, herramientas visuales, motas, brotes, contenedor y objetos), manteniendo la línea artística y un peso razonable. No basta con un contador de ocho taps de 1,65 segundos. Optimiza para experiencia agradable: 2–3 acciones significativas son mejores que ocho repetitivas.
+
+**No inventes una cuarta reliquia:** las tres señales originales se mantienen (bosque, deseo del cielo y último recuerdo del jardín).
+
+## P1-C: AMPLIAR INTERACTIVIDAD SIN RELLENO
+
+Autoriza 2–3 microinteracciones nuevas con propósito claro, corto y emotivo, preferiblemente al inicio o antes de la excavación:
+
+- Ayudar al hada a orientar la luz en el sendero y ver cómo el escenario revela un camino.
+- Tocar/destapar un detalle del viñedo que da una pista del destino sin añadir otra llave.
+- Activar una reacción del paisaje, pétalos o mariposas que afecte de forma visible el acompañamiento de Rosa y Beige.
+
+Cada gesto debe tener animación y consecuencia; evitar botones de «Continuar» superfluos o elecciones que no hacen nada. No convertir el cuento en un videojuego de recompensas acumulables.
+
+## P1-D: GUION Y CAUSALIDAD DEL PRÓLOGO
+
+En `film-script.json`, la introducción afirma que conocen «tres señales que necesita el broche» y que hay que conseguirlas, pero no relaciona con suficiente claridad la misión con **abrir la caja que protegerán y encontrarán más adelante**.
+
+Escribir dos o tres frases naturales, sin exposición pesada: Rosa y Beige custodian desde hace tiempo una caja especial destinada a Valerie; tiene tres pequeños cierres que responden a recuerdos encontrados con su ayuda; el hada/luz sabe dónde empezar. No anticipar anillo ni pregunta final. Ritmo visual vivo con acciones físicas durante el diálogo. Acelerar pausas innecesarias sin sacrificar legibilidad.
+
+## P1-E: FLORES Y RITMO DE CÁMARA
+
+Durante la **floración original de los lirios**, el fondo NO necesita moverse. Mantener ese momento íntimo con cámara serena y personajes visibles. DESPUÉS sí puede proseguir el paseo panorámico con distintos tipos de flores y mariposas. No sustituir lirios del jardín ni el texto de la carta que ya habla de rosas. Preservar fotos, recuerdos, regalo, sorpresa, anatomía de los peluches.
+
+## P1-F: EFECTOS DE SONIDO REALES Y CUIDADOS
+
+`src/sound.js` ya ofrece música/ambiente procedimental muy básico, pero la experiencia solicita más efectos originales:
+
+- Ambiente suave de viñedo: hojas, aire, pisadas; bosque: pequeñas ramas y sonido tenue de hada; río: movimiento de agua y salpicaduras; museo: pasos sobre suelo, puerta, lámparas; álbum: roce del papel; jardín: alas/mariposas y pétalos; excavación: tierra, rascar, desenterrar y limpiar; caja: metales de broche, bisagra/forro y reveal del anillo.
+- Spatial/panning sutil y volumen proporcionado; mezclar ambientes y SFX con prioridad a diálogo/lectura. Opciones de activar, silenciar y controlar volumen. Sonidos originales o con licencia adecuada, sin infringir derechos.
+- Respetar autoplay de iOS/Android: desbloquear AudioContext con toque explícito; ofrecer silencio predeterminado si no se autoriza, sin afectar la reproducción ni los timings. Detener/suspender al pausar, minimizar o ocultar app, recuperar de manera estable.
+- No agregar la canción comercial automáticamente.
+
+## P1-G: PERFORMANCE, ROBUSTEZ Y CONSUMO DE CODEX
+
+Perfil de ejecución móvil vertical real, no solo emulación. Objetivo de fluidez ~60 FPS donde el dispositivo lo permita, degradación elegante en teléfonos modestos; no sacrificar actuaciones relevantes. Medir tiempo de cuadros (mediana/p95), memoria, recargas de imágenes, cachés y trabajo Canvas prolongado. La versión autónoma ronda 48 MB; si creas nuevos assets, optimiza dimensiones, atlas y carga progresiva. Evitar repintado continuo durante contemplación estática, pero sin dormir controles que todavía necesitan interacción.
+
+Primero reproduce y aísla la causa, después modifica. Un solo agente principal salvo necesidad real; lectura focalizada de módulos. No ejecutar suites completas repetidamente por cambios triviales. No perder tiempo generando capturas, videos, grabaciones ni paquetes de evidencias para el usuario. Si usas pruebas de píxeles internas, puedes analizarlas sin producir entregables visuales.
+
+## ORDEN DE IMPLEMENTACIÓN Y CRITERIOS DE SALIDA
+
+**Fase 1 — Bloqueantes:** desbloquear final con pruebas de estados reales; caja + broches + capas + plano; integridad de navegación. No avanzar con un final roto.
+
+**Fase 2 — Regresiones:** salida de hoja, transición, salto, burbujas Rosa/Beige; preservar puerta y museo; arreglar álbum del banco.
+
+**Fase 3 — Calidad nueva:** excavación físicamente hermosa; sonido; microinteracciones narrativas y ritmo inicial; floración intacta.
+
+**Fase 4 — Integración:** todo el recorrido desde introducción hasta pregunta, las dos opciones de hoja, las dos del álbum y jardín, constelación y dibujo, carta, broches y ambas autorizaciones del anillo. Probar controles y escala en 320/375/390/412/430 px y diferentes DPR.
+
+Utiliza la matriz adjunta como QA obligatorio. Tests deben comprobar **salida dibujada**, no solo flags o data interna. Si no tienes iPhone/Android físicos, dilo claramente; no afirmes pruebas inexistentes. No declares FULL PASS si persisten defectos críticos. Puede haber resultados parciales si el tiempo/cuota limita: prioriza finalizar y entregar los P0 corregidos, en vez de añadir features a medias.
+
+**Entregable:** ZIP completo nuevo `VALERIE_F24_6_MOBILE_CINEMATIC_ESTABLE_COMPLETO.zip`, código fuente y assets incluidos, cambios verificables, resumen P0/P1 completados vs pendientes y lista exacta de pruebas ejecutadas. Mantener original F24.5 intacto. No responder con solo un plan. Implementa ahora.

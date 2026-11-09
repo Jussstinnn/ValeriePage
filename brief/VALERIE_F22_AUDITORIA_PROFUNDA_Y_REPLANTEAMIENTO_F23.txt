@@ -1,0 +1,50 @@
+VALERIE F22 — AUDITORÍA INDEPENDIENTE Y REPLANTEAMIENTO DE EXPERIENCIA
+Fuente examinada: VALERIE_CUENTO_F22_COMPLETO.zip
+Enfoque: calidad de experiencia, interacción, dirección narrativa y evolución visual.
+Fecha de revisión: 28 de octubre de 2026.
+
+1. ALCANCE Y RESULTADOS COMPROBADOS
+- Se inspeccionó la estructura del ZIP, los módulos de narrativa, elecciones, actuación, composición, animación del jardín, entrada táctil y render de recuerdos/final.
+- En entorno Linux/Node 22 se ejecutó npm run build correctamente. El proyecto tiene una dependencia de orden de ejecución para algunas pruebas: una carpeta dist construida debe estar presente; tras compilar, npm test aprobó 24/24 casos.
+- Se ejecutó el HTML offline real con Playwright/Chromium mediante carga de su contenido autónomo. Se abrieron y observaron en 390×844 las escenas 0, 2, 6, 7, 9, 10, 11, 12 y 14, y se intentó abrir 17/18 directamente. No hubo errores JavaScript durante estas muestras. El lector protegido redirigió apropiadamente el salto directo hacia los capítulos de la carta.
+- Se verificó interactivamente que «El bosque escucha» presenta opciones «Seguir a la luciérnaga» y «Escuchar al árbol».
+- No se certifica cobertura visual exhaustiva de los 19 capítulos, cada instante de animación ni el comportamiento en Safari/iPhone o Android físicos. No se ensayó el rendimiento sostenido en un teléfono. Las observaciones de belleza/ritmo son evaluaciones de diseño, no defectos funcionales automáticos.
+
+2. HALLAZGO PRINCIPAL: DIFERENCIA ENTRE EL JARDÍN Y EL RESTO
+- src/lily-garden.js tiene un sistema botánico procedural detallado: 14 lirios, 11 capullos, secuencias individuales de crecimiento, curvas de tallos, hojas, pétalos, texturas y desarrollo temporal. LA ESCENA CAMBIA MATERIALMENTE en pantalla.
+- src/choice-director.js, src/story-graph.js, src/reactive-quests.js, src/consequence-theatre.js y src/story-homecoming.js implementan elecciones reales y motivos que reaparecen. Pero la arquitectura de decisiones prioriza «opción + reacción + eco», sin que el nuevo estado cause normalmente una secuencia alternativa extensa o una transformación escenográfica del nivel del jardín.
+- src/director.js procesa tap/touch de Canvas con una colección de targets y tipos genéricos (flower, forest, leaf, painting, etc.) y un botón Interactuar contextual. No hay todavía un sistema de gestos/fases plenamente específico por mundo, con feedback continuo y objetivos de escena bien dramatizados.
+- Los 19 capítulos usan principalmente 4 fondos ilustrados de entorno en assets/runtime (vineyard-clearing, forest-path, gallery-room, moon-garden), con variaciones y efectos. Eso facilita coherencia pero fomenta la sensación de que muchas escenas son la misma composición con texto distinto.
+- src/guardian-acting.js y src/character-score.js contienen actuación válida (inclinaciones, orejas, ayudas y pequeños saltos); los personajes rara vez cambian de escala narrativa o protagonizan una coreografía compleja visible. La falta de acontecimientos amplios no se resuelve escribiendo más conversaciones.
+
+3. PROBLEMAS DE EXPERIENCIA PRIORITARIOS
+P0 ARTÍSTICO — Secuencias demasiado contemplativas o parecidas en varios mundos. Cambiar subtítulo, posición de personaje y motivo pequeño no equivale a una escena completamente nueva.
+P0 ARTÍSTICO — Elecciones con poca agencia perceptible. Las 8 elecciones (16 alternativas) convergen pronto y cambian ecos, pero rara vez modifican 40-90 segundos de historia/escenario de manera inequívoca.
+P0 ARTÍSTICO — Los conejitos necesitan más objetivos físicos, conflicto amable, comedia tierna, sorpresa y relaciones causales. Que el diálogo resulte de lo que HICIERON, no preceda a otro botón vacío.
+P1 UX — Las interacciones se presentan con frecuencia mediante botones de «hacer algo» y saltos cortos, en vez de un gesto con respuesta progresiva bajo el dedo. Mantener accesibilidad y una opción equivalente sin gestos.
+P1 DIRECCIÓN — Faltan cambios fuertes de encuadre: plano de establecimiento, aproximación/descubrimiento, macro, reacción de pareja y salida orgánica. Los fondos hermosos se perciben como postales cuando no cambian materialmente.
+P1 VARIEDAD — Varias salas reutilizan fondo y encuadre. No hace falta generar 19 fondos nuevos; sí crear capas y estados visuales propios donde la historia lo justifique.
+P1 FOTO — Las fotografías originales deben seguir completas/inalteradas; las revelaciones y actuaciones de los guardianes deben ser profundamente distintas. No inventar biografía ni sentimientos reales.
+P1 FINAL — Las opciones anteriores necesitan reaparecer mediante actuaciones y objetos inequívocos en el clímax, no solo como detalles pequeños. La pregunta final y la respuesta presencial deben mantenerse.
+P2 ENTREGA — El HTML offline ronda 26 MB según los archivos empaquetados; optimizar cargas de hosting y memoria sin sacrificar arte ni exigir conectividad. Documentación QA ya advierte que no se han probado teléfonos físicos.
+
+4. ANCLAJE EN EL CÓDIGO: OPORTUNIDADES
+src/lily-garden.js → tomar como referencia de interacción temporal y transformación generativa, no copiar su efecto visual.
+src/night-painting.js / src/cinematic-world.js → ampliar la pintura para deformación/transformación táctil dirigida y un portal que materialmente modifica el cuadro.
+src/adventure-stage.js y src/adventure-world.js → convertir el bosque de opción breve en rutas con coreografías sustancialmente distintas (luciérnaga/árbol), ambas reconvergentes.
+src/reactive-quests.js → dar continuidad física a estrella, flor y mapa mediante props que alteran puesta en escena y acciones.
+src/choice-director.js + src/story-graph.js → diseño de ramas de 2-3 actos sustanciales, persistencia reversibles y consecuencias diferidas; no elecciones cosméticas.
+src/guardian-acting.js + src/character-score.js + src/rig.js → secuencias de actuación completa y actos cooperativos sin romper anatomía real de peluches ni el contacto de patas.
+src/guardian-world.js / src/memory-theatre.js / src/memory-shortfilms.js → diferenciar recuerdos con escenarios/props/cámara, foto intacta y contemplación ilimitada.
+src/director.js → añadir un controlador de interacciones/contexto separado, con gestos, fase, estados, accesibilidad, cancelar/reintentar, sin acumular hacks dentro de un único archivo.
+src/story-homecoming.js / src/final-ceremony.js → clímax de consecuencias visibles, coreografía del anillo, reconocimiento del regalo físico y final no automático.
+
+5. HIPÓTESIS DE POR QUÉ SE PERCIBE COMO «NO LE PUSO GANAS»
+El proyecto ha crecido mediante una larga cadena de módulos que envuelven VF.SceneStage y VF.SceneEnvironment y agregan capas/props a las mismas escenas. Esto permite sumar funcionalidades con poco riesgo técnico, pero también favorece el patrón «efecto nuevo encima del encuadre existente». La solución no es otro módulo de partículas; es diseñar secuencias nuevas con arte específico, transformar el entorno y desarrollar nuevas mecánicas de interacción.
+
+6. RECOMENDACIÓN DE PRODUCCIÓN
+Conservar el arte y personajes aprobados. Diseñar y construir una escena vertical completa como prueba de nuevo estándar: BOSQUE VIVO. Dos rutas deliberadas, actuación física real, una interacción táctil progresiva, transformación visual del bosque y consecuencia que vuelve en museo/jardín. Comprobar navegador antes de extenderlo.
+Después: MUSEO PARTICIPATIVO, CIELO/CONSTELACIONES, JARDÍN INTERACTIVO EXPANDIDO, RECUERDOS/ÁLBUM, CARTA/REGALO, FINAL, OPTIMIZACIÓN. No migrar masivamente si la primera escena todavía parece una foto de fondo con dos conejitos y un botón.
+
+7. ESTADO
+Se han producido auditoría y plan/prompt. NO se han modificado los archivos originales de F22. No se certifica que el proyecto esté listo para el QR. Antes de la publicación, probar Safari/iPhone y Android físicos, privacidad/HTTPS, carga, audio, temperatura, gestos y los tres recuerdos.

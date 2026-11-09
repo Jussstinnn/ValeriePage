@@ -1,0 +1,235 @@
+{
+  "base": {
+    "file": "VALERIE_F24_3_DIRECTORS_CUT_COMPLETO.zip",
+    "sha256": "0192b694e98adf9785fbb8f6309b95226d3b50f10c33a48015ff21101d199a13",
+    "unchanged": true
+  },
+  "modified": [
+    {
+      "file": "BIBLIA_NARRATIVA.md",
+      "sha256": "46893bf607aa9b990196e879c26c5f0ccd9e3cb639993cd0b5f48db7b1313e29"
+    },
+    {
+      "file": "CAMBIOS.md",
+      "sha256": "a1acb8d8c013d1f70173004e137be726a224399e3ed4672134918601b8cfcefc"
+    },
+    {
+      "file": "CHECKPOINT.md",
+      "sha256": "b059628657a3b3b96de2775120b5cf129091d8be99ab14e9b1cad70adedd5d8a"
+    },
+    {
+      "file": "MATRIZ_DECISIONES.md",
+      "sha256": "01f1093996f15934aabaf77e94989a6f268f685785c7a9582282c65976456705"
+    },
+    {
+      "file": "PENDIENTES_F25_F30.md",
+      "sha256": "6e6e3bc648a63b9763375d7a3654f72494c8822271a27a76f7198b484329f39f"
+    },
+    {
+      "file": "README.md",
+      "sha256": "b448859db5e01cd657b3d44ac66f71d46055e88567bb0404b48dc06f77e5c4ca"
+    },
+    {
+      "file": "README_WINDOWS.md",
+      "sha256": "78bc3713b9808bdeb191122553dbe048cd5a76e84d11f19b73ddec8ff7c598d6"
+    },
+    {
+      "file": "assets/journey/manifest.json",
+      "sha256": "fb4f163f18e679d3125a1deea67d672ff1d371041fd54e2ed10a3e8933a6727b"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "dfec4a2b64ce870f3e5bc3130c8bdbbf42e7d8e9c39ed351ba1b3bba24e238e2"
+    },
+    {
+      "file": "package.json",
+      "sha256": "18341d9d3236d996e857dd16719fb27b89f4c4f21c1d33a88af1093219948f8a"
+    },
+    {
+      "file": "release.json",
+      "sha256": "844fc330117fc51f32e074c08fbb88707f60d760bdc42b32acdb92a6d4840881"
+    },
+    {
+      "file": "scripts/build.mjs",
+      "sha256": "9237e9fc6bcf4d8fe7792dd1d21c53df701a93e6a3c7031d12b307bf5712f348"
+    },
+    {
+      "file": "scripts/package.mjs",
+      "sha256": "7a60c95a38e4b2ff878a76990f71621c3eb6c6c7f662d2bbd9b3b536c0f9a561"
+    },
+    {
+      "file": "scripts/serve.mjs",
+      "sha256": "4c969fd0c06ae6152cc3e9a5fbe3a40720228a5d802a63d1d12bb6224a65dc65"
+    },
+    {
+      "file": "scripts/verify.mjs",
+      "sha256": "e1b543a85ae9943633677001d0a2252604a59d9efc16372908aa5816b6935b58"
+    },
+    {
+      "file": "src/art-assets.js",
+      "sha256": "04968841bf918562ef368d6105c823949b145dc9ee98fb4d035df52ac86b64ba"
+    },
+    {
+      "file": "src/cinematic-hud.js",
+      "sha256": "cfb0b9d7da108ab864e89a0ac27e40cf50dad2b0f5499c7b55d5559e7d6d096c"
+    },
+    {
+      "file": "src/director.js",
+      "sha256": "a4b75e79ec0e2a5a5bef7f83c76a4c264557f94c33be5a27c2f058829092b4e3"
+    },
+    {
+      "file": "src/editorial-policy.js",
+      "sha256": "4b0d4502f7ed5bdd6879350d19a20844d09593d31164935ec9b73745e84a7826"
+    },
+    {
+      "file": "src/fairy-guide.js",
+      "sha256": "ef661e852bea99f56eb76b156b70da7b0aa89ed697b84ec434b82503dbd2aba3"
+    },
+    {
+      "file": "src/film.css",
+      "sha256": "2af0a33ed38bbfd0b0fe75944726bd37c2ae413feeca854b7c1f0e916bd43f22"
+    },
+    {
+      "file": "src/gallery-theatre.js",
+      "sha256": "bca323678a80a3377e0e467c6cf55d6d68b14995b705a415f8f2ec7ff4e8c6c5"
+    },
+    {
+      "file": "src/gift-ceremony.js",
+      "sha256": "0ba0617d8c7ebb2fce25def30ad99457813e5bc40b99add231c6349236729af8"
+    },
+    {
+      "file": "src/index.html",
+      "sha256": "0d0415b628d9fbf46c224e0b31cdc59c3c222c8d55a04e110a5a813d7e499279"
+    },
+    {
+      "file": "src/journey-assets.js",
+      "sha256": "714804614d7cddffc7169ede5137423e67b19e7fe2190ee7543654d5a7d95cba"
+    },
+    {
+      "file": "src/living-world.js",
+      "sha256": "4f226e8928f8f8ca34d466366287a8cb00ea91d83c635098de78ef79645562dd"
+    },
+    {
+      "file": "src/memory-adventures.js",
+      "sha256": "ad2c09d98d97919dca9072b976567af93a8326ba2a0fa606069bdef953895b62"
+    },
+    {
+      "file": "src/reveal-director.js",
+      "sha256": "c7cfdb4847b1147e432b5d7d1df30c201354379ecae8d04cc01db77904093f2d"
+    },
+    {
+      "file": "src/session.js",
+      "sha256": "ee1c7efac27b0399859920efb8f363b8650b270b9b0513ed7209f000c27960b5"
+    },
+    {
+      "file": "src/vineyard-scene.js",
+      "sha256": "d68044172187ab67be04d0aa1955684ab7fc28e45570a079010952c2ca5906c8"
+    },
+    {
+      "file": "tests/directors-cut.test.mjs",
+      "sha256": "d6aefbe1f499572ea2c3c8d685f7f9f4178f638da07299763e2d8934fcd08095"
+    },
+    {
+      "file": "tests/forest-session.test.mjs",
+      "sha256": "74e2f6d9237438fb6a4c20b4cb8d1048244d16d6dda48ba343e6c02a3b5ddc9e"
+    },
+    {
+      "file": "tests/journey-migration.test.mjs",
+      "sha256": "e6b582401f5e52c7b0e86a0323fae2072dd0ec61d5a28c00222d60375c5c57ee"
+    },
+    {
+      "file": "tests/root-motion.test.mjs",
+      "sha256": "b7877047df2f7f71818ab7332442312d4f93ca20e0553e3e1bee35394534363c"
+    },
+    {
+      "file": "tests/story-state.test.mjs",
+      "sha256": "65ec179096d9765b72a0cd45530b58ea2fd126677a443d98f9418f4d31eee2f6"
+    },
+    {
+      "file": "tests/vertical-cut.test.mjs",
+      "sha256": "28eff124cdc4fd60904a541a2cb5af06850538fa3ed8389c04e827be7b0c0924"
+    }
+  ],
+  "added": [
+    {
+      "file": "assets/journey/garden-walk.png",
+      "sha256": "02eb741a60667103c8a9dcdae90656bdb76343f0cdc64bfc9b5f4e07cb4e5b9e"
+    },
+    {
+      "file": "assets/journey/garden-walk.webp",
+      "sha256": "61afe5bc302ac5a4990b98bc3e9ed83654b2eb478acfddf218ae98bb5f9d43df"
+    },
+    {
+      "file": "assets/journey/relics.png",
+      "sha256": "e05203912d7425cd544f53e00c87b926d0706024c3024004ee984efd418413a2"
+    },
+    {
+      "file": "assets/journey/relics.webp",
+      "sha256": "4ea93fa914db91b145e964d561ea4d981286a9e9b8d726d68d89dec41a5bf4ba"
+    },
+    {
+      "file": "brief/LEEME_VALERIE_F24_4.txt",
+      "sha256": "0f69ad4053f10b2b505fafc2042592885c8618d7e3514b7ac79f19a579335f37"
+    },
+    {
+      "file": "brief/VALERIE_F24_4_AUDITORIA_TRAZABILIDAD.md",
+      "sha256": "f155efaae98d1cb28401bd35dfd648ab5cfce28a1809041eeab3ef986a4077c1"
+    },
+    {
+      "file": "brief/VALERIE_F24_4_BIBLIA_DE_DIRECCION_Y_GUION.md",
+      "sha256": "3a7fa6f615a9c3282a57cd1db88b6823172c66b4e715b11579ddaffd45e8010d"
+    },
+    {
+      "file": "brief/VALERIE_F24_4_PROMPT_MAESTRO_PARA_CODEX.txt",
+      "sha256": "49b3e963928b312509c4a7686696e6fd1d47360807515797733cbce5f4ad79b8"
+    },
+    {
+      "file": "src/ceremony-theatre.js",
+      "sha256": "2342d098fb2b93b21ab47397b3ba2c1b6986f2453e57a522205b7e5b20021211"
+    },
+    {
+      "file": "src/film-script.js",
+      "sha256": "4b01cf85b5a2d41aaa5e21cc146ad3b861a2b56572109c098acebcaace6690bc"
+    },
+    {
+      "file": "src/film-script.json",
+      "sha256": "c391197181210a814087a6d748992321d9aeb2ee0399b9a497ac666c7507f9a4"
+    },
+    {
+      "file": "src/garden-promenade.js",
+      "sha256": "22fb3a8852ea06aa4134e50c44fbd67b3d276de790321e9650b35275b2213211"
+    },
+    {
+      "file": "src/painting-input.js",
+      "sha256": "8b5a27c0e1007717bf43a1b22d9136e20c39ede61eaa962c4a9af202d839e6a2"
+    },
+    {
+      "file": "src/painting-theatre.js",
+      "sha256": "f8bd6c141e4a7eaa2006cbf20b9022f20747f485e928c7be37177d0220856058"
+    },
+    {
+      "file": "src/relic-journey.js",
+      "sha256": "d005d0e71570056dc4a983f266e61c7f6bbc0a51d7e4649d57c1ec0546bfa058"
+    },
+    {
+      "file": "src/threshold-leaf.js",
+      "sha256": "be19a749b6fa6025d9c9454fedfc210fb9afbf7c4286af95fc8144cfc0388452"
+    },
+    {
+      "file": "src/world-path.js",
+      "sha256": "20c194f77332b23d1210a8b99e5d3583b38a339543ddfa1802c1509a66e1fa7c"
+    },
+    {
+      "file": "tests/living-tale-runtime.cjs",
+      "sha256": "1e20e87ee762d650aac8f13baf5eb441e0f16769654ded1cdf40e2fedc83d552"
+    },
+    {
+      "file": "tests/living-tale.test.mjs",
+      "sha256": "940827ff3367c558c01613d4063735823c867b579fd9feec09891f546fe0950c"
+    },
+    {
+      "file": "tests/performance-f244.cjs",
+      "sha256": "327ea570f479d48c70ef703246470b2d3cd2bfc2d74c7fae5087d5823975327a"
+    }
+  ]
+}

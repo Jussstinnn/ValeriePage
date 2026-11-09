@@ -1,0 +1,87 @@
+# CODEX — VALERIE F24.1 · MOBILE VERTICAL DIRECTOR'S CUT
+
+## TU MISIÓN
+Convierte la F24 actual en una **película interactiva extraordinaria para teléfono vertical**. El autor probó F24 y NO aprueba todavía su experiencia artística: considera los controles mal resueltos, el botón «Siguiente» aparece cuando no debería, las decisiones son ambiguas y faltan actuaciones, vida, interactividad y continuidad. No declares éxito por compilar: debes lograr mejoras perceptibles y funcionales en el recorrido real de los primeros siete capítulos.
+
+Este prompt es la **primera ejecución del plan maestro**, no una orden para desarrollar todos los mundos de golpe. Primero debes hacer que la experiencia 1→7 se sienta cinematográfica de verdad, y crear una interfaz de decisión/control reutilizable en el resto de la película.
+
+## FUENTES OBLIGATORIAS Y PRIORIDAD
+Base: el proyecto entregado como `VALERIE_F24_CINE_CONTINUO_COMPLETO(1).zip` o el directorio F24 ya extraído si existe y está íntegro. NO empezar desde F23 ni regenerar F24 desde cero. Conservar `src/`, tests, recursos, escenas posteriores, manuscrito personal y funcionalidad.
+
+Leer los dos adjuntos de diseño de esta fase:
+1. `VALERIE_PLAN_MAESTRO_MOBILE_VERTICAL.md` — contrato de experiencia, fases, prioridades, decisiones y criterios de aceptación.
+2. `VALERIE_GUION_CINEMATOGRAFICO_V1.md` — nueva dirección de personajes y guion. **Implementar ahora principalmente los capítulos 1–7; no agregar aún capítulos 8, 9, 13, 20 ni renumerar IDs de escenas.**
+
+Si solo puedes acceder al prompt y no a los adjuntos, informa esa limitación en el checkpoint; no inventes haberlos leído.
+
+## FOCO EXCLUSIVO: MOBILE PORTRAIT
+- Diseñar y pulir exclusivamente teléfono vertical. Referencia: iPhone 13 Pro ~390×844 px CSS; comprobar también 320×568, 360×800 y 375×812. Respetar safe areas, dynamic viewport, barras del navegador y zonas táctiles.
+- No invertir tiempo en horizontal ni escritorio en F24.1, salvo evitar romper deliberadamente el comportamiento que ya existe.
+- Nada de navegación de capítulos mediante scroll; las acciones deben ser botones contextuales o gestos narrativos explícitos.
+
+## PROBLEMAS QUE DEBES SOLUCIONAR, NO SOLO DISIMULAR
+1. `src/cinematic-hud.js` actualmente calcula `showNext` con `held || manual`, lo que hace aparecer «Siguiente» en estados de elección/interacción, además de lecturas protegidas. Replantear la semántica completa por estado, sin esconder simplemente los botones con CSS.
+2. Los textos y controles de decisión (`#choice-panel`, `#choice-options`, `#contextual-action`) parecen formularios, no acciones dentro de una película. Rediseñarlos como momentos de elección con claridad, intención, feedback y animación.
+3. Evitar que `context-next`, `next`, `choice-action`, ayuda o menú resulten botones duplicados, ambiguos o pulsables sin efecto. Manejar input rápido/debounce semántico, no temporizadores cosméticos.
+4. Los diálogos existentes son funcionales, pero suelen ser demasiado breves o genéricos. Darles naturalidad, humor tierno, pausa, miradas y una evolución real Rosa/Beige sin alterar la carta/fotos/ceremonia. No convertirlos en un mural de texto.
+5. En el viñedo, cada cambio de plano debe mantener pies, posición, escala, luz, objeto sostenido, orientación y continuidad de cámara. Sin teletransporte, cortes arbitrarios ni fundidos a negro como parche.
+6. La asistencia del bosque no puede quedarse visible después de completarse sin producir feedback. Distinguir «la acción aún hace falta» de «ya ayudaste y la animación está terminando».
+
+## COMPORTAMIENTO POR ESTADO — CONTRATO INNEGOCIABLE
+**PLAYING (cine por defecto):** autoplay para diálogos, reacciones, trayectos y transiciones. No mostrar ningún botón «Siguiente». Pequeño acceso recuperable a menú de controles; mantener pantalla mayormente despejada.
+
+**AWAITING_CHOICE:** mostrar solo opciones de decisión (dos acciones explícitas y diferenciables), nunca CTA «Siguiente»/«Continuar sin elegir» superpuesto. El cine espera indefinidamente. Al seleccionar, animar consecuencia A/B real, completar el blocking y continuar automáticamente. Mantener ruta neutral en función secundaria accesible solo si es necesaria, sin destacarla por encima de las dos opciones.
+
+**AWAITING_INTERACTION:** mostrar una instrucción breve y específica («Toca la luciérnaga», «Desliza la hoja»), con señal animada sobre el objeto real y un único canal de asistencia si es indispensable; no añadir «Siguiente» como sustituto universal. Tras éxito, feedback, bloquear repetidos y continuar automáticamente al terminar la actuación.
+
+**AWAITING_READING / AWAITING_REVEAL:** esperar sin límite. Mostrar CTA propio del momento, por ejemplo «He terminado de leer», «Seguir cuando quieras», «Abrir la caja», solo cuando corresponda y no durante revelaciones incompletas. Fotos, carta, anillo y pregunta final siempre protegidos.
+
+**PAUSED/MENU:** panel discreto solo bajo solicitud; controles reanudar/pausar, retroceder, repetir, capítulos, texto, audio; no debe desplazar escena/cámara. Menú no interfiere con decisiones ni gestos. Alt+? no necesario; conservar accesibilidad keyboard/focus/VoiceOver.
+
+**MANUAL:** variante voluntaria en configuración, con botón de avanzar cuando corresponda; no hacerla modo predeterminado al reiniciar o restaurar.
+
+No crear dos fuentes de verdad temporal. El motor central decide cuándo completó una actuación, la lectura y la transición; cancelar las anteriores si hay navegación/restart.
+
+## GUION Y DIRECCIÓN EN ESTA ENTREGA: CAPÍTULOS 1–7
+Implementar el texto y las actuaciones del documento `VALERIE_GUION_CINEMATOGRAFICO_V1.md` para:
+1. `dos-miradas`: fuga de luz, primer saltito, Beige ayuda, invitación a Valerie.
+2. `te-abro-el-camino`: hoja física, opciones claras de quién la sostiene, coreografías realmente diferentes según el portador.
+3. `una-patita-mas`: miedo pequeño, patita, salto de uno en uno, pies aterrizan antes de avanzar.
+4. `el-tiempo-de-los-dos`: Rosa regresa a esperar a Beige, escena silenciosa viva; no dos figuras inmóviles con texto.
+5. `un-secreto-para-ti`: caja visible solo superficialmente, brillo debilitándose, nada del interior. Motivo para explorar.
+6. `tras-la-luz`: caminata en dirección coherente; Rosa se adelanta y vuelve a esperar, ambos entran al bosque con oclusión real.
+7. `el-bosque-escucha`: decisión luciérnaga/árbol y senderos visualmente diferenciados; helechos y árbol de F23 preservados, asistencia resuelta.
+
+En cada beat, escribir un `action plan` breve y ejecutar una actuación visible; quien escucha debe reaccionar con oreja/cabeza/mirada/cuerpo. Distintos planos conectados; gestos con anticipación, impulso, peso y aterrizaje. Evitar bucles predecibles de flotación/zoom, partículas constantes y movimientos de interfaz que aparentan animación del personaje.
+
+## DECISIONES REUTILIZABLES PARA TODA LA PELÍCULA
+Conservar `choiceId`, valores de opción y reglas de los ocho nodos: `leaf-holder`, `forest-way`, `museum-sky`, `garden-gift`, `portrait-reveal`, `album-space`, `quiet-memory`, `letter-seal`.
+
+Reescribir etiquetas basándose en la tabla del plan maestro: verbo + protagonista/acción + consecuencia legible. Dos tarjetas de igual peso y gran superficie táctil. Mostrar resultados mediante escena y cambios de actuación, no alertas de confirmación. Conservar ramificación, reversión e historial. Se permite un componente generalizado nuevo, pero no crear un sistema paralelo que compita con el director actual.
+
+Efecto visual de decisión: fondo sigue vivo; luz o elemento de escena conduce la atención; tarjetas aparecen elegantes y solo cuando corresponden; desaparecen con destino visual a la acción seleccionada. No dejar UI flotante durante la actuación. En 320×568, si no cabe verticalmente, adaptar tipografía/composición con área segura, no reducir botones por debajo de 44 px.
+
+## ARQUITECTURA
+Leer de manera focalizada `src/cinematic-hud.js`, `src/editorial-policy.js`, `src/cinema-clock.js`, `src/director.js`, `src/story-graph.js`, `src/choice-director.js`, `src/vineyard-scene.js`, `src/transition-director.js`, `src/composition.js`, `src/forest-scene.js`, `src/film.css` y scripts efectivos del guion. No revisar de nuevo todo el proyecto si no es necesario.
+
+Mantener el motor existente, extraer/adaptar responsabilidades pequeñas cuando ayude. Modelar estados con transiciones explícitas y preferentemente eventos como `acting-complete`, `transition-complete`, `interaction-complete`, `reading-complete`. No usar `setTimeout` independientes para pasar de capítulo si todavía hay animación física. Incluir cancelación por token/generación de navegación; tests de clic múltiple/restart/background/reload.
+
+No modificar anatomía ni proporciones de peluches, assets originales de sus fotos, carta, `character-models.js`, `kinematics.js`, `rig.js`, `animation.js` sin necesidad técnica comprobada. Si un arreglo requiere cambiar la estructura de rig/animación, documentar por qué y proteger sus contratos/QA. No re-ilustrar el bosque aprobado. Evitar librerías pesadas innecesarias.
+
+## CRITERIOS DE ACEPTACIÓN ANTES DE ENTREGAR
+- Ejecución real de capítulos 1→7 en modo Cine sin botón «Siguiente» para lo ordinario.
+- Decisiones de hoja y bosque se detienen indefinidamente, cada opción es clara y produce coreografía distinta; después continúan sin un segundo CTA.
+- Prueba que `context-next` está oculto de verdad en PLAYING, CHOICE e INTERACTION; solo aparece CTA por contenido protegido o modo manual, según contrato.
+- Cero botones activos que no produzcan efecto apreciable o cambio de estado; proteger contra taps dobles durante animación.
+- Continuidad temporal y física: no hay cambios de posición/escala sin oclusión o movimiento explícito, no hay voz durante transición sin encuadre estable, ni corte antes de aterrizar.
+- Pruebas portrait 320×568, 360×800, 375×812 y 390×844 para bordes seguros, colisiones con conejitos/fotos, CTA accesibles y foco correcto. No invertir este ciclo en horizontal.
+- QA regresión de fotos originales, carta inalterada, secretos, gift/ring/finale, ocho elecciones, guards de navegación, pausa/reanudar, historial, reinicio y restauración.
+- Compilación de producción y tests focalizados, sin afirmar que se probó Safari físico si no se hizo.
+- Escena con sonido apagado por defecto, sin exigir permiso de micrófono o sensor de movimiento.
+- ZIP nuevo completo con `src`, `dist`, assets y scripts Windows; checkpoint de una página. **NO pedir capturas, videos ni grabaciones al autor. NO generar paquetes de evidencia.** El autor probará personalmente la calidad visual en su iPhone.
+
+## DISCIPLINA DE EFICIENCIA
+Un agente principal, sin subagentes paralelos. Continuar desde F24; conservar código válido. Skills solo si sirven directamente (por ejemplo `impeccable` para pulido). No desarrollar ahora los cuatro escenarios nuevos ni el resto de F25–F30. Corregir causas, no maquillar síntomas. Pruebas focalizadas y build final, no cientos de compilaciones idénticas. Al cerrar, resumen de cambios, tests exactos, pendientes, ubicación del ZIP y punto de reanudación.
+
+## DEFINICIÓN DE ÉXITO
+El autor debe poder abrir la primera secuencia en su teléfono vertical y sentir que **Rosa y Beige están vivos**, recorren un mundo único y se escuchan; que Valerie solo toca la pantalla cuando tiene una decisión o gesto significativo; que los controles no interrumpen la película, y que cada transición conserva espacio, tiempo y emoción. Si algo no cumple, repáralo o señálalo honestamente. No declarar «nivel cinematográfico» basándote solo en passing tests.

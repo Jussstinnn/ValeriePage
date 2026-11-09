@@ -1,0 +1,44 @@
+
+> valerie-illustrated@24.6.3 test
+> node --test tests/contracts.test.mjs tests/animation.test.mjs tests/matte.test.mjs tests/root-motion.test.mjs tests/private.test.mjs tests/encoding.test.mjs tests/story-state.test.mjs tests/cinema.test.mjs tests/asset-codec.test.mjs
+
+✔ Each reference plush has immutable anatomy, distinct ears/proportions and reusable measured limbs (14.6543ms)
+✔ Named clips blend channels and settle without invalid poses; unknown actions are rejected (15.677ms)
+✔ A planted foot holds world position while the body moves, and snapshots restore springs (11.2362ms)
+✔ Offline binary transport round-trips partial words, all byte values and every actual art/photo file (570.6976ms)
+✔ Corrupt embedded resources fail safely rather than producing a partly decoded image (0.3108ms)
+✔ The assembled offline HTML keeps every embedded byte, including dollar pairs in the alphabet (418.1336ms)
+✔ offline ships all prepared plush pieces while source-only atlases remain in the full project (167.08ms)
+✔ Cinema is the default and advances complete dialogue from the renderer loop without autonomous timers (23.5504ms)
+✔ Pause, hidden tab, dialogue, loading and transitions freeze editorial time exactly (39.5733ms)
+✔ Decisions, photographs, letter folios, gift, ring and final question never expire (285.5224ms)
+✔ A reading timer cannot interrupt takeoff, flight, incomplete action or its settling interval (5.5821ms)
+✔ Manual mode is explicit, preserves elapsed reading, and replay grants a full fresh interval (7.6591ms)
+✔ Forest gestures stay optional and explicit; completing one resumes cinema only after the visible transformation settles (6.6046ms)
+✔ A physical forest crossing and constellation assistance use real completion rather than expired elapsed time (12.0755ms)
+✔ Safe capture/restore requires the exact narrative anchor and never restores a pointer or pending advance (7.0364ms)
+✔ Async navigation is issued once; replay invalidates stale promise completion and blocked loads wait for explicit recovery (10.6865ms)
+✔ Every policy exposes the complete semantic contract and a long Spanish message receives more reading time (2.5637ms)
+✔ Declared rig contract, nine originals and all six canonical references match their manifests (77.9903ms)
+✔ Pilot is independent of old engines, external services and scroll navigation (157.6371ms)
+✔ The declared pilot is nineteen held shots; surprise placement remains unconfirmed (15.6395ms)
+✔ Leaf lift precedes the crossing, actual body travels, support precedes landing, and final case is uncovered (20.9374ms)
+✔ Optional help affects the articulated prop, stays bounded, and never becomes required progress (16.7841ms)
+✔ Session restore rejects corrupt data and reset is isolated from RC07 (5.925ms)
+✔ Product source is strict UTF-8; invalid accents cannot silently enter a generated film (133.5628ms)
+✔ Matte cover preserves aspect and covers every edge under pans and wide lenses (11.5848ms)
+✔ Private handler protects both document and every asset before reading, without publishing (91.9163ms)
+✔ Full crossing: first lift through apex and descent bind both paws to the pelvis in every viewport (259.2656ms)
+✔ Small guardian hops and legacy hops share the same flight space; watch never cancels another action (67.4611ms)
+✔ Root translation and posture are inherited exactly by flight paws; landing restores world support continuously (62.6738ms)
+✔ Every optional branch has distinct actions and a valid, stable reconvergence (123.256ms)
+✔ Changing a choice replaces effects, reload preserves it, history restores it, skip is honest, reset retains only reading preference (80.1511ms)
+✔ Old, unknown and corrupt session state recovers without inventing a selection (71.0703ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1277.0515

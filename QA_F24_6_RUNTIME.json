@@ -1,0 +1,90 @@
+[
+  {
+    "test": "living-tale-runtime.cjs",
+    "group": "opening",
+    "engine": "chromium",
+    "width": 390,
+    "height": 844,
+    "exit": 0,
+    "seconds": 46.35,
+    "stdout": "{\"engine\":\"chromium\",\"group\":\"opening\",\"passed\":true,\"offline\":false}\n",
+    "stderr": ""
+  },
+  {
+    "test": "living-tale-runtime.cjs",
+    "group": "forest",
+    "engine": "chromium",
+    "width": 390,
+    "height": 844,
+    "exit": 0,
+    "seconds": 27.44,
+    "stdout": "{\"engine\":\"chromium\",\"group\":\"forest\",\"passed\":true,\"offline\":false}\n",
+    "stderr": ""
+  },
+  {
+    "test": "living-tale-runtime.cjs",
+    "group": "lifecycle",
+    "engine": "chromium",
+    "width": 390,
+    "height": 844,
+    "exit": 0,
+    "seconds": 14.09,
+    "stdout": "{\"engine\":\"chromium\",\"group\":\"lifecycle\",\"pause\":true,\"decisionRestore\":true,\"cancellation\":true,\"protectedHash\":true,\"preparedRestart\":true}\n{\"engine\":\"chromium\",\"group\":\"lifecycle\",\"passed\":true,\"offline\":false}\n",
+    "stderr": ""
+  },
+  {
+    "test": "living-tale-runtime.cjs",
+    "group": "personal",
+    "engine": "webkit",
+    "width": 390,
+    "height": 844,
+    "exit": 0,
+    "seconds": 58.83,
+    "stdout": "{\"engine\":\"webkit\",\"group\":\"personal\",\"passed\":true,\"offline\":false}\n",
+    "stderr": ""
+  },
+  {
+    "test": "stability-runtime.cjs",
+    "group": "ceremony",
+    "engine": "chromium",
+    "width": 430,
+    "height": 932,
+    "exit": 0,
+    "seconds": 56.41,
+    "stdout": "{\"engine\":\"chromium\",\"group\":\"ceremony\",\"pass\":true,\"offline\":false}\n",
+    "stderr": ""
+  },
+  {
+    "test": "stability-runtime.cjs",
+    "group": "dig",
+    "engine": "webkit",
+    "width": 390,
+    "height": 844,
+    "exit": 0,
+    "seconds": 64.91,
+    "stdout": "{\"engine\":\"webkit\",\"group\":\"dig\",\"pass\":true,\"offline\":false}\n",
+    "stderr": ""
+  },
+  {
+    "test": "stability-runtime.cjs",
+    "group": "letter",
+    "engine": "webkit",
+    "width": 390,
+    "height": 844,
+    "exit": 0,
+    "seconds": 35.13,
+    "stdout": "{\"engine\":\"webkit\",\"group\":\"letter\",\"pass\":true,\"offline\":false}\n",
+    "stderr": ""
+  },
+  {
+    "test": "stability-runtime.cjs",
+    "group": "surprise",
+    "engine": "webkit",
+    "width": 390,
+    "height": 844,
+    "exit": 0,
+    "seconds": 18.69,
+    "stdout": "latency {\n  touchAt: 19519,\n  filmTime: 15.536000000000012,\n  feedbackMs: 9,\n  savedMs: 9,\n  nextBeatMs: 1043\n}\n{\"engine\":\"webkit\",\"group\":\"surprise\",\"pass\":true,\"offline\":false}\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.zip
+VALERIE_ILLUSTRATED_F*.html
+release-staging/
+test-results/
+
+VALERIE_F2_F3_*.html
+
+site-staging/

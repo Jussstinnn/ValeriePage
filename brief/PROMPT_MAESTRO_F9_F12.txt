@@ -1,0 +1,396 @@
+VALERIE — EVOLUCIÓN DEFINITIVA
+PROMPT MAESTRO DE EJECUCIÓN PARA CODEX
+Etapas sugeridas: F8.6 → F9 → F10 → F11 → F12 (y las revisiones adicionales que hagan falta)
+Versión del encargo: 27 de octubre de 2026
+
+================================================================================
+00. MANDATO GENERAL — LEER ANTES DE MODIFICAR NADA
+================================================================================
+
+Te autorizo a continuar el proyecto VALERIE de forma profunda y ambiciosa a partir del ZIP REAL MÁS RECIENTE que adjunto: «VALERIE_ILLUSTRATED_F8_EVOLUCION_NARRATIVA_COMPLETO.zip». Conservarás intacto ese ZIP y su carpeta original; trabajarás en una nueva copia independiente y dejarás checkpoints recuperables.
+
+EL TRABAJO NO TERMINA AL CORREGIR LOS BUGS. No te estoy pidiendo un F8.6 pequeño y definitivo. Quiero una evolución progresiva, sostenida, con verdaderos saltos cualitativos hacia la versión definitiva: una película ilustrada interactiva y emocional, diseñada prioritariamente para teléfono, protagonizada por los dos peluches auténticos del regalo, que culmina en la caja rosa, el anillo rosado y la pregunta «Valerie, ¿quieres ser mi novia?».
+
+La dirección artística ACTUAL —personajes basados en fotografías reales de los peluches, fondos ilustrados 2D/2.5D, paleta, suavidad, tipografía y atmósfera— ya está encaminada y NO debe descartarse. No regreses al ASCII como estética principal, no sustituyas a los protagonistas por conejos genéricos, no reconstruyas toda la arquitectura sin necesidad, no cambies a scroll narrativo y no reduzcas la experiencia a una demo. Usa la ingeniería actual como base sobre la que construir algo marcadamente superior.
+
+En particular, el último feedback del autor identifica un BUG VISUAL DE ALTA PRIORIDAD: CUANDO EL CONEJITO SALTA, LAS PATAS/PÍES SE QUEDAN PEGADOS AL SUELO O SE DESPRENDEN VISUALMENTE DEL CUERPO. Esto es inaceptable. Debe corregirse DE RAÍZ antes de ampliar coreografías de salto, y comprobarse en todos los planos donde se use una acción similar.
+
+Tampoco acepto otra entrega donde un informe enumere decenas de sistemas, pero visualmente las escenas se vean igual. Cada nueva fase debe producir mejoras perceptibles, específicas, coherentes y funcionales, no solo más clases, flags, overlays o microefectos.
+
+No solicites nuevas aprobaciones para cada fase. Puedes continuar autónomamente conforme vayas cerrando las etapas con resultados reales y comprobaciones útiles. Deja checkpoints y ZIPs en hitos significativos; si te interrumpe el límite de cuota, documenta el punto exacto para continuar SIN reiniciar ni repetir pasos terminados. La evaluación artística final corresponde al autor: no declares «aprobado visualmente» algo que él no haya revisado.
+
+================================================================================
+01. CONTEXTO INNEGOCIABLE E IDENTIDAD DEL REGALO
+================================================================================
+
+Es una obra personal para Valerie, no un producto genérico ni una experiencia comercial. En la caja física del regalo están representados los mismos protagonistas que en la web:
+
+- CONEJITO ROSA: peluche pequeño de pelaje rosa claro, ojos negros brillantes, hocico claro y nariz rosada, dos orejas erguidas ASIMÉTRICAS de forma muy particular. No convertirlo en un humanoide ni en un conejo de dibujos genérico. Su personalidad puede ser curiosa, juguetona, tierna y expresiva.
+- CONEJITO BEIGE/TOPO: peluche más grande, pelaje gris topo/beige suave, cabeza redondeada y ojos negros, nariz rosada, DOS OREJAS LARGAS CAÍDAS claramente reconocibles. Personalidad serena, protectora, amable, paciente.
+- CAJA REAL: una caja rosada de regalo, con iluminación cálida y pequeños banderines, que conecta la película con la sorpresa física. Reproducir su lenguaje visual con fidelidad: no sustituirla por una caja de joyería genérica como protagonista del encuentro.
+- ANILLO REAL: acabado rosado/cobrizo, piedra central ROSA y pequeñas piedras decorativas. Mantener proporciones y colores de referencia; la ilustración puede ser estilizada, no inventar otra joya ni un diamante incoloro genérico.
+- TRES FOTOGRAFÍAS PERSONALES: se preservan los originales. Una muestra a dos personas con un perrito; las otras dos tienen sus significados personales. NO inventar fechas, lugares, identidades, conversaciones reales ni emociones atribuidas a los fotografiados.
+
+NAVEGACIÓN: botones visibles y accesibles de ANTERIOR/SIGUIENTE, más pausa/repetir, volumen y un índice discreto. NO usar scroll para avanzar narrativamente. El desplazamiento normal puede existir donde sea imprescindible leer contenido, pero no debe cambiar de capítulo ni eludir la carta, la caja o el anillo.
+
+No solicites a Valerie una respuesta digital ni colecciones datos privados de la sorpresa. El cierre deja espacio para una respuesta EN PERSONA. El audio debe ser opcional y no depender de reproducción automática prohibida. No añadir música comercial no licenciada en la entrega.
+
+================================================================================
+02. PRINCIPIO DE PRODUCCIÓN: CALIDAD CRECIENTE, NO CIERRE PREMATURO
+================================================================================
+
+Esta revisión debe funcionar como una nueva temporada de desarrollo hacia la edición definitiva. No consideres «ya está terminada» la película solo por tener 19 planos o por pasar las pruebas de Node. Podemos crear nuevos planos o interludios SI aportan significado y calidad; podemos rehacer planos existentes si están subdesarrollados; podemos profundizar las actuaciones y detalles del mundo. Tampoco se trata de aumentar arbitrariamente duración o cantidad de archivos.
+
+Orden de prioridad general:
+1) CERO roturas anatómicas y continuidad de las patas/orejas/cuerpos.
+2) Narrativa sólida y conejitos verdaderamente vivos; actuaciones, diálogos y consecuencias.
+3) Recuerdos profundamente rediseñados; fotos protagonistas y intactas.
+4) Mundos existentes más profundos y diferentes en cámara, iluminación y composición.
+5) Carta, caja, anillo y desenlace como clímax máximo.
+6) Rendimiento, offline, responsive, privacidad y QA adversarial.
+
+Ante cualquier elección entre «más funcionalidades superficiales» y «menos funcionalidades extraordinariamente realizadas», elige calidad. Pero no reduzcas el mandato a corregir cuatro cosas: avanza por etapas hacia la obra definitiva.
+
+================================================================================
+03. P0 CRÍTICO — CORREGIR PATAS DESPRENDIDAS DURANTE EL SALTO
+================================================================================
+
+SÍNTOMA PROPORCIONADO POR EL AUTOR:
+Cuando salta el conejito —especialmente el ROSA en «Una patita más» y en pequeños hops de la nueva narrativa— el torso sube mientras las patas permanecen visualmente en el suelo o quedan separadas del cuerpo. Es una regresión artística/funcional P0. No maquillar con sombras o recortes: arreglar las transformaciones físicas del rig.
+
+PUNTOS DEL CÓDIGO ACTUAL QUE DEBES INVESTIGAR (hipótesis técnicas, no culpables confirmados):
+- src/cinematic-stage.js: tramo `mode==='crossing'`: p.floor se mantiene como base, p.y cambia por `flight`, p.airborne pasa entre 0 y 1.
+- src/guardian-acting.js: pequeños saltos calculan `arc`, restan altura a `p.y` y asignan `p.airborne` durante parte del arco.
+- src/animation.js: `RigAnimator.feet()` calcula `feetWorld`, mezclando `p.floor`, `p.y`, `p.airborne`, contacto, anclajes plantados y clamp a los límites de vista.
+- src/rig.js: `PlushRig.draw()` transforma las patas desde `pose.feetWorld` a espacio local usando `(foot.x-pose.x)/s` y `(foot.y-pose.y)/s`, y dibuja torso/patas bajo transformaciones parcialmente diferentes.
+- src/production-stage.js, guardian-stage.js y director.js: orden real de `pose -> postproceso/acting -> animator.resolve -> draw`, interpolación y restauración.
+
+Investiga la causa REAL en el código y en fotogramas intermedios. No basta con decir «corregido porque las patas ahora siguen al cuerpo». Comprueba también aterrizaje, desaceleración, cambios de escala, transición de capítulo, pausar/reanudar, saltar a otro plano, volver, reiniciar, restaurar sesión, horizontal, y el modo `prefers-reduced-motion`.
+
+CAMBIO ARQUITECTÓNICO RECOMENDADO:
+- Separar explícitamente FOOT PLANT (pies en suelo) y FLIGHT (pies unidos a la pelvis). Un pie puede anclarse en coordenadas del mundo SOLO mientras existe contacto físico con el suelo. Durante vuelo debe desprenderse del ANCLA DEL SUELO, NO DEL PERSONAJE: ambos pies heredan posición, escala, orientación y movimiento de la misma raíz del cuerpo/rig.
+- Modelar `grounded / anticipation / takeoff / flight / landing / settle` o un equivalente coherente. Que `contact` se actualice de forma consistente con las transiciones; evitar usar únicamente un booleano ambiguo `airborne` con geometrías incongruentes.
+- Una sola trayectoria vertical del personaje debe alimentar torso, pelvis, piernas, patas y accesorios; desacoplar solo sombra de suelo y animación secundaria.
+- Los pies en vuelo deben permanecer visualmente conectados a las caderas mediante su propia geometría y ocultación/máscara natural. NO añadir patas humanas, segmentos alargados, tubos, discos para esconder huecos o manos que parezcan pies.
+- La sombra de contacto permanece en el suelo y se suaviza/reduce al elevarse; NO se dibuja como una extremidad del personaje.
+- Mantener referencias de tipo y transformaciones: qué parte está en coordenadas de escena, de mundo, de actor y de atlas; documentar el contrato. Evitar aplicar cámara/scale dos veces a un miembro y una sola vez al torso.
+- Garantizar que el modo reducción de movimiento no deja un fotograma suspendido o pies incoherentes; puede simplificar el salto a inclinación y asentamiento sin vuelo.
+
+PRUEBAS OBLIGATORIAS DE ESTE BUG:
+A) Reproducir el fallo existente y describir su causa real. Inspeccionar el instante previo, anticipación, primer fotograma de vuelo, ápice, caída, aterrizaje y pose de reposo. En «Una patita más» comprobar especialmente alrededor de t≈2.0, t≈2.35, t≈3.0, t≈3.8 y t≈4.3 s (ajusta tiempos si el guion cambió).
+B) Para cada frame con fase flight: `left.contact===false`, `right.contact===false`; la separación pelvis↔patas debe permanecer dentro de los límites naturales definidos en coordenadas del mismo rig, independientemente de la altura respecto al suelo.
+C) En grounded/landed: pies y sombra deben apoyarse, sin penetración de suelo ni pops.
+D) Testear saltos pequeños del guardián (`soft-hop`, `make-room`, `invite` o sus nombres actuales), no solamente la escena original.
+E) Entrar/salir repetidamente del plano, usar Anterior/Siguiente mientras salta, pausar en ápice, reanudar, resetear y redimensionar durante la acción.
+F) Probar al menos pantallas 320×568, 390×844, 430×932 y 844×390, sin miembros congelados, patas zafadas, cambios súbitos de tamaño ni sombras erróneas.
+G) Añadir pruebas automáticas de invariantes de rig y fases; realizar inspección visual puntual en los fotogramas críticos para comprobar silueta (los invariantes numéricos no sustituyen la evaluación visual).
+
+Este bloque debe finalizar ANTES de diseñar más saltos. No avanzar declarando «P0 solucionado» si la geometría sigue rompiéndose.
+
+================================================================================
+04. P0/P1 HEREDADOS DE LA AUDITORÍA F8 — CORREGIR SIN REGRESIONES
+================================================================================
+
+La última auditoría independiente identificó estos hallazgos, que debes REVERIFICAR contra el ZIP y corregir si siguen presentes:
+
+QA-01: `npm test` rompe desde una extracción limpia porque en `tests/contracts.test.mjs` se solicita un nombre de HTML offline antiguo (`VALERIE_ILLUSTRATED_F8.html`) y el artefacto real es `VALERIE_F8_EVOLUCION_NARRATIVA.html`. Evitar nombres hardcodeados inconsistentes: leer desde release.json, actualizar test, build y documentación.
+
+QA-02: una máscara/gradiente en `src/guardian-world.js`, `foreground()`, OSCURECE la mitad inferior de las fotos en móvil horizontal (p. ej. 844×390). Durante contemplación de cada recuerdo, no poner niebla, títulos, subtítulos ni capas oscuras por encima de las caras o la imagen. Resolver legibilidad de texto con contenedor local independiente y capa de profundidad que no invada el bbox de la foto.
+
+QA-03: `src/guardian-script.js` solo tiene guiones propios en parte de los planos; en otros se utiliza un fallback narrativo demasiado genérico. Completar estratégicamente escenas importantes, manteniendo silencios elegidos deliberadamente; jamás llenar cada segundo de diálogos por obligación.
+
+QA-04: los recuerdos comparten casi el mismo esquema de descubrimiento/revelación/contemplación/reacción/despedida; diferenciarlos realmente en dirección de cámara y actuaciones, no solo renombrar los beats.
+
+QA-05: el desenlace todavía se percibe vacío, con conejitos pequeños y los motivos del viaje poco presentes; rediseñar el lenguaje visual y la coreografía del clímax, no solo agregar partículas.
+
+QA-06: peso de HTML offline ~27 MB y ZIP fuente ~93 MB en la revisión auditada. Medir carga y memoria reales, optimizar el sitio modular y la preparación por escena. No borrar respaldos ni sacrificar fidelidad de las fotografías privadas.
+
+QA-07: los recuerdos son contenido privado; `noindex` y URL difícil NO son protección. Para QR final, HTTPS y control de acceso efectivo a páginas Y activos, sin subir fotos a recursos públicos accidentalmente. No publicar nada sin autorización del autor.
+
+QA-08: texto de progreso truncado en pantallas estrechas. Corregir elegancia editorial sin reducir el área táctil de navegación.
+
+Antes de cambios amplios, registra qué fallos aún existen y cuáles ya fueron resueltos. No inventar bugs ni afirmar que se corrigieron si no pudiste reproducirlos o comprobar su reparación.
+
+================================================================================
+05. FASE F8.6/F9 — MOTOR DE ACTUACIÓN Y DIÁLOGO VERDADERAMENTE VIVO
+================================================================================
+
+Quiero personajes que actúen, no muñecos que respiran. Los dos conejitos deben tener personalidades consistentes de principio a fin:
+- ROSA: curioso, dulce, valiente con timidez, expresivo, juguetón de forma suave; nunca movimientos de bailarín o humanoide.
+- BEIGE: atento, tierno, paciente, protector sin paternalismo, cómplice y expresivo con pequeños gestos; orejas largas pesadas con inercia natural.
+
+Implementar una «partitura de personajes» clara: mirada, intención, objetivo, anticipación, reacción, retorno, duración y continuidad. No basta con mover cabeza 2 grados. Añadir y dirigir microescenas útiles: uno descubre una luz y llama al otro; comparten una hoja; se ayudan en el salto (sin romper la anatomía); uno recoge una estrella/pétalo; miran una foto; comparten un pequeño abrazo o acurrucamiento; abren juntos un sobre; esperan en silencio ante la caja. Todos deben ser viables con cuerpos de PELUCHE, no muñecos antropomorfos.
+
+DIÁLOGOS:
+- Subtítulos delicados con etiqueta visual sutil de quién habla (rosa/beige). No globos de cómic intrusivos.
+- Sincronizar línea, mirada, gesto, pausa y respuesta. Permitir «continuar» y «volver a escuchar/leer» sin interrumpir la navegación global.
+- Nunca ocultar un texto romántico por temporizador corto; el espectador controla cuándo avanzar; diálogos breves y emocionalmente precisos.
+- Los protagonistas no deben «explicar el producto» ni hablar como narradores de tutorial. Su lenguaje debe ser natural, tierno, muy cuidado, sin empalagar ni infantilizar excesivamente.
+- Mantener silencios intencionales, especialmente en las fotos, la carta y el anillo. Ninguna necesidad de voces sintetizadas; opcionales y bajo control, pero no requisito del proyecto.
+- Los diálogos NUEVOS de los conejitos son ficción poética permitida. NO atribuir recuerdos, sentimientos o frases reales a las dos personas de las fotografías sin contenido aportado por el autor.
+- Centralizar la edición de diálogos y dedicatorias, con identificadores estables para evitar que una refactorización cambie textos personales.
+
+EVALUACIÓN: una persona que no haya leído código debe poder identificar, sin explicaciones, quién está hablando, a quién mira, qué descubrió, qué objeto conserva y qué ha cambiado en la historia.
+
+================================================================================
+06. FASE F9 — RECONSTRUCCIÓN ESPECTACULAR DE LOS TRES RECUERDOS
+================================================================================
+
+La sección de recuerdos y fotos es PRIORIDAD EMOCIONAL MÁXIMA. Actualmente las fotografías ya se revelan y se contemplan, pero todavía tienen una puesta en escena repetitiva y los conejitos a veces parecen adornos diminutos. Quiero tres cortometrajes ilustrados distintos, cada uno con identidad propia y un hilo conductor compartido.
+
+RECUERDO 1 — DOS PERSONAS Y UN PERRITO:
+- Los conejitos encuentran la primera foto de una manera creativa e íntima (un brillo entre hojas o una pequeña memoria conservada). Su descubrimiento debe tener acciones sincronizadas, no simplemente fade in.
+- La foto original es protagonista: conservar píxeles originales, rostros, perrito, encuadre reconocible y relación de aspecto. Durante contemplación, evitar cualquier overlay sobre su contenido; mantenerla en pantalla todo el tiempo que Valerie desee.
+- Después, volver a los peluches con una reacción específica, por ejemplo el rosa se sorprende por el perrito y el beige lo mira con ternura. No inventar detalles del lugar/fecha.
+
+RECUERDO 2 — DOS SONRISAS:
+- Distinto ritmo: luminoso, pequeño intercambio juguetón entre conejitos, revelación dinámica pero elegante y cámara editorial propia, sin animar rostros reales.
+- La secuencia no debe ser el mismo template del anterior con otros colores. Poses diferentes, otra transición y otro lenguaje de encuadre.
+
+RECUERDO 3 — UN INSTANTE:
+- Más silencioso, contemplativo. Los dos peluches se acercan, descansan juntos, encuentran una luz/pétalo que anticipa el sobre. Cámara muy suave y lectura en calma.
+- Este momento debe preparar de verdad la carta, no cerrar como otra tarjeta de galería.
+
+REQUISITOS DE LAS TRES FOTOS:
+- No inventar profundidad falsa deformando los rostros; se permite zoom/pan del contenedor, capas de marcos originales y fondos ilustrados, siempre preservando la integridad del contenido fotográfico.
+- Imagen completa en modo de contemplación, visible en portrait y landscape. Si se ofrece modo detalle, debe ser voluntario y reversible.
+- Ofrecer gestos/acciones opcionales que añadan emoción, pero nunca impedir continuar si no se descubre un elemento secreto.
+- Durante plano fotográfico protagonista, conejitos fuera del área útil o cuidadosamente situados, nunca tapando caras. Durante reacción, regresan con una actuación completa.
+- Cada foto debe tener un recorrido visual claramente distinto, con pausas respetadas y sin cinco pantallas mecánicamente idénticas.
+- Dejar una entrada sencilla para que el autor escriba frases PERSONALES auténticas, sin inventarlas tú. Mantener por defecto un texto poético neutro elegante.
+- Verificar ida/vuelta, foto completa, estado, accesibilidad, e interacción tras pausa/restauración.
+
+================================================================================
+07. FASE F9.1/F10 — ELEVAR LOS MUNDOS EXISTENTES: MÁS VIDA, MÁS DIRECCIÓN
+================================================================================
+
+Aprovecha las obras ya existentes, no las reemplaces por fondos genéricos. Deben EVOLUCIONAR con nuevos acontecimientos visuales:
+
+VIÑEDO: cámara con planos de establecimiento y detalle, ramas y uvas con profundidad, reflejos cuidados, los dos conejitos reaccionando entre sí; transiciones sin «saltos de escala» al cargar por primera vez.
+
+BOSQUE: sistema de hadas/luciérnagas original y discreto, plantas que responden suavemente al paso, un pequeño descubrimiento que conecte con la siguiente escena. No sobrecargar de efectos ni sacar FPS por adornos.
+
+MUSEO: que el cuadro se sienta realmente vivo, con transformación de pinceladas y profundidad. Los conejitos deben observar, descubrir y atravesar ese mundo mediante una secuencia visual con cámara, no simplemente aparecer delante de una imagen estática.
+
+CIELO Y ESTRELLAS: constelaciones que conectan con el motivo de la luz del cuento. Reutilizar una estrella/objeto con continuidad visual y narrativa.
+
+JARDÍN DE LIRIOS: flores con movimientos botánicos y primeros planos elegantes; seleccionar/tocar puede generar una dedicatoria y una reacción de personajes, sin necesidad de interacción obligatoria. No ocultar la flor por textos.
+
+TRANSICIONES: establecer 3–4 familias coherentes de transición artesanal/cinemática (luz, hoja, pétalo, marco, reflejo), con variantes específicas. Evitar simple fade en todos los mundos. No reciclar la misma coreografía repetidamente.
+
+EXTRA CREATIVO PERMITIDO: añadir 1–3 interludios pequeños significativos (el observatorio de recuerdos; un jardín donde guardan la estrella; un sendero que anticipa la caja) SOLO si mejoran la historia y no crean relleno. En la entrega se debe explicar qué función narrativa cumple cada escena nueva.
+
+================================================================================
+08. FASE F10 — CARTA VIVA, INTIMIDAD Y EDICIÓN PERSONAL
+================================================================================
+
+Mejorar profundamente la carta. Los conejitos descubren el sobre, lo acercan, lo abren juntos y se retiran en silencio para que Valerie lea sin interrupciones. Las páginas/folios deben tener composición editorial refinada, jerarquía tipográfica y animación suave que no perjudique la lectura.
+
+- La carta tiene prioridad sobre VFX y controles secundarios. No esconder frases principales tras «Leer» como única forma de verlas.
+- Debe poder leerse/recorrerse sin límite de tiempo; no avanzar ni saltarse folios por scroll, rueda, historial ni gestos accidentales.
+- Conservar la firma editable y textos auténticos del proyecto. No agregar declaraciones personales o hechos supuestamente reales sin autorización.
+- Navegar atrás y adelante recupera el folio, el estado de revelación, la reproducción y, cuando corresponda, la posición de lectura sin corrupciones.
+- Transición elegante a la caja física: algún elemento (sello, pétalo, luz) conecta el final de la carta con la sorpresa.
+- Formular una guía de personalización breve y comprensible para el autor (por ejemplo personal-content.js o un archivo de contenido), sin herramienta de administración excesiva.
+
+================================================================================
+09. FASE F10.1/F11 — GRAN CEREMONIA: LA CAJA Y EL ANILLO AUTÉNTICOS
+================================================================================
+
+Esta secuencia debe superar en impacto visual a TODAS las anteriores. No quiero una caja con un ring encima ni un zoom abrupto que tape a los peluches sin dirección.
+
+Coreografía propuesta (adaptable si encuentras una idea mejor):
+1) Plano general: los dos conejitos se reconocen dentro del universo del regalo.
+2) Descubrimiento: aparece LA CAJA ROSA REAL ilustrada, con su borde/luces/banderines reconocibles, no una caja de joyería sustituta.
+3) Preparación: los conejitos se acercan, miran, esperan, dejan espacio.
+4) Apertura: animación con tapa, bisagra, luz y oclusión coherentes; partes sin intersecciones geométricas.
+5) Revelación: pausa cálida, reflejo y aparición progresiva del anillo rosado.
+6) Contemplación: plano de la joya con geometría y textura estilizadas pero legibles, sin tapar todo el contexto de golpe.
+7) Salida: la luz del anillo recoge pétalo/estrella/huella/recuerdos y conduce al final.
+
+Mantener fidelidad de color y forma del anillo real, tamaño relativo y orientación razonable. En mobile, usar composición adaptativa: marco mayor para la joya cuando corresponda, pero nunca deformar o recortar sin intención. El macro debe tener su propio ritmo; no se puede omitir por un salto de índice no autorizado.
+
+No inventar una simulación fotorrealista si el resultado será peor. La elegancia ilustrada y el control de cámara son superiores a presumir WebGL/3D sin propósito. Usar una tecnología avanzada únicamente si mejora de manera perceptible el arte y no degrada los teléfonos.
+
+================================================================================
+10. FASE F11 — RECONSTRUIR EL FINAL COMO CLÍMAX CINEMATOGRÁFICO
+================================================================================
+
+La pregunta «Valerie, ¿quieres ser mi novia?» debe nacer de lo que vimos durante la película, no aparecer en una tarjeta aislada y vacía.
+
+- Los dos conejitos vuelven con actuación significativa y tamaño suficiente para ser protagonistas; nunca iconos diminutos pegados al borde inferior.
+- Elementos RECONOCIBLES de los mundos anteriores —estrella, hoja, pétalo, luz del museo, recuerdos— retornan en una secuencia emocionalmente coherente y sin saturación.
+- La transición desde el anillo produce un cambio de espacio, iluminación y escala de manera intencional y fluida.
+- La pregunta permanece legible, centrada y sin prisa. Debe convivir con un marco vivo pero discreto, sobre todo en 320×568 y horizontal corto.
+- Después del reveal, el mundo continúa respirando lentamente; sin timer que cierre o avance, sin requerir respuesta digital, sin interacciones que distraigan.
+- Tener una opción de volver a contemplar la película o la ceremonia sin borrar automáticamente la experiencia de Valerie.
+
+Se considera un clímax fallido si todavía predomina un vacío sin intención, los conejitos quedan demasiado pequeños, o el final se parece más a un texto sobre fondo que a la culminación de una aventura ilustrada.
+
+================================================================================
+11. FASE F11.1 — NOVIDADES SIGNIFICATIVAS QUE PUEDES INVENTAR
+================================================================================
+
+Tienes libertad artística/ingenieril para proponer e implementar funciones adicionales extraordinarias. No necesitas aprobación por cada microdetalle, pero NO añadas por llenar un checklist. Prioriza las que aporten identidad al cuento:
+
+- RELIQUIAS NARRATIVAS: 2–4 símbolos discretos que los conejitos conservan realmente y que regresan durante la carta/final. Deben tener estado y continuidad, no ser partículas aleatorias.
+- INTERACCIONES DE TERNURA: pulsar un peluche produce un gesto delicado contextual, sin detener ni romper la historia; gestos variables según ánimo/escena, no el mismo salto universal.
+- MICROACTUACIONES OBSERVABLES: se miran, descansan, escuchan, comparten una flor, se acercan a una fotografía; el usuario debe percibirlas sin conocer la implementación.
+- CLIMAS SONOROS ORIGINALES: ambientes suaves por mundo, cues mínimos ligados a actuaciones, volumen/fade correctos, pausables, opcionales y sin reanudación imprevista.
+- TRANSICIONES GENERATIVAS CON MOTIVO: estrella→luz del museo, pétalo→foto, sello→cajita; usar composición y narrativa, no una explosión de partículas como solución universal.
+- MODO CONTEMPLACIÓN: poder quedarse en una escena/recuerdo sin que el texto desaparezca, con controles permanentes y sin consumir CPU innecesariamente.
+- DETALLES ESCONDIDOS NO OBLIGATORIOS: reacciones de orejas, pequeña luz, luciérnaga y elementos diminutos que recompensen atención sin bloquear progreso.
+- UNA PRESENTACIÓN ESPECIAL PARA LA PRIMERA APERTURA: carga/preparación sin destellos bruscos, escenas completas antes de mostrarse y sin personaje miniaturizado que «salta» a tamaño grande cuando termina de cargar.
+
+Cualquier feature nueva debe cumplir: propósito emocional, ejecución impecable, rendimiento razonable, accesibilidad y mantenimiento. Documenta por qué existe, qué escenario transforma y cómo se verifica.
+
+================================================================================
+12. MOBILE FIRST COMO NORMA ABSOLUTA
+================================================================================
+
+La versión principal se verá en teléfono, especialmente un iPhone. Diseñar y probar pensando en portrait primero. Desktop no se descuida y requiere dirección horizontal propia, no simple estiramiento.
+
+- Composición de contenido y cámara para 320×568, 375×667, 390×844, 430×932, 844×390 y desktop.
+- Navegación Anterior/Siguiente y transporte SIEMPRE visibles, botones de al menos 44×44 CSS px cuando sea posible; sin tapar texto, fotografía, orejas, personajes o controles del sistema.
+- Respetar `env(safe-area-inset-*)`, `100dvh`/cambios de barras móviles, cambio de orientación y recuperación de foco.
+- Textos importantes no se evaporan, no se mueven detrás de un degradado y no ocupan el centro donde se encuentran los personajes.
+- Tipografía y diálogos legibles a tamaños de teléfono pequeño, contraste adecuado y selector de reducción de movimiento.
+- Primera carga estable: preparar assets e información geométrica antes de revelar la escena; nunca escala pequeña→grande involuntaria ni flash del fondo.
+- Mantener tamaño, escala y orden de capas de ambos conejitos consistentes entre frame, pausa, transición y resize.
+- El audio es opcional, con botón visible, sin autoplay forzado, sin picos molestos.
+- Soporte de teclado/lectores de pantalla para los controles; botones semánticos, foco visible y aria labels significativos.
+- El scroll NO avanza capítulos, ni permite eludir puertas narrativas.
+
+================================================================================
+13. ARQUITECTURA, RENDIMIENTO Y OFFLINE
+================================================================================
+
+No reemplazar toda la base a menos que existan pruebas claras de que es necesario. Mantén módulos/contratos entre guion, personajes, rigs, cámara, memoria, carta, ceremonia, UI, audio y sesión. El código debe quedar comprensible y reproducible en Windows.
+
+Objetivos operativos:
+- Una única fuente de verdad para tiempo/estado de una actuación y para root transforms del rig; explícitamente separado de cámara y de coordenadas de pie plantado.
+- Renderizar solo el área/escena necesaria; detener trabajo costoso al pausar o contemplar algo estático. La respiración de personajes puede usar una actualización de baja frecuencia cuando proceda.
+- Preparación anticipada de la escena siguiente sin bloquear controles; abortar cargas obsoletas si el usuario vuelve atrás.
+- Evitar duplicados pesados en el paquete para publicación; ZIP completo de fuente puede incluir respaldos, pero la web modular privada solo debe incluir artefactos necesarios.
+- Optimizar PNG/WEBP u otros recursos según compatibilidad real; no alterar o recomprimir fotos personales con pérdida sin aprobación.
+- HTML offline funcional y autocontenido si el flujo lo requiere; verificar que no dependa accidentalmente de rutas relativas inexistentes, CDN o solicitudes de red.
+- El servidor privado/QR en producción debe utilizar HTTPS y protección real de acceso a TODOS los recursos, no solo al `index.html`; no publicar todavía sin autorización expresa.
+- No afirmar FPS universales o compatibilidad completa de Safari sin pruebas físicas. Reportar mediciones reproducibles y limitaciones.
+
+================================================================================
+14. SISTEMA DE QA INTENSIVO Y ÚTIL — SIN CEREMONIA DE EVIDENCIAS
+================================================================================
+
+Quiero QA exigente, pero enfocado en encontrar y corregir problemas reales, no baterías interminables sin valor.
+
+PRUEBAS DE REGRESIÓN FUNCIONAL:
+- Navegación consecutiva y no consecutiva por los planos con Anterior/Siguiente/índice; modo pausa, repetir, volver, reiniciar, teclado, entradas rápidas y spam de controles.
+- Saltos/actuaciones: antes, durante y después; entrada y salida de escena; dimensiones y continuidad anatómica; fijación correcta de pies; rotación y pausa en ápice.
+- Diálogos: orden, identidad, tiempos, subtítulos completos, reentrada, replay, doble activación; mensajes persistentes mientras hace falta.
+- Recuerdos 1/2/3: perspectiva portrait y landscape, lectura sin máscara, foto íntegra, contemplación ilimitada, retorno a protagonistas, estado guardado.
+- Carta: todos los folios, secuencia de apertura, Anterior/Siguiente, límites, restauración y scroll accidental.
+- Cajita/anillo: cerrado→apertura→revelación→contemplación→final; impedir bypass, restaurar y repetir sin duplicar animaciones.
+- Final: aparece completo, protagonistas visibles, pregunta legible, retoma de sesión sin omisiones.
+- Carga offline y modular; pérdida de acceso a un recurso, errores controlados, reconexión, falta de fuentes o audio, protección contra excepciones.
+- Orientación, safe areas, minimización/reanudación, `prefers-reduced-motion`, teclado/foco.
+- `npm run build` y `npm test` desde el ZIP LIMPIO sin alias manuales; todos los tests relevantes deben pasar de verdad.
+
+QA ADVERSARIAL DEL SALTO:
+- Test de root transform: transformar al actor para elevarlo NO deja pies en suelo en modo flight.
+- Test de contacto: pies en mundo solo mientras `contact=true`; sombra de suelo no es miembro corporal.
+- Test visual puntual de silueta en la trayectoria completa con saltos pequeños y grandes, incluyendo intermedios, no solo el primer y último frame.
+- Reproducir en móvil vertical y horizontal, antes/después de entrar por un enlace directo y después de restaurar sesión.
+
+QA ARTÍSTICO:
+- Para cada plano cambiado, responder: ¿es visible la mejora? ¿los conejitos están realizando acciones entendibles? ¿hay variedad real de cámara? ¿texto/foto no tapa arte? ¿el movimiento es tierno y natural?
+- Comparación cualitativa con F8 base. No declarar «radicalmente diferente» si únicamente se añadieron capas o se desplazó unos píxeles el contenido.
+- Los tests de código no equivalen a aprobación artística. El autor revisará la película real.
+
+No me entregues carpetas de capturas, videos, dashboards ni reportes largos. Puedes usar comprobaciones visuales puntuales internamente si te ayudan a detectar bugs; solo necesito el producto, los resultados de QA resumidos y los ZIPs. No pedir al autor que grabe o capture nada para que puedas trabajar.
+
+================================================================================
+15. ORGANIZACIÓN POR FASES — AVANZAR DE VERDAD
+================================================================================
+
+FASE A / F8.6: Arreglos críticos: rig de salto, test roto del HTML, máscara de fotos horizontal, navegación/regresiones. Entrega un checkpoint confiable de funcionamiento.
+
+FASE B / F9: Los guardianes cobran vida: dirección de actuación, lenguaje corporal de peluche, diálogos verdaderos y objetos con continuidad; aplicar a escenas esenciales sin perder silencios.
+
+FASE C / F9.1–F9.2: Tres recuerdos reconstruidos como microhistorias singulares; mejor fotografía, composición, profundidad, música original opcional y reacción de personajes. Entrega una versión revisable con los tres recorridos terminados.
+
+FASE D / F10: Viñedo, bosque, museo, cielo y lirios evolucionados; nuevos acontecimientos y transiciones, sin reemplazar paisajes ya aprobados ni degradar rendimiento.
+
+FASE E / F10.1: Carta viva y edición de contenido emocional; lectura en calma, protagonista y a prueba de navegación accidental.
+
+FASE F / F11: Ceremonia de caja y anillo de referencia real; apertura, macro, contemplación, transición y cierre sin bloqueos.
+
+FASE G / F11.1: Desenlace reimaginado con los dos peluches grandes y motivos de la aventura; sorpresa final personal e inolvidable.
+
+FASE H / F12: QA integral final, rendimiento móvil, carga y offline, hosting privado seguro, instrucciones QR y paquete completo editable. No publicar ni imprimir códigos sin autorización.
+
+Puedes reorganizar fases técnicamente si hay dependencias, pero NO omitir objetivos. No terminar en A declarando que «F8.6 resuelve todo». No avanzar artificialmente a F12 cuando queden errores P0. En cada hito, deja claro qué está acabado, qué NO está acabado y qué merece la próxima fase.
+
+================================================================================
+16. CONTRATO DE ENTREGABLES Y CONTINUIDAD
+================================================================================
+
+Conserva el ZIP fuente original intacto y una copia independiente por revisión importante. El nombre de salida inicial recomendado es `VALERIE_ILLUSTRATED_EVOLUCION_F9_COMPLETO.zip`; las siguientes entregas pueden ser F10, F11, F12 con nombres consistentes. Los nombres no sustituyen un resultado de calidad.
+
+Para cada entrega significativa, proporcionar:
+1. ZIP COMPLETO EDITABLE y sin rutas externas ocultas.
+2. HTML autónomo offline REALMENTE funcional.
+3. Paquete modular para hosting privado, sin incluir `legacy` innecesario en la salida pública.
+4. `README_WINDOWS.md` conversacional: extraer, abrir offline, servidor local/LAN, compilar y probar.
+5. `CAMBIOS.md` corto, por sistemas y con resumen de avances VISIBLES, no solo nombres de archivos.
+6. `CHECKPOINT.md`: fase, progreso, archivos relevantes, pendientes precisos, comandos ya ejecutados, cómo continuar tras límite de cuota.
+7. Resumen breve de pruebas realmente ejecutadas, con resultados y limitaciones. No declarar `PASS` a tests que no se pudieron ejecutar.
+
+Asegúrate de que el ZIP limpio sea reconstruible y que el offline contenga todos los assets necesarios. Evita rutas `C:\Users\...` que solo funcionen en tu PC. El sitio que se vaya a compartir por QR no puede revelar los recursos personales sin protección; no desplegar sin autorización.
+
+================================================================================
+17. PROHIBICIONES Y ERRORES A NO REPETIR
+================================================================================
+
+- Prohibido cambiar a navegación narrativa por scroll.
+- Prohibido volver al ASCII como lenguaje dominante.
+- Prohibido rediseñar los peluches como personajes genéricos o humanos.
+- Prohibido usar anatomías que rompan al saltar y considerar el resultado aceptable porque «los tests pasaron».
+- Prohibido crear nuevas extremidades sueltas, brazos tipo tubo, patas humanas o deformaciones inquietantes.
+- Prohibido tapar fotografías originales con nieblas/títulos/gradientes mientras se contemplan.
+- Prohibido inventar memorias o hechos personales sobre las fotografías.
+- Prohibido forzar una interacción opcional para progresar o pedir respuesta digital a Valerie.
+- Prohibido usar música comercial sin licencia o subir las fotos a terceros innecesariamente.
+- Prohibido reconstruir todo por moda tecnológica cuando la dirección ya está aprobada.
+- Prohibido repetir 19 veces la misma composición con otro fondo y declararlo un cuento nuevo.
+- Prohibido gastar horas en capturas, grabaciones y dashboards como entregables.
+- Prohibido afirmar que todas las pruebas pasan si un test de ZIP limpio está roto.
+- Prohibido avanzar capítulos cerrados ocultando un bug P0.
+
+================================================================================
+18. CRITERIOS FINALES DE ÉXITO
+================================================================================
+
+La evolución habrá alcanzado la intención de este encargo cuando:
+
+[ ] Ningún salto despega el cuerpo y deja las patas pegadas al suelo; el aterrizaje es tierno, natural y anatómicamente íntegro.
+[ ] Los dos peluches siguen siendo inequívocamente reconocibles como los regalos reales y nunca dan miedo por pose o movimiento humanoide.
+[ ] Los conejitos conversan y actúan con personalidades coherentes a lo largo de la historia, no solo al comienzo.
+[ ] Los tres recuerdos son escenas cinematográficas DIFERENTES, con fotografías intactas, grandes, legibles y tiempo ilimitado de contemplación.
+[ ] Los mundos tienen nuevos acontecimientos, profundidad y transiciones de autor, no una repetición de plantillas.
+[ ] La carta se lee sin prisas, con todas sus páginas y sin saltos narrativos accidentales.
+[ ] La caja recuerda de verdad a la caja rosa física; el anillo respeta la piedra rosa y el metal rosado.
+[ ] La apertura de la caja y el desenlace son claramente las escenas más memorables; la pregunta final permanece visible y no exige respuesta digital.
+[ ] En móvil, el primer render está preparado, controles permanecen accesibles, textos no tapan obras, no hay cortes de cámara/escala ni brazos/pies desconectados.
+[ ] Los artefactos públicos son ligeros dentro de lo razonable y privados realmente cuando corresponda; el offline funciona.
+[ ] El ZIP limpio compila y prueba sin trucos, y las limitaciones se declaran con honestidad.
+[ ] La nueva versión representa una evolución VISUAL Y EMOCIONAL demostrable frente a F8, no solo una refactorización.
+
+================================================================================
+19. INSTRUCCIÓN FINAL Y AUTORIZACIÓN
+================================================================================
+
+Tienes mi autorización para trabajar con autonomía y ambición creativa, POR FASES REALES, conservando respaldos, documentando checkpoints y continuando hacia la versión definitiva. Comienza ahora por el BUG CRÍTICO DEL SALTO y los fallos confirmados en la auditoría; tan pronto queden resueltos, desarrolla el sistema narrativo vivo y la gran reconstrucción de recuerdos; continúa con mundos, carta, ceremonia, final y pulido integral.
+
+No quiero una película que «simplemente funciona». Quiero una obra íntima, espectacular, tierna y memorable, que evoluciona revisión tras revisión y cuyo valor se sienta en la pantalla del teléfono de Valerie. No te conformes con un cambio cosmético ni te detengas cuando todavía haya oportunidades importantes. Si una tarea no puede completarse en esta ventana, deja el código funcionando y un checkpoint exacto para continuar sin perder nada.
+
+COMIENZA A IMPLEMENTAR. NO TE LIMITES A PROPONER IDEAS.

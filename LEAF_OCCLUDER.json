@@ -1,0 +1,16 @@
+{
+  "source": "foliage-atlas.png",
+  "sha256": "bb981299224b5b834de0b6857142e6defa70a2c77e0140e560ae8e6d44cea0c1",
+  "crop": [
+    760,
+    710,
+    484,
+    526
+  ],
+  "method": "native alpha>250 inscribed Manhattan distance, no image alteration",
+  "anchor": {
+    "x": 0.32954545454545453,
+    "y": 0.6929657794676806,
+    "r": 0.1487603305785124
+  }
+}

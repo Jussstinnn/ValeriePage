@@ -1,0 +1,44 @@
+/* The approved bloom leads into a traversable illustrated garden, not another bloom engine. */
+(() => {
+ const {span,mix,ease,clamp}=VF.math;
+ const stops=[{id:'arrive',a:.20,b:.32},{id:'roses',a:.32,b:.44},{id:'lavender',a:.44,b:.55},{id:'daisies',a:.55,b:.67},{id:'notice',a:.67,b:.73},{id:'garden-care',a:.73,b:.82},{id:'leave',a:.82,b:.90}];
+ VF.GardenPromenade={
+  pose(shot,time,v,o={}){
+   const b=o.beat||this.narrativeFrame,plan=b.actionPlan,age=b.actionPending?0:o.reduced?plan.duration:Math.min(b.age,plan.duration),t=plan.start+age,f=v.frame,im=VF.JourneyAssets.image('garden-walk'),W=im.width*v.h/im.height,H=v.h,cast={},base=.20*W;
+   for(const [i,id]of ['pink','taupe'].entries()){
+    const a=VF.JourneyActing.actor(id,base+v.w*(id==='pink'?-.19:.19),H*.86+i*3,Math.min(f.w*.63,H*.30)*(id==='pink'?.82:1));
+    for(const stop of stops){const p=VF.GuardianScript[shot.id].find(b=>b.id===stop.id).actionPlan;for(let k=0;k<5;k++)VF.JourneyActing.hop(a,t,p.start+.12+k*.73+i*.09,p.start+.71+k*.73+i*.09,(stop.b-stop.a)*W/5,18,'garden-depth-hop');}
+    const flightLift=a.floor-a.y,worldX=a.x/W,z=.10+.13*Math.sin((worldX-.2)*Math.PI*1.5),scale=1/(1+.45*z);a.s*=scale;a.floor=H*(.86-z*.11)+i*3;a.y=a.floor-flightLift*scale;
+    cast[id]=a;
+   }
+   const echo=this.events.filter(e=>e.kind==='butterfly-path'&&time-e.at<9).at(-1);if(echo){cast.pink.head=-.18;cast.pink.lookY=-.7;cast.taupe.earTip=.18;}for(const [id,a]of Object.entries(cast)){a.worldPosition={x:a.x/W,z:.10+.13*Math.sin((a.x/W-.2)*Math.PI*1.5)};a.lookX=id==='pink'?.5:-.4;a.head=id==='pink'?.08:-.10;a.depth=a.floor;a.gaitWeight=0;}
+   const axis=(cast.pink.x+cast.taupe.x)/(2*W),left=clamp(v.w*.5-axis*W,v.w-W,0);for(const a of Object.values(cast))a.x+=left;
+   const variant=b.decisions?.['garden-gift']||'petal',harvest=b.id==='gift-result',q=harvest?(this.dig?.snapshot().ready?1:0):['garden-care','leave'].includes(b.id)?1:0;
+   const dig=this.dig?.snapshot(),patch={x:left+W*.73,y:H*(.86-(.10+.13*Math.sin((.73-.2)*Math.PI*1.5))*.11)+13.5+v.w*.085,w:v.w*.55,h:47};
+   if(harvest){for(const [id,a]of Object.entries(cast)){const active=dig?.active?.actor===id,cycle=active?dig.active.age/(dig.active.duration||1.7):0,wave=active?Math.sin(cycle*Math.PI*2):0;a.sit=.95;a.crouch=.55+(active?.15:0);a.head=.18+(active?.05:0);a.earL=-.15;a.earR=.13;a.earTip=-.08;a.arms[id==='pink'?'right':'left']={x:id==='pink'?42:-58,y:-67+wave*13};}for(const [id,a]of Object.entries(cast)){const side=id==='pink'?'right':'left',rest=VF.Kinematics.localToWorld(a,a.arms[side],id),moving=dig?.active?.actor===id,reach=moving?.70:.24,phase=dig?.phase||0,brush=moving?Math.sin((dig.active.age||0)*6)*6:0,target={x:patch.x+(id==='pink'?-1:1)*patch.w*.15,y:patch.y-10+(phase>=2?-30:0)+brush};a.handsWorld={[side]:{x:mix(rest.x,target.x,reach),y:mix(rest.y,target.y,reach)}};a.earTip+=(moving?Math.sin((dig.active.age||0)*4)*.08:0);}
+    if(dig?.ready){cast.pink.head=-.08;cast.taupe.head=.12;}}
+   if(b.id==='roses'){cast.pink.head=.20;cast.pink.lookY=.7;cast.taupe.earTip=.12;}if(b.id==='lavender'){cast.taupe.head=-.17;cast.taupe.earL=.14;cast.pink.lookX=.7;}if(b.id==='daisies'){cast.pink.head=-.13;cast.pink.earL=.18;cast.pink.earR=-.12;}
+   const s={actors:cast,world:'garden',chapter:'journey',sceneStage:'garden',set:'garden-walk',guardian:b,beat:b.id,biome:0,gallery:{left,W,H,axis},lens:{zoom:1,cx:axis,cy:.5,travel:axis-.2},leaf:{visible:0},box:{visible:0},light:{x:['notice','gift-choice','gift-result'].includes(b.id)?patch.x:v.w*.78,y:['notice','gift-choice','gift-result'].includes(b.id)?patch.y-25:H*.36,strength:.8},fairyTarget:['notice','gift-choice','gift-result'].includes(b.id)?{x:patch.x+38,y:patch.y-80}:null,dig,patch,harvest:{active:harvest,progress:q,variant,started:!b.actionPending},actionReady:!b.actionPending&&(o.reduced||age>=plan.duration)&&!Object.values(cast).some(a=>a.airborne),renderLayers:['moon-garden-panorama','midground-butterflies','world-space-plushes','handheld-relic','foreground-leaves']};
+   this.blendEntry(s,o.entryPose,ease(clamp(o.entryProgress??1)),v);if(this.last?.sceneStage==='garden'&&(o.entryProgress??1)>=1){const dx=left-this.last.gallery.left;for(const state of Object.values(this.animator.states))for(const foot of Object.values(state.feet||{}))if(foot.contact)foot.x+=dx;}this.animator.resolve(s,time,v,{dt:o.dt||0,reduced:o.reduced,paused:o.paused,seek:this.seekPending});this.seekPending=false;this.last=s;return s;
+  },
+  background(p,s,t,v,profile,reduced){const im=VF.JourneyAssets.image('garden-walk'),g=s.gallery;p.drawImage(im,g.left,0,g.W,g.H);this.interactionTargets=[];this.flowerPoint=null;this.stats.world='garden';this.stats.set='garden-walk';this.stats.matte={x:g.left,y:0,w:g.W,h:g.H};this.stats.renderLayers=s.renderLayers;this.stats.promenade=null;VF.GardenPromenade.butterflies.call(this,p,s,t,v,profile,reduced);this.stats.flowerSpecies=VF.FlowerStations.draw(p,s,v,t);if(['notice','gift-choice','gift-result','garden-care','leave'].includes(s.guardian.id))VF.GardenSoil.bed(p,s.patch);},
+  afterActors(p,s,t,v){
+   const b=s.guardian,d=s.dig,chosen=s.harvest.variant;if(!['notice','gift-choice','gift-result','garden-care','leave'].includes(b.id))return;const pink=s.renderedActors.find(a=>a.id==='pink'),hand=pink?.hands.right;if(!hand)return;const patch=s.patch,lift=d?.phase>=3?1:d?.phase===2?d.stageProgress:0,clean=d?.phase>=4?1:d?.phase===3?d.stageProgress:0,uncover=d?.phase>=1?1:d?.stageProgress||0,to={x:hand.x,y:hand.y-4},x=mix(patch.x,to.x,ease(lift)),y=mix(patch.y-8,to.y,ease(lift)),size=Math.min(v.w*.12,chosen==='flower'?47:43);
+   if(['notice','gift-choice','gift-result'].includes(b.id)){
+    p.save();
+    // The original selected relic is really below the soil layer, progressively uncovered.
+    // One object, one draw. Before it leaves the earth its visibility belongs to the excavated aperture.
+    if(lift<=0&&uncover>0){p.save();p.globalAlpha=ease(Math.min(1,uncover*2));VF.RelicVisual.draw(p,'garden',chosen,x,y,size);p.restore();}
+    VF.GardenSoil.draw(p,patch,d,uncover);
+    if(lift>0){p.save();p.shadowColor='#231a11aa';p.shadowBlur=3;p.shadowOffsetY=2;VF.RelicVisual.draw(p,'garden',chosen,x,y,size);p.restore();}
+    if(!d?.ready){const shine=p.createRadialGradient(patch.x-5,patch.y-27,0,patch.x-5,patch.y-27,17);shine.addColorStop(0,chosen==='flower'?'#e8f8d9':'#f8d1b8');shine.addColorStop(.25,'#dfc99b99');shine.addColorStop(1,'#e8d8a900');p.fillStyle=shine;p.fillRect(patch.x-24,patch.y-46,40,40);}
+    if(d?.active){const actor=s.renderedActors.find(a=>a.id===d.active.actor),palm=actor?.hands[d.active.actor==='pink'?'right':'left'];if(palm){const q=d.active.age/(d.active.duration||1.7);for(let i=0;i<10;i++){const phase=(q*2+i*.093)%1,xx=palm.x+(i%2?1:-1)*phase*(18+i*3),yy=palm.y-4-Math.sin(phase*Math.PI)*28+phase*22;p.fillStyle=i%2?'#b59a75':'#685342';p.beginPath();p.ellipse(xx,yy,2+i%3,2,phase,0,Math.PI*2);p.fill();}}}p.restore();
+    if(lift>=1&&clean<1){p.save();p.fillStyle='#715844';for(let i=0;i<9;i++){if(i/9<clean)continue;p.beginPath();p.ellipse(x-12+(i%3)*10,y-10+Math.floor(i/3)*9,3,2,i,0,Math.PI*2);p.fill();}p.restore();}
+    this.interactionTargets.push({kind:'garden-gift',x:patch.x,y:patch.y-8,r:Math.max(60,patch.w/2)});
+   }else{VF.RelicVisual.draw(p,'garden',chosen,to.x,to.y,size);}
+   this.stats.dig={...d,patch,soilVolume:1-uncover*.68,objectLift:lift,clean,hand:to,relicDraws:lift>0||uncover>0||!['notice','gift-choice','gift-result'].includes(b.id)?1:0,objectBounds:{x:x-size*.5,y:y-size*.5,w:size,h:size}};this.stats.harvest={variant:chosen,progress:d?.ready?1:0,x,y,actualHand:to};s.relicHarvest=true;
+  },
+  butterflies(p,s,t,v,profile,reduced){const g=s.gallery,atlas=VF.JourneyAssets.image('relics'),cw=atlas.naturalWidth/3,ch=atlas.naturalHeight/2;let visible=0;for(let i=0;i<9;i++){const echo=this.events.filter(e=>e.kind==='butterfly-path'&&t-e.at<9).at(-1),q=echo?span(0,1.2,t-echo.at)*(1-span(6,9,t-echo.at)):0,x=mix(g.left+g.W*(.20+i*.073)+Math.sin(t*.55+i)*22,s.light.x+Math.sin(t+i*1.3)*45,q),y=mix(v.h*(.36+(i%3)*.09)+Math.sin(t*.75+i*1.7)*15,s.light.y+Math.cos(t+i)*30,q);if(i<3&&x>20&&x<v.w-20)this.interactionTargets.push({kind:'butterfly-path',x,y,r:28});if(x< -40||x>v.w+40)continue;visible++;const size=44+(i%3)*8,flap=reduced?.68:.32+.68*Math.abs(Math.sin(t*4.8+i));p.save();p.translate(x,y);p.rotate(Math.sin(t*.6+i)*.16);for(const side of [-1,1]){p.save();p.scale(flap,1);p.drawImage(atlas,2*cw+(side<0?0:cw/2),ch,cw/2,ch,side<0?-size/2:0,-size/2,size/2,size);p.restore();}p.restore();}this.stats.promenade={axis:g.axis,physicalWalk:true,butterflies:visible,depth:true};},
+  foreground(p,s,t,v){const g=s.gallery;const size=v.w*.49;for(let i=0;i<3;i++){const x=((g.left*1.17+i*v.w*.8)%(v.w*1.7))-v.w*.5;VF.Art.draw(p,'foliage',VF.Art.rects.foliage.fern,x,v.h-size*.20,size,size*.42);}}
+ };
+})();

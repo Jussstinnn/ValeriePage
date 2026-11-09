@@ -1,0 +1,13 @@
+VALERIE F24.4 — PAQUETE DE DIRECCIÓN Y DESARROLLO
+
+1. Abrir Codex en la conversación/proyecto que trabaja sobre VALERIE.
+2. Aportar el ZIP base: VALERIE_F24_3_DIRECTORS_CUT_COMPLETO.zip.
+3. Aportar este paquete y pedir ejecutar el archivo VALERIE_F24_4_PROMPT_MAESTRO_PARA_CODEX.txt.
+4. El prompt ya autoriza la ejecución completa sobre copia independiente. No necesita planificación adicional ni nuevas confirmaciones.
+
+DOCUMENTOS INCLUIDOS
+- VALERIE_F24_4_PROMPT_MAESTRO_PARA_CODEX.txt: orden ejecutable, exigencias por escenario, correcciones técnicas, QA y entrega.
+- VALERIE_F24_4_AUDITORIA_TRAZABILIDAD.md: observaciones del usuario vinculadas a rutas/condiciones de F24.3 y limitaciones reales de las pruebas.
+- VALERIE_F24_4_BIBLIA_DE_DIRECCION_Y_GUION.md: lógica argumental, guion sugerido, personajes, tres reliquias y storyboard del recorrido.
+
+No se incluyen capturas, grabaciones ni videos. No se ha editado el código de F24.3; este paquete es la especificación para implementar F24.4.

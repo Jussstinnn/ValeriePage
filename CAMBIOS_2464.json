@@ -1,0 +1,158 @@
+{
+  "phase": "F24.6.4",
+  "baseSha256": "60e687db0a480765634223b35190d2863fdf8e3f7f2ac6cc6cba5cfd7ba89ba8",
+  "changes": {
+    "src/audio-library.js": {
+      "sha256": "c2d1372959ef4059be2e8ac23727b8d59e7ddafa747d334004851ac5e29ced20",
+      "previous": null
+    },
+    "src/ceremony-theatre.js": {
+      "sha256": "d0e35178d6b8edada65ad02404fe67dc5291fd4eb00792038eaffe8b6c4e03c0",
+      "previous": "6787043e0f525da0e5775c3fd6969de22eed98e0f3e73abf60f879a025ace5b3"
+    },
+    "src/director.js": {
+      "sha256": "1520bf46547dbf88fa045326793a62ef60ab3ec4c98f6105d9bfad356d28173f",
+      "previous": "5d4adee732199038a26e542f90bbe50a2044aed210106945b455bab8055b18c7"
+    },
+    "src/film-script.json": {
+      "sha256": "a3f46c488513a6bd5fb64cae5653554e17984464f7c5e14b3945d76ce1755198",
+      "previous": "bd29cf52277f7491911c9e4dd7480ee5d7d66dc700447f83db9b6101457a087d"
+    },
+    "src/gift-ceremony.js": {
+      "sha256": "7fc2fd552cce672335618aa37724ee5d1df8b1b19b0307dfaf2a357ae7b867fb",
+      "previous": "ff28eb47c73a2bad2a072680eeca8c2e3190be09253c2cf1ad7f95766e79a7be"
+    },
+    "src/index.html": {
+      "sha256": "39e05ac3ee88d8e1969a86861a28bd8480f35d66273f04cea518f61dbe72dd69",
+      "previous": "d45fc225eb1817b3f7b8937b6a7531c89afb893a07ac21492380c221c45f9681"
+    },
+    "src/reveal-director.js": {
+      "sha256": "c2c1d91b5d5202bca9fffa7fe579b999c15e13a13c71f2c1872e35609c79dd73",
+      "previous": "c7cfdb4847b1147e432b5d7d1df30c201354379ecae8d04cc01db77904093f2d"
+    },
+    "src/session.js": {
+      "sha256": "738c50d976b6d29fa8db0f973dfd61db5faf9c299d7881672f76658b630179aa",
+      "previous": "3627ddbe1daa351750ce9965379e0defb5b02ed82ba2a4de7c01fcb44fa646d0"
+    },
+    "src/sound.js": {
+      "sha256": "8d69bb310af4ad88b0be94cab949ab2232f78e13c976498bdf317904d9785a50",
+      "previous": "0b90269893233eadc8f1dcf41e727039ac3601d4a2d299dac8af569a0c6f9ae9"
+    },
+    "scripts/build.mjs": {
+      "sha256": "5a642b2778cbce19a6f30fc6dcc7b790b34d4676ce8e829e2cbffaa9c7f1e4e7",
+      "previous": "9237e9fc6bcf4d8fe7792dd1d21c53df701a93e6a3c7031d12b307bf5712f348"
+    },
+    "scripts/derive-plush-step.mjs": {
+      "sha256": "6e12f164ea1e75ee2bd69f868cd4a4a0d997a50a40c1acf56a73f7b1e457e51b",
+      "previous": null
+    },
+    "scripts/package.mjs": {
+      "sha256": "0e8229b29e2b4f4e70079def5ca8d6e06f42c0b0ae38c14d6b040665d32fd871",
+      "previous": "e28290412121e3dfb3e5353368c489d6629913bf2a0cac5655c7d93da0865555"
+    },
+    "scripts/prepare-audio.cjs": {
+      "sha256": "4b1d069319b8fc002b150c4952094f7b5a6d34002576518eae9df4b926911a5e",
+      "previous": null
+    },
+    "scripts/private-server.mjs": {
+      "sha256": "e6c8591827ad29e32d2dbdd4493acbcdfde4bdcddb1136a203849f4555e02bde",
+      "previous": "50a4e1b8bd59843f46ca5044ef34b63e8858a24132865c08db3de008be8b446c"
+    },
+    "scripts/serve.mjs": {
+      "sha256": "5cd20ebe08617fa4a11aa412390c57fa308b4e1bc3796b37caafa04d082668d9",
+      "previous": "9ec2b175514cd51656816c36719eaee39b51adabe8b16b0268670437965cd770"
+    },
+    "tests/audio-2464.cjs": {
+      "sha256": "731e20c1ae0b1a04790f44676f4509c617e73cc5e40c36d827ab728b7f218347",
+      "previous": null
+    },
+    "tests/ceremony-2464.cjs": {
+      "sha256": "d4f1c31b609a214d49baedb652bbeb0566ca4b24e71b278d71f87d243936dbe1",
+      "previous": null
+    },
+    "tests/ceremony-2464.test.mjs": {
+      "sha256": "a8606301c03f036859831c5230b0ebce1782ca7cd9e849387fd5bea6724f1d3c",
+      "previous": null
+    },
+    "tests/stability-runtime.cjs": {
+      "sha256": "4d1093618581b8e0a5b12319bffcf24440506842d3a40cf10dc0f146a8a96c41",
+      "previous": "88d0d39b9aa8f4e7bb184dad0a69e00697e9f1b20f63d8cf8268f01e349c262b"
+    },
+    "assets/audio/cloth.wav": {
+      "sha256": "54b30e22722ce366c571c2cda24e06bf7455b1356b843bc06a4c9ef80df33a26",
+      "previous": null
+    },
+    "assets/audio/creek.wav": {
+      "sha256": "cd841d99c2ca17c8b36c38cdf07fc843f4b2538d76608b052a4511118d413014",
+      "previous": null
+    },
+    "assets/audio/door.wav": {
+      "sha256": "0712343a5bfdba2bc053d38f3ffbff5dc679c3fb803a692d8fb6dfcad933b30c",
+      "previous": null
+    },
+    "assets/audio/latch.wav": {
+      "sha256": "837ed7aa95116259caba337801cb844bd2332b28fefe32dad3e0729ab1852b86",
+      "previous": null
+    },
+    "assets/audio/leaves.wav": {
+      "sha256": "e5d328cdb240beefb0f0a6135b3664dc2c841e830d63d533512f51e034491051",
+      "previous": null
+    },
+    "assets/audio/manifest.json": {
+      "sha256": "57d539e7254da1915591c45b41fd8d7177c4ee4f13c099c112f7a6605ea61582",
+      "previous": null
+    },
+    "assets/audio/night.wav": {
+      "sha256": "6149a80caa64bd24539685bcea95f86d80acef34c0ba4af1898a6da55217f2dd",
+      "previous": null
+    },
+    "assets/audio/originals/cloth.mp3": {
+      "sha256": "93ce221ab889ca535e21b948efe1646a58ef0e9d28ae2974a418cd455f647a63",
+      "previous": null
+    },
+    "assets/audio/originals/creek.mp3": {
+      "sha256": "29c6c0498b18e24d00776d99f7be35d6e35f64c2f203dee6a1d0434f9f45a927",
+      "previous": null
+    },
+    "assets/audio/originals/door.mp3": {
+      "sha256": "88470957cf3351f287765afbacdcf076b46a149ad2b641fdba17a03be94143df",
+      "previous": null
+    },
+    "assets/audio/originals/latch.mp3": {
+      "sha256": "7df830059f8a2ad1bf426a0714e56077525fee5c471f8730b072a0b1309837f1",
+      "previous": null
+    },
+    "assets/audio/originals/leaves.mp3": {
+      "sha256": "d04a253702aa04b9b461583eda49d5b0bbd1ee345631e3a7041046d53f95362a",
+      "previous": null
+    },
+    "assets/audio/originals/night.mp3": {
+      "sha256": "9a67a8bfcac34b27369f8d694a66eae612ec8532e919a0777e1f13f519806ecc",
+      "previous": null
+    },
+    "assets/audio/originals/paper.mp3": {
+      "sha256": "bbfe308e17db4bcd402d07c69447c31ec351dc9d4143f8d93c4e567d4c1ac8d5",
+      "previous": null
+    },
+    "assets/audio/originals/woodland.mp3": {
+      "sha256": "3418164e5e30d752971257f054ecb2a2eb9912642dd135eead783f5c1e3d9326",
+      "previous": null
+    },
+    "assets/audio/paper.wav": {
+      "sha256": "8de1283d7e0b2e4ad1ee00ec982a79ca561eb9c55fd743ff38f123e4e61847ce",
+      "previous": null
+    },
+    "assets/audio/sources.json": {
+      "sha256": "83647b7824eba5ce0fd50ec4bea5112da5177598d0683ba55f0261d246b2a37b",
+      "previous": null
+    },
+    "assets/audio/step.wav": {
+      "sha256": "4928fc25a5e4dd1dba6891ac65c47a27a76e1d7b5ba3e0e592c62f036e342b20",
+      "previous": null
+    },
+    "assets/audio/woodland.wav": {
+      "sha256": "215e334c8160c92d18a13e7de0ba064570ca1f834c3e02e544415d07537095fa",
+      "previous": null
+    }
+  }
+}

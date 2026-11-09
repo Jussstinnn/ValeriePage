@@ -1,0 +1,218 @@
+[
+  {
+    "source": "antes-del-primer-pasito",
+    "target": "dos-miradas",
+    "kind": "vine-passage",
+    "sourceWorld": "arch",
+    "targetWorld": "rows",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "dos-miradas",
+    "target": "te-abro-el-camino",
+    "kind": "vine-passage",
+    "sourceWorld": "rows",
+    "targetWorld": "pergola",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "te-abro-el-camino",
+    "target": "una-patita-mas",
+    "kind": "path-dissolve",
+    "sourceWorld": "pergola",
+    "targetWorld": "creek",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "una-patita-mas",
+    "target": "el-tiempo-de-los-dos",
+    "kind": "water-reflection",
+    "sourceWorld": "creek",
+    "targetWorld": "rose",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "el-tiempo-de-los-dos",
+    "target": "un-secreto-para-ti",
+    "kind": "spatial-passage",
+    "sourceWorld": "rose",
+    "targetWorld": "alcove",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "un-secreto-para-ti",
+    "target": "tras-la-luz",
+    "kind": "spatial-passage",
+    "sourceWorld": "alcove",
+    "targetWorld": "tunnel",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "tras-la-luz",
+    "target": "el-bosque-escucha",
+    "kind": "spatial-passage",
+    "sourceWorld": "tunnel",
+    "targetWorld": "forest",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "el-bosque-escucha",
+    "target": "donde-apuntan-las-raices",
+    "kind": "forest-canopy",
+    "sourceWorld": "forest",
+    "targetWorld": "roots",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "donde-apuntan-las-raices",
+    "target": "la-casa-de-las-ventanas",
+    "kind": "vine-passage",
+    "sourceWorld": "roots",
+    "targetWorld": "glasshouse",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "la-casa-de-las-ventanas",
+    "target": "el-vestibulo-de-las-historias",
+    "kind": "doorway",
+    "sourceWorld": "glasshouse",
+    "targetWorld": "gallery",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "el-vestibulo-de-las-historias",
+    "target": "el-museo-de-la-noche",
+    "kind": "follow-cast",
+    "sourceWorld": "gallery",
+    "targetWorld": "gallery",
+    "transfer": "camera continuity",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "el-museo-de-la-noche",
+    "target": "dos-sonrisas",
+    "kind": "follow-cast",
+    "sourceWorld": "gallery",
+    "targetWorld": "gallery",
+    "transfer": "camera continuity",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "dos-sonrisas",
+    "target": "la-noche-en-la-pared",
+    "kind": "follow-cast",
+    "sourceWorld": "gallery",
+    "targetWorld": "gallery",
+    "transfer": "camera continuity",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "la-noche-en-la-pared",
+    "target": "dentro-del-cuadro",
+    "kind": "frame-match",
+    "sourceWorld": "gallery",
+    "targetWorld": "gallery",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "dentro-del-cuadro",
+    "target": "un-deseo-para-dos",
+    "kind": "follow-cast",
+    "sourceWorld": "gallery",
+    "targetWorld": "gallery",
+    "transfer": "camera continuity",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "un-deseo-para-dos",
+    "target": "el-jardin-despierta",
+    "kind": "petal-match",
+    "sourceWorld": "gallery",
+    "targetWorld": "garden",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "el-jardin-despierta",
+    "target": "entre-lirios-y-alas",
+    "kind": "petal-match",
+    "sourceWorld": "garden",
+    "targetWorld": "garden-walk",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "entre-lirios-y-alas",
+    "target": "un-lirio-para-ti",
+    "kind": "spatial-passage",
+    "sourceWorld": "garden-walk",
+    "targetWorld": "garden",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "un-lirio-para-ti",
+    "target": "nuestro-retrato",
+    "kind": "petal-match",
+    "sourceWorld": "garden",
+    "targetWorld": "memory",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "nuestro-retrato",
+    "target": "un-instante",
+    "kind": "page-turn",
+    "sourceWorld": "memory",
+    "targetWorld": "memory",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "un-instante",
+    "target": "una-carta-para-ti",
+    "kind": "page-turn",
+    "sourceWorld": "memory",
+    "targetWorld": "letter",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "una-carta-para-ti",
+    "target": "la-caja-rosa",
+    "kind": "page-turn",
+    "sourceWorld": "letter",
+    "targetWorld": "alcove",
+    "transfer": "covered motivated cut",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "la-caja-rosa",
+    "target": "algo-que-guarde",
+    "kind": "follow-cast",
+    "sourceWorld": "alcove",
+    "targetWorld": "alcove",
+    "transfer": "camera continuity",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  },
+  {
+    "source": "algo-que-guarde",
+    "target": "una-nueva-pagina",
+    "kind": "follow-cast",
+    "sourceWorld": "alcove",
+    "targetWorld": "alcove",
+    "transfer": "camera continuity",
+    "support": "landed native floor; no cross-biome rig interpolation"
+  }
+]

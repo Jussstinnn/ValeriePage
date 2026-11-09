@@ -1,0 +1,12 @@
+{
+  "source": "F8.5 approved artwork; F9 authorized root/foot mechanics repair",
+  "approval": "User 2026-10-27: repair jump anatomy at the root; preserve drawings, model proportions and plush identity.",
+  "sha256": {
+    "src/character-models.js": "2cdbf3ba3fbbdeb6580995799c39617ec59c96d9041ef5341936e03ea343dac6",
+    "src/rig.js": "06f26890371e41925c0c7cf191c78a8b9dec926eb43bb0fc31a1f53e2b6867b4",
+    "src/animation.js": "65c976a4c5b0ef976e8f6fddfb1affa66513590b497ec089e02cc84ecedeeca6",
+    "src/kinematics.js": "7c6fcf363986c077563aaa40b399ddec504010bd0621404abf0182fbbda2fc0e"
+  },
+  "f24_1_original_rig_sha256": "b7185d9ab049c2504189c6009f9a6f3d26b6bcd8474ad8192c0f9632e372ed06",
+  "f24_1_1_note": "Authorized technical-only change: cached constructor path, identical geometry/rig/draw, WebKit getImageData InvalidState avoided. Original source in brief/RIG_F24_1_ORIGINAL.js."
+}

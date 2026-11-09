@@ -1,0 +1,72 @@
+{
+  "stability": [
+    {
+      "cycle": 1,
+      "estimatedResidentBytes": 38964732,
+      "compressedResources": {
+        "images": 40,
+        "bytes": 14198228
+      }
+    },
+    {
+      "cycle": 2,
+      "estimatedResidentBytes": 38964732,
+      "compressedResources": {
+        "images": 40,
+        "bytes": 14198228
+      }
+    },
+    {
+      "cycle": 3,
+      "estimatedResidentBytes": 38964732,
+      "compressedResources": {
+        "images": 40,
+        "bytes": 14198228
+      }
+    },
+    {
+      "cycle": 4,
+      "estimatedResidentBytes": 38964732,
+      "compressedResources": {
+        "images": 40,
+        "bytes": 14198228
+      }
+    }
+  ],
+  "label": "F24.1.1 polished",
+  "conditions": "Edge headless, 390x844, DPR2, desktop CPU, 2s per scene, callback cost includes rendering and editorial; no GPU or physical-phone claim",
+  "firstUsefulFrameMs": 215,
+  "transferredBytes": 17903130,
+  "scenes": [
+    {
+      "index": 0,
+      "shot": "dos-miradas",
+      "seconds": 2.0146999999284745,
+      "observedCompositionFPS": 60.05856951620376,
+      "callbackP50ms": 0.5999999046325684,
+      "callbackP95ms": 0.8999999761581421,
+      "estimatedDecodedBytes": 32190650,
+      "assetImages": 2
+    },
+    {
+      "index": 6,
+      "shot": "el-bosque-escucha",
+      "seconds": 2.013899999976158,
+      "observedCompositionFPS": 60.08242713214781,
+      "callbackP50ms": 0.5,
+      "callbackP95ms": 0.8999999761581421,
+      "estimatedDecodedBytes": 65908854,
+      "assetImages": 3
+    },
+    {
+      "index": 7,
+      "shot": "el-museo-de-la-noche",
+      "seconds": 2.009799999952316,
+      "observedCompositionFPS": 59.209871630422604,
+      "callbackP50ms": 0.6000000238418579,
+      "callbackP95ms": 0.8000000715255737,
+      "estimatedDecodedBytes": 49952886,
+      "assetImages": 3
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "pass": true,
+  "levels": [
+    {
+      "kind": "step",
+      "played": true,
+      "rms": 0.006196742211844166,
+      "peak": 0.2944234609603882
+    },
+    {
+      "kind": "soil",
+      "played": true,
+      "rms": 0.005306414571213994,
+      "peak": 0.2487371265888214
+    },
+    {
+      "kind": "paper",
+      "played": true,
+      "rms": 0.01542802948315005,
+      "peak": 0.6368446946144104
+    },
+    {
+      "kind": "cloth",
+      "played": true,
+      "rms": 0.017362742194291705,
+      "peak": 0.27503907680511475
+    },
+    {
+      "kind": "latch",
+      "played": true,
+      "rms": 0.017654135791527522,
+      "peak": 0.498219758272171
+    },
+    {
+      "kind": "hinge",
+      "played": true,
+      "rms": 0.008841568286467162,
+      "peak": 0.3463094234466553
+    },
+    {
+      "kind": "door",
+      "played": true,
+      "rms": 0.03144665183806934,
+      "peak": 0.42727965116500854
+    },
+    {
+      "kind": "water",
+      "played": true,
+      "rms": 0.026327523701037303,
+      "peak": 0.5230710506439209
+    }
+  ],
+  "beds": [
+    {
+      "shot": "una-patita-mas",
+      "field": "vineyard",
+      "ambient": "creek",
+      "active": true
+    },
+    {
+      "shot": "el-museo-de-la-noche",
+      "field": "museum",
+      "ambient": null,
+      "active": false
+    },
+    {
+      "shot": "una-carta-para-ti",
+      "field": "letter",
+      "ambient": null,
+      "active": false
+    }
+  ],
+  "recordings": {
+    "ids": [
+      "step",
+      "paper",
+      "latch",
+      "leaves",
+      "cloth",
+      "door"
+    ],
+    "pending": 0,
+    "bytes": 2059568,
+    "provenance": "local-CC0-field-recordings"
+  },
+  "initialSilence": true,
+  "oscillatorsBeforeMusic": 0,
+  "mute": true,
+  "errors": []
+}

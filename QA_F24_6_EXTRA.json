@@ -1,0 +1,118 @@
+{
+  "allAreEmulated": true,
+  "checks": [
+    {
+      "test": "stability-runtime",
+      "group": "pixels",
+      "engine": "chromium",
+      "sizes": [
+        320,
+        375,
+        390,
+        412,
+        430
+      ],
+      "assertion": "actual pixels changed; projected centers; >30% socket texture survives actors; no premature lid lettering",
+      "result": "PASS",
+      "drawnPixelCounts": {
+        "320": [
+          690,
+          678,
+          690
+        ],
+        "375": [
+          867,
+          888,
+          873
+        ],
+        "390": [
+          924,
+          964,
+          948
+        ],
+        "412": [
+          1050,
+          1030,
+          1035
+        ],
+        "430": [
+          1153,
+          1142,
+          1151
+        ]
+      },
+      "visibleFractionAfterActors": 1,
+      "prematureLetters": 0
+    },
+    {
+      "test": "stability-runtime",
+      "group": "ceremony",
+      "engine": "chromium",
+      "sizes": [
+        390,
+        430
+      ],
+      "result": "PASS"
+    },
+    {
+      "test": "stability-runtime",
+      "group": "ceremony",
+      "engine": "chromium",
+      "reducedMotion": true,
+      "result": "PASS"
+    },
+    {
+      "test": "stability-runtime",
+      "group": "ceremony",
+      "engine": "webkit",
+      "size": [
+        320,
+        568
+      ],
+      "offline": true,
+      "httpRequests": 0,
+      "result": "PASS"
+    },
+    {
+      "test": "audio-f246",
+      "engine": "chromium",
+      "size": [
+        320,
+        568
+      ],
+      "result": "PASS",
+      "initialContext": "uninitialized",
+      "afterMuteVoices": 0
+    },
+    {
+      "test": "stability-runtime",
+      "group": "bubbles",
+      "engine": "chromium",
+      "sizes": [
+        320,
+        390
+      ],
+      "result": "PASS"
+    },
+    {
+      "test": "stability-runtime",
+      "group": "layout",
+      "engine": "chromium",
+      "sizes": [
+        320,
+        375,
+        390,
+        412,
+        430
+      ],
+      "result": "PASS"
+    },
+    {
+      "test": "stability-runtime",
+      "group": "ceremony",
+      "engine": "chromium",
+      "pauseDuringOpening": true,
+      "result": "PASS"
+    }
+  ]
+}

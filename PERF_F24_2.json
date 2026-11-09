@@ -1,0 +1,119 @@
+{
+  "longTasks": {
+    "count": 7,
+    "maxMs": 89
+  },
+  "jsHeapBytesProxy": 7705428,
+  "stability": [
+    {
+      "cycle": 1,
+      "estimatedResidentBytes": 44802796,
+      "compressedResources": {
+        "images": 41,
+        "bytes": 13232836
+      }
+    },
+    {
+      "cycle": 2,
+      "estimatedResidentBytes": 38511340,
+      "compressedResources": {
+        "images": 41,
+        "bytes": 13232836
+      }
+    },
+    {
+      "cycle": 3,
+      "estimatedResidentBytes": 44802796,
+      "compressedResources": {
+        "images": 41,
+        "bytes": 13232836
+      }
+    },
+    {
+      "cycle": 4,
+      "estimatedResidentBytes": 44802796,
+      "compressedResources": {
+        "images": 41,
+        "bytes": 13232836
+      }
+    }
+  ],
+  "label": "F24.2 final",
+  "conditions": "Edge headless, 390x844, DPR2, desktop CPU, 2s per scene, callback cost includes rendering and editorial; no GPU or physical-phone claim",
+  "firstUsefulFrameMs": 237.19999992847443,
+  "transferredBytes": 25388428,
+  "scenes": [
+    {
+      "index": 0,
+      "shot": "antes-del-primer-pasito",
+      "seconds": 2.010899999976158,
+      "observedCompositionFPS": 59.17748271988209,
+      "nativeRAFFrequency": 236.70993087952837,
+      "drawCallsPerSecond": 59.17748271988209,
+      "callbackP50ms": 0.5,
+      "callbackP95ms": 0.7000000476837158,
+      "estimatedDecodedBytes": 37516714,
+      "assetImages": 1
+    },
+    {
+      "index": 3,
+      "shot": "una-patita-mas",
+      "seconds": 2.012,
+      "observedCompositionFPS": 59.642147117296226,
+      "nativeRAFFrequency": 240.0596421471173,
+      "drawCallsPerSecond": 59.642147117296226,
+      "callbackP50ms": 0.7000000476837158,
+      "callbackP95ms": 1,
+      "estimatedDecodedBytes": 37597724,
+      "assetImages": 1
+    },
+    {
+      "index": 4,
+      "shot": "el-tiempo-de-los-dos",
+      "seconds": 2.0062999999523163,
+      "observedCompositionFPS": 59.81159348195785,
+      "nativeRAFFrequency": 238.24951403646543,
+      "drawCallsPerSecond": 59.81159348195785,
+      "callbackP50ms": 0.8000000715255737,
+      "callbackP95ms": 1.2000000476837158,
+      "estimatedDecodedBytes": 46424009,
+      "assetImages": 2
+    },
+    {
+      "index": 7,
+      "shot": "el-bosque-escucha",
+      "seconds": 2.0196999999284744,
+      "observedCompositionFPS": 59.909887609192005,
+      "nativeRAFFrequency": 239.63955043676802,
+      "drawCallsPerSecond": 59.909887609192005,
+      "callbackP50ms": 0.7999999523162842,
+      "callbackP95ms": 1.2000000476837158,
+      "estimatedDecodedBytes": 56707544,
+      "assetImages": 1
+    },
+    {
+      "index": 8,
+      "shot": "donde-apuntan-las-raices",
+      "seconds": 2.0035,
+      "observedCompositionFPS": 59.89518342899925,
+      "nativeRAFFrequency": 239.08160718742204,
+      "drawCallsPerSecond": 59.89518342899925,
+      "callbackP50ms": 0.7999999523162842,
+      "callbackP95ms": 1.100000023841858,
+      "estimatedDecodedBytes": 44889352,
+      "assetImages": 1
+    },
+    {
+      "index": 11,
+      "shot": "el-museo-de-la-noche",
+      "seconds": 2.0090999999046324,
+      "observedCompositionFPS": 57.239560004707975,
+      "nativeRAFFrequency": 227.9627694100544,
+      "drawCallsPerSecond": 57.239560004707975,
+      "callbackP50ms": 1,
+      "callbackP95ms": 1.3000000715255737,
+      "estimatedDecodedBytes": 50464886,
+      "assetImages": 3
+    }
+  ]
+}

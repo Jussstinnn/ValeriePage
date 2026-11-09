@@ -1,0 +1,1752 @@
+{
+  "phase": "F24.6",
+  "started": "2026-10-30T05:02:32.099Z",
+  "environment": "Windows Edge/Chromium headless, 390x844 DPR3 emulado; reloj real",
+  "physicalDevice": false,
+  "samples": [
+    {
+      "chapter": "antes-del-primer-pasito",
+      "beat": "unlatch",
+      "intervalMs": 20003.300000071526,
+      "fps": 59.439895217883816,
+      "rafMedianMs": 4.199999999998909,
+      "rafP95Ms": 4.300000000000182,
+      "drawMsEMA": 0.4003768671375879,
+      "drawMsP95": 0.6000000238418579,
+      "decodedBytes": 52928452,
+      "peakDecodedBytes": 52928452,
+      "jsHeap": 4987043,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "arch",
+            "fairy",
+            "rows"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-choice",
+      "intervalMs": 20002.5,
+      "fps": 59.642544681914764,
+      "rafMedianMs": 4.19999999999709,
+      "rafP95Ms": 4.30000000000291,
+      "drawMsEMA": 0.8702784204155906,
+      "drawMsP95": 1.2000000476837158,
+      "decodedBytes": 53056930,
+      "peakDecodedBytes": 53056930,
+      "jsHeap": 5584526,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "pergola",
+            "creek"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "intervalMs": 20002.700000047684,
+      "fps": 60.14188084594241,
+      "rafMedianMs": 4.19999999999709,
+      "rafP95Ms": 4.30000000000291,
+      "drawMsEMA": 0.7365960684838625,
+      "drawMsP95": 1,
+      "decodedBytes": 53009462,
+      "peakDecodedBytes": 53056930,
+      "jsHeap": 7242223,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "creek",
+            "rose"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-choice",
+      "intervalMs": 20001.899999976158,
+      "fps": 59.744324289263744,
+      "rafMedianMs": 4.19999999999709,
+      "rafP95Ms": 4.30000000000291,
+      "drawMsEMA": 0.45132818836951566,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 89252240,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 6428765,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "roots"
+          ],
+          "decodedBytes": 18874368,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "forest",
+          "clearing"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-museo-de-la-noche",
+      "beat": "lamp",
+      "intervalMs": 20004.300000071526,
+      "fps": 60.08708127731049,
+      "rafMedianMs": 4.19999999999709,
+      "rafP95Ms": 4.30000000000291,
+      "drawMsEMA": 0.4941313107059404,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 68859583,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 7450040,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dos-sonrisas",
+      "beat": "album-choice",
+      "intervalMs": 20005.299999952316,
+      "fps": 60.034090966037134,
+      "rafMedianMs": 4.19999999999709,
+      "rafP95Ms": 4.30000000000291,
+      "drawMsEMA": 0.5213592276208348,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 68859583,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 5884260,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dentro-del-cuadro",
+      "beat": "sky-choice",
+      "intervalMs": 20001.700000047684,
+      "fps": 60.19488343476453,
+      "rafMedianMs": 4.199999999982538,
+      "rafP95Ms": 4.30000000000291,
+      "drawMsEMA": 0.6203854411778645,
+      "drawMsP95": 0.9000000953674316,
+      "decodedBytes": 63462136,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 7061138,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-jardin-despierta",
+      "beat": "arrive",
+      "intervalMs": 20005,
+      "fps": 58.88527868032992,
+      "rafMedianMs": 4.199999999982538,
+      "rafP95Ms": 4.300000000017462,
+      "drawMsEMA": 0.9791237688073785,
+      "drawMsP95": 1.1999999284744263,
+      "decodedBytes": 77598028,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 8099945,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 1,
+      "longTaskMaxMs": 125
+    },
+    {
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "intervalMs": 20001.599999904633,
+      "fps": 60.145188385215974,
+      "rafMedianMs": 4.199999999982538,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.8070360136908489,
+      "drawMsP95": 1.2999999523162842,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 9038890,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "antes-del-primer-pasito",
+      "beat": "unlatch",
+      "intervalMs": 20001.800000071526,
+      "fps": 60.094591486551295,
+      "rafMedianMs": 4.199999999982538,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.5664911579436587,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 60854534,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 8985124,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "arch",
+            "rows"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-choice",
+      "intervalMs": 20004.100000023842,
+      "fps": 60.087682025113224,
+      "rafMedianMs": 4.199999999982538,
+      "rafP95Ms": 4.300000000017462,
+      "drawMsEMA": 0.7427321222855916,
+      "drawMsP95": 1.100000023841858,
+      "decodedBytes": 60983012,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 7006736,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "pergola",
+            "creek"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "intervalMs": 20001.900000095367,
+      "fps": 60.14428629251542,
+      "rafMedianMs": 4.199999999982538,
+      "rafP95Ms": 4.300000000017462,
+      "drawMsEMA": 0.8404581210513257,
+      "drawMsP95": 1.100000023841858,
+      "decodedBytes": 60935544,
+      "peakDecodedBytes": 89252240,
+      "jsHeap": 11689315,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "creek",
+            "rose"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-choice",
+      "intervalMs": 20002.299999952316,
+      "fps": 60.09278886540779,
+      "rafMedianMs": 4.199999999982538,
+      "rafP95Ms": 4.300000000017462,
+      "drawMsEMA": 1.0586806718841177,
+      "drawMsP95": 1.7999999523162842,
+      "decodedBytes": 90404240,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 10761609,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "roots"
+          ],
+          "decodedBytes": 18874368,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "forest"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-museo-de-la-noche",
+      "beat": "lamp",
+      "intervalMs": 20002.899999976158,
+      "fps": 60.09128676349093,
+      "rafMedianMs": 4.2000000000116415,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.5498319730328314,
+      "drawMsP95": 1,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8840084,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "scream",
+            "gallery",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dos-sonrisas",
+      "beat": "album-choice",
+      "intervalMs": 20001.899999976158,
+      "fps": 59.994300541520076,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.6099241514236386,
+      "drawMsP95": 0.8000000715255737,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 6700008,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "scream",
+            "gallery",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dentro-del-cuadro",
+      "beat": "sky-choice",
+      "intervalMs": 20001.800000071526,
+      "fps": 60.044295791613486,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.542149689693287,
+      "drawMsP95": 0.8000000715255737,
+      "decodedBytes": 64614136,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 9368445,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "scream",
+            "gallery",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-jardin-despierta",
+      "beat": "daisies",
+      "intervalMs": 20001.899999976158,
+      "fps": 59.69432903881248,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.9398824373162182,
+      "drawMsP95": 1.399999976158142,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 10747912,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 1,
+      "longTaskMaxMs": 146
+    },
+    {
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "intervalMs": 20004.899999976158,
+      "fps": 60.13496625843539,
+      "rafMedianMs": 4.2000000000116415,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.9290806667519707,
+      "drawMsP95": 1.2000000476837158,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8432876,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "antes-del-primer-pasito",
+      "beat": "unlatch",
+      "intervalMs": 20004.400000095367,
+      "fps": 60.08678090791374,
+      "rafMedianMs": 4.2000000000116415,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.5452105078405267,
+      "drawMsP95": 1,
+      "decodedBytes": 60854534,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8165870,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "arch",
+            "rows"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-choice",
+      "intervalMs": 20004.899999976158,
+      "fps": 60.135266859691065,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.6404008306242536,
+      "drawMsP95": 1.100000023841858,
+      "decodedBytes": 60983012,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 12575446,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "pergola",
+            "creek"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "intervalMs": 20004,
+      "fps": 60.137972405518894,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.5744192724425915,
+      "drawMsP95": 1,
+      "decodedBytes": 60935544,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8841321,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "creek",
+            "rose"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-choice",
+      "intervalMs": 20004.200000047684,
+      "fps": 60.0873816497103,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.5217031757260601,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 90404240,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 10919097,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "roots"
+          ],
+          "decodedBytes": 18874368,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "forest"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-museo-de-la-noche",
+      "beat": "lamp",
+      "intervalMs": 20002,
+      "fps": 60.093990600939904,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.5830717615680668,
+      "drawMsP95": 0.8000000715255737,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 12130876,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dos-sonrisas",
+      "beat": "album-choice",
+      "intervalMs": 20001.399999976158,
+      "fps": 60.04579679429598,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.5433040495153088,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 11109336,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dentro-del-cuadro",
+      "beat": "sky-choice",
+      "intervalMs": 20001.799999952316,
+      "fps": 60.19458248771962,
+      "rafMedianMs": 4.2000000000116415,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.46590455522476376,
+      "drawMsP95": 0.7000000476837158,
+      "decodedBytes": 64614136,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 7586025,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-jardin-despierta",
+      "beat": "daisies",
+      "intervalMs": 20001.799999952316,
+      "fps": 59.74462298407388,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.2999999999883585,
+      "drawMsEMA": 0.6194817659715267,
+      "drawMsP95": 1,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 11504374,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 1,
+      "longTaskMaxMs": 125
+    },
+    {
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "intervalMs": 20004.800000071526,
+      "fps": 60.135567463593674,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.5800171318413511,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 12838248,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "antes-del-primer-pasito",
+      "beat": "unlatch",
+      "intervalMs": 20005.399999976158,
+      "fps": 60.13376388382305,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.44672476251464,
+      "drawMsP95": 0.8000000715255737,
+      "decodedBytes": 60854534,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 9698066,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "arch",
+            "rows"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-choice",
+      "intervalMs": 20001.600000023842,
+      "fps": 60.0951923845376,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.654996480419558,
+      "drawMsP95": 1,
+      "decodedBytes": 60983012,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 6881438,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "pergola",
+            "creek"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "intervalMs": 20002.5,
+      "fps": 60.14248218972629,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.5430698610042644,
+      "drawMsP95": 0.7000000476837158,
+      "decodedBytes": 60935544,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 16705625,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "creek",
+            "rose"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-choice",
+      "intervalMs": 20004,
+      "fps": 60.037992401519695,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.4940444961044348,
+      "drawMsP95": 0.7999999523162842,
+      "decodedBytes": 90404240,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 12545349,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "roots"
+          ],
+          "decodedBytes": 18874368,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "forest"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-museo-de-la-noche",
+      "beat": "lamp",
+      "intervalMs": 20003.400000095367,
+      "fps": 60.089784736308296,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.42079484994575056,
+      "drawMsP95": 0.7000000476837158,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8662152,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dos-sonrisas",
+      "beat": "album-choice",
+      "intervalMs": 20001.800000071526,
+      "fps": 59.99460048574173,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.572200091474826,
+      "drawMsP95": 0.6000000238418579,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 10320452,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dentro-del-cuadro",
+      "beat": "sky-choice",
+      "intervalMs": 20001.399999976158,
+      "fps": 60.195786295031105,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.3491515540809712,
+      "drawMsP95": 0.5,
+      "decodedBytes": 64614136,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8006665,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-jardin-despierta",
+      "beat": "daisies",
+      "intervalMs": 20001.100000023842,
+      "fps": 59.84670843096495,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.542608532327483,
+      "drawMsP95": 0.7000000476837158,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 7629696,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 1,
+      "longTaskMaxMs": 103
+    },
+    {
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "intervalMs": 20002.5,
+      "fps": 60.09218801548635,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.4944747047562614,
+      "drawMsP95": 0.8999999761581421,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8982656,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "antes-del-primer-pasito",
+      "beat": "unlatch",
+      "intervalMs": 20001.200000047684,
+      "fps": 60.09639421620375,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.42581938787820994,
+      "drawMsP95": 0.6000000238418579,
+      "decodedBytes": 60854534,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 6767314,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "arch",
+            "rows"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-choice",
+      "intervalMs": 20002.100000023842,
+      "fps": 60.09308929487436,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.4546751128684477,
+      "drawMsP95": 0.7000000476837158,
+      "decodedBytes": 60983012,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 17086302,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "pergola",
+            "creek"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "intervalMs": 20002.600000023842,
+      "fps": 60.142181516331185,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.5083632381190963,
+      "drawMsP95": 0.6000000238418579,
+      "decodedBytes": 60935544,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 13317645,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "creek",
+            "rose"
+          ],
+          "decodedBytes": 25165824,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-choice",
+      "intervalMs": 20002.600000023842,
+      "fps": 60.09218801548635,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.5323419194143986,
+      "drawMsP95": 0.7999999523162842,
+      "decodedBytes": 90404240,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 8096302,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "roots"
+          ],
+          "decodedBytes": 18874368,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "forest"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-museo-de-la-noche",
+      "beat": "lamp",
+      "intervalMs": 20001.5,
+      "fps": 60.095492838037146,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.4191679386184635,
+      "drawMsP95": 0.7000000476837158,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 14943761,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dos-sonrisas",
+      "beat": "album-choice",
+      "intervalMs": 20002.300000071526,
+      "fps": 59.99310079319423,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.6590269709885778,
+      "drawMsP95": 0.8000000715255737,
+      "decodedBytes": 70011583,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 13422537,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 1
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "dentro-del-cuadro",
+      "beat": "sky-choice",
+      "intervalMs": 20004,
+      "fps": 60.0879824035193,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.4521644512235119,
+      "drawMsP95": 0.7000000476837158,
+      "decodedBytes": 64614136,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 11175358,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "gallery",
+            "scream",
+            "starry"
+          ],
+          "decodedBytes": 26970136,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": false,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    },
+    {
+      "chapter": "el-jardin-despierta",
+      "beat": "daisies",
+      "intervalMs": 20004.5,
+      "fps": 59.53660426404059,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.8483594362485953,
+      "drawMsP95": 1.2999999523162842,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 13118023,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 1,
+      "longTaskMaxMs": 141
+    },
+    {
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "intervalMs": 20003.200000047684,
+      "fps": 60.09038553817063,
+      "rafMedianMs": 4.199999999953434,
+      "rafP95Ms": 4.300000000046566,
+      "drawMsEMA": 0.8701295099529247,
+      "drawMsP95": 1,
+      "decodedBytes": 78366028,
+      "peakDecodedBytes": 90404240,
+      "jsHeap": 14841253,
+      "caches": {
+        "journey": {
+          "ids": [
+            "relics",
+            "fairy",
+            "garden-walk"
+          ],
+          "decodedBytes": 18873024,
+          "pending": 0
+        },
+        "painting": false,
+        "lilies": true,
+        "gift": false,
+        "jewel": false,
+        "question": false,
+        "faceVariants": 2,
+        "art": [
+          "foliage",
+          "clearing",
+          "garden"
+        ],
+        "memories": 0
+      },
+      "resizeDelta": 0,
+      "longTasks": 0,
+      "longTaskMaxMs": 0
+    }
+  ],
+  "errors": [],
+  "elapsedMs": 906030,
+  "complete": true,
+  "finished": "2026-10-30T05:17:38.742Z"
+}

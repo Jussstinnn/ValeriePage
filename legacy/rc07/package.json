@@ -1,0 +1,20 @@
+{
+  "name": "valerie-cinematic-rebirth",
+  "version": "7.0.0",
+  "private": true,
+  "description": "VALERIE — El mundo que te espera. Cine ASCII interactivo, móvil y offline.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/contracts.test.mjs tests/runtime.test.mjs tests/semantics.test.mjs",
+    "test:browser": "node scripts/verify-rc07.mjs",
+    "package": "node scripts/package.mjs",
+    "test:rc07": "node scripts/verify-rc07.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1"
+  }
+}

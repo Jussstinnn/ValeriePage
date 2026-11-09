@@ -1,0 +1,149 @@
+# VALERIE F24.2 — RECONSTRUCCIÓN CINEMATOGRÁFICA REAL
+## ACTO I NUEVO + RUTA FÍSICA DEL BOSQUE AL MUSEO | MOBILE VERTICAL
+
+**AUTORIZACIÓN DE IMPLEMENTACIÓN.** Trabaja sobre una copia independiente de `VALERIE_F24_1_1_IOS_VERTICAL_POLISH_COMPLETO.zip`. No modifiques F24.1.1. Implementa el trabajo de este encargo completo y entrega un ZIP nuevo y reproducible con el código fuente; no quiero un plan sustituyendo el desarrollo. No me pidas confirmación para las decisiones artísticas menores; aplícalas con criterio de dirección, respetando las reglas de protección.
+
+**Lee antes de tocar código** los dos documentos adjuntos:
+1. `VALERIE_F24_2_DIAGNOSTICO_REAL_Y_DECISION.md` (pruebas y fallos estructurales observados).
+2. `VALERIE_F24_2_BIBLIA_NARRATIVA_Y_STORYBOARD.md` (guion, mapa espacial, acciones, diálogos, planos y nuevos escenarios).
+
+Esos documentos son requisitos de esta versión, no referencias opcionales. Priorízalos frente a la antigua consigna de no añadir escenarios en F24.1.1: esa consigna quedó obsoleta para F24.2. Mantén las protecciones técnicas y personales de las versiones anteriores.
+
+## 0. POR QUÉ ESTA REVISIÓN ES DIFERENTE
+
+La evaluación del usuario de F24.1.1 es negativa en el primer tramo: prólogo, Dos miradas, Te abro el camino, Una patita más, El tiempo de los dos y otras escenas del viñedo se perciben demasiado simples; el bosque sí ofrece buenas interacciones. El museo aparece sin un viaje entendible. La versión anterior consumió mucho tiempo de Codex y resolvió bugs, pero no produjo una mejora creativa de magnitud equivalente. **Deja de confundir más líneas/variables/effects/tests con producción cinematográfica.**
+
+**Nueva definición de éxito:** la experiencia cambia sustancialmente a simple vista, SIN explicación técnica: hay lugares distintos, personajes que actúan, microhistoria con tensión y humor, objetos que motivan las decisiones, recorridos espaciales continuos y una llegada razonable al museo. Un conjunto de variaciones de zoom sobre `vineyard-clearing.png` NO cuenta como escenarios nuevos.
+
+No declares F24.2 completa solo porque `npm run build` y los tests sean verdes. Se necesita todo el recorrido jugable en mobile vertical desde el prólogo hasta el museo.
+
+## 1. PRIORIDAD — MOBILE VERTICAL MULTIPLATAFORMA
+
+La experiencia se dirige a teléfonos verticales, no solo a Safari: iPhone con Safari/WebKit, Android con Chrome/Chromium y Samsung Internet cuando haya acceso, tamaños 320, 360, 375, 390, 412 y 430 px, barras de navegador variables, `safe-area-inset`, DPR variable, toque, arrastre y cancelación, lector de pantalla y movimiento reducido. Desktop y horizontal no requieren rediseño en esta revisión, pero no permitas una regresión que los vuelva inutilizables. No crear navegación por scroll.
+
+Un gesto en escena NUNCA puede abrir el HUD; solo su botón explícito. No fluctuar burbuja/subtítulo durante un mismo turno. El texto legible permanece dentro de su fondo y jamás encima de la cara del personaje. No hay «Siguiente» durante ejecución automática, elección o gesto pendiente. Mantener controles de retroceso, pausa y capítulos recuperables. La acción contextual solo aparece cuando se necesita realmente.
+
+## 2. RECONSTRUIR LOS PRIMEROS SEIS CAPÍTULOS, NO MAQUILLARLOS
+
+**Debe implementarse el storyboard completo de los segmentos 0–6**, incluyendo nuevas composiciones y comportamientos. No bastan cinco sprites agregados sobre el fondo actual. Requiere:
+
+- **Prólogo:** arco de viñas/rosas y farol con luz, Rosa y Beige entrando realmente a escena, presentación por actuaciones, pequeña acción de liberar la luz y salida espacial hacia el sendero. La luz debe escapar por un evento visible (no aparecer de la nada); no hacer diapositiva de bienvenida.
+- **Dos miradas:** sendero de hileras, perspectiva real, la luz circula entre los actores y objetos, persecución con anticipación/pausas, Rosa vuelve al lado de Beige. Juego breve de atraer luz con resultado visible, sin inventar fracaso.
+- **Te abro el camino:** pérgola con viento, gran hoja físicamente apoyada bloqueando el paso, decisión Rosa/Beige con animaciones realmente distintas, Valerie ayuda a mover la hoja y se ve el arroyo más allá. Conservar ID `leaf-holder` y sus elecciones/consecuencias.
+- **Una patita más:** arroyo COMO LUGAR: dos orillas, piedras con apoyo, corriente, reflejos y ondas de contacto, sombras bajo patitas, saltos en dos tiempos, espera mutua y reacción. No resolverlo con elipsis dibujadas en el borde del cuadro. Incluir gesto de elegir piedra y CTA accesible alternativo, sin punición.
+- **El tiempo de los dos:** terraza distinta con una rosa (o rosa silvestre) visible desde antes de pronunciar «flor»; escenario, primer plano y actuación juguetona con pétalo en oreja, verdadera pausa emotiva, no plano estático de 26 píxeles.
+- **Un secreto para ti:** alcoba escenográfica real con la caja original dormida (no revelación del anillo), luz que intenta aproximarse, pista proyectada hacia un túnel. Evitar reutilizar simplemente el plano del regalo final.
+- **Tras la luz:** túnel de viñas hacia vegetación del bosque, viaje continuo con oclusión orgánica, Rosa espera a Beige, cámara acompaña y entrega las posiciones de ambos sin teletransportación al set F23.
+
+**Nuevos escenarios obligatorios**: crear sets/mattes/autores originales y diferenciados para arco/farol inicial, camino entre hileras, pérgola-orilla, arroyo, terraza rosa, alcoba de caja y umbral/túnel. Es aceptable reutilizar partes del atlas de follaje si conservan su calidad y constituyen composición nueva con profundidad real; NO es aceptable declarar esas escenas distintas si únicamente cambian zoom o color del mismo fondo. No sustituir los peluches ni regenerar su anatomía.
+
+No necesitas cambiar exactamente los títulos/IDs originales; conservándolos facilitas navegación e historial. Puedes incorporar los planos secundarios como subescenas dentro de estos capítulos, con una escena técnica nueva cuando corresponda a una localización real.
+
+## 3. EXTENDER LA AVENTURA DESPUÉS DEL BOSQUE: HASTA EL MUSEO, SIN TELETRANSPORTAR
+
+**Esta sección es obligatoria y forma parte de la entrega F24.2.** El camino debe ser narrativamente y geográficamente verificable:
+
+1. Preserva el bosque F23 (`el-bosque-escucha`), sus dos rutas, gestos `discover/shape/cross/rest`, neutral y asistencia. Al completarlo se muestra una pista distinta según luciérnaga/árbol.
+2. **NUEVO: `donde-apuntan-las-raices`**: raíces y pasaje en profundidad; la pista aparece integrada en la vegetación; los conejitos deben interpretar físicamente la señal y ayudar a revelar la dirección. Valerie puede tocar o trazar sobre la pista. Se ve el destino a lo lejos.
+3. **NUEVO: `la-casa-de-las-ventanas`**: exterior real del antiguo invernadero/galería de cristal, ventanas iluminadas, un sendero hasta su entrada, actuación frente a la puerta y contacto con picaporte/farol. La decisión del bosque deja un eco visible.
+4. **NUEVO: `el-vestibulo-de-las-historias`**: arquitectura interior con marcos, lámparas, suelo/alfombra y el cuadro nocturno visible al fondo. Se ve a los conejitos pasar a través de la puerta y acercarse a la obra. Si vestíbulo se representa mediante una toma continua dentro de `la-casa-de-las-ventanas`, se admite un único capítulo técnico, PERO los dos espacios y su transición deben estar verdaderamente representados.
+5. Ahora sí se llega a **`el-museo-de-la-noche`**. Adaptar entrada, posiciones y primeros diálogos para que continúen desde el vestíbulo. Mantener y mejorar las decisiones del cuadro y las lámparas. El marco debe permanecer situado al cambiar al mundo interior de la pintura.
+
+El mapa completo, guion y actuaciones esperadas están en el documento de storyboard. Los nuevos escenarios tienen función causal y no son escenas de relleno. **No posponer este enlace a otra fase** ni reemplazarlo por una conversación que diga «Llegamos al museo».
+
+## 4. DIRECCIÓN DE ANIMACIÓN — ANIMAR CAUSAS, NO RELLENO
+
+La meta es riqueza audiovisual dirigida. Cada microactuación debe describir: situación anterior, anticipación, trayectoria, apoyo, reacción, contacto, salida. Los peluches no caminan como humanos: saltitos pequeños, cambios de peso, cuerpo de peluche flexible, orejas y ojos expresivos. Evitar sliding, poses clonadas, vibración estéril y personajes que saltan de coordenadas entre planos. No ocultar el error con fundidos negros.
+
+- Root motion persistente de escena a escena, world-space anchors para suelo, manos y utilería; escala y dirección estables.
+- Cámara con bloqueo de dirección, parallax de 2–4 planos según set, foreground occluders conectados a elementos reales del escenario; evitar paneos genéricos en todas las escenas.
+- Agua: orillas visibles, profundidad, piedras con superficies legibles, ondulación/reactividad bajo la patita, emisión de ondas al contacto, sin recargar Canvas innecesariamente.
+- Viento y rosa: no solo seno en una coordenada; inclinación coordinada de pétalos y hojas, pequeñas respuestas actor-objeto y luz que motive el primer plano.
+- Entrada a edificios: los actores cruzan un umbral visible, el set interior conserva la puerta detrás y la luz mantiene trayectoria.
+- Sonido ambiental discreto y sincronizado (viento/agua/hojas/cristal), controlable y respetando reproducción móvil y silencio; no introducir música comercial protegida.
+- Animaciones delicadas en momentos de silencio y pequeñas pausas; la cámara no tiembla ni se desplaza sin razón.
+- Si es posible, usa módulos de coreografía declarativa / paths / anclajes reutilizables, pero prioriza que se VEAN bien. No gastar la ejecución en un motor enorme que no se usa.
+
+## 5. INTERACTIVIDAD COMO MOTOR DE HISTORIA
+
+Esta es la parte que el usuario SÍ aprobó del bosque: conservarla y extenderla.
+
+Acciones exigidas en la nueva apertura: abrir/liberar farol, atraer/guiar luz, elegir quién sostiene la hoja + ayudar físicamente, elegir o iluminar piedras para cruzar, interacción de descubrimiento con la rosa (puede ser opcional pero debe producir actuación), descubrir pista de raíces y abrir la puerta de la galería. Los toques responden de inmediato y no chocan con HUD. Cada acción puede completarse sin gestos precisos mediante ayuda accesible, y nadie queda bloqueado por no saber arrastrar.
+
+La decisión `leaf-holder` ejecuta **dos escenas diferenciadas** con contacto y orden de cruce distinto. Las dos rutas del bosque afectan luz/pistas en pasaje/invernadero. Si eliges una alternativa, no debe necesitarse pulsar «Siguiente» salvo un momento narrativamente protegido. El sistema no avanza durante una actuación pendiente. Las rutas neutrales y de retroceso funcionan. No introducir decisiones falsas sin cambios visibles.
+
+## 6. CORREGIR LA ARQUITECTURA PARA ESCENAS NUEVAS
+
+La implementación actual tiene supuestos por número de capítulo que NO sobrevivirán a inserciones:
+
+- `src/director.js`: `isVineyard=()=>index<=5`, lógica `next>6`, `next<=5` y precarga, `activeStage/activeWorld`, sesión y cargas de assets.
+- `src/transition-director.js`: `kind(from,to)` usa números 5,6,7,8,9... para transiciones específicas. Cambiar a **IDs/metadata de escena o enlaces de un grafo**, con fallback explícito, no índices frágiles.
+- `src/session.js`: `index` guardado; migrar sesiones preexistentes por ID de capítulo, evitando que un usuario al reanudar caiga en un capítulo distinto. Conservar los IDs de ocho decisiones, las fases del bosque y estados protegidos.
+- `src/content.js` + `src/personal-content.js` + `src/vertical-script.js` + otros scripts sobre `VF.GuardianScript`: revisar orden de carga para que un parche histórico no sobrescriba accidentalmente el guion aprobado; fuente única de datos dramatúrgicos para la nueva apertura.
+- `src/vineyard-scene.js` y `src/cinematic-world.js`: separar sets y comportamiento local por ubicación y no por simples rangos de índice; precarga/descarga y posición de actores coherentes.
+- `src/forest-scene.js`: no reescribir F23, añadir solo estado/salida para los nuevos destinos.
+
+Verifica explícitamente `go()`, `navigate()`, restauración, regresar, repetir, cancelar transición, fondos tardíos y cambiar ruta después de una elección. No romper `ReaderPolicy` de carta ni la ceremonia. No perder snapshots al insertar escenas.
+
+## 7. ARTE Y CALIDAD: QUÉ CONSIDERAMOS UNA MEJORA SUSTANCIAL
+
+Todos los nuevos espacios requieren dirección de arte deliberada: silueta reconocible, profundidad, materiales coherentes, objeto principal, zonas transitables y legibilidad para 9:16. Usar capas y assets nuevos auténticos cuando el set lo exija; no tarjetas superpuestas, CSS genérico, formas vectoriales mínimas o simples gradientes para representar invernadero, río o museo. No producir un catálogo de imágenes inconexas: deben pertenecer al mismo mundo ilustrado, conservar gama cromática y escala.
+
+**Evidencia funcional, no paquetes visuales:** el proyecto debe contener los archivos reales de los nuevos escenarios y su uso en render, no solo prompts de arte o JSON no consumidos. Cada escenario tendrá identificador estable, entrada, objeto interactivo, salida y efectos. No inflar el repositorio con assets alternativos inutilizados.
+
+Todos los comentarios previos siguen vigentes: buen mobile vertical en Android e iOS; subtítulos estables, controles discretos, decisiones bonitas y claras; fondos/props sin bugs; museo con decoración de galería (lámparas, marcos, no helechos pegados); caja con set real; optimización sin sacrificar belleza; carta con **«rosas»** y jardín de lirios INTACTO.
+
+## 8. PRESERVACIONES INNEGOCIABLES
+
+- Rosa y Beige deben conservar su apariencia de peluches aprobada (atlasses, rigs, proporciones, orejas, rostros, escala relativa). No hacer sustitución de personajes ni un estilo distinto.
+- Mantener fotos originales byte-identical, carta excepto la modificación ya autorizada `rosas`, caja, anillo, ceremonia y pregunta presencial. No filtrar anticipadamente la sorpresa en escenas iniciales o en recursos visibles de UI.
+- Mantener intactas las dos rutas del bosque y las decisiones anteriores, con su historial y consecuencias; la nueva narrativa puede tender puentes desde ellas.
+- No cambiar lirios del jardín; **Rosa del viñedo** y «rosas» de la carta son distintos de los lirios ya existentes.
+- No introducir navegación por scroll ni pantallas convencionales de onboarding. El prólogo es película, no tutorial.
+- No publicar nada, generar QR ni montar hosting público. La experiencia contiene fotos personales.
+
+## 9. RENDIMIENTO MÓVIL DE VERDAD
+
+La anterior versión estima una reducción de recursos, pero hay un HTML autónomo de ~33 MB, y se añadirá arte nuevo. No lo empeores sin analizarlo. Usar manifest modular + carga por tramo, prefetch solo de escenas próximas, caché acotada y liberación de imágenes decodificadas que ya no se usan. Mantener HTML offline si es posible, pero comparar costo y no declararlo vía de distribución ideal para celular. Evitar recortar el movimiento de personajes en nombre de FPS: hacer profiling de draw calls, overdraw, texturas, buffers, reflow y timers.
+
+Registrar indicadores reproducibles en emulación vertical: tiempo hasta primera escena útil, recursos descargados, memoria estimada y p50/p95 del render, y un recorrido largo sin crecimiento de buffers. 60 fps es objetivo donde el hardware lo permita, no cifra inventada; si la capa compleja exige downgrade, conservar la actuación principal y reducir efectos secundarios. Probar `prefers-reduced-motion`, `visibilitychange`, `pagehide/pageshow`, rotación accidental, red lenta y modo offline donde aplique.
+
+## 10. PUERTAS DE CALIDAD Y ACEPTACIÓN (NO PASAR SIN CUMPLIR)
+
+**Puerta A: reconstrucción artística visible.** No menos de seis tratamientos espaciales diferenciados dentro del viñedo (el set se reconoce incluso ocultando texto y personajes), además del bosque existente y un recorrido realmente representado hacia el museo. Al menos tres nuevas localizaciones/revelaciones físicas después del bosque: raíces, exterior de edificio, vestíbulo, o dos escenas técnicas si exterior→interior es una sola cámara continua. Ninguna puede ser solo otro zoom del mismo matte.
+
+**Puerta B: causalidad.** Es posible responder, mirando la película, «¿por qué salieron del viñedo?», «¿qué hicieron en el arroyo?», «¿qué descubrieron gracias a la rosa?», «¿por qué entraron al bosque?» y «¿cómo llegaron al museo?». Todo eso debe estar representado visualmente. No basta una línea que lo afirme.
+
+**Puerta C: actuaciones.** Comprobar que `leaf-holder` conserva dos coreografías distintas, arroyo con contacto firme y sin saltos de ancla, y personajes atravesando el umbral museo con continuidad real de cámara, posición y escala. Rosa y Beige se miran y reaccionan al otro tras al menos cada descubrimiento mayor.
+
+**Puerta D: interacción.** Primer recorrido incluye acciones visibles y claras en farol, luz, hoja, piedras, rosa, raíces y puerta; interacciones tienen feedback táctil/visual inmediato y alternativa accesible. Ningún gesto involuntario abre HUD. Nada se auto-resuelve antes del toque cuando la escena espera a Valerie. Sin «Siguiente» sobrante.
+
+**Puerta E: regresión.** `npm test`, `npm run test:vertical`, `npm run test:forest`, pruebas focalizadas de escenas nuevas, build; recorrer todas las fases en emulación WebKit y Chromium móvil si está disponible, ambas rutas y neutral; navegar hacia atrás/adelante, repetir y recargar en decisiones, al cruzar el arroyo, al entrar al museo y durante carta/caja/final. Comprobar las ocho decisiones originales, no romper fotos ni texto personal.
+
+**Puerta F: respeto al usuario y al tiempo.** Primero implementar y probar una escena sustancial completa en código, luego repetir arquitectura y escenografía donde corresponda. No volver a gastar toda la ejecución en auditorías duplicadas, planes redundantes, subagentes sin necesidad, capturas/videos/grabaciones/paquetes de evidencia ni README extensos. Solo usar skills pertinentes; un agente principal como preferencia. No pedir al usuario más confirmaciones antes de empezar.
+
+**Puerta G: transparencia.** Si una de estas puertas falla, no declarar «F24.2 completada». Listar exactamente qué falta y entregar el estado real en el ZIP, sin etiquetas de PASS falsas. Pruebas en WebKit de escritorio no son Safari físico; indicar siempre esa limitación.
+
+## 11. ORDEN DE EJECUCIÓN, ORIENTADO A RESULTADO
+
+1. Asegurar copia independiente, inspeccionar exclusivamente módulos causales y validar hashes de recuerdos/personajes; no reinventar todo.
+2. Refactor mínimo de navegación y guardado para escena por ID; añadir tests de migración ANTES de insertar capítulos.
+3. Construir primera secuencia **prólogo→Dos miradas→pérgola** con nuevos sets reales, continuidad física y una interacción completa. Verificarla en vertical.
+4. Construir **pérgola→arroyo→rosa→caja→túnel→bosque**, incluyendo las dos variantes de hoja. Verificar trayectorias, hit areas y reproducción continua.
+5. Conectar **bosque→raíces→invernadero→vestíbulo→museo**. Demostrar en código los portales y geometrías de entrada/salida.
+6. Revisar todas las zonas de texto/HUD/decisiones en Android/Chromium y WebKit móvil emulado, pruebas de regresión personal y rendimiento; optimizar sin perder coreografía.
+7. Empaquetar F24.2 con código fuente, assets nuevos, HTML/servidor reproducible en Windows. Entregar un único ZIP final y breve checkpoint con listado de sets realmente usados, cambios, pruebas ejecutadas y pendientes honestos.
+
+## 12. LO QUE NO ES SUFICIENTE
+
+- Añadir 1–2 frases a cada capítulo y decir que el guion mejoró.
+- Poner una flor pequeña o una hoja nueva sin que los personajes interactúen físicamente.
+- Usar siete encuadres diferentes sobre `vineyard-clearing.png` y llamarlos siete escenarios.
+- Añadir botones grandes sin una animación asociada y sin consecuencia.
+- Una transición genérica de hoja/verde que esconda el salto del bosque al museo.
+- Un edificio mostrado solo en texto, o una puerta que nunca atraviesan los conejitos.
+- Un informe largo de pruebas sin nueva puesta en escena jugable.
+- Crear 20 módulos de arquitectura nuevos cuando bastan unos pocos para producir mejor cine.
+- Priorizar el número de líneas, tests o tokens usados por encima de la experiencia visible.
+
+**Resultado obligatorio:** cuando el autor abra F24.2 en un celular vertical, la diferencia con F24.1.1 debe ser evidente desde el primer minuto y continuar hasta la llegada natural al museo. No más pintura encima del mismo problema: **construye la aventura que el guion promete. EMPIEZA A IMPLEMENTAR AHORA.**

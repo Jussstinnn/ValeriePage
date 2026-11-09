@@ -1,0 +1,62 @@
+{
+  "version": "24.6.3",
+  "baseSha256": "4bf707be8c52bb35716b9bfbe8cb7e7b5c3f85cfa13749f590f8546f08628368",
+  "changes": {
+    "src/director.js": {
+      "sha256": "5d4adee732199038a26e542f90bbe50a2044aed210106945b455bab8055b18c7",
+      "previous": "7f8584a14d624bb6446a0733c97b3a0a82225188f6a5986e1a6a98f1d54865ee"
+    },
+    "src/film-script.js": {
+      "sha256": "04d9f572d4710bee55dfa49fbd478037f6ae31d0ae1ecd789fc74412f71c02f4",
+      "previous": "fc2a0842923b6bd6db72aef746f076fb84392d7281a56b74f2a97ed7d4025653"
+    },
+    "src/garden-promenade.js": {
+      "sha256": "732612d38d1a56ea934d0d4da1a80da574d0a33ee719a9a48b1ecb329528afa9",
+      "previous": "6a5dac68f0a37e40909220d4808c48969cf039eb053f32e9c28f8aeeab0148b6"
+    },
+    "src/index.html": {
+      "sha256": "d45fc225eb1817b3f7b8937b6a7531c89afb893a07ac21492380c221c45f9681",
+      "previous": "46dde9ca3b10ed65a90e76f4acea13886e432f43909c326d14e7fab8750f19b6"
+    },
+    "src/relic-journey.js": {
+      "sha256": "6bc34b3b6776ccaec05da4a93eedcd35bf4fd39d6ec7599791048ce063f4655f",
+      "previous": "2d9acfb342c90ff1b74e3e5635ff5260edc87af7c03a1c7abc4b6b2cd282a89d"
+    },
+    "src/session.js": {
+      "sha256": "3627ddbe1daa351750ce9965379e0defb5b02ed82ba2a4de7c01fcb44fa646d0",
+      "previous": "bae8fd7c99d25b74f28367d070366b224ca741229c2d2f29bf5e9dbd81c90697"
+    },
+    "src/sound-materials.js": {
+      "sha256": "867aa8683907c728b9e6ef8327c1b8eea682ab387e4ddeb9bc1989b7cc8b260c",
+      "previous": null
+    },
+    "src/sound.js": {
+      "sha256": "0b90269893233eadc8f1dcf41e727039ac3601d4a2d299dac8af569a0c6f9ae9",
+      "previous": "1ea0f35692317e96534b4ef08e30121964d1709fc167a1ec55b2d8920f911f1c"
+    },
+    "scripts/package.mjs": {
+      "sha256": "e28290412121e3dfb3e5353368c489d6629913bf2a0cac5655c7d93da0865555",
+      "previous": "ada219c9212f3e82d7a36b862f9ac38ea886b479bc04c3afb52a7e8c6011aa83"
+    },
+    "scripts/serve.mjs": {
+      "sha256": "9ec2b175514cd51656816c36719eaee39b51adabe8b16b0268670437965cd770",
+      "previous": "c2094e772ed5fd153d56fce825755ff4a0c3efbed6cbfd5ebc63d3b40458d0c0"
+    },
+    "tests/audio-2463.cjs": {
+      "sha256": "e51a57aa584e9a85c817babab898161575a8ba8615e6bd3e380f3f28a96030a0",
+      "previous": null
+    },
+    "tests/dig-2463.cjs": {
+      "sha256": "badb4705bb869f6a33e6701072bf938514eb74c01f9d0f76e095a4213b5b0781",
+      "previous": null
+    },
+    "tests/ending-2463.cjs": {
+      "sha256": "ad1ab3448f5e36d11d3d0a836207a4a1bd6fe4df672762a3fc7fd071ee872721",
+      "previous": null
+    },
+    "tests/revision-2463.test.mjs": {
+      "sha256": "5dc8bb4d7c32b00f3ef0f9c9bd7ff6426c7f018302619a9969c66186f795bef1",
+      "previous": null
+    }
+  }
+}

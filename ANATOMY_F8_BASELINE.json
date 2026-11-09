@@ -1,0 +1,10 @@
+{
+  "source": "VALERIE_F2_F3_ANATOMIA_03_COMPLETO.zip",
+  "approval": "User explicit approval of direction and anatomy, 2026-10-27; future worlds require user visual evaluation.",
+  "sha256": {
+    "src/character-models.js": "2cdbf3ba3fbbdeb6580995799c39617ec59c96d9041ef5341936e03ea343dac6",
+    "src/rig.js": "d5cb99df81a22728dd4fc14322c5a50e5f1eb66b8dcf27d639752875563ac9bc",
+    "src/animation.js": "f543018b912610f3ac36a3d4d55ba6aeeff81f0422acb0f938accabfff958c5e",
+    "src/kinematics.js": "7c6fcf363986c077563aaa40b399ddec504010bd0621404abf0182fbbda2fc0e"
+  }
+}

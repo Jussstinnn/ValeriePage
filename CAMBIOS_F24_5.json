@@ -1,0 +1,150 @@
+{
+  "base": {
+    "file": "VALERIE_F24_4_CUENTO_VIVO_COMPLETO.zip",
+    "sha256": "70f40b9abb4040fb4949573f3174fd6814519860850b1cc1317d12ef7becc219"
+  },
+  "modified": [
+    {
+      "file": "src/bubble-director.js",
+      "sha256": "05815226f4ac1e422f84043957d041dc8ce7d08add351455dcc3690d6c652790"
+    },
+    {
+      "file": "src/ceremony-theatre.js",
+      "sha256": "efd83e8ccb2094dff18cc6440fe7d9ed1b2e8444eab88fafcae19d5b1a974f3c"
+    },
+    {
+      "file": "src/cinematic-hud.js",
+      "sha256": "0332dc5f52b517279c17cda6889195ff8a41140cb9a722bb284dd4d51b10e4fa"
+    },
+    {
+      "file": "src/director.js",
+      "sha256": "c3fa2876573dc63d6bb54c38753fed40d90f25d72ebe7c8c7f7f1f1d3192ecdf"
+    },
+    {
+      "file": "src/editorial-policy.js",
+      "sha256": "5d55611584e2d04cd4a2c9d38900b8bdd6c5d6e6e6aee2cd6e7ffc3f1490342a"
+    },
+    {
+      "file": "src/film-script.json",
+      "sha256": "49122d5c6edbef3c7b0f7858c3edcb9baeda71e054b3b8aaf46bbd264d9a1873"
+    },
+    {
+      "file": "src/film.css",
+      "sha256": "1a20cf12db0b89bfa2d0c117c918e080cd8b9cffb2c1f4bd771f0b79e0c5c45a"
+    },
+    {
+      "file": "src/forest-scene.js",
+      "sha256": "bfd2012bf5279407ba7cc8099571e287f9ff121804dcd7720bc9235cee3c9144"
+    },
+    {
+      "file": "src/gallery-theatre.js",
+      "sha256": "5a1f0baf22058cd1dcdf26616ffb3aa4eb354312d760cb36ffbedc9fa552aba9"
+    },
+    {
+      "file": "src/garden-promenade.js",
+      "sha256": "34b6914f386149f20b4a31b79f813dca2f4dd214131d5be9a79c032add3e98e5"
+    },
+    {
+      "file": "src/gift-ceremony.js",
+      "sha256": "e8057c25dbbee3068ad8bd67f088c8f21dbeba8b04cdbe812f5e317cd6ec1e99"
+    },
+    {
+      "file": "src/letter-reader.js",
+      "sha256": "3135587cdecb35770997efc55008ec4153970dc3ff46c4e24629ff5620f39977"
+    },
+    {
+      "file": "src/memory-adventures.js",
+      "sha256": "d86e78d7469ffc12a1294c193c102683f0dc2ded0284bd28447044b49236e351"
+    },
+    {
+      "file": "src/painting-input.js",
+      "sha256": "a41af56951e74aa16702cb336b54a4803c03107bdcbc71ba773fb75a369baa75"
+    },
+    {
+      "file": "src/relic-journey.js",
+      "sha256": "2d9acfb342c90ff1b74e3e5635ff5260edc87af7c03a1c7abc4b6b2cd282a89d"
+    },
+    {
+      "file": "src/session.js",
+      "sha256": "46a907af97a6fe9bfa4eead03c5a456227b52236b8a55dba89556c8b99ca2a06"
+    },
+    {
+      "file": "src/transition-director.js",
+      "sha256": "6a948ffeb14b605cbf3c44a63958f24dc30de01925a389e43e7f7270e7d5dd7f"
+    },
+    {
+      "file": "src/vineyard-scene.js",
+      "sha256": "6aaafb004b2755d27ba6bf1521a9c7256f897b818146f895df2be4f8e417e963"
+    },
+    {
+      "file": "scripts/package.mjs",
+      "sha256": "f07314f2fe49115f4a0e43baf638265201d6c0bce0fc2b56a3979e552327f932"
+    },
+    {
+      "file": "scripts/serve.mjs",
+      "sha256": "897b58bd2bec79ec236516e0444dc43d047a9e3d30cd2d69d492f8bfe4fb3f43"
+    },
+    {
+      "file": "scripts/verify.mjs",
+      "sha256": "04e56d0e1f22af3d78254da1482718f1701d0b8b09318df8ca60be69055fa93a"
+    },
+    {
+      "file": "tests/forest-session.test.mjs",
+      "sha256": "f1399271fe98f6dd4718e43e1332cfeaa82e8a24d23858c8db71aa962d1de9a8"
+    },
+    {
+      "file": "tests/journey-migration.test.mjs",
+      "sha256": "f27aae264fd86de5aafa891d6b4930248d129ff15b782aa039da4e718519fbec"
+    },
+    {
+      "file": "tests/vertical-cut.test.mjs",
+      "sha256": "95ec89e93be4131fb72d5563747624640c7e89ac20ad5e42f41f91c497d4bfb2"
+    }
+  ],
+  "added": [
+    {
+      "file": "src/album-object.js",
+      "sha256": "e4bd2c6efa7f37341878ae5e4b6ca86db2b3bd541e205c7d6d80265ec1d0b91d"
+    },
+    {
+      "file": "src/flower-stations.js",
+      "sha256": "89546581cb418ad99bb4e46e489b9589d5dd37d72c3f5a5da0ad6dc6328db12b"
+    },
+    {
+      "file": "src/garden-dig.js",
+      "sha256": "49e947c4b1c85e54fcb0eab974909bfedb2c4db6dba07c4c0b7eb065b930a364"
+    },
+    {
+      "file": "src/path-depth.js",
+      "sha256": "5bd1da986503e734e0acb4dc7b6f06ef3855754bcca7e0fc029dc1cd791d7a3e"
+    },
+    {
+      "file": "scripts/zip-windows.ps1",
+      "sha256": "edb62183fc4fe8f1a47b804f7b73d02aa951fb6f0ab6c67f7049d8dbb3b904e5"
+    },
+    {
+      "file": "tests/performance-f245.cjs",
+      "sha256": "c63ed726e7db44d04e96116acf59b7b7296a52b0ad82a722bd2f2a67051c26f2"
+    },
+    {
+      "file": "tests/refinement-runtime.cjs",
+      "sha256": "33598dced19faa729a0cd3140a5ad5f62bba5d80e1a74e56238b82b5bde0ac1d"
+    },
+    {
+      "file": "tests/refinement.test.mjs",
+      "sha256": "16177a17a0b7d9113169e37ddbd2cb610f888ff7130a9ec69d3f3678e35a6c45"
+    },
+    {
+      "file": "brief/VALERIE_F24_5_AUDITORIA_F24_4.md",
+      "sha256": "aa6bc4e893b404a1e2c17a8a6d4ad6bbb0ee4f432410c08e0d0e034dfd0851b7"
+    },
+    {
+      "file": "brief/VALERIE_F24_5_DIRECCION_NARRATIVA.md",
+      "sha256": "b5df799051115655a3c9553f23705f56abae2e446966a27994def320e0693331"
+    },
+    {
+      "file": "brief/VALERIE_F24_5_PROMPT_MAESTRO_CODEX.txt",
+      "sha256": "ceec9bbba495366d0aa1c1a606d64258b9b8ff3b36328f0ef765445dda98c9f6"
+    }
+  ]
+}

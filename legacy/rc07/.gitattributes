@@ -1,0 +1,8 @@
+* text=auto
+engines/** -text
+memories/** -text
+assets/** -text
+*.png -text
+*.jpg -text
+*.webm -text
+*.bundle -text

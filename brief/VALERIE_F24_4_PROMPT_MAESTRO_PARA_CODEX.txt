@@ -1,0 +1,182 @@
+# VALERIE F24.4 — DIRECTOR'S CUT · MUNDO VIVO Y RELATO SIN HUECOS
+## ORDEN DE IMPLEMENTACIÓN — BASADA EN AUDITORÍA REAL DE F24.3
+
+**ENTRADAS:**
+1. ZIP base `VALERIE_F24_3_DIRECTORS_CUT_COMPLETO.zip`.
+2. Documento `VALERIE_F24_4_AUDITORIA_TRAZABILIDAD.md`.
+3. Documento `VALERIE_F24_4_BIBLIA_DE_DIRECCION_Y_GUION.md`.
+4. Los comentarios del autor que originan estos documentos.
+
+**AUTORIZACIÓN:** Implementa **F24.4 completa**, en una copia independiente de F24.3, conservando el ZIP anterior intacto. No me pidas otra planificación ni autorización. Los dos documentos adjuntos son parte obligatoria de esta especificación. Si existe discrepancia entre un texto de desarrollo antiguo y la dirección de F24.4, prevalecen esta orden y las observaciones del autor, sin modificar contenido personal protegido.
+
+# 0. OBJETIVO Y ESTÁNDAR DE CALIDAD
+
+Esta versión NO es un parche de interfaz. Se necesita una reconstrucción narrativa, espacial y cinematográfica de las partes débiles, tomando como estándar los mejores momentos de F24.3: la entrada al museo, el recorrido en el mismo escenario, abrir la puerta, el cruce del arroyo, la observación de la flor, el cuadro que cambia la iluminación, la sorpresa de la fotografía y la aparición de la caja. **Esas partes gustan al autor y NO debes destruirlas.**
+
+La prioridad absoluta es experiencia **mobile vertical real en iOS y Android**, estable en distintos tamaños, con ritmo vivo, personajes que actúan en un mundo profundo y decisiones que se sienten importantes. Nada de dos PNG superpuestos sobre un paisaje estático con cámara arbitraria. El trabajo debe ser demostrablemente diferente y mejor al recorrer el inicio, el cuadro, el jardín y el final.
+
+No optimices SEO ni inviertas trabajo en horizontal o escritorio salvo evitar fallos críticos. No incorpores por ahora playa, honguitos, cabaña u otros mundos ajenos a este alcance.
+
+# 1. RECUPERACIÓN EFICIENTE Y ARQUITECTURA REAL
+
+1. Extrae F24.3 a nueva carpeta; registra base, hash y archivos modificados. No borres ni reempaquetes originales personales como sustitutos.
+2. Inspecciona primero solo los módulos identificados en la auditoría, no releas globalmente toda la historia. Verifica el orden efectivo de scripts: `src/journey-script.js`, `src/vertical-script.js`, `src/directors-cut-script.js`, `src/guardian-script.js`, `src/reactive-quests.js`, `src/memory-adventures.js`. La versión final del texto y beats que verá el usuario debe tener una **sola fuente autoritativa por capítulo**. Evita sobrescrituras silenciosas.
+3. Reutiliza la solución de profundidad y desplazamiento de `src/gallery-theatre.js:4-33` para el primer acto y la galería futura del jardín. Conserva la coreografía del arroyo de `src/vineyard-scene.js`.
+4. Define contratos de mundo con posición del suelo, capas, z/profundidad, escala según distancia, cámara, puntos de entrada/salida, persistencia de objetos, capa de UI y plano de interacción. No resuelvas desplazamientos solo cambiando x en dos pasos.
+5. Las condiciones de transición, decisiones, historial, restauración y estado deben basarse en identificadores estables de capítulos/beats; no índices frágiles.
+6. Prioriza un agente principal y las skills pertinentes solo si aportan valor. No gastes tiempo generando capturas, videos ni evidencias. QA técnico sí, evidencia visual final la realizará el autor.
+
+# 2. RECONSTRUYE EL PRÓLOGO, CON MOTIVACIÓN COMPLETA
+
+Actualmente `src/directors-cut-script.js:5-11` inicia con «¡Yo llevo la luz!» sin introducir a Rosa y Beige como guardianes ni explicar por qué está ahí el hada. Es insuficiente.
+
+**Obligatorio:** Presentar en escena: quiénes son Rosa y Beige; que han estado cuidando una cajita para Valerie; por qué tienen un farol con una luz; por qué la luz se transforma en hada al llegar ella; por qué la hada los guía; qué buscan y por qué los objetos sirven para abrir la caja. No basta con texto informativo: debe ocurrir una pequeña situación con personajes y escenografía.
+
+Implementa la dirección del guion anexo para `antes-del-primer-pasito`: entrada de cámara, preparativos de guardianes, humor tierno, presentación de cada uno, invitación y gesto para despertar el farol. No empieces con un diálogo largo, lento o redundante. Debe existir algo interesante que ver casi inmediatamente y una primera interacción razonablemente temprana.
+
+**Criterio:** si Valerie no entiende quiénes son, qué guardan y por qué empieza la aventura antes de salir de la zona inicial, está incompleto.
+
+# 3. CONVIERTE LOS PRIMEROS CAPÍTULOS EN UN CAMINO CON PROFUNDIDAD REAL
+
+**`dos-miradas`**: No seguir un hada al azar. Mostrar que se enreda y explicar por qué necesita ayuda; las dos decisiones deben producir actuaciones distintas. La elección afecta un detalle posterior del vuelo.
+
+**`te-abro-el-camino`**: El texto «¡Esta hoja pesa más que yo!» no tiene sentido y debe reescribirse. La hoja debe **tapar realmente el umbral completo**. Dos ramificaciones:
+- Rosa levanta la hoja, Beige **cruza hacia el fondo**, aparece del otro lado, ayuda, y Rosa lo sigue.
+- Beige levanta la hoja, Rosa **cruza hacia el fondo**, aparece del otro lado, ayuda, y Beige lo sigue.
+
+Actualmente `src/vineyard-scene.js:67-71` usa pasos laterales cortos para el visitante; esto NO satisface el cruce. Implementar trayectorias en coordenadas de mundo con profundidad, escalado progresivo coherente, apoyo en suelo, oclusión por la hoja, cámara acompañando, orden de capas correcto y continuidad hacia el siguiente plano. La hoja se levanta y sigue anclada hasta que los dos han cruzado. Cada alternativa debe verse fiel al texto de su opción, sin permitir que Rosa solamente se acerque a Beige.
+
+**`una-patita-mas` / arroyo:** conservar la excelente base de piedras, saltos y profundidad. Solo pulir conexión espacial, reacciones y continuidad.
+
+**`el-tiempo-de-los-dos` / rosa:** conservar la flor y la hermosa observación. Reescribir por qué se detienen allí: el hada se posa, el viento mueve la rosa, Beige se detiene, Rosa aprende a esperar. No dejar al hada tapar la flor ni las caras.
+
+**`un-secreto-para-ti` / caja:** conservar su presentación. Explicar visualmente la necesidad de **tres señales/reliquias**: luz del bosque, deseo del cielo, pétalo o flor del jardín. Mostrar tres cavidades o referencias visuales coherentes. La caja NO se abre al verla inicialmente. Guardar coordenadas/landmarks para volver al mismo sitio.
+
+**`tras-la-luz`**: «Esta vez sí te esperé» necesita antecedente en actuación. Mostrar a Rosa adelantarse antes, volver por Beige y esperar de verdad, o sustituir la frase por una compatible. La interacción «Guiar la luz entre las ramas» tiene que mover luz/hada en la escena y abrir un túnel visible. Sin acción sin efecto.
+
+**`el-bosque-escucha`**: preservar interacciones aprobadas y corregir la fuga de haces/helechos al salir hacia otro capítulo. Cada ruta del bosque entrega una variante visible de la primera señal; registrar elección. No pasar capas gráficas residuales a escenas nuevas.
+
+# 4. TOMA EL MUSEO COMO ESTÁNDAR, NO COMO ZONA PARA RECONSTRUIR
+
+La entrada del museo, abrir puerta, panorámica caminada con fondo moviéndose, cuadros auténticos en pared, iluminación cambiante y foto «Dos sonrisas» cubierta son **éxitos aprobados**. Conserva esos planos y el orden íntimo. Trabaja con la calidad técnica de `src/gallery-theatre.js` y reutiliza su modelo de cámara en viñedo y jardín.
+
+El museo sigue conectado por raíces, casa y vestíbulo: conserva continuidad y refuerza donde aún sea necesario. Nunca teletransportar a los personajes cuando el espectador elige entrar al cuadro.
+
+# 5. ARREGLA EL CUADRO DE LA NOCHE ESTRELLADA DE RAÍZ
+
+La pintura auténtica en la pared es el soporte visual que debe permanecer identificable. La opción «Seguir dentro del cuadro» **no** puede saltar a una escenografía inconexa de plantas, personajes caminando sobre pinceladas y texturas defectuosas.
+
+**Dirección:** el lente se aproxima suavemente al cuadro auténtico; el borde se amplía y la pintura llena la zona de interacción. Si los conejitos permanecen visibles, ubicarlos de manera pictórica coherente como siluetas/reflejos junto al marco, no parados sobre plantas de otro mundo. Mantén el mismo plano artístico para ambas decisiones:
+
+A. **«Dibuja tu deseo»**. Valerie dibuja a mano libre directamente SOBRE la reproducción visible: usar una capa transparente independiente anclada al cuadro, coordenadas locales de obra y matrices coherentes con su proyección/cámara, clipping correcto, múltiples trazos, gesto táctil estable, suavizado razonable, deshacer, limpiar y terminar. El hada puede seguir el trazo sin taparlo. No reemplazar el gesto del usuario por un dibujo prefabricado ni deformar las texturas de la pintura. Si existe opción de asistencia para accesibilidad, debe declararse explícitamente como alternativa distinta.
+
+B. **«Unir las luces»**. Distribuir luces en la obra para que Valerie las toque/una. El resultado debe formar **V + J**, con una V clara, un signo + claramente separado y una J clara, no la antigua figura de cinco luces. Debe tener feedback, progreso, animación final y persistencia como segunda señal de la caja.
+
+**Código prioritario:** `src/sky-brush.js:8-25` asigna trazos al frame general y distorsiona texturas con malla; `src/director.js:244-254` controla captura y gestos; `src/reactive-quests.js` conserva figuras antiguas de pintura y constelación; `src/world-cinema.js` y los motores de pintura agregan capas heredadas. Reorganiza esas responsabilidades en una escena/módulo propio de pintura, sin mantener dos sistemas superpuestos dibujando sobre zonas incompatibles. No permitas plantas, hojas, elementos de jardín ni suelo ficticio sobre el cuadro. Cancela pointer capture cuando corresponda, evita scroll/click involuntario durante trazo y garantiza reinicio/recuperación. La observación y la contemplación deben ser voluntarias.
+
+**Cierre:** Rosa y Beige descubren la señal que Valerie dibujó o conectó y expresan «Valerie es nuestro mayor deseo» con una actuación emotiva, no texto aislado. La señal se conserva con estilo distinto según la rama. De ahí pasan al jardín por transición motivada de luz, sin escena intermedia defectuosa de pie sobre la pintura.
+
+# 6. JARDÍN: FLORACIÓN APROBADA + MUNDO CAMINABLE
+
+No modifiques la animación de floración aprobada ni sustituyas los lirios del jardín. **Después de florecer**, ampliar la experiencia con un jardín panorámico de flores y mariposas, para que los conejitos caminen acompañados por cámara y capas de paralaje; variación de escala y profundidad real, como en el museo. Motivar narrativamente el tercer objeto. Diseñar pétalo y flor luminosa como ilustraciones reconocibles, no íconos diminutos; opción escogida afecta color, material y animación de recolección/carga.
+
+Asegura que los subtítulos, burbujas y tarjetas **no tapen a Rosa y Beige**, especialmente durante la floración. Ajustar composición editorial por plano según regiones ocupadas por personajes e interacciones, no solamente desplazarles hacia arriba de forma fija. Validar en móviles estrechos.
+
+# 7. RECUERDOS, ALMENDRITA, CARTA Y OBJETOS
+
+**Texto obligatorio:** en la escena del retrato, cuando Rosa ve al perro, cambiar a:
+«¡Hay un perrito! Alguien me dijo que se llama Almendrita.»
+El beat actual está en `src/memory-adventures.js:17` (`dog`), aunque también hay otras fuentes de guion; confirmar que la versión FINAL visible lo diga una sola vez. No tocar la imagen personal ni inventar biografía adicional.
+
+Mantener intactas las tres fotografías, su ocultamiento/revelación y lectura sin cronómetro; preservar la carta. Mantener el gusto por **rosas** escrito en la carta. No sustituir lirios del jardín por rosas.
+
+Hacer que las opciones de decoración de carta y todas las reliquias sean preciosas y distinguibles. No «estrella, pétalo y algo indefinido»: definir forma visual, estado, variante por rama, ubicación al cargarlas, cómo se dejan en caja y cómo se guardan en la sesión. Idealmente registrar en una pequeña «memoria del recorrido» que aparece solo cuando narrativamente corresponde, nunca como HUD que tape a los personajes.
+
+# 8. FINAL CON CAJA: RECONSTRUCCIÓN COMPLETA DE ACTUACIÓN Y SORPRESA
+
+Regresar al lugar exacto donde apareció la caja (`alcove`), con la misma piedra, camino, composición reconocible y una iluminación de cierre. No basta con usar un nombre de recurso similar: al comparar las posiciones del escenario debe entenderse que volvieron al sitio inicial.
+
+Los guardianes presentan las tres señales, cada una con su material/color de la elección; ingresan en el broche sin ocultar a Rosa. Una explicación corta resume causalmente por qué son necesarias. Los conejitos NO pueden teletransportarse detrás de la caja ni fingir que levantan la tapa quedándose inmóviles. Animar preparación, agarre, patitas en contacto, coordinación de apertura, bisagra, compensación de peso y reacción. La caja debe ocupar una zona que no haga chocar texto, conejitos y controles.
+
+**Estados de ceremonia obligatorios y persistentes:**
+- `CLOSED`: caja cerrada, anillo absolutamente invisible.
+- `UNLATCHED`: Valerie pulsa «Abrir el broche», se autoriza apertura, no revelación.
+- `OPEN_HIDDEN`: tapa abierta, anillo COMPLETAMENTE CUBIERTO por un forro/cinta/pliegue interior; no debe verse en ningún fotograma ni filtrarse por transición, recarga, pausa o navegación.
+- `REVEAL`: Valerie pulsa «Descubrir el secreto». El forro se aparta, el anillo se anima desde dentro, lo reciben luz y cámara. **No antes.**
+- `CONTEMPLATE`: solo después puede usar «Mirarlo de cerca», y luego «Volver con Rosa y Beige»; ninguna opción redundante o repetida.
+- `QUESTION`: «Una última cosa para ti» conduce a la composición de letras guardadas en la propia caja. Las letras deben *moverse, reunirse y acomodarse* hasta mostrar la dedicatoria dirigida a Valerie y la pregunta final: «Valerie, ¿quieres ser mi novia?». Conservar la intención literal expresada por el autor de que las letras formen «Valerie quiere ser mi novia», pero presentarla como **pregunta**, no como afirmación de su respuesta. La pregunta debe esperar indefinidamente su respuesta en persona.
+
+**Código:** `src/reveal-director.js:5-9` actualmente trata apertura y revelación como una misma autorización; separar. `src/director.js:69,83,184` tiene botones dependientes de beat, actualmente «Descubrir lo que guardaron» puede aparecer cuando el anillo ya está revelado; implementar labels por estado real. `src/gift-ceremony.js:39-58`, `src/ending-theatre.js` y `src/story-homecoming.js` deben compartir un solo contrato claro de caja, colocación de actores, capas y animación de pregunta. Evitar que una clase heredada sobrescriba silenciosamente el estado de otra.
+
+# 9. TRANSICIONES, INTERFAZ Y RITMO EN TODA LA PELÍCULA
+
+**Transiciones:** el autor valora el barrido de color que cubre la pantalla al final, la hoja que se aproxima y se aleja, y la cámara que sigue a los personajes. Crear una gramática coherente con estos recursos: barridos cromáticos fluidos, vegetación/pétalos/luz según situación, cambios de plano motivados y continuidad de dirección. Evitar corte arbitrario, fundido negro genérico, teletransporte o capas residuales. Limpiar estado y composición al cambiar de mundo.
+
+**UI:** no menú que se abre con toques de escenario; pausa, capítulos y retroceso discretos. Durante reproducción automática NO mostrar «Siguiente» entre actuaciones ordinarias. En decisiones presentar solamente alternativas claras y, cuando se necesite, gesto de confirmación específico; ninguna acción adicional que no tenga efecto. Fotos, carta y pregunta final protegidas. Ubicar texto en la superficie turquesa o burbujas donde corresponde, sin tapar personajes ni acciones, de manera consistente **en todos los capítulos**. Sin saltos al reajustar la ventana del navegador móvil.
+
+**Ritmo:** quitar pausas artificiales de introducción. Al inicio, cada pocos segundos debe ocurrir un microacontecimiento visual o avance significativo (gesto, acción, reacción, revelación, cambio de plano). Ternura y calma no equivalen a inercia; preservar pausas contemplativas solo cuando tienen sentido.
+
+**Rendimiento:** optimizar tamaño/carga de recursos (HTML autónomo de F24.3 ~46 MB), cachés, `Canvas 2D`, imágenes, trazos, timers, listeners, animaciones, imágenes no residentes y overlays, sin sacrificar escenografía ni número de interacciones. Medir uso de memoria estimada y FPS reales en la emulación disponible. No afirmar rendimiento físico de iPhone/Android sin pruebas allí. Adaptar resolución/DPR/calidad inteligentemente, sin degradar texturas en momentos importantes.
+
+# 10. MATRIZ DE QA OBLIGATORIA (NO BASTA CON npm test)
+
+**A. Guion y causalidad**
+- Los protagonistas se presentan como guardianes; justifican luz, hada y caja en el prólogo.
+- Los tres objetos se anuncian, se obtienen con acciones específicas y se utilizan para abrir la caja.
+- No hay frases («Esta vez sí te esperé») sin actuación previa que las justifique.
+- Cada decisión tiene consecuencia visible e identificable.
+
+**B. Profundidad y movimiento**
+- Ambas ramas de hoja terminan con el viajero al FONDO, detrás del umbral, con escala menor y oclusión correcta, y el portador pasa después. No acercamiento lateral falso.
+- Río conserva sus saltos y apoyos; flor sigue bien visible; puerta sigue funcionando.
+- Bosque sale limpio sin overlays residuales; museo conserva panorama/puerta/lámpara/álbum.
+- Jardín después de floración presenta paseo continuo con mariposas, sin bloquear texto.
+
+**C. Pintura/gestos**
+- En «Dibuja tu deseo», los trazos coinciden con las posiciones tocadas **dentro de la obra real** tras scroll inexistente, resize/DPR/cámara y reentrada; varios trazos, borrar/deshacer/terminar. No textura desfigurada.
+- En «Unir las luces» se forma claramente `V + J`, persiste y se refleja luego en caja.
+- Nunca plantas/otros escenarios sobre la pintura; no duplicación de frames ni capas dañadas.
+
+**D. Caja/pregunta**
+- Antes de «Abrir el broche»: 0 píxeles de anillo visibles.
+- Después de «Abrir el broche» y antes de «Descubrir el secreto»: 0 píxeles de anillo visibles; forro/cubierta intacto, sin filtración en transición o recarga.
+- Solo después de «Descubrir» aparece el anillo y comienza el acercamiento opcional. Botones correctos una sola vez.
+- Patitas realmente agarran tapa/objeto; no cruce incorrecto de capas.
+- Letras animadas y pregunta final persistente.
+
+**E. Mobile integral**
+- Emular vertical 320×568, 375×667/812, 390×844, 412×915 y 430×932, DPR 1/2/3 cuando sea posible.
+- Comprobar áreas seguras, teclado si aplica, visibilidad dinámica de barras, input táctil, pointercancel, navegación, elección, retrato, pintura, carta y anillo.
+- Sin texto sobre caras, cajas o interacciones; HUD accesible y NO espontáneo.
+- Recarga en mitad de elección, dibujo, entrada al museo, apertura de caja y pregunta final; estado y sorpresa correctos.
+- Pruebas automáticas unitarias + funcionales + visual-semánticas (coordenadas, colisiones de áreas, orden de capas, bounding boxes) y compilación. Safari/WebKit + Chromium cuando haya motores; si no existen, documentar límite sin simular cumplimiento.
+- Evaluar duración de inicio, fallos de composición progresivos y rendimiento sostenido. No declarar «PASS visual» sin prueba.
+
+**F. No regresión**
+- Originales y anatomía protegidos mediante hash/comparación.
+- Fotografías, carta, lirios, bosque, museo, puerta y árbol preservados.
+- No duplicar rutas, disparar múltiples gestos, avanzar durante decisión o reiniciar incorrectamente modo cine.
+
+# 11. CRITERIOS DE ACEPTACIÓN POR CALIDAD PERCIBIDA
+
+Rechaza tu propia entrega como incompleta si ocurre cualquiera de los siguientes casos:
+1. El prólogo sigue sin explicar por qué hay una caja, una luz o un hada.
+2. Rosa o Beige atraviesan la hoja solo lateralmente, sin profundidad visible.
+3. El museo pierde su sensación de recorrido vivo.
+4. El cuadro cambia a una escena fea de personajes sobre plantas o el dedo dibuja fuera de la imagen real.
+5. La constelación no forma V + J.
+6. El texto o los objetos recolectados ocultan a Rosa/Beige.
+7. El anillo aparece antes de la decisión «Descubrir el secreto».
+8. La caja se abre sin actuación real o el texto de botones contradice el estado.
+9. La pregunta final aparece sin composición de letras.
+10. Los tests pasan pero los criterios artísticos anteriores siguen incumplidos.
+
+# 12. MODO DE TRABAJO Y ENTREGABLE
+
+Trabaja por unidades con checkpoint técnico breve en la misma ejecución (prólogo/primeros actos; cuadro; jardín/recuerdos; caja; integración). Esto **no** es una solicitud de aprobación entre unidades ni una invitación a realizar trabajo fragmentario: implementa todo lo posible con calidad real. Prioriza P0 antes de P1, preserva lo bueno, evita análisis repetitivos y no montes un gran suite de auditoría antes de corregir la primera falla concreta.
+
+**No generes capturas, videos, grabaciones ni paquetes de evidencias**; el autor hará evaluación visual. Los tests de funcionamiento de código son obligatorios. No inventes un resultado que no hayas probado.
+
+Entrega un **ZIP completo, independiente y ejecutable de F24.4**, con sus assets y archivos originales necesarios. Incluye `CAMBIOS.md`, checkpoint de continuidad, pruebas ejecutadas (comandos y resultados reales), limitaciones exactas y lista de pendientes si no terminaste algo. No declares versión completa si falta un requisito P0. Mantén F24.3 intacta.
+
+**INSTRUCCIÓN FINAL:** Comienza la implementación ahora. El objetivo no es acumular commits, tests o líneas de código, sino que al volver a ver la película el autor pueda reconocer una mejora cinematográfica verdaderamente sustancial en los momentos que reportó, con una historia comprensible, movimientos con profundidad, interacciones que importan y una sorpresa final bien dirigida.

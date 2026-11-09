@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "engine": "webkit",
+  "frames": 1126,
+  "phases": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "maxDraws": 1,
+  "directReturn": true,
+  "errors": []
+}

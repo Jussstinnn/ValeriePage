@@ -1,0 +1,43 @@
+
+> valerie-illustrated@24.6.4 test:vertical
+> node --test tests/vertical-cut.test.mjs tests/hud-contract.test.mjs tests/cinema.test.mjs tests/transitions-f24.test.mjs
+
+✔ Cinema is the default and advances complete dialogue from the renderer loop without autonomous timers (12.1914ms)
+✔ Pause, hidden tab, dialogue, loading and transitions freeze editorial time exactly (21.4914ms)
+✔ Decisions, photographs, letter folios, gift, ring and final question never expire (191.6827ms)
+✔ A reading timer cannot interrupt takeoff, flight, incomplete action or its settling interval (4.4495ms)
+✔ Manual mode is explicit, preserves elapsed reading, and replay grants a full fresh interval (4.6831ms)
+✔ Forest gestures stay optional and explicit; completing one resumes cinema only after the visible transformation settles (3.574ms)
+✔ A physical forest crossing and constellation assistance use real completion rather than expired elapsed time (9.6028ms)
+✔ Safe capture/restore requires the exact narrative anchor and never restores a pointer or pending advance (5.4267ms)
+✔ Async navigation is issued once; replay invalidates stale promise completion and blocked loads wait for explicit recovery (8.6501ms)
+✔ Every policy exposes the complete semantic contract and a long Spanish message receives more reading time (1.8313ms)
+✔ safe cinematic framing cannot change when controls, focus or playback state change (5.7804ms)
+✔ requested controls have real hidden/inert state and focused transport cannot auto-close (3.4415ms)
+✔ pausing opens once and an explicit close remains respected until the next pause edge (2.5216ms)
+✔ choices exclude transport while protected continuation and a single assistance channel are delegated (2.5241ms)
+✔ leaving a contextual action returns focus safely; protected final has no forced continuation (2.3389ms)
+✔ HTML preserves every old command once and provides recoverable contextual landmarks (0.4857ms)
+✔ one transition timeline freezes exactly while paused and resumes from the same cut (5.6402ms)
+✔ large frame deltas stop at the opaque transfer barrier instead of exposing a different world (9.7551ms)
+✔ a covered passage has one source and one target contract, never a second cast rendered by the transition (1.8475ms)
+✔ cancelled navigation cannot finish and a fresh transition has a distinct identity (1.4118ms)
+✔ public snapshots detach poses and camera state from observers (1.241ms)
+✔ reduced motion retains a covered transfer and coherent entry instead of skipping the gate (1.2492ms)
+✔ reverse navigation uses the same temporal boundary and preserves its authored direction (1.3025ms)
+✔ rebuilt screenplay has nineteen scored scenes and preserves earlier decisions (73.5766ms)
+✔ successive turns retain exactly the same roots, scale and camera at score boundaries (94.9362ms)
+✔ all authored flight paws belong to the pelvis and every beat ends settled (795.7329ms)
+✔ carrier changes actual blocking and stone choice changes the crossing destination (38.2867ms)
+✔ semantic links survive ordinal insertion and define a real doorway and vestibule (40.1637ms)
+✔ gallery threshold rests stay planted in world space between the two hops (41.3393ms)
+✔ earlier leaf carrier changes who helps at the root fork (42.3113ms)
+✔ the rendered leaf remains continuous when the second plush takes its grip (58.8353ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1284.1041

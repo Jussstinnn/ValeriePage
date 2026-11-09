@@ -1,0 +1,5 @@
+* text=auto
+legacy/rc07/engines/** -text
+legacy/rc07/memories/** -text
+references/** -text
+assets/** -text

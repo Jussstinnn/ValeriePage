@@ -1,0 +1,328 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#080913"><meta name="description" content="La noche estrellada: una experiencia museística de arte generativo ASCII animado"><title>La noche estrellada · Atelier ASCII V3</title>
+<style>
+:root{color-scheme:dark;--ink:#080913;--cream:#efe8dc;--gold:#d3bb90;--quiet:#9c97a3}*{box-sizing:border-box}html,body{margin:0;min-width:0}html{background:#080913}body{background:radial-gradient(ellipse 70% 52% at 50% 36%,#222237 0%,#10111f 56%,#080913 100%);color:var(--cream);font:13px system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+.experience{min-height:100svh;min-height:100dvh;height:100dvh;max-width:1720px;margin:auto;display:grid;grid-template-rows:45px minmax(0,1fr) auto;position:relative;overflow:hidden;padding:clamp(12px,2.3vh,22px) clamp(12px,3vw,44px) calc(12px + env(safe-area-inset-bottom))}
+.experience:before{content:'';position:absolute;inset:4% 16% 13%;pointer-events:none;background:radial-gradient(ellipse,#d3a87812,transparent 74%);z-index:0}
+header,.stage,.copy{z-index:1;position:relative}header{display:flex;align-items:center;justify-content:space-between;gap:8px}.brand{font:15px Georgia,serif;letter-spacing:.04em;display:flex;align-items:center;gap:10px}.brand b{border-radius:50%;border:1px solid #c5ad8b86;width:28px;height:28px;display:grid;place-items:center;font-weight:400;color:#e8c99c;font-size:17px}.stamp{font:10px ui-monospace,Consolas,monospace;letter-spacing:.21em;color:#ada3a9}
+.stage{display:grid;place-items:center;min-height:0;overflow:hidden}.canvas-shell{position:relative;width:min(100%,calc((100dvh - 207px)*1.45),1320px);max-height:100%;display:grid;place-items:center;filter:drop-shadow(0 16px 38px #040408a6)}canvas{display:block;width:100%;height:auto;max-height:100%;aspect-ratio:1440/900;object-fit:contain;touch-action:manipulation;cursor:pointer;outline-offset:4px;-webkit-tap-highlight-color:transparent}canvas:focus-visible,button:focus-visible{outline:2px solid #f7d999;outline-offset:3px}.hint{position:absolute;top:1%;left:50%;transform:translateX(-50%);white-space:nowrap;font:10px ui-monospace,Consolas,monospace;letter-spacing:.12em;color:#e6caa8a6;pointer-events:none;transition:opacity .4s;opacity:0}.hint.shown{opacity:1}
+.copy{display:flex;align-items:center;flex-direction:column;gap:7px;text-align:center;padding:6px 0 0}.eyebrow{font:10px ui-monospace,Consolas,monospace;letter-spacing:.22em;color:#bba98e;text-transform:uppercase}h1{margin:0;font:400 clamp(28px,3vw,49px)/1.06 Georgia,serif;letter-spacing:-.045em;color:#f7eadd}h1 em{color:#d9c6a5;font-weight:400}.description{margin:0;color:#aca5aa;font-size:12px;max-width:600px;line-height:1.35}.toolbar{display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap;margin-top:5px}.button{min-height:44px;min-width:44px;border:1px solid #655c68ad;border-radius:50px;background:#1f1d2ac7;color:#e8e0da;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 14px;cursor:pointer;font:12px system-ui,sans-serif;transition:background .2s,transform .12s}.button:hover{background:#393041}.button:active{transform:scale(.965)}.button.primary{background:#dbc29c;color:#28202b;border-color:#dbc29c;font-weight:670}.button[aria-pressed=true]{border-color:#dec59c;background:#564a49}.symbol{font:19px/1 Arial,sans-serif}.progress{height:2px;width:min(360px,70vw);background:#403a49;border-radius:4px;overflow:hidden}.progress div{height:100%;background:linear-gradient(90deg,#728bc4,#d7ad78);width:0}.side{position:absolute;top:44%;writing-mode:vertical-rl;font:9px ui-monospace,Consolas,monospace;color:#857d89;letter-spacing:.20em;pointer-events:none}.side.left{left:clamp(14px,2.3vw,42px);transform:rotate(180deg)}.side.right{right:clamp(14px,2.3vw,42px)}
+body.immersive .experience{grid-template-rows:0 minmax(0,1fr) 53px}body.immersive header,body.immersive .eyebrow,body.immersive h1,body.immersive .description,body.immersive .side{opacity:0;pointer-events:none}body.immersive .canvas-shell{width:min(100%,calc((100dvh - 90px)*1.50),1460px)}
+@media(max-width:700px){.experience{grid-template-rows:33px minmax(0,1fr) auto;padding:9px 12px calc(10px + env(safe-area-inset-bottom))}.brand{font-size:13px}.brand b{width:25px;height:25px}.stamp{font-size:8px;letter-spacing:.05em}.stage{align-items:center}.canvas-shell{width:min(100%,calc((100dvh - 163px)*.755));max-width:100%;}.canvas-shell canvas{aspect-ratio:820/1080}.side{display:none}.hint{font-size:9px;top:1%}.copy{gap:5px;padding-top:2px}.eyebrow{font-size:8px;letter-spacing:.11em}h1{font-size:clamp(24px,6.25vw,33px)}.description{font-size:10px}.toolbar{width:100%;flex-wrap:nowrap;gap:4px;margin-top:3px}.button{padding:0 3px;min-width:0;min-height:46px;flex:1}.word{display:none}.symbol{font-size:19px}body.immersive .canvas-shell{width:min(100%,calc((100dvh - 65px)*.755))}}
+@media(max-width:350px){.stamp{display:none}.description{font-size:9px}.eyebrow{display:none}.copy{gap:4px}h1{font-size:24px}}
+@media(max-height:460px) and (orientation:landscape){.experience{grid-template-columns:54% 46%;grid-template-rows:31px minmax(0,1fr);padding:4px 10px 6px}header{grid-column:1/-1}.stage{grid-area:2/1/3/2}.copy{grid-area:2/2/3/3;justify-content:center;gap:4px}.canvas-shell{width:min(100%,calc((100dvh - 45px)*1.6))}.canvas-shell canvas{aspect-ratio:1440/900}.eyebrow,.description,.progress,.hint{display:none}h1{font-size:clamp(20px,3vw,30px)}.toolbar{flex-wrap:wrap;max-width:340px}.button{flex:1 1 calc(33.33% - 5px);min-width:44px;min-height:36px}.side{display:none}}
+body.embed{overflow:hidden}body.embed .experience{height:100dvh;min-height:0;padding:0;display:grid;grid-template-rows:1fr;place-items:center}body.embed header,body.embed .copy,body.embed .hint,body.embed .side{display:none}body.embed .stage{width:100%;height:100dvh}body.embed .canvas-shell{width:min(100%,calc(100dvh*1.6),1440px)}@media(max-width:700px) and (orientation:portrait){body.embed .canvas-shell{width:min(100%,calc(100dvh*.76))}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0.001ms!important;transition-duration:0.001ms!important}}
+</style></head><body><main class="experience"><header><span class="brand"><b>✦</b>Pequeños Encantos</span><span class="stamp">VI · ATELIER ASCII / MUSEO</span></header><div class="side left">AN ARTWORK THAT BREATHES</div><section class="stage"><div class="canvas-shell"><canvas id="art" width="1440" height="900" role="img" tabindex="0" aria-label="Museo ASCII interactivo con dos visitantes observando La noche estrellada de Van Gogh"></canvas><div id="hint" class="hint">TOCA EL CUADRO PARA DESPERTAR LAS ESTRELLAS ✧</div></div></section><div class="side right">EVERY STROKE IS MADE OF CHARACTERS</div><footer class="copy"><span class="eyebrow">Capítulo seis · frente al infinito</span><h1>La noche <em>estrellada.</em></h1><p class="description">Una noche que gira dentro del cuadro. Dos personas que la contemplan.</p><div class="toolbar"><button class="button primary" id="replay" aria-label="Repetir"><span class="symbol">↻</span><span class="word">Repetir</span></button><button class="button" id="play" aria-label="Pausar" aria-pressed="false"><span class="symbol" id="play-symbol">Ⅱ</span><span class="word" id="play-word">Pausar</span></button><button class="button" id="texture" aria-label="Cambiar densidad ASCII" aria-pressed="false"><span class="symbol">▦</span><span class="word" id="texture-word">ASCII fino</span></button><button class="button" id="light" aria-label="Cambiar iluminación" aria-pressed="false"><span class="symbol" id="light-symbol">☾</span><span class="word" id="light-word">Sala nocturna</span></button><button class="button" id="immersive" aria-label="Modo inmersivo" aria-pressed="false"><span class="symbol">⤢</span><span class="word">Inmersivo</span></button><button class="button" id="save" aria-label="Guardar PNG"><span class="symbol">↓</span><span class="word">PNG</span></button></div><div class="progress" aria-hidden="true"><div id="bar"></div></div></footer></main>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id),canvas=$('art'),o=canvas.getContext('2d',{alpha:false,desynchronized:true});
+const work=document.createElement('canvas');let g=work.getContext('2d',{willReadFrequently:true});const visitors=document.createElement('canvas'),visitorG=visitors.getContext('2d',{willReadFrequently:true});
+const painting=document.createElement('canvas'),pg=painting.getContext('2d',{willReadFrequently:true});
+painting.width=960;painting.height=760;
+const TAU=Math.PI*2,DURATION=12.4;
+const state={time:0,playing:true,coarse:false,warm:false,immersive:false,wishes:0,portrait:false,frames:0,finished:false,lastWish:-100,reduced:matchMedia('(prefers-reduced-motion:reduce)').matches};
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),smooth=(a,b,v)=>{const x=clamp((v-a)/(b-a));return x*x*(3-2*x)};
+function rnd(seed){let v=Math.sin(seed*127.71+34.12)*43758.546;return v-Math.floor(v)}
+function rad(ctx,x,y,r,stops){const grad=ctx.createRadialGradient(x,y,0,x,y,r);for(const [t,c] of stops)grad.addColorStop(t,c);return grad}
+function linear(ctx,x,y,X,Y,stops){const grad=ctx.createLinearGradient(x,y,X,Y);for(const [t,c] of stops)grad.addColorStop(t,c);return grad}
+function ell(ctx,x,y,rx,ry,color,rot=0){ctx.save();ctx.translate(x,y);ctx.rotate(rot);ctx.fillStyle=color;ctx.beginPath();ctx.ellipse(0,0,rx,ry,0,0,TAU);ctx.fill();ctx.restore()}
+function stroke(ctx,points,col,width=2){ctx.beginPath();ctx.moveTo(points[0],points[1]);for(let i=2;i<points.length;i+=2)ctx.lineTo(points[i],points[i+1]);ctx.lineCap='round';ctx.lineJoin='round';ctx.strokeStyle=col;ctx.lineWidth=width;ctx.stroke()}
+function bez(ctx,p,color,width=2){ctx.beginPath();ctx.moveTo(p[0],p[1]);ctx.bezierCurveTo(p[2],p[3],p[4],p[5],p[6],p[7]);ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap='round';ctx.stroke()}
+function colorAt(x,y,z){const wave=Math.sin(x*.011+y*.032+z)*.5+.5;const tints=[['#144487','#1b5aa0','#227cc0','#6badcf','#aacfd1'],['#152d66','#234c9e','#426db5','#87b8cc','#c4e0c7']];const ix=Math.floor(clamp(wave*4.99));return tints[y>520?1:0][ix]}
+function makePainting(){const W=960,H=760;
+ // Original, hand-authored procedural interpretation of Van Gogh's 1889 composition.
+ pg.fillStyle=linear(pg,0,0,0,H,[[0,'#101c45'],[.37,'#173a79'],[.65,'#17417b'],[.78,'#1f456c'],[1,'#131e32']]);pg.fillRect(0,0,W,H);
+ function b(x,y,X,Y,c,w=2){bez(pg,[x,y,x+(X-x)*.35,y-4,x+(X-x)*.73,Y+3,X,Y],c,w)}
+ const night=['#142454','#1c407c','#244f91','#2763a0','#3679ae','#418caf','#699dbb','#8bb8be','#c3d1bc'];
+ const yellows=['#f5e49a','#ecd05f','#e6b549','#efe194','#c9d3a6'];
+ // Curvilinear coherent sky strokes. Direction field bends around three vortex cores.
+ const cores=[{x:460,y:294,s:235,k:4.2},{x:677,y:390,s:110,k:2.4},{x:247,y:220,s:128,k:2.0}];
+ function velocity(x,y){let u=1.45,v=.13 + .26*Math.sin(x*.006 + y*.013);
+  for(const c of cores){const xx=x-c.x,yy=y-c.y,d2=xx*xx+yy*yy+1200,infl=c.k*Math.exp(-d2/(c.s*c.s*1.2));const norm=Math.sqrt(d2);u-=yy/norm*infl;v+=xx/norm*infl}
+  // long sky-current arcs trace a directional S
+  const river=288 + 110*Math.sin((x-175)/430*Math.PI) - 24*Math.sin(x*.010);const dif=y-river;
+  const push=Math.exp(-(dif*dif)/(170*170)); v+=Math.cos((x-160)/430*Math.PI)*1.8*push;return Math.atan2(v,u)}
+ // Deep underpainted bands, undulating rather than horizontal.
+ for(let j=0;j<26;j++){const y=22+j*20;for(let layer=0;layer<3;layer++){
+   const arr=[];for(let x=-35;x<=1000;x+=9){const ang=velocity(x,y);const yy=y+23*Math.sin(x*.012+j*.51)+9*Math.sin(x*.027+j*.64)+layer*3;arr.push(x,yy)}
+   stroke(pg,arr,night[(j+layer*2)%night.length],(layer===1?7:3.7));
+ }}
+ // Dense impasto marks, generated along the local directional field.
+ for(let i=0;i<8600;i++){
+   const x=rnd(i*19+9)*W, y=rnd(i*37+31)*H*.81;
+   const angle=velocity(x,y),len=7+27*rnd(i*13+7),w=.95+rnd(i*23+13)*2.8;
+   const hue=night[(Math.floor(rnd(i*17+4)*night.length)+Math.floor(y/100))%night.length];
+   const color=(i%19===0?yellows[i%yellows.length]:hue);
+   const cx=Math.cos(angle),cy=Math.sin(angle);
+   bez(pg,[x-len*cx*.5,y-len*cy*.5,x-len*cx*.15-len*cy*.06,y-len*cy*.15+len*cx*.06,x+len*cx*.15+len*cy*.05,y+len*cy*.15-len*cx*.05,x+len*cx*.5,y+len*cy*.5],color,w)
+ }
+ // Major, continuous luminous S-current: layered narrow ribbons and segmented impasto.
+ function riverPoint(t,delta){const x=-45+1040*t;const y=365-138*Math.sin(Math.PI*t*1.22)+90*Math.sin(2.6*Math.PI*t+.25)-10*t+delta;return [x,y]}
+ for(let lane=-10;lane<=10;lane++){
+   const pts=[];for(let n=0;n<=185;n++){const q=n/185,[x,y]=riverPoint(q,lane*3.65);pts.push(x,y+4*Math.sin(q*22+lane*.3))}
+   const col=['#0b285a','#2b5b9e','#4d94bc','#9bcdc8','#e9d98b','#c3cdb1','#3685b2','#1d477d'][((lane+16)%8)];stroke(pg,pts,col, lane%4===0?4.6:2.5)
+ }
+ // Cohesive whirlpool contours; broken ribbons imply hand-laid strokes.
+ function eddy(cx,cy,rx,ry,twist){
+  for(let lane=0;lane<14;lane++){
+   const phase=lane*.24,curvePts=[];const count=170;
+   for(let n=0;n<=count;n++){
+    const q=n/count,ang=(q*2.1+phase)*TAU*.85,rad=Math.min(1.05,.05+q*.84+lane*.015);
+    let x=cx+Math.cos(ang+twist)*rx*rad*(1+.07*Math.sin(ang*3+lane));
+    let y=cy+Math.sin(ang+twist)*ry*rad*(1+.05*Math.cos(ang*4-lane));curvePts.push(x,y)
+   }
+   stroke(pg,curvePts,['#d7d7ae','#69b1bf','#316ba5','#a5c6cb','#e5d999','#2d5694'][lane%6],lane%3===0?4.4:2.8)
+  }
+ }
+ eddy(438,288,183,104,.26);eddy(668,381,109,88,-.36);eddy(247,213,94,65,.28);
+ // Bright halo-rich stars at visually deliberate placements; the crescent moon at upper right.
+ const stars=[[112,84,28],[240,103,34],[335,76,24],[487,85,30],[625,109,35],[752,217,31],[862,128,67],[769,332,29],[528,449,24],[297,417,24],[155,316,25],[62,404,26]];
+ for(let i=0;i<stars.length;i++){const [x,y,r]=stars[i];
+   pg.fillStyle=rad(pg,x,y,r*2.5,[[0,'#fff4c9'],[.11,'#fce28bd9'],[.25,'#eccb5dbb'],[.47,'#90bbd4a0'],[.76,'#245b9d52'],[1,'#00000000']]);pg.fillRect(x-r*3,y-r*3,r*6,r*6);
+   for(let ring=0;ring<11;ring++){pg.lineCap='round';pg.lineWidth=1.7+1.8*rnd(i*9+ring);pg.strokeStyle=['#f8e4a0','#efcc5a','#8bb8b8','#e2d390','#467eb5'][ring%5];pg.beginPath();pg.ellipse(x,y,r*(.33+ring*.13),r*(.25+ring*.105),ring*.13,ring*.17,TAU-ring*.08);pg.stroke()}
+   ell(pg,x,y,r*.20,r*.20,'#fff0bd');
+ }
+ // The distant blue Alpilles and low village line.
+ pg.fillStyle=linear(pg,0,534,0,760,[[0,'#356791'],[.35,'#284d80'],[1,'#101c3e']]);pg.beginPath();pg.moveTo(0,574);
+ for(let x=0;x<=960;x+=7){pg.lineTo(x,600-30*Math.sin((x+50)*.009)-21*Math.sin(x*.029+.7))}pg.lineTo(960,760);pg.lineTo(0,760);pg.closePath();pg.fill();
+ for(let i=0;i<770;i++){const x=rnd(i*4+38)*W,y=584+rnd(i*7+24)*172;
+  const angle=-.35 + Math.sin(x*.012)*.3,len=7+rnd(i*19)*22;
+  bez(pg,[x,y,x+len*.32,y+len*.10,x+len*.7,y-len*.08,x+len,y+len*Math.sin(angle)*.26],['#27548b','#5983a5','#4879a2','#7a978f','#315c7d'][i%5],.8+2.3*rnd(i*11))}
+ // Village: rooftops, windows, the famous church spire.
+ const homes=[[290,652,47],[341,663,48],[401,637,54],[470,653,42],[526,657,55],[611,665,47],[681,656,50],[746,664,52],[807,679,47],[870,668,46]];
+ for(let j=0;j<homes.length;j++){
+  const [x,y,w]=homes[j],h=34+j%3*8;pg.fillStyle=['#81929e','#c2b69b','#7c9daa','#a8aba7'][j%4];pg.fillRect(x,y,w,h);
+  pg.fillStyle='#1a355c';pg.beginPath();pg.moveTo(x-7,y);pg.lineTo(x+w*.52,y-20-(j%3)*5);pg.lineTo(x+w+8,y);pg.closePath();pg.fill();
+  for(let k=0;k<3;k++){pg.fillStyle='#dbb663';pg.fillRect(x+6+k*11,y+13,5,7)}
+ }
+ pg.fillStyle='#a0b7b7';pg.fillRect(575,576,21,111);pg.fillStyle='#cad0b9';pg.beginPath();pg.moveTo(561,592);pg.lineTo(586,527);pg.lineTo(610,592);pg.closePath();pg.fill();
+ // Tall dark cypress in foreground, more organic and asymmetrical.
+ pg.fillStyle='#111e29';pg.beginPath();pg.moveTo(139,760);pg.bezierCurveTo(124,697,131,636,144,570);pg.bezierCurveTo(121,526,148,457,131,418);pg.bezierCurveTo(109,377,126,301,140,243);pg.bezierCurveTo(123,200,135,105,166,28);pg.bezierCurveTo(203,86,182,176,205,240);pg.bezierCurveTo(188,310,220,376,209,429);pg.bezierCurveTo(241,498,228,559,258,633);pg.bezierCurveTo(271,677,290,710,286,760);pg.closePath();pg.fill();
+ for(let i=0;i<1100;i++){
+  const y=29+rnd(i*13+35)*733;const center=164+Math.sin(y*.021)*13+(y/760)*18;
+  const radius=17+Math.sin(y*.009+1.6)*11+y*.060;
+  const x=center+(rnd(i*17+3)-.5)*radius*1.6;
+  if(x<center-radius*.67||x>center+radius*.73)continue;
+  const len=5+18*rnd(i*31+8);const angle=-1.25+Math.sin(y*.031+i*.13)*.43;
+  bez(pg,[x,y,x+Math.cos(angle)*len*.3,y+Math.sin(angle)*len*.3,x+Math.cos(angle)*len*.8,y+Math.sin(angle)*len*.8,x+Math.cos(angle)*len,y+Math.sin(angle)*len],['#273d38','#3e5944','#486051','#3e4840','#6a6244','#1d3537'][i%6],1.0+rnd(i*5)*2.3)
+ }
+}
+makePainting();const paintingPixels=pg.getImageData(0,0,960,760).data;
+function layout(){const p=state.portrait,W=canvas.width,H=canvas.height;
+ const width=p?W*.86:W*.62, height=width*760/960, left=(W-width)/2, top=p?H*.12:H*.09;
+ return {W,H,p,left,top,pw:width,ph:height, cx:W/2, yFloor:p?H*.79:H*.79};}
+function resize(){const portrait=window.innerWidth<=700&&window.innerHeight>460;state.portrait=portrait;const W=portrait?820:1440,H=portrait?1080:900;if(canvas.width!==W||canvas.height!==H){canvas.width=W;canvas.height=H}if(work.width!==W||work.height!==H){work.width=W;work.height=H}if(visitors.width!==W||visitors.height!==H){visitors.width=W;visitors.height=H}}
+function gallery(t){const {W,H,left,top,pw,ph,yFloor,p}=layout();g.clearRect(0,0,W,H);g.fillStyle=linear(g,0,0,W,H,[[0,state.warm?'#342a2d':'#161a28'],[.6,state.warm?'#55403b':'#22263c'],[1,'#11121e']]);g.fillRect(0,0,W,H);
+ const a=smooth(0,2.2,t);g.globalAlpha=a;
+ // architectural inset wall panels and cornices
+ g.strokeStyle=state.warm?'#b997705a':'#6c7d9c4d';g.lineWidth=p?3:2;
+ for(const x of [W*.06,W*.14,W*.86,W*.94]){g.beginPath();g.moveTo(x,H*.09);g.lineTo(x,yFloor-H*.03);g.stroke()}
+ stroke(g,[0,H*.086,W,H*.086],state.warm?'#b3956c':'#69748c',5);
+ stroke(g,[0,yFloor,W,yFloor],state.warm?'#b28a60':'#586679',6);
+ // pools of light on wall
+ g.fillStyle=rad(g,W*.5,top+ph*.36,pw*.8,[[0,state.warm?'#e4aa6045':'#b7a9a42c'],[1,'#00000000']]);g.fillRect(0,0,W,yFloor);
+ // floor / perspective
+ g.fillStyle=linear(g,0,yFloor,0,H,[[0,'#3d312f'],[.43,'#261f23'],[1,'#0d111a']]);g.fillRect(0,yFloor,W,H-yFloor);
+ for(let j=0;j<11;j++){const y=yFloor+(H-yFloor)*Math.pow(j/10,1.35);stroke(g,[0,y,W,y], '#96796433',1.2)}
+ for(let j=-9;j<=9;j++)stroke(g,[W*.5+j*pw*.025,yFloor,W*.5+j*W*.084,H],'#ab8a7033',1.1);
+ // lamp scones, desktop only
+ if(!p)for(const x of [W*.105,W*.895]){g.fillStyle=rad(g,x,H*.34,92,[[0,'#ffd2a740'],[1,'#00000000']]);g.fillRect(x-100,H*.34-110,200,230);ell(g,x,H*.34,13,43,'#8e736b');ell(g,x,H*.34,7,27,'#e2c7a4')}
+ // frame outer shadow
+ g.shadowColor='#000000ca';g.shadowBlur=36;g.shadowOffsetY=13;g.fillStyle='#0d0b15';g.fillRect(left-28,top-28,pw+56,ph+56);g.shadowBlur=0;g.shadowOffsetY=0;
+ const frame=smooth(1.8,4.0,t);g.globalAlpha=a*frame;
+ g.fillStyle=linear(g,left,top,left+pw,top+ph,[[0,'#5f472c'],[.18,'#e6bc77'],[.5,'#936b35'],[.85,'#efc788'],[1,'#4a3826']]);g.fillRect(left-22,top-22,pw+44,ph+44);
+ g.strokeStyle='#ffe4ac';g.lineWidth=4;g.strokeRect(left-18,top-18,pw+36,ph+36);
+ g.strokeStyle='#63482b';g.lineWidth=7;g.strokeRect(left-8,top-8,pw+16,ph+16);
+ // fine ornamental etchings on gilded frame
+ for(let i=0;i<30;i++){const xx=left+(i+.5)*pw/30;ell(g,xx,top-14,3,1.8,'#f8d69f');ell(g,xx,top+ph+14,3,1.8,'#f8d69f')}
+ for(let i=0;i<20;i++){const yy=top+(i+.5)*ph/20;ell(g,left-14,yy,1.8,3,'#efca8b');ell(g,left+pw+14,yy,1.8,3,'#efca8b')}
+ g.fillStyle='#0b162a';g.fillRect(left,top,pw,ph);g.globalAlpha=a;
+ // label / mounting under frame
+ const plateY=Math.min(yFloor-35,top+ph+39);g.fillStyle='#bda37c';g.fillRect(W*.5-101,plateY,202,23);g.fillStyle='#3e322d';g.font='14px Georgia';g.textAlign='center';g.fillText('VINCENT VAN GOGH · 1889',W*.5,plateY+16);g.textAlign='left';g.globalAlpha=1;
+ return {left,top,pw,ph,frame};
+}
+const artCache={key:'',canvas:document.createElement('canvas')};
+function paintInside(t,{left,top,pw,ph,frame}){
+ const reveal=smooth(2.75,7.1,t);if(reveal<.003)return;
+ const key=`${Math.round(pw)}x${Math.round(ph)}-${state.coarse?'coarse':'fine'}`;
+ if(artCache.key!==key){
+  artCache.key=key;
+  const layer=artCache.canvas;layer.width=Math.max(1,Math.round(pw));layer.height=Math.max(1,Math.round(ph));
+  const c=layer.getContext('2d');
+  const P=paintingPixels,C=960,D=760;
+  const dx=state.coarse?(state.portrait?17:15):(state.portrait?12.2:11.8),dy=state.coarse?19:15.4,size=state.coarse?20:16.2;
+  c.font=`bold ${size}px "Courier New",monospace`;c.textBaseline='middle';c.textAlign='left';
+  const palette=' .:;irsXA253hMHGS#9B&@';
+  for(let y=3;y<ph-1;y+=dy)for(let x=3;x<pw-1;x+=dx){
+   const nx=x/pw,ny=y/ph,sx=clamp(Math.floor(nx*C),0,C-1),sy=clamp(Math.floor(ny*D),0,D-1),i=(sy*C+sx)*4;
+   const R=P[i],G=P[i+1],B=P[i+2],lum=(R*.2126+G*.7152+B*.0722)/255;
+   const n=rnd((Math.floor(x/dx)+1)*19+(Math.floor(y/dy)+1)*63);
+   const isGold=R>G*1.16 && R>B*1.28 && G>92;
+   const isSky=ny<.76;
+   // Preserve breathing space between the impasto strokes; the coherent accent layer defines the spirals.
+   const regions=[[438,288,198,116],[668,381,117,92],[247,213,108,79]];
+   let vortex=0; if(isSky){for(const [cx,cy,rx,ry] of regions){const d=((sx-cx)/rx)**2+((sy-cy)/ry)**2;vortex=Math.max(vortex,Math.max(0,1-d))}}
+   if(isSky && !isGold && lum<.31 && n<.44)continue;
+   if(isSky && vortex>.15 && !isGold && n<(.36+.26*vortex))continue;
+   const light=clamp((lum-.10)/.74);const ix=Math.min(palette.length-1,Math.floor(clamp(light*.83+n*.12)*palette.length));
+   const ch=palette[Math.max(1,ix)];
+   let alpha=isGold?.98:clamp(.29+light*.64);
+   if(isSky && vortex>.1 && !isGold)alpha*=.60;
+   const boost=isGold?1.50:1.12;
+   c.fillStyle=`rgba(${Math.min(255,R*boost+5)|0},${Math.min(255,G*(isGold?1.45:1.18)+5)|0},${Math.min(255,B*1.17+7)|0},${alpha})`;
+   c.fillText(ch,x,y)
+  }
+ }
+ o.save();
+ // Organic diagonal veil: precomputed text grows into view from different positions.
+ if(reveal<.999){o.beginPath();o.moveTo(left,top);o.lineTo(left+pw*reveal*1.65,top);o.lineTo(left+pw*clamp(reveal*1.6-.23),top+ph);o.lineTo(left,top+ph);o.closePath();o.clip();}
+ o.drawImage(artCache.canvas,left,top,pw,ph);
+ if(state.warm){o.globalAlpha=.06*reveal;o.fillStyle='#ffbc6e';o.fillRect(left,top,pw,ph)}
+ o.restore()
+}
+const accentCache={key:'',canvas:document.createElement('canvas')};
+function highlightPainting(t,pos){const reveal=smooth(3.4,8.1,t);if(reveal<.02)return;
+ const {left,top,pw,ph}=pos,scaleX=pw/960,scaleY=ph/760;
+ const key=`${Math.round(pw)}-${Math.round(ph)}-${state.coarse?'coarse':'fine'}`;
+ if(accentCache.key!==key){
+  accentCache.key=key;const layer=accentCache.canvas;layer.width=Math.round(pw);layer.height=Math.round(ph);const ac=layer.getContext('2d');
+  ac.textAlign='center';ac.textBaseline='middle';
+  const font=state.coarse?15:12.5;ac.font=`bold ${font}px "Courier New",monospace`;
+  const stars=[[112,84,28],[240,103,34],[335,76,24],[487,85,30],[625,109,35],[752,217,31],[862,128,67],[769,332,29],[528,449,24],[297,417,24],[155,316,25],[62,404,26]];
+  for(let k=0;k<stars.length;k++){
+   const [x,y,r]=stars[k];
+   for(let ring=0;ring<5;ring++){
+    const n=Math.round((r*(.48+ring*.37)*TAU)/(state.coarse?16:12));
+    for(let j=0;j<n;j++){
+     const a=j*TAU/n+ring*.12;const R=r*(.38+ring*.36);const xx=(x+Math.cos(a)*R)*scaleX,yy=(y+Math.sin(a)*R*.76)*scaleY;
+     ac.fillStyle=ring<2?'#f8e5a2':ring===2?'#e2c773':ring===3?'#98bfc9':'#4d92bb';ac.globalAlpha=.81-ring*.06;ac.fillText(j%5===0?'*':j%3===0?'+':'·',xx,yy)
+    }
+   }
+   // Dense golden star cores remain legible at 320 px. Every pixel is still a glyph.
+   const radius=r*(k===6?.53:.43),grid=state.coarse?11:8.6;
+   for(let oy=-radius;oy<=radius;oy+=grid)for(let ox=-radius;ox<=radius;ox+=grid){
+    const d=(ox*ox+oy*oy)/radius**2; if(d>1)continue;
+    ac.globalAlpha=clamp(.93-d*.39);ac.fillStyle=d<.40?'#fff4bb':d<.68?'#f6d568':'#d7b55b';
+    ac.fillText(d<.52?'@':'+',(x+ox)*scaleX,(y+oy*.83)*scaleY)
+   }
+   ac.globalAlpha=1;ac.font=`bold ${state.coarse?20:15}px monospace`;ac.fillStyle='#fff2cb';ac.fillText('✦',x*scaleX,y*scaleY);ac.font=`bold ${font}px monospace`;
+  }
+  // glyphs follow the S-river, rather than arbitrary free-floating curls.
+  for(let lane=-8;lane<=8;lane++)for(let j=0;j<160;j++){
+   const t=j/159;const x=-45+1040*t;
+   const y=365-138*Math.sin(Math.PI*t*1.22)+90*Math.sin(2.6*Math.PI*t+.25)-10*t+lane*3.65+4*Math.sin(t*22+lane*.3);
+   if(x<6||x>954||y<14||y>570||j%2)continue;
+   ac.globalAlpha=.38+(lane%5===0?.23:0);ac.fillStyle=['#6faad4','#a3cbd3','#e4d6a3','#68a5ca','#346fa8'][((lane+15)%5)];
+   ac.fillText(j%5===0?'#':j%2?'=':'~',x*scaleX,y*scaleY)
+  }
+  function eddyGlyphs(cx,cy,rx,ry){for(let lane=0;lane<9;lane++)for(let j=0;j<175;j++){
+   const t=j/174,ang=(t*2.1+lane*.24)*TAU*.85,rr=Math.min(1.05,.05+t*.84+lane*.015);
+   const x=cx+Math.cos(ang+.26)*rx*rr*(1+.07*Math.sin(ang*3+lane)),y=cy+Math.sin(ang+.26)*ry*rr*(1+.05*Math.cos(ang*4-lane));
+   if(x<10||x>950||y<10||y>580||j%3)continue;
+   ac.globalAlpha=.55;ac.fillStyle=lane%3===0?'#d9dbb2':lane%3===1?'#7db6ce':'#3c83bc';ac.fillText(j%4===0?'#':j%3===0?'=':'~',x*scaleX,y*scaleY)
+  }}
+  eddyGlyphs(438,288,183,104);eddyGlyphs(668,381,109,88);eddyGlyphs(247,213,94,65);
+  ac.globalAlpha=1;
+ }
+ o.save();o.globalAlpha=reveal*.92;o.drawImage(accentCache.canvas,left,top,pw,ph);
+ // Frame-to-frame highlight passes travel slowly along the major current; animated, not prerendered footage.
+ o.textAlign='center';o.textBaseline='middle';o.font=`bold ${state.coarse?15:13}px monospace`;
+ for(let j=0;j<30;j++){
+  const q=(j/30 + (t-3)*.011)%1,x=-45+1040*q,y=365-138*Math.sin(Math.PI*q*1.22)+90*Math.sin(2.6*Math.PI*q+.25)-10*q;
+  if(x<5||x>955||y<0||y>600)continue;
+  const shimmer=.25+.47*Math.sin(t*1.17+j*.94)**2;
+  o.fillStyle=`rgba(245,226,172,${reveal*shimmer})`;o.fillText(j%4===0?'*':'·',left+x*scaleX,top+y*scaleY)
+ }
+ // Individual warm star pulses. Most of the scene remains static for efficiency.
+ for(const [k,s] of [[0,[112,84]],[1,[240,103]],[2,[487,85]],[3,[625,109]],[4,[862,128]]]){
+  const glow=.43+.48*(.5+.5*Math.sin(t*.9+k*1.35));o.globalAlpha=reveal*glow;o.font=`bold ${state.coarse?22:17}px monospace`;o.fillStyle='#fff0ac';o.fillText('✦',left+s[0]*scaleX,top+s[1]*scaleY)
+ }
+ o.restore()
+}
+function frameAccent(t,pos){const reveal=smooth(2.1,4.8,t);if(reveal<.01)return;const {left,top,pw,ph}=pos;
+ o.save();o.font=`bold ${state.coarse?16:12}px monospace`;o.textAlign='center';o.textBaseline='middle';
+ const glyphs='❖+*'; const gap=state.coarse?21:14;
+ for(let x=left-14,n=0;x<=left+pw+14;x+=gap,n++){
+   o.fillStyle=`rgba(${n%3===0?'252,229,178':'198,158,92'},${reveal*.93})`;
+   o.fillText(glyphs[n%3],x,top-15);o.fillText(glyphs[(n+1)%3],x,top+ph+15)}
+ for(let y=top-13,n=0;y<=top+ph+13;y+=gap,n++){
+   o.fillStyle=`rgba(223,190,126,${reveal*.84})`;o.fillText(glyphs[(n+1)%3],left-14,y);o.fillText(glyphs[n%3],left+pw+14,y)}
+ o.restore()}
+function visitorsAscii(t){const reveal=smooth(5.6,9.1,t);if(reveal<.01)return;
+ visitorG.clearRect(0,0,visitors.width,visitors.height);const original=g;g=visitorG;people(t);g=original;
+ const data=visitorG.getImageData(0,0,visitors.width,visitors.height).data,{W,H,p}=layout();
+ const step=p?9.7:10.8,dy=p?12:13.3;
+ o.save();o.font=`bold ${p?15:15.6}px monospace`;o.textBaseline='middle';o.textAlign='left';
+ for(let y=H*.49;y<H;y+=dy)for(let x=W*.2;x<W*.8;x+=step){const k=((y|0)*W+(x|0))*4,A=data[k+3];if(A<38)continue;
+  const R=data[k],G=data[k+1],B=data[k+2],L=(R*.2126+G*.7152+B*.0722)/255;
+  o.fillStyle=`rgba(${Math.min(255,R*1.25+16)|0},${Math.min(255,G*1.25+16)|0},${Math.min(255,B*1.32+19)|0},${clamp((A/255)*(.7+L*.47))})`;
+  o.fillText(L>.62?'@':L>.35?'#':L>.16?'A':':',x,y)}
+ o.restore()}
+function people(t){const {W,H,p,yFloor,cx}=layout();let reveal=smooth(5.6,9.1,t);if(!reveal)return;g.save();g.globalAlpha=reveal;
+ const size=p?1.32:1.45,gap=p?160:235,by=yFloor+(p?58:33);
+ // figures shown from behind facing painting, not seated in the sky
+ for(let k=0;k<2;k++){const x=cx+(k===0?-gap/2:gap/2);const s=size*(k===0?.97:1.03);g.save();g.translate(x,by);g.scale(s,s);
+   const sway=Math.sin(t*.42+k*.9)*.011;g.rotate(sway);
+   // legs + shoes
+   bez(g,[-14,4,-20,42,-20,96,-28,125], '#3e3640',20);bez(g,[15,4,20,39,23,91,29,123],'#353442',20);
+   ell(g,-32,123,18,8,'#1b1823',-.12);ell(g,30,123,18,8,'#171927',.12);
+   // body with soft textile shading
+   g.fillStyle=linear(g,-52,-78,48,52,k===0?[[0,'#c9a4b1'],[.54,'#946f84'],[1,'#4d4a6a']]:[[0,'#a5b4d0'],[.56,'#617a9f'],[1,'#30384c']]);g.beginPath();g.moveTo(-45,-69);g.bezierCurveTo(-30,-84,33,-84,47,-67);g.bezierCurveTo(56,-31,51,17,39,35);g.quadraticCurveTo(0,49,-39,35);g.bezierCurveTo(-49,5,-54,-40,-45,-69);g.fill();
+   bez(g,[-40,-52,-54,-34,-55,3,-40,22],k===0?'#ac8b9b':'#849bb5',13);bez(g,[41,-49,54,-21,52,5,45,25],k===0?'#a47c92':'#718ba9',13);
+   // head and hair
+   ell(g,0,-100,28,30,'#c59e94');
+   g.fillStyle=k===0?linear(g,-26,-143,24,-70,[[0,'#6c5263'],[.5,'#a07a92'],[1,'#3c2c47']]):linear(g,-27,-143,27,-83,[[0,'#7788a6'],[.6,'#3c526f'],[1,'#29334b']]);
+   g.beginPath();g.moveTo(-29,-93);g.bezierCurveTo(-35,-133,-13,-154,19,-141);g.bezierCurveTo(40,-126,33,-98,30,-89);g.bezierCurveTo(18,-73,-12,-75,-29,-93);g.fill();
+   if(k===0){bez(g,[-24,-105,-44,-66,-32,-24,-18,-17],'#916b86',5);bez(g,[25,-101,42,-73,32,-36,24,-24],'#785d74',5)}
+   // tiny star reflection from painting
+   ell(g,k===0?13:-14,-51,7,2,'#fff0d666',-.2);
+   g.restore();
+ }
+ // joined hands, small sincere gesture
+ bez(g,[cx-38,by-13,cx-14,by+11,cx-9,by+12,cx,by+10],'#d6a8a3',10);bez(g,[cx+38,by-13,cx+14,by+11,cx+9,by+12,cx,by+10],'#ccb0a7',10);ell(g,cx,by+10,8,5,'#e1bdac');
+ g.restore()}
+function accents(t,pos){if(t<7.0)return;const a=smooth(7,10,t);const {left,top,pw,ph}=pos;o.save();o.textAlign='center';o.textBaseline='middle';
+ for(let i=0;i<36;i++){const xx=left+pw*rnd(i*15+3),yy=top+ph*rnd(i*7+13);const bright=.42+.58*Math.sin(t*.95+i*4)**2;o.fillStyle=`rgba(252,221,145,${a*bright*.78})`;o.font=`bold ${i%4===0?17:12}px monospace`;o.fillText(i%5===0?'✦':i%3===0?'*':'·',xx,yy)}
+ // animated luminous star wake within the painting in glyphs
+ const extra=t-state.lastWish;if(extra>=0&&extra<1.65){const q=extra/1.65,x=left+pw*(.8-.54*q),y=top+ph*(.24+.34*q),fade=Math.sin(Math.PI*q);o.font='bold 22px monospace';o.fillStyle=`rgba(255,242,175,${fade})`;o.fillText('✦',x,y);for(let j=1;j<13;j++){o.fillStyle=`rgba(163,220,255,${fade*(1-j/13)})`;o.fillText(j%3===0?'*':'·',x+j*12,y-j*5)}}o.restore()}
+const roomCache={key:'',canvas:document.createElement('canvas')};
+function asciiScene(t){const {W,H}=layout();const key=`${W}x${H}-${state.warm?'warm':'night'}-${state.coarse?'large':'fine'}`;
+ let pos;
+ if(t>=4.02 && roomCache.key===key){
+   // The wall, frame and floor are static after the reveal; one cached blit avoids
+   // thousands of repeated Canvas fillText() calls on phones.
+   o.drawImage(roomCache.canvas,0,0,W,H);pos=layout();
+ }else{
+   pos=gallery(t);o.fillStyle='#070912';o.fillRect(0,0,W,H);
+   const a=g.getImageData(0,0,W,H).data;const dx=state.coarse?(state.portrait?12:14):(state.portrait?9:10.5),dy=state.coarse?16:12.5,font=state.coarse?18:13.3;const chars=' .:;irsXA253hMHGS#9B&@';
+   o.font=`${font}px "Courier New",monospace`;o.textBaseline='middle';o.textAlign='left';
+   for(let y=3;y<H-2;y+=dy)for(let x=3;x<W-2;x+=dx){const inPainting=x>=pos.left&&x<pos.left+pos.pw&&y>=pos.top&&y<pos.top+pos.ph;if(inPainting)continue;
+    const k=((y|0)*W+(x|0))*4,R=a[k],G=a[k+1],B=a[k+2],lum=(R*.2126+G*.7152+B*.0722)/255;const local=state.portrait?.12:.13;if(lum<local)continue;
+    const noise=rnd(Math.floor(x/dx)*17+Math.floor(y/dy)*79);let z=Math.min(chars.length-1,Math.floor(clamp(lum*.95+noise*.1)*chars.length));if(z<3)continue;
+    const alpha=clamp(.47+lum*.66);o.fillStyle=`rgba(${Math.min(255,R*1.1)|0},${Math.min(255,G*1.1)|0},${Math.min(255,B*1.1)|0},${alpha})`;
+    o.fillText(chars[z],x,y)
+   }
+   if(t>=4.02){roomCache.key=key;roomCache.canvas.width=W;roomCache.canvas.height=H;roomCache.canvas.getContext('2d').drawImage(canvas,0,0)}
+ }
+ paintInside(t,pos);highlightPainting(t,pos);frameAccent(t,pos);visitorsAscii(t);accents(t,pos);
+}
+
+let raf=0,last=0,dirty=true;
+function draw(){resize();asciiScene(state.time);state.frames++;$('bar').style.width=(clamp(state.time/DURATION)*100).toFixed(1)+'%';$('hint').classList.toggle('shown',state.time>8.2);dirty=false}
+function update(){const playing=state.playing;$('play-symbol').textContent=playing?'Ⅱ':'▶';$('play-word').textContent=playing?'Pausar':'Continuar';$('play').setAttribute('aria-label',playing?'Pausar':'Continuar');$('play').setAttribute('aria-pressed',String(!playing))}
+function loop(now){raf=0;if(last&&now-last<(state.portrait?75:65)&&state.playing){raf=requestAnimationFrame(loop);return}if(!last)last=now;const dt=Math.min(.09,(now-last)/1000);last=now;if(state.playing){state.time+=dt;dirty=true;if(state.time>=DURATION&&!state.finished){state.finished=true;if(window.parent!==window)window.parent.postMessage({source:'ascii-museum',event:'complete'},'*')}}if(dirty)draw();if(state.playing)raf=requestAnimationFrame(loop)}
+function wake(){dirty=true;if(!raf)raf=requestAnimationFrame(loop)}function replay(){state.time=0;state.playing=true;state.finished=false;state.lastWish=-100;last=0;update();wake()}
+function toggle(){state.playing=!state.playing;last=0;update();wake()}
+function wish(){state.wishes++;state.lastWish=Math.max(8.5,state.time);if(state.time<8.5)state.time=8.5;wake()}
+$('replay').addEventListener('click',replay);$('play').addEventListener('click',toggle);$('texture').addEventListener('click',()=>{state.coarse=!state.coarse;$('texture').setAttribute('aria-pressed',String(state.coarse));$('texture-word').textContent=state.coarse?'ASCII grueso':'ASCII fino';wake()});
+$('light').addEventListener('click',()=>{state.warm=!state.warm;$('light').setAttribute('aria-pressed',String(state.warm));$('light-symbol').textContent=state.warm?'☀':'☾';$('light-word').textContent=state.warm?'Sala cálida':'Sala nocturna';wake()});
+$('immersive').addEventListener('click',()=>{state.immersive=!state.immersive;document.body.classList.toggle('immersive',state.immersive);$('immersive').setAttribute('aria-pressed',String(state.immersive));wake()});
+$('save').addEventListener('click',()=>{draw();const a=document.createElement('a');a.download='la-noche-estrellada-museo-ascii.png';a.href=canvas.toDataURL('image/png');document.body.append(a);a.click();a.remove()});
+canvas.addEventListener('click',wish);canvas.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();wish()}});
+window.addEventListener('resize',()=>{last=0;wake()});document.addEventListener('visibilitychange',()=>{last=0;if(!document.hidden)wake()});
+if(new URLSearchParams(location.search).get('embed')==='1'){document.body.classList.add('embed');state.immersive=true}
+window.addEventListener('message',e=>{if(location.protocol!=='file:'&&e.origin!==location.origin)return;if(!e.data||e.data.source!=='ascii-museum-host')return;switch(e.data.action){case'replay':replay();break;case'pause':state.playing=false;update();break;case'play':state.playing=true;last=0;update();wake();break;case'seek':if(Number.isFinite(e.data.time)){state.time=clamp(e.data.time,0,DURATION);wake()}break}});
+window.asciiMuseum={getState:()=>({...state}),seek:t=>{state.time=clamp(t,0,DURATION);state.playing=false;update();wake()},replay,pause:()=>{state.playing=false;update()},play:()=>{state.playing=true;last=0;update();wake()},capture:()=>canvas.toDataURL('image/png'),wish};
+resize();if(state.reduced){state.time=DURATION;state.playing=false;update();draw()}else wake();
+})();
+</script></body></html>

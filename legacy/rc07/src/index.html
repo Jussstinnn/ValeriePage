@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+ <meta name="theme-color" content="#090e12">
+ <meta name="description" content="Una pequeña película de luz, recuerdos y cosas que vuelven a florecer. Para Valerie.">
+ <meta name="robots" content="noindex,nofollow,noarchive">
+ <title>Valerie · El mundo que te espera</title>
+ <link rel="preload" href="assets/fonts/CormorantGaramond.ttf" as="font" type="font/ttf" crossorigin>
+ <link rel="preload" href="assets/fonts/DMSans.ttf" as="font" type="font/ttf" crossorigin>
+ <link rel="stylesheet" href="film.css">
+</head>
+<body data-mode="cover" data-fonts-ready="false">
+ <a href="#film-main" class="skip">Ir a la historia</a>
+ <div id="film-root">
+  <canvas id="screen" aria-hidden="true"></canvas>
+  <header class="frame-top" id="frame-top">
+   <button id="home" class="wordmark" aria-label="Volver a portada conservando el progreso">Para ti, Valerie<svg class="wordmark-mark" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5" fill="none" stroke="currentColor" stroke-width="1"/></svg></button>
+   <div class="top-actions">
+    <button id="sound" class="quiet-button" aria-label="Activar ambiente sonoro" aria-pressed="false"><span class="audio-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="sound-label">Sonido apagado</span></button>
+    <button id="read-story" class="quiet-button" hidden aria-expanded="false" aria-controls="story-reader">Releer</button><button id="chapters" class="quiet-button" aria-haspopup="dialog">El recorrido <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h4m4 0h10M3 12h4m4 0h10M3 19h4m4 0h10"/></svg></button>
+   </div>
+  </header>
+  <main id="film-main" tabindex="-1">
+   <section id="cover" aria-labelledby="film-title">
+    <div class="cover-copy">
+     <p class="cover-intro">Hay cosas que vuelven a florecer.</p>
+     <h1 id="film-title" translate="no">Valerie</h1>
+     <p class="cover-note">El mundo que te espera.<br>Una historia para recorrer sin prisa.</p>
+    </div>
+    <div class="cover-start"><button id="begin" class="text-action">Entrar <span aria-hidden="true">↗</span></button><p>Explora deslizando. Sin prisa.</p></div>
+    <p class="cover-colophon">Una historia escrita con luz.</p>
+   </section>
+   <section id="story-reader" hidden aria-labelledby="story-reader-title"><button id="close-story" class="quiet-button" aria-label="Cerrar lectura">Cerrar</button><h2 id="story-reader-title"></h2><p id="story-reader-text"></p></section><section id="scene-copy" hidden aria-labelledby="scene-title">
+    <p id="scene-act" class="scene-act"></p>
+    <h2 id="scene-title" tabindex="-1"></h2>
+   </section>
+   <button id="light-grip" hidden aria-label="Mover la luz. También puedes usar el botón de interacción."></button><div id="art-zone" hidden><button id="art-touch" aria-label="Interactuar con la obra"></button></div>
+   <div id="scene-bottom" hidden>
+    <p id="scene-line" class="scene-line"></p>
+    <div class="interaction"><button id="interact" class="art-action"></button><p id="art-hint" role="status"></p><button id="full-bouquet" class="quiet-button" hidden>Ver ramo completo</button></div>
+    <div id="memory-dial" hidden aria-label="Los tres recuerdos"><button data-memory="6" aria-label="Ver Nuestro retrato">Un retrato</button><button data-memory="7" aria-label="Ver Dos sonrisas">Dos sonrisas</button><button data-memory="8" aria-label="Ver Un instante">Un instante</button></div>
+   </div>
+   <section id="letter" hidden aria-labelledby="letter-title"><canvas id="letter-light" aria-hidden="true"></canvas>
+    <div class="letter-heading"><p>De mí, para ti.</p><h2 id="letter-title">Lo que quiero decirte.</h2></div>
+    <div class="letter-page" id="letter-page"><p class="letter-folio" id="letter-folio"></p><h3 id="letter-section"></h3><div id="letter-reading" class="letter-reading" tabindex="0" aria-label="Texto de la carta"><p id="letter-text"></p><p class="signature" id="signature" hidden>Con todo mi cariño.</p></div><p id="letter-scroll-note" hidden>Desliza para seguir leyendo.</p><button id="skip-letter" class="quiet-button">Saltar la carta</button><div class="letter-actions"><button id="letter-back" class="quiet-button">← Anterior</button><button id="letter-next" class="text-action">Seguir leyendo <span aria-hidden="true">↗</span></button></div></div>
+   </section>
+   <section id="ring" hidden aria-labelledby="ring-title"><div class="ceremony-copy"><p>Una pequeña sorpresa.</p><h2 id="ring-title">Algo que guardé para ti.</h2></div><div class="ceremony-action"><p id="ring-note">Ábrela cuando estés lista.</p><button id="open-ring" class="text-action">Abrir la cajita <span aria-hidden="true">↗</span></button><button id="skip-ceremony" class="quiet-button" hidden>Omitir la ceremonia</button></div></section>
+   <section id="scene-error" hidden aria-label="No se pudo preparar la escena"><p>Esta obra no pudo prepararse. La historia puede continuar.</p><button id="retry-scene">Reintentar esta obra</button><button id="continue-scene">Continuar el recorrido</button></section>
+   <section id="finale" hidden aria-labelledby="finale-title"><p class="finale-preface">Me gustaría escribir una nueva página contigo.</p><h2 id="finale-title" aria-label="Valerie, ¿quieres ser mi novia?"><span>Valerie,</span><span>¿quieres ser</span><span>mi novia?</span></h2><p class="finale-note" id="finale-note">No tienes que responder en una pantalla.<br>Estoy aquí para escucharte.</p><button id="restart" class="quiet-button">Reiniciar la historia <span aria-hidden="true">↶</span></button></section>
+  </main>
+  <div id="controls" hidden>
+   <div class="progress-row"><button id="auto" class="quiet-button" aria-label="Activar avance automático" aria-pressed="false">A mi ritmo</button><label id="volume-control" class="volume-control"><input id="volume" type="range" min="0" max="100" value="45" aria-label="Volumen del ambiente sonoro"></label><span id="act-progress" hidden></span><progress id="progress" max="100" value="0" aria-label="Progreso del recorrido"></progress><span id="progress-label"></span></div>
+   <nav class="transport" aria-label="Controles de la historia"><button id="previous" class="quiet-button" aria-label="Capítulo anterior">← <span>Anterior</span></button><div class="transport-middle"><button id="replay" class="control-icon" aria-label="Repetir capítulo" title="Repetir capítulo">↶</button><button id="pause" class="control-icon" aria-label="Pausar la historia" title="Pausar la historia"><svg id="pause-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="2"/></svg></button></div><button id="next" class="quiet-button"><span>Siguiente</span> →</button></nav>
+  </div>
+  <button id="wake-controls" hidden class="quiet-button" aria-label="Mostrar controles">Controles</button>
+  <p id="status" class="status" role="status" aria-live="polite"></p>
+  <div id="loader" hidden role="status"><span aria-hidden="true">*</span> La luz está tomando forma…</div>
+ </div>
+ <dialog id="chapter-dialog" aria-labelledby="chapter-dialog-title"><div class="dialog-head"><h2 id="chapter-dialog-title">El recorrido</h2><button id="close-chapters" class="control-icon" aria-label="Cerrar recorrido"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button></div><p class="dialog-note">Puedes volver a cualquier momento.</p><ol id="chapter-list"></ol><div class="dialog-foot"><button id="menu-skip-ceremony" class="quiet-button" hidden>Omitir ceremonia</button><button id="haptics" class="quiet-button" aria-pressed="false" hidden>Respuesta táctil: apagada</button><button id="quality" class="quiet-button">Calidad: automática</button><button id="dialog-home" class="quiet-button" aria-label="Volver a portada conservando el progreso">Portada</button><button id="new-story" class="quiet-button">Empezar de nuevo</button></div></dialog>
+ <div id="engine-host" aria-hidden="true" inert></div>
+ <noscript><div class="noscript"><h2>Valerie</h2><p>Esta película está dibujada con JavaScript. Actívalo en tu navegador para entrar en la historia.</p></div></noscript>
+ <script src="engines.js" defer></script>
+ <script src="film.js" defer></script>
+</body></html>

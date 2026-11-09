@@ -1,0 +1,47 @@
+
+> valerie-illustrated@24.6.4 test
+> node --test tests/contracts.test.mjs tests/animation.test.mjs tests/matte.test.mjs tests/root-motion.test.mjs tests/private.test.mjs tests/encoding.test.mjs tests/story-state.test.mjs tests/cinema.test.mjs tests/asset-codec.test.mjs tests/ceremony-2464.test.mjs
+
+✔ Each reference plush has immutable anatomy, distinct ears/proportions and reusable measured limbs (12.7634ms)
+✔ Named clips blend channels and settle without invalid poses; unknown actions are rejected (14.3693ms)
+✔ A planted foot holds world position while the body moves, and snapshots restore springs (8.3338ms)
+✔ Offline binary transport round-trips partial words, all byte values and every actual art/photo file (490.9726ms)
+✔ Corrupt embedded resources fail safely rather than producing a partly decoded image (0.3422ms)
+✔ The assembled offline HTML keeps every embedded byte, including dollar pairs in the alphabet (427.5779ms)
+✔ offline ships all prepared plush pieces while source-only atlases remain in the full project (167.8327ms)
+✔ lid waits for approach and grip; an elapsed opening can never authorize a ring (115.2582ms)
+✔ revealing waits for the physical retreat; zoom and reduced motion preserve the same authorizations (78.1297ms)
+✔ legacy completed opening is rebased in the new namespace without erasing or repeating consent (73.9201ms)
+✔ Cinema is the default and advances complete dialogue from the renderer loop without autonomous timers (19.1864ms)
+✔ Pause, hidden tab, dialogue, loading and transitions freeze editorial time exactly (32.2718ms)
+✔ Decisions, photographs, letter folios, gift, ring and final question never expire (243.8799ms)
+✔ A reading timer cannot interrupt takeoff, flight, incomplete action or its settling interval (4.9255ms)
+✔ Manual mode is explicit, preserves elapsed reading, and replay grants a full fresh interval (5.0574ms)
+✔ Forest gestures stay optional and explicit; completing one resumes cinema only after the visible transformation settles (4.3437ms)
+✔ A physical forest crossing and constellation assistance use real completion rather than expired elapsed time (8.7544ms)
+✔ Safe capture/restore requires the exact narrative anchor and never restores a pointer or pending advance (5.8518ms)
+✔ Async navigation is issued once; replay invalidates stale promise completion and blocked loads wait for explicit recovery (10.0686ms)
+✔ Every policy exposes the complete semantic contract and a long Spanish message receives more reading time (2.2261ms)
+✔ Declared rig contract, nine originals and all six canonical references match their manifests (61.6602ms)
+✔ Pilot is independent of old engines, external services and scroll navigation (155.3185ms)
+✔ The declared pilot is nineteen held shots; surprise placement remains unconfirmed (15.9773ms)
+✔ Leaf lift precedes the crossing, actual body travels, support precedes landing, and final case is uncovered (16.9483ms)
+✔ Optional help affects the articulated prop, stays bounded, and never becomes required progress (14.0014ms)
+✔ Session restore rejects corrupt data and reset is isolated from RC07 (3.7935ms)
+✔ Product source is strict UTF-8; invalid accents cannot silently enter a generated film (115.3494ms)
+✔ Matte cover preserves aspect and covers every edge under pans and wide lenses (11.0021ms)
+✔ Private handler protects both document and every asset before reading, without publishing (74.6334ms)
+✔ Full crossing: first lift through apex and descent bind both paws to the pelvis in every viewport (219.4717ms)
+✔ Small guardian hops and legacy hops share the same flight space; watch never cancels another action (54.852ms)
+✔ Root translation and posture are inherited exactly by flight paws; landing restores world support continuously (60.0202ms)
+✔ Every optional branch has distinct actions and a valid, stable reconvergence (106.505ms)
+✔ Changing a choice replaces effects, reload preserves it, history restores it, skip is honest, reset retains only reading preference (72.263ms)
+✔ Old, unknown and corrupt session state recovers without inventing a selection (61.0117ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1184.1758

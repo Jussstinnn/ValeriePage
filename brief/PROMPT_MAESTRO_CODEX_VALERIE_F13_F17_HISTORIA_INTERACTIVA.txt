@@ -1,0 +1,151 @@
+PROMPT MAESTRO DE PRODUCCIÓN PARA CODEX
+VALERIE — DOS CONEJITOS Y EL SECRETO DEL JARDÍN
+F13–F17 | Renovación narrativa, actuación y experiencia interactiva mobile-first
+Fecha: 27 de octubre de 2026
+
+AUTORIZACIÓN Y MISIÓN
+Trabaja con el ZIP adjunto VALERIE_ILLUSTRATED_EVOLUCION_F12_COMPLETO.zip como base real; consérvalo intacto y desarrolla una rama independiente de evolución. Lee la auditoría F12 adjunta antes de editar. No reinicies la dirección artística, no te limites a repetir los 19 planos con cambios mínimos. Quiero construir un cuento ilustrado interactivo único para Valerie: aventura emotiva, dos protagonistas que se comunican y colaboran, elecciones amables y efectos visuales/artísticos claramente apreciables.
+
+Esta obra no es un videojuego de dificultad, una landing page, una serie de imágenes con subtítulos ni un tour automático. Debe sentirse como un cuento cinematográfico íntimo en el que Valerie acompaña a dos conejitos de peluche muy concretos a descubrir una sorpresa conectada con una cajita y un anillo reales.
+
+REGLAS NO NEGOCIABLES
+1. MOBILE-FIRST de verdad: iPhone y Android portrait prioritarios; adaptación horizontal y desktop propia.
+2. Navegación principal únicamente mediante botones visibles Anterior/Siguiente. NUNCA crear navegación narrativa por scroll. Las elecciones serán botones/tarjetas táctiles propias dentro de la escena.
+3. Conservar identidad exacta de los dos peluches: Rosa pequeño, pelaje rosa pastel, orejas altas asimétricas, hocico claro y ojos de botón; Beige/topo mayor, orejas largas caídas visibles, pelaje taupe, ojos oscuros y nariz rosada. Mantener los atlas existentes aprobados. No volver a geometrías genéricas ni cuerpos humanoides.
+4. Conservar el regalo físico: caja rosa con luces cálidas y banderines, anillo oro rosado con piedra central rosa. No sustituirlos por un anillo genérico u otra caja.
+5. Mantener tres fotos auténticas enteras y fieles; jamás inventar movimientos o expresiones en rostros humanos, ni lugares/fechas/acontecimientos personales no confirmados. No inventar memorias como hechos.
+6. La carta conserva el contenido personal actual y puede personalizarse mediante archivo simple. La pregunta exacta: «Valerie, ¿quieres ser mi novia?» Sin botón de Sí/No ni registro de respuesta digital.
+7. Respetar `prefers-reduced-motion`, lectura ilimitada, subtítulos, audio opcional, controles permanentes, áreas seguras y funcionamiento offline.
+8. No crear grabaciones, videos, dashboards o miles de capturas para la entrega. Sí hacer QA de código, navegadores, estados, visual/posiciones y rendimiento focalizado, con resultados concisos y honestos.
+9. Conservar F12 y versiones anteriores como backup, checkpoints por fase. Entregar por hito ZIP completo editable, HTML autónomo, instrucciones Windows y resumen breve.
+10. Priorizar escenas excelentes sobre cantidad. NO aceptar que una mejora esté «implementada» si solo existe en un objeto JavaScript pero no es visible/táctil.
+
+DIAGNÓSTICO DEL PROBLEMA ACTUAL (VERIFICADO EN F12)
+- 15/15 tests Node y build pasan. HTML offline cargó al inicio en Chromium (390×844) sin error observado; no está certificado el recorrido visual completo ni iPhone físico.
+- La navegación y diálogos se basan en `src/narrative-director.js`, `src/guardian-script.js`, `src/definitive-script.js`, `src/director.js` y #story/#narration; fundamentalmente son pasos lineales y subtítulos inferiores.
+- `session.keeps` y `session.symbols` preservan objetos que aparecen visualmente, pero no existe un modelo de elección con ramificaciones y consecuencias que definan miniaventuras.
+- `#interact` desencadena reacciones opcionales uniformes; hace falta que toque/resuelva/desvele algo concreto que cambie las actuaciones, el mundo o los diálogos.
+- Los recuerdos han mejorado, pero deben construirse como episodios diferentes con descubrimientos activos.
+- No arregles el aburrimiento con más partículas, más shaders, más archivos, narraciones largas o una nueva librería por moda. Cambia la EXPERIENCIA.
+
+VISIÓN ARTÍSTICA Y EMOCIONAL
+Título de trabajo: «Dos conejitos y el secreto del jardín».
+Premisa: una noche, Rosa encuentra una pequeña luz que no puede llevar solo; Beige lo ayuda. Descubren un camino hacia una cajita cuya luz aún no está completa. Juntos necesitan hallar tres destellos simbólicos —curiosidad, cuidado y recuerdos—. Valerie los ayuda a tomar decisiones suaves. La misión conduce al viñedo, bosque, museo, cielo, lirios, recuerdos, carta y caja real. No es una búsqueda de puntos: los símbolos significan algo que viven juntos.
+Curva emocional: invitación → curiosidad → complicidad → primer problema → ayuda y logro → magia → ternura → descubrimiento personal → intimidad → anticipación → sorpresa → pregunta.
+El romance viene del diseño de momentos, no de repetir «te quiero» en cada pantalla. Alterna diálogo, humor suave, miradas, silencios y acciones visibles. No infantilizar ni forzar melodrama.
+
+PERSONALIDADES (CONTRATO)
+ROSA: curioso, un poco impulsivo, valiente en pequeñas cosas, entusiasta, torpe de manera tierna, mira hacia atrás para comprobar que Beige y Valerie lo acompañan. Habla en frases breves, a veces pregunta. Es protagonista activo sin caminar como un humano.
+BEIGE: sereno, protectivo, paciente, con humor suave, más corpulento, orejas caídas que acompañan movimientos. Ayuda sin dar lecciones, a veces duda o se sorprende. Nunca parece estático ni un oso genérico.
+LA PAREJA DE PELUCHES: no son rivales ni se comportan como narradores omniscientes. Hacen equipo, se esperan, comparten hallazgos, pueden tener una pequeña discrepancia amable y reconciliarse mediante acción. Cada secuencia debería poder describirse por lo que hicieron juntos, no por un mensaje de texto.
+
+SISTEMA DE BOCADILLOS Y PENSAMIENTOS — OBLIGATORIO
+Crear un componente/capa visual tipo SpeechBubbleDirector para conversaciones ancladas a la cabeza de cada conejo. Deben existir:
+- Burbuja de HABLA suave, de contorno orgánico y diseño acorde al cuento, sin parecer interfaz corporativa ni sticker infantil exagerado.
+- Burbuja de PENSAMIENTO con pequeñas motas conectadas al personaje; distinta del habla.
+- Burbuja opcional de REACCIÓN (sorpresa o gesto muy breve) sincronizada con pose.
+- Opciones de diálogo reales si corresponde.
+La burbuja sigue posición animada del personaje en mundo→viewport; coloca cola/puntero correctamente; evita salirse del safe area o cubrir ojos, fotos, controles, carta y caja. Si no cabe, usa una composición alternativa dentro del marco o banda de subtítulo premium como fallback. No animes bruscamente escala o posición. Al entrar, el texto aparece de manera progresiva opcional; lectura no caduca. Soporte screen reader, teclado, focos, aria y reduced-motion. No esconder la conversación al instante ni obligar al usuario a perseguirla con el dedo.
+No muestres dos burbujas largas superpuestas. Dirige turnos: Rosa habla → Beige mira/reacciona → Beige responde → gesto conjunto. La actuación debe corresponder al texto, no movimiento genérico aleatorio.
+Ofrece preferencia de lectura: «burbujas + subtítulos» o «solo subtítulos» si técnicamente razonable; mantener narración accesible siempre.
+
+MOTOR DE ELECCIONES — REQUISITO CENTRAL
+Implementar StoryChoiceDirector independiente de las animaciones; esquema declarativo estable:
+choiceId, prompt, two or three options, preconditions, immediateAction, stateEffects, sceneVariant, futureDialogue, accessibilityLabel, rejoinNode.
+Cada elección debe:
+1. ser OPCIONAL y fácil, sin castigo, sin fracaso, sin contador ni tiempo límite;
+2. incluir dos opciones encantadoras, ambas compatibles con el carácter de los conejitos;
+3. producir una acción inmediata perceptiblemente distinta (no solo otra línea de texto);
+4. alterar un pequeño elemento posterior: objeto en manos, reacción, iluminación, línea, fotografía/carta/final;
+5. poder revisitarse/editarse desde capítulo anterior con persistencia consistente;
+6. converger hacia el mismo desenlace romántico; no crear veinte finales ni bloquear el anillo.
+No usar ramificaciones explosivas: estructura «ramifica brevemente → consecuencias locales → reconverge». Mantener una línea de historia fácil de seguir y un sistema de estado versionado/migrable. Si la sesión se corrompe, continuar con valores seguros. Si el usuario no interactúa, habilitar «Continuar la historia» de manera comprensible, sin elecciones automáticas engañosas.
+
+TRES ELECCIONES PILOTO CON ESPECIFICACIONES VISUALES
+A) BOSQUE. Rosa: «¿Lo seguimos?» Beige: «¿O escuchamos primero?» Opciones: «Seguir a la luciérnaga» / «Escuchar al árbol». Primera: camino iluminado y Rosa intenta atrapar una chispa; segunda: hojas se apartan y Beige descubre la pista al escuchar. Resultado compartido: una luz que los acompaña; estilo visual cambia en la siguiente escena.
+B) MUSEO/ESTRELLAS. «¿Le damos una pincelada al cielo?» Opciones: «Pintar una estrella» / «Encender una constelación». Pintar: gesto de pincel guiado, transformación dibujada. Constelación: puntos táctiles amplios unidos, sin precisión obligatoria. El objeto luminoso que se llevan y su diálogo posterior deben cambiar.
+C) JARDÍN. «¿Cuál guardamos con cuidado?» Opciones «El pétalo rosado» / «La pequeña flor luminosa». Acciones, poses, un objeto cargado durante capítulos posteriores y detalle diferente en carta/caja; ningún tipo de evaluación moral de la decisión.
+
+NUEVAS INTERACCIONES ESPECÍFICAS
+- Ayudar al conejo rosa a cruzar un arroyo con un salto breve: root motion único, patas unidas a pelvis durante vuelo, contacto real en aterrizaje y sombra independiente; bug anterior no debe volver.
+- Elegir quién sostiene una hoja sin convertir al personaje en humanoide.
+- Acercar una luciérnaga arrastrándola suavemente con alternativa «Tocar para guiar» para accesibilidad.
+- Activar pequeñas figuras en una pintura que abren una transición hacia un mundo diferente.
+- Despertar una flor mediante toque y contemplar su detalle, sin pop-up plano.
+- Encontrar una foto detrás de pétalos, otra dentro de un álbum y otra mediante una luz compartida: acciones y planos diferentes.
+- Elegir un detalle visual de la carta (no cambiar su texto personal) y colocar un símbolo en el sobre.
+- Ayudar a los conejitos a abrir la caja física ilustrada: colaboración con acciones de ambos, no una caja animándose sola.
+No implementar todas en el primer bloque: las tres elecciones piloto tienen prioridad, luego elegir únicamente las que aumenten calidad narrativa.
+
+RECUERDOS / FOTOS — TRATAMIENTO ESPECIAL
+El contenido existente contiene tres fotografías reales. Reconstruir su presentación como tres pequeños cortometrajes diferentes, sin cambiar la identidad de las personas ni manipular sus caras.
+RETRATO: Rosa descubre un perrito en una foto; su curiosidad provoca un movimiento visible que ayuda a Beige a sostener el marco. Foto se revela completa y grande; pausa de contemplación sin cuenta atrás. Diálogo no afirma dónde, cuándo ni qué pensaban las personas.
+DOS SONRISAS: Rosa intenta mirar el álbum, Beige le hace espacio; intercambio juguetón, páginas físicas y reflejos de luz. Montaje y ritmo distintos del retrato.
+UN INSTANTE: ambos se sientan o se acurrucan y comparten silencio; una pequeña luz ilumina el recuerdo y conduce al sobre. No repetir la misma entrada/pose/revelación del anterior.
+Cinematografía: planos generales, medianos y detalles intencionados. La fotografía ocupa el espacio central durante contemplación; nada de fotos minúsculas, degradados que tapen rostros, zooms abruptos o estiramiento. Bocadillos solo cuando personajes vuelven al plano protagonista, y fuera de la fotografía durante su contemplación. Mantener proporciones originales. Textos personales configurables; mostrar textos neutrales honestos cuando estén vacíos.
+
+ARQUITECTURA RECOMENDADA (NO PRESCRIPTIVA)
+- StoryGraph: nodos, elecciones breves, reconvergencia y condiciones.
+- ChoiceState: session versionado con choices, keeps, dialogueSeen, progress, sceneVariants y reversible transitions.
+- BubbleDirector: posiciones ancladas a transformaciones finales de personajes, colisión con UI y foto.
+- ActingDirector: intención → anticipación → movimiento → reacción de contraparte → reposo; animación plush con límites anatómicos.
+- SceneComposer: encuadres cinematográficos distintos y objetivos visuales concretos.
+- DialogueContent: JSON/JS editorial separado de renderers y accesible.
+- InteractionDirector: capacidades touch/click/keyboard con gestos opcionales y alternativas.
+- QA instrumentation mínima para leer estado actual y elecciones; no exponer datos personales en registros.
+Reutiliza `src/director.js`, `src/narrative-director.js`, `src/guardian-acting.js`, `src/rig.js`, `src/character-models.js`, `src/guardian-world.js` y `src/ending-theatre.js` sin romper APIs existentes innecesariamente. Elige Canvas+DOM híbrido para bocadillos legibles o un render equivalente accesible. No traer framework grande sin necesidad.
+
+FASES AUTORIZADAS Y PUERTAS DE CALIDAD
+F13 — BIBLIA NARRATIVA Y PILOTO CON VIDA.
+Escribir una biblia breve pero completa de personajes, misión, escenas, decisiones, emociones y objetos. Implementar una secuencia jugable mobile-first de viñedo→bosque con diálogos en burbujas y UNA elección real de dos opciones. La diferencia entre ambas alternativas debe ser visible por actuación y entorno. No pedir aprobación cada hora, pero no expandir si el piloto sigue sintiéndose como diapositivas.
+Entrega: ZIP F13 + HTML autónomo + checkpoint + diferencias de opción.
+
+F14 — PERSONAJES CON ACTUACIÓN PROPIA.
+Desarrollar secuencias nuevas: curiosidad, esperar al otro, pequeño desacuerdo divertido, ayuda, descubrir una pista, celebrar en silencio, acurrucarse; al menos dos coreografías completas reutilizables por capítulo, sin poses bipedales humanas ni patas desprendidas. Sonidos opcionales de material/hojitas, no voces robóticas inventadas.
+Entrega: ZIP F14 y pruebas de continuidad de personaje.
+
+F15 — TRES AVENTURAS CORTAS Y ENTORNOS REACTIVOS.
+Implementar museo/estrella y jardín/pétalo como elecciones con efectos persistentes. Bosque, museo y jardín se diferencian en tono, color, interacción, profundidad, cámara y manera de revelarse. No simplemente otro PNG de fondo y texto.
+Entrega: ZIP F15 con decisiones y rutas comprobadas.
+
+F16 — RECUERDOS, CARTA Y CAJA EMOCIONALES.
+Reconstruir los tres recuerdos como miniaventuras, integrar la carta y la caja real. Consecuencias de elecciones regresan: símbolos y frases variables discretas, elección visible en manos/páginas/caja. El texto auténtico de la carta se preserva. El anillo aparece con primer plano digno y pausa sin límite.
+Entrega: ZIP F16, HTML offline y validación de imágenes íntegras.
+
+F17 — GRAN FINAL Y EDICIÓN DEFINITIVA CANDIDATA.
+Desenlace con todos los motivos recogidos, dos conejitos principales y pregunta en primer plano. Variaciones de montaje por camino elegido, pero mismo final. Proteger lectura/caja, volver atrás, repetir, restaurar elección, carga lenta, offline, accesibilidad, iPhone/Android y escritorio. Preparar hosting privado con HTTPS/QR para revisión sin publicarlo automáticamente.
+Entrega: ZIP F17 candidato final + documentación de pendientes reales y QA honesto. Nunca declarar definitivo sin aprobación del autor y prueba en móvil físico.
+
+CRITERIOS DE ACEPTACIÓN NARRATIVA — OBJETIVOS QUE CODEX DEBE DEMOSTRAR
+- No basta que `choices` exista: dos elecciones distintas deben producir dos secuencias observables distintas y recordar la elección después.
+- No basta poner un texto sobre Canvas: los bocadillos deben seguir a los conejos y ser visualmente legibles sin tapar ojos o controles en 320×568, 390×844 y 844×390.
+- No basta sumar frases: cada conversación importante debe modificar una expresión, mirada, postura o acción de ambos.
+- No basta abrir un álbum: el recuerdo tiene introducción, interacción de los conejitos, fotografía en contemplación, y salida única.
+- No basta contar objetos: pétalo/estrella/luz elegidos reaparecen con una consecuencia en carta, caja o final.
+- No basta pasar pruebas de código: el primer minuto debe tener un acontecimiento narrativo reconocible y una elección emotiva, sin volverse pesado.
+- Todas las elecciones deben resolverse por touch, mouse y teclado; atajos nunca se convierten en puertas que bloquean el regalo.
+- Cada escena puede durar tanto como quiera Valerie; audio opcional; movimiento reducido; navegación por botones persistente; ninguna respuesta digital a la propuesta.
+
+QA POR FASE (ÚTIL, NO COSMÉTICO)
+1. Compilar y ejecutar tests en ZIP extraído limpio; probar HTML autónomo sin HTTP.
+2. Verificar progresión manual, regreso, repetir, salto de capítulo autorizado, cierre y reentrada.
+3. Probar ambas ramas de cada elección y consecuencia, almacenamiento y reinicio; no mezclar estados previos.
+4. Inspección de geometría: orejas, uniones, manos/patas en salto, contacto suelo, expresiones, relación de escala.
+5. Probar burbujas en mínimo tres viewports (320×568,390×844,844×390) y uno desktop, y `prefers-reduced-motion`.
+6. Fallos simulados de asset de foto/fondo, cargas lentas, blur/resume, cambio de orientación, letras muy largas y modo sin audio.
+7. Perfil CPU/memoria/carga prudente; reportar números con contexto, no prometer 60 FPS ni éxito universal.
+8. Verificar que archivos privados no se filtren desde el hosting; QR y dominio quedan para autorización final.
+9. Informar bugs y mejoras implementadas y pendientes en 1-2 páginas máximo; sin generar capturas/videos como entregables.
+
+INSTRUCCIONES DE TRABAJO PARA CODEX
+- Trabaja en copia independiente de F12, conserva toda la entrega intacta.
+- Conoce el código fuente antes de editar. Prioriza solucionar la narración y la sensación de aburrimiento, no inventar nueva arquitectura excesiva.
+- No contestes con una propuesta o un checklist como entrega final: programa la fase F13 y continúa según puertas de calidad.
+- Guarda checkpoints concisos al terminar cada fase para interrumpir/retomar por límite de cuota sin repetir trabajo.
+- Usa las referencias reales de dos conejitos, caja y anillo del proyecto. No uses imágenes genéricas de conejos, anuncios ni stock.
+- Autorízate a mejorar creativamente la historia con diálogos originales entre los peluches; no inventes recuerdos reales de las personas.
+- Documenta decisiones y criterios de aceptación. Cuando el resultado no alcance la calidad, no lo declares final y corrígelo en la fase correspondiente.
+- Solo si hay una ambigüedad PERSONAL insalvable que dependa de un recuerdo específico no proporcionado, usa texto editorial neutro configurable en lugar de detener toda la implementación.
+
+MENSAJE FINAL DE DIRECCIÓN
+No quiero «19 pantallas que avanzan». Quiero que Valerie descubra a DOS PERSONAJES con personalidad que viven una aventura cálida y comparten un secreto. Quiero decisiones pequeñas con consecuencias tiernas, burbujas que parezcan nacer de los conejitos, escenarios sorprendentes y fotografías tratadas con respeto. Lo importante no es la cantidad de fases ni la complejidad técnica: es que cada escena haga querer ver lo que sucede a continuación. Empieza ahora con F13 y lleva la historia hacia esa visión, manteniendo alta calidad en cada hito.

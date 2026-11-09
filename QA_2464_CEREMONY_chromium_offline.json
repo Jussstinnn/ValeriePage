@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "width": 390,
+      "maxHandError": 1.1718571004216928e-13,
+      "flagPixels": [
+        172,
+        169,
+        152
+      ],
+      "physicalHop": true,
+      "macroDepth": true,
+      "wordsFromFlags": true,
+      "reload": true,
+      "drawMs": 7.699510000000001,
+      "p95": 0,
+      "errors": []
+    }
+  ]
+}

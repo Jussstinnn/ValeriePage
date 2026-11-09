@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "engine": "chromium",
+  "group": "ceremony",
+  "reducedMotion": true,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "command": "VALERIE_CASE=ceremony VALERIE_REDUCED=1 node tests/stability-runtime.cjs",
+  "coverage": [
+    "placements",
+    "open",
+    "hidden hold",
+    "reveal",
+    "macro",
+    "return",
+    "question",
+    "reload",
+    "pause"
+  ],
+  "offline": false
+}

@@ -1,0 +1,3267 @@
+{
+  "version": 4,
+  "source": "F24.4 narrative bible",
+  "chapters": [
+    {
+      "id": "antes-del-primer-pasito",
+      "title": "El camino que prepararon",
+      "mode": "prologue",
+      "world": "vineyard",
+      "biome": 0,
+      "hold": 20,
+      "line": "El camino que prepararon",
+      "action": "Abrir el farol",
+      "engine": "journey",
+      "set": "arch",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "arrival",
+          "speaker": "pink",
+          "text": "¡Soy Rosa! Beige y yo guardamos una caja muy especial para ti, Valerie.",
+          "acting": "guardian-preparations",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 6.8,
+            "gesture": "guardian-preparations",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 6.8,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "lantern",
+          "speaker": "taupe",
+          "text": "Tiene tres pequeños cierres. Solo responden a recuerdos que encontremos contigo.",
+          "acting": "check-the-lantern",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 6.8,
+            "duration": 6.8,
+            "gesture": "check-the-lantern",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 6.8,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "unlatch",
+          "speaker": null,
+          "text": "",
+          "acting": "wake-the-guide",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 13.6,
+            "duration": 3.6,
+            "gesture": "wake-the-guide",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.6,
+            "actionCompletion": "world-score-complete"
+          },
+          "interaction": {
+            "label": "Despertar el farol",
+            "hint": "Toca el broche. La luz esperaba a Valerie para mostrar el camino.",
+            "target": "lantern"
+          }
+        },
+        {
+          "id": "escape",
+          "speaker": "pink",
+          "text": "¡El hada conoce el camino! Sabe dónde encontrar la primera señal.",
+          "acting": "greet-the-guide",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 17.2,
+            "duration": 5.2,
+            "gesture": "greet-the-guide",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5.2,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "mission",
+          "speaker": "taupe",
+          "text": "Una luz del bosque, un deseo tuyo y un recuerdo del jardín. Juntos abrirán nuestra caja.",
+          "acting": "show-the-three-signs",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 22.4,
+            "duration": 6.5,
+            "gesture": "show-the-three-signs",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 6.5,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": "pink",
+          "text": "¿Nos acompañas? Esta vez miraré por dónde salto.",
+          "acting": "follow-with-purpose",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 28.9,
+            "duration": 4,
+            "gesture": "follow-with-purpose",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4,
+            "actionCompletion": "world-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "dos-miradas",
+      "title": "Dos miradas",
+      "line": "Una mirada pregunta. La otra dice: vamos juntos.",
+      "action": "Acercar la luz",
+      "mode": "recognise",
+      "biome": 1,
+      "hold": 14,
+      "engine": "journey",
+      "set": "rows",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "loose-light",
+          "speaker": "pink",
+          "text": "¡Se quedó atrapada! Si tiro de la cinta…",
+          "acting": "notice-snag",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 3.4,
+            "gesture": "notice-snag",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.4,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "steady",
+          "speaker": "taupe",
+          "text": "Espera. Podemos ayudarla sin lastimarle las alas.",
+          "acting": "hold-ribbon",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 3.4,
+            "duration": 3.6,
+            "gesture": "hold-ribbon",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.6,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "escape",
+          "speaker": "pink",
+          "text": "Valerie, ¿le prestamos una patita?",
+          "acting": "ask-guide",
+          "kind": "choice",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 7.0,
+            "duration": 0,
+            "gesture": "ask-guide",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 0,
+            "actionCompletion": "authored-score-complete"
+          },
+          "choiceId": "guide-way"
+        },
+        {
+          "id": "together",
+          "speaker": null,
+          "text": "",
+          "acting": "guide-rescue",
+          "kind": "result",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 7.0,
+            "duration": 6.2,
+            "gesture": "guide-rescue",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 6.2,
+            "actionCompletion": "authored-score-complete"
+          },
+          "choiceId": "guide-way"
+        },
+        {
+          "id": "reply",
+          "speaker": "taupe",
+          "text": "Ahora sí. Tú nos muestras por dónde.",
+          "acting": "release-guide",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 13.2,
+            "duration": 3.7,
+            "gesture": "release-guide",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.7,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "acting": "rows-departure",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 16.9,
+            "duration": 3.5,
+            "gesture": "rows-departure",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.5,
+            "actionCompletion": "authored-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "te-abro-el-camino",
+      "title": "Te abro el camino",
+      "line": "A veces, cuidar es hacerle un poquito de sitio al otro.",
+      "action": "Rozar la hoja",
+      "mode": "leaf",
+      "biome": 1,
+      "hold": 14,
+      "engine": "journey",
+      "set": "pergola",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "leaf-problem",
+          "speaker": "pink",
+          "text": "¡La hoja cerró el camino! No veo detrás.",
+          "acting": "inspect-blocked-threshold",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 3.8,
+            "gesture": "inspect-blocked-threshold",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leaf-offer",
+          "speaker": "taupe",
+          "text": "Uno la sostiene. El otro pasa y ayuda desde el otro lado.",
+          "acting": "test-the-anchored-leaf",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 3.8,
+            "duration": 4.8,
+            "gesture": "test-the-anchored-leaf",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leaf-choice",
+          "speaker": "pink",
+          "text": "¿Quién abre el camino?",
+          "acting": "choose-holder",
+          "kind": "choice",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.6,
+            "duration": 0,
+            "gesture": "choose-holder",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 0,
+            "actionCompletion": "world-score-complete"
+          },
+          "choiceId": "leaf-holder"
+        },
+        {
+          "id": "leaf-result",
+          "speaker": null,
+          "text": "",
+          "acting": "cross-the-deep-threshold",
+          "kind": "result",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.6,
+            "duration": 12.6,
+            "gesture": "cross-the-deep-threshold",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 12.6,
+            "actionCompletion": "world-score-complete"
+          },
+          "choiceId": "leaf-holder",
+          "interaction": {
+            "label": "Ayudar a levantar la hoja",
+            "hint": "Toca la hoja. Primero cruza uno, después vuelve la ayuda desde el fondo.",
+            "target": "leaf"
+          }
+        },
+        {
+          "id": "leaf-reply",
+          "speaker": "pink",
+          "text": "¡Ya estamos los dos del otro lado!",
+          "acting": "reunite-in-depth",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 21.2,
+            "duration": 3.8,
+            "gesture": "reunite-in-depth",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leaf-together",
+          "speaker": null,
+          "text": "",
+          "acting": "leave-the-threshold",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 25.0,
+            "duration": 2.5,
+            "gesture": "leave-the-threshold",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 2.5,
+            "actionCompletion": "world-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "una-patita-mas",
+      "title": "Una patita más",
+      "line": "Si el paso parece grande, aquí tienes mi patita.",
+      "action": "Acompañar el salto",
+      "mode": "crossing",
+      "biome": 1,
+      "hold": 14,
+      "engine": "journey",
+      "set": "creek",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "bank",
+          "speaker": "pink",
+          "text": "Desde aquí parece lejísimos.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "peer-water",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 3.2,
+            "gesture": "peer-water",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.2,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "also",
+          "speaker": "taupe",
+          "text": "No hace falta hacerlo de un solo salto.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "test-stone",
+          "close": "action",
+          "actionPlan": {
+            "start": 3.2,
+            "duration": 3.5,
+            "gesture": "test-stone",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.5,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "afraid",
+          "speaker": "pink",
+          "text": "¿Y si resbalo?",
+          "kind": "speech",
+          "view": "original",
+          "acting": "small-recoil",
+          "close": "action",
+          "actionPlan": {
+            "start": 6.7,
+            "duration": 3.2,
+            "gesture": "small-recoil",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.2,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "offer",
+          "speaker": "taupe",
+          "text": "Entonces te espero. Mira, esta es firme.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "offer-stone",
+          "close": "action",
+          "actionPlan": {
+            "start": 9.9,
+            "duration": 3.7,
+            "gesture": "offer-stone",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.7,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "cross",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "two-stone-crossing",
+          "close": "action",
+          "actionPlan": {
+            "start": 13.6,
+            "duration": 8.8,
+            "gesture": "two-stone-crossing",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 8.8,
+            "actionCompletion": "journey-score-complete"
+          },
+          "interaction": {
+            "label": "Ayudar a encontrar la piedra",
+            "hint": "Toca una de las piedras iluminadas para abrir el paso",
+            "target": "stone"
+          }
+        },
+        {
+          "id": "landed",
+          "speaker": "pink",
+          "text": "¡Sigo teniendo las dos patas!",
+          "kind": "speech",
+          "view": "original",
+          "acting": "shake-droplet",
+          "close": "action",
+          "actionPlan": {
+            "start": 22.4,
+            "duration": 3.5,
+            "gesture": "shake-droplet",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.5,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "reply",
+          "speaker": "taupe",
+          "text": "Y yo sigo teniendo las dos orejas.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "check-ears",
+          "close": "action",
+          "actionPlan": {
+            "start": 25.9,
+            "duration": 3.6,
+            "gesture": "check-ears",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.6,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "wet-footprints",
+          "close": "action",
+          "actionPlan": {
+            "start": 29.5,
+            "duration": 3.4,
+            "gesture": "wet-footprints",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.4,
+            "actionCompletion": "journey-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "el-tiempo-de-los-dos",
+      "title": "El tiempo de los dos",
+      "line": "No tenemos prisa. Lo bonito también es quedarnos aquí.",
+      "action": "Quedarse con ellos",
+      "mode": "tender",
+      "biome": 1,
+      "hold": 14,
+      "engine": "journey",
+      "set": "rose",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "notice",
+          "speaker": "pink",
+          "text": "¿Por qué te paraste?",
+          "kind": "speech",
+          "view": "original",
+          "acting": "return-for-beige",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 3.4,
+            "gesture": "return-for-beige",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.4,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "answer",
+          "speaker": "taupe",
+          "text": "Porque esa rosa se inclinó… y pareció saludarnos.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "notice-rose",
+          "close": "action",
+          "actionPlan": {
+            "start": 3.4,
+            "duration": 3.8,
+            "gesture": "notice-rose",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "flower",
+          "speaker": "pink",
+          "text": "¡No la había visto!",
+          "kind": "speech",
+          "view": "original",
+          "acting": "lean-to-rose",
+          "close": "action",
+          "actionPlan": {
+            "start": 7.2,
+            "duration": 3.5,
+            "gesture": "lean-to-rose",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.5,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "slow",
+          "speaker": "taupe",
+          "text": "A veces lo bonito nos espera cuando bajamos el paso.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "petal-ear",
+          "close": "action",
+          "actionPlan": {
+            "start": 10.7,
+            "duration": 4.8,
+            "gesture": "petal-ear",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "stay",
+          "speaker": "pink",
+          "text": "Entonces esperamos… pero solo un poquito.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "snuggle-pause",
+          "close": "action",
+          "actionPlan": {
+            "start": 15.5,
+            "duration": 4.5,
+            "gesture": "snuggle-pause",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.5,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "silence",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "shared-silence",
+          "close": "action",
+          "actionPlan": {
+            "start": 20.0,
+            "duration": 4.2,
+            "gesture": "shared-silence",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.2,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "rose-reflection",
+          "close": "action",
+          "actionPlan": {
+            "start": 24.2,
+            "duration": 3.4,
+            "gesture": "rose-reflection",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.4,
+            "actionCompletion": "journey-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "un-secreto-para-ti",
+      "title": "Un secreto para ti",
+      "line": "Hay algo que guardé para ti. Y dos pequeños cómplices.",
+      "action": "Acercarse al secreto",
+      "mode": "secret",
+      "biome": 1,
+      "hold": 15,
+      "engine": "journey",
+      "set": "alcove",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "sleeping",
+          "speaker": "pink",
+          "text": "Aquí está. La hemos cuidado todo este tiempo.",
+          "acting": "recognize-our-secret",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4.4,
+            "gesture": "recognize-our-secret",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.4,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "meaning",
+          "speaker": "taupe",
+          "text": "Mira el broche: tres lugares vacíos.",
+          "acting": "inspect-three-recesses",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 4.4,
+            "duration": 4.4,
+            "gesture": "inspect-three-recesses",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.4,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "all",
+          "speaker": "pink",
+          "text": "Luz del bosque, un deseo del cielo y algo que crezca con cariño…",
+          "acting": "read-the-signs",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.8,
+            "duration": 5.7,
+            "gesture": "read-the-signs",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5.7,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "together",
+          "speaker": "taupe",
+          "text": "Volveremos con los tres. Entonces podrá abrirse.",
+          "acting": "promise-to-return",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 14.5,
+            "duration": 4.6,
+            "gesture": "promise-to-return",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.6,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "acting": "follow-the-guide-to-roots",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 19.1,
+            "duration": 3.5,
+            "gesture": "follow-the-guide-to-roots",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.5,
+            "actionCompletion": "world-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "tras-la-luz",
+      "title": "Tras la luz",
+      "line": "El camino es otro cuando lo descubrimos juntos.",
+      "action": "Llamar a la luz",
+      "mode": "path",
+      "world": "forest",
+      "biome": 1,
+      "hold": 15,
+      "engine": "journey",
+      "set": "tunnel",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "scout",
+          "text": "",
+          "speaker": null,
+          "kind": "silence",
+          "view": "original",
+          "acting": "scout-return-and-wait",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 3.6,
+            "gesture": "scout-return-and-wait",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.6
+          }
+        },
+        {
+          "id": "wait",
+          "speaker": "pink",
+          "text": "Esta vez miré atrás antes de seguir.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "scout-and-return",
+          "close": "action",
+          "actionPlan": {
+            "start": 3.6,
+            "duration": 4.5,
+            "gesture": "scout-and-return",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.5,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "reply",
+          "speaker": "taupe",
+          "text": "Lo vi. Gracias por esperarme.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "beige-catches-up",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.1,
+            "duration": 3.5,
+            "gesture": "beige-catches-up",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.5,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "three",
+          "speaker": "pink",
+          "text": "¿Entramos?",
+          "kind": "speech",
+          "view": "original",
+          "acting": "ask-threshold",
+          "close": "action",
+          "actionPlan": {
+            "start": 11.6,
+            "duration": 3.2,
+            "gesture": "ask-threshold",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.2,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "together",
+          "speaker": "taupe",
+          "text": "Si vamos juntos, sí.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "threshold-pair",
+          "close": "action",
+          "actionPlan": {
+            "start": 14.8,
+            "duration": 3.8,
+            "gesture": "threshold-pair",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "follow",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "enter-forest",
+          "close": "action",
+          "actionPlan": {
+            "start": 18.6,
+            "duration": 5,
+            "gesture": "enter-forest",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5,
+            "actionCompletion": "journey-score-complete"
+          },
+          "interaction": {
+            "label": "Guiar la luz entre las ramas",
+            "hint": "Acompaña la luz hasta el hueco. Las ramas se abren con ella.",
+            "target": "light"
+          }
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "el-bosque-escucha",
+      "title": "El bosque escucha",
+      "line": "Hay mundos pequeños que despiertan cuando te acercas.",
+      "action": "Despertar el bosque",
+      "mode": "forest",
+      "world": "forest",
+      "biome": 1,
+      "hold": 16,
+      "beats": [
+        {
+          "id": "glimmer",
+          "speaker": "pink",
+          "text": "¡Está haciendo una señal!",
+          "acting": "hear-light",
+          "view": "original",
+          "kind": "speech",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        },
+        {
+          "id": "listen",
+          "speaker": "taupe",
+          "text": "O quizás el bosque está intentando decirnos algo.",
+          "acting": "hear-light",
+          "view": "original",
+          "kind": "speech",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        },
+        {
+          "id": "forest-choice",
+          "speaker": "pink",
+          "text": "¿Qué hacemos, Valerie?",
+          "acting": "listen",
+          "view": "original",
+          "kind": "choice",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "forest-way"
+        },
+        {
+          "id": "forest-result",
+          "speaker": null,
+          "text": "",
+          "acting": "watch",
+          "view": "original",
+          "kind": "result",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "forest-way"
+        },
+        {
+          "id": "forest-together",
+          "speaker": "taupe",
+          "text": "Solo estaba esperando que escucháramos.",
+          "acting": "share-light",
+          "view": "original",
+          "kind": "speech",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "donde-apuntan-las-raices",
+      "title": "Donde apuntan las raíces",
+      "mode": "journey",
+      "world": "forest",
+      "biome": 0,
+      "hold": 20,
+      "line": "La luz encuentra el camino.",
+      "action": "Ayudarles",
+      "engine": "journey",
+      "set": "roots",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "not-end",
+          "speaker": "pink",
+          "text": "¡No era el final del bosque!",
+          "kind": "speech",
+          "view": "original",
+          "acting": "fork-and-check",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4,
+            "gesture": "fork-and-check",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "signal",
+          "speaker": "taupe",
+          "text": "Es una señal. Mira las ventanas.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "trace-root",
+          "close": "action",
+          "actionPlan": {
+            "start": 4,
+            "duration": 4.2,
+            "gesture": "trace-root",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.2,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "reveal",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "root-reveal",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.2,
+            "duration": 5.6,
+            "gesture": "root-reveal",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5.6,
+            "actionCompletion": "journey-score-complete"
+          },
+          "interaction": {
+            "label": "Revelar el camino entre las raíces",
+            "hint": "Toca o sigue las marcas de la raíz",
+            "target": "roots"
+          }
+        },
+        {
+          "id": "house",
+          "speaker": "pink",
+          "text": "Parece una casa hecha para guardar estrellas.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "window-reaction",
+          "close": "action",
+          "actionPlan": {
+            "start": 13.8,
+            "duration": 4.2,
+            "gesture": "window-reaction",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.2,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "root-passage",
+          "close": "action",
+          "actionPlan": {
+            "start": 18.0,
+            "duration": 4,
+            "gesture": "root-passage",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4,
+            "actionCompletion": "journey-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "la-casa-de-las-ventanas",
+      "title": "La casa de las ventanas",
+      "mode": "journey",
+      "world": "museum",
+      "biome": 0,
+      "hold": 20,
+      "line": "La luz encuentra el camino.",
+      "action": "Ayudarles",
+      "engine": "journey",
+      "set": "glasshouse",
+      "entry": "path-left",
+      "exit": "door",
+      "beats": [
+        {
+          "id": "home",
+          "speaker": "pink",
+          "text": "¿Aquí vive la luz?",
+          "kind": "speech",
+          "view": "original",
+          "acting": "approach-glass",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4,
+            "gesture": "approach-glass",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "sky",
+          "speaker": "taupe",
+          "text": "No lo sé… pero alguien guardó el cielo detrás de ese vidrio.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "recognize-window",
+          "close": "action",
+          "actionPlan": {
+            "start": 4,
+            "duration": 4.5,
+            "gesture": "recognize-window",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.5,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "enter",
+          "speaker": "pink",
+          "text": "¿Entramos?",
+          "kind": "speech",
+          "view": "original",
+          "acting": "touch-handle",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.5,
+            "duration": 3.4,
+            "gesture": "touch-handle",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.4,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "care",
+          "speaker": "taupe",
+          "text": "Primero abramos la puerta, sin romper nada.",
+          "kind": "speech",
+          "view": "original",
+          "acting": "support-door",
+          "close": "action",
+          "actionPlan": {
+            "start": 11.9,
+            "duration": 3.7,
+            "gesture": "support-door",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.7,
+            "actionCompletion": "journey-score-complete"
+          }
+        },
+        {
+          "id": "open",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "open-door",
+          "close": "action",
+          "actionPlan": {
+            "start": 15.6,
+            "duration": 7,
+            "gesture": "open-door",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 7,
+            "actionCompletion": "journey-score-complete"
+          },
+          "interaction": {
+            "label": "Abrir la puerta de la galería",
+            "hint": "Toca el picaporte; ellos esperan a que se abra",
+            "target": "door"
+          }
+        },
+        {
+          "id": "through",
+          "speaker": null,
+          "text": "",
+          "kind": "silence",
+          "view": "original",
+          "acting": "walk-through-door",
+          "close": "action",
+          "actionPlan": {
+            "start": 22.6,
+            "duration": 5,
+            "gesture": "walk-through-door",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5,
+            "actionCompletion": "journey-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "el-vestibulo-de-las-historias",
+      "title": "El vestíbulo de las historias",
+      "mode": "journey",
+      "world": "museum",
+      "biome": 0,
+      "hold": 20,
+      "line": "La luz encuentra el camino.",
+      "action": "Ayudarles",
+      "engine": "journey",
+      "set": "gallery",
+      "entry": "path-left",
+      "exit": "path-right",
+      "beats": [
+        {
+          "id": "entry",
+          "speaker": "pink",
+          "text": "¡Aquí el suelo devuelve nuestros pasitos!",
+          "acting": "gallery-entry",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4.2,
+            "gesture": "gallery-entry",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.2,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "wait",
+          "speaker": "taupe",
+          "text": "Ven. Hay sitio para los dos.",
+          "acting": "gallery-wait",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 4.2,
+            "duration": 3.8,
+            "gesture": "gallery-wait",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "acting": "walk-to-scream",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.0,
+            "duration": 4.6,
+            "gesture": "walk-to-scream",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.6,
+            "actionCompletion": "authored-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "el-museo-de-la-noche",
+      "title": "El museo de la noche",
+      "line": "Se quedaron frente a un cielo que todavía no sabían que podían visitar.",
+      "action": "Rozar la pintura",
+      "mode": "museum",
+      "world": "museum",
+      "biome": 0,
+      "hold": 16,
+      "engine": "journey",
+      "set": "gallery",
+      "beats": [
+        {
+          "id": "arrival",
+          "speaker": "pink",
+          "text": "¡Ah! ¿También se le escapó una luciérnaga?",
+          "acting": "scream-surprise",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4.6,
+            "gesture": "scream-surprise",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.6,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "mimic",
+          "speaker": "taupe",
+          "text": "O quizá le faltó alguien con quien mirarla.",
+          "acting": "shy-mimic",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 4.6,
+            "duration": 4.7,
+            "gesture": "shy-mimic",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.7,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "lamp",
+          "speaker": null,
+          "text": "",
+          "acting": "light-the-work",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 9.3,
+            "duration": 2.8,
+            "gesture": "light-the-work",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 2.8,
+            "actionCompletion": "authored-score-complete"
+          },
+          "interaction": {
+            "label": "Encender la lámpara del cuadro",
+            "hint": "Toca el aplique junto a El grito",
+            "target": "lamp"
+          }
+        },
+        {
+          "id": "soft",
+          "speaker": "pink",
+          "text": "Así da menos susto.",
+          "acting": "relieved-ears",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 12.1,
+            "duration": 3.8,
+            "gesture": "relieved-ears",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": "taupe",
+          "text": "Mira… esa página nos está esperando.",
+          "acting": "walk-to-album",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 15.9,
+            "duration": 4.8,
+            "gesture": "walk-to-album",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8,
+            "actionCompletion": "authored-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "dos-sonrisas",
+      "title": "Dos sonrisas",
+      "line": "Hay cosas que una imagen sabe decir sin palabras.",
+      "action": "Acercar el recuerdo",
+      "mode": "memory",
+      "memory": 1,
+      "world": "memory",
+      "biome": 0,
+      "hold": 16,
+      "engine": "journey",
+      "set": "gallery",
+      "beats": [
+        {
+          "id": "peek",
+          "speaker": "pink",
+          "text": "Hay algo guardado aquí. Esta vez no voy a tirar de la cinta.",
+          "acting": "album-peek",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4.6,
+            "gesture": "album-peek",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.6,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "space",
+          "speaker": "taupe",
+          "text": "Está justo aquí, sobre el banco. Abrámoslo despacito.",
+          "acting": "album-offer",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 4.6,
+            "duration": 3.6,
+            "gesture": "album-offer",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.6,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "album-choice",
+          "speaker": "pink",
+          "text": "¿Cómo descubrimos lo que guarda este banco?",
+          "acting": "album-seat",
+          "kind": "choice",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.2,
+            "duration": 0,
+            "gesture": "album-seat",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 0,
+            "actionCompletion": "authored-score-complete"
+          },
+          "choiceId": "album-space"
+        },
+        {
+          "id": "album-result",
+          "speaker": null,
+          "text": "",
+          "acting": "album-support",
+          "kind": "result",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.2,
+            "duration": 3.8,
+            "gesture": "album-support",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "authored-score-complete"
+          },
+          "choiceId": "album-space",
+          "interaction": {
+            "label": "Descubrir Dos sonrisas",
+            "hint": "Toca el álbum cerrado",
+            "target": "memory"
+          }
+        },
+        {
+          "id": "contemplate",
+          "speaker": null,
+          "text": "Dos sonrisas. Todo el tiempo para mirarlas.",
+          "acting": "quiet-photo",
+          "kind": "silence",
+          "view": "photo",
+          "close": "action",
+          "actionPlan": {
+            "start": 12.0,
+            "duration": 2.2,
+            "gesture": "quiet-photo",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 1,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "laugh",
+          "speaker": "pink",
+          "text": "Ahora también me dan ganas de sonreír.",
+          "acting": "soft-hop",
+          "kind": "speech",
+          "view": "reaction",
+          "close": "action",
+          "actionPlan": {
+            "start": 14.2,
+            "duration": 4.2,
+            "gesture": "soft-hop",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.2,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": "taupe",
+          "text": "Nos llevamos esa luz.",
+          "acting": "walk-to-night",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 18.4,
+            "duration": 4.4,
+            "gesture": "walk-to-night",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.4,
+            "actionCompletion": "authored-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "la-noche-en-la-pared",
+      "title": "Una noche dentro del marco",
+      "mode": "museum",
+      "world": "museum",
+      "engine": "journey",
+      "set": "gallery",
+      "hold": 20,
+      "line": "Primero, mirar. Después, cruzar.",
+      "beats": [
+        {
+          "id": "arrival",
+          "speaker": "pink",
+          "text": "Beige… aquí la noche no está dormida.",
+          "acting": "reach-starry-night",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4.5,
+            "gesture": "reach-starry-night",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.5,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "recognize",
+          "speaker": "taupe",
+          "text": "Mira sus remolinos. Parece que todo el cielo respira.",
+          "acting": "look-at-authentic-work",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 4.5,
+            "duration": 4.8,
+            "gesture": "look-at-authentic-work",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8,
+            "actionCompletion": "authored-score-complete"
+          }
+        },
+        {
+          "id": "invitation",
+          "speaker": null,
+          "text": "",
+          "acting": "contemplate-authentic-work",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 9.3,
+            "duration": 2.5,
+            "gesture": "contemplate-authentic-work",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 2.5,
+            "actionCompletion": "authored-score-complete"
+          },
+          "interaction": {
+            "label": "Acercarnos a la pintura",
+            "hint": "La obra será nuestro lienzo. Contémplala todo el tiempo que quieras.",
+            "target": "painting"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "acting": "cross-the-frame",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 11.8,
+            "duration": 3.2,
+            "gesture": "cross-the-frame",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.2,
+            "actionCompletion": "authored-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "dentro-del-cuadro",
+      "title": "Dentro del cuadro",
+      "line": "Y aquella luz encontró una manera de salir del marco.",
+      "action": "Seguir el destello",
+      "mode": "painting",
+      "world": "museum",
+      "biome": 0,
+      "hold": 17,
+      "beats": [
+        {
+          "id": "inside",
+          "speaker": "pink",
+          "text": "La noche se quedó quieta para escucharte.",
+          "acting": "approach-the-real-painting",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4.8,
+            "gesture": "approach-the-real-painting",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "ask",
+          "speaker": "taupe",
+          "text": "Tu deseo puede dejar una huella en ella.",
+          "acting": "offer-the-artwork",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 4.8,
+            "duration": 4.4,
+            "gesture": "offer-the-artwork",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.4,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "sky-choice",
+          "speaker": "pink",
+          "text": "Valerie, ¿cómo quieres dejarlo?",
+          "acting": "choose-the-mark",
+          "kind": "choice",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 9.2,
+            "duration": 0,
+            "gesture": "choose-the-mark",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 0,
+            "actionCompletion": "world-score-complete"
+          },
+          "choiceId": "museum-sky"
+        },
+        {
+          "id": "sky-result",
+          "speaker": null,
+          "text": "",
+          "acting": "make-your-own-mark",
+          "kind": "result",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 9.2,
+            "duration": 0.9,
+            "gesture": "make-your-own-mark",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 0.9,
+            "minSettledDuration": 0.12
+          },
+          "choiceId": "museum-sky",
+          "interaction": {
+            "label": "Terminar mi deseo",
+            "hint": "Dibuja varios trazos sobre la obra o une las luces. Tú decides cuándo terminar.",
+            "target": "sky"
+          },
+          "confirmationAlreadyRead": true
+        },
+        {
+          "id": "earned",
+          "speaker": "taupe",
+          "text": "Lo que dibujaste ya tiene un lugar entre nuestras señales.",
+          "acting": "receive-the-wish",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 10.1,
+            "duration": 3.6,
+            "gesture": "receive-the-wish",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5.2,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "wish",
+          "speaker": "pink",
+          "text": "Valerie es nuestro mayor deseo.",
+          "acting": "share-the-wish",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 13.7,
+            "duration": 5.4,
+            "gesture": "share-the-wish",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5.4,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "acting": "carry-the-mark-to-the-garden",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 19.1,
+            "duration": 3.8,
+            "gesture": "carry-the-mark-to-the-garden",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3.8,
+            "actionCompletion": "world-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "engine": "journey",
+      "set": "gallery",
+      "sceneStage": "painting",
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "un-deseo-para-dos",
+      "title": "Un deseo para dos",
+      "line": "Bajo el mismo cielo, hasta el silencio puede decir: contigo.",
+      "action": "Trazar un deseo",
+      "mode": "sky",
+      "world": "museum",
+      "biome": 0,
+      "hold": 16,
+      "beats": [
+        {
+          "id": "wish",
+          "speaker": "taupe",
+          "text": "Llevamos tu huella. Ahora nos falta algo que cuidar.",
+          "acting": "keep-the-sky-sign",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 4.8,
+            "gesture": "keep-the-sky-sign",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": "pink",
+          "text": "El hada conoce un jardín que todavía está despertando.",
+          "acting": "follow-the-garden-light",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 4.8,
+            "duration": 4.8,
+            "gesture": "follow-the-garden-light",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8,
+            "actionCompletion": "world-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "engine": "journey",
+      "set": "gallery",
+      "sceneStage": "painting",
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "el-jardin-despierta",
+      "title": "El jardín despierta",
+      "line": "El deseo bajó despacito. Donde tocó la tierra, comenzó a florecer.",
+      "action": "Despertar un lirio",
+      "mode": "garden",
+      "world": "garden",
+      "biome": 1,
+      "hold": 17,
+      "beats": [
+        {
+          "id": "bloom",
+          "speaker": null,
+          "text": "El jardín estaba esperando una luz.",
+          "acting": "watch",
+          "view": "original",
+          "kind": "narration",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        },
+        {
+          "id": "ask",
+          "speaker": "pink",
+          "text": "¡Mira cuánto puede crecer algo cuando lo cuidan!",
+          "acting": "wonder",
+          "view": "original",
+          "kind": "speech",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "entre-lirios-y-alas",
+      "title": "Un camino entre lirios",
+      "mode": "journey",
+      "world": "garden",
+      "engine": "journey",
+      "set": "garden-walk",
+      "sceneStage": "garden",
+      "biome": 0,
+      "hold": 20,
+      "line": "El tercer recuerdo se cuida con las dos patitas.",
+      "beats": [
+        {
+          "id": "arrive",
+          "speaker": "pink",
+          "text": "¡Las mariposas también conocen el camino!",
+          "acting": "walk-between-lilies",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 5,
+            "gesture": "walk-between-lilies",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "roses",
+          "text": "Estas se parecen a una pequeña espiral.",
+          "speaker": "pink",
+          "acting": "smell-roses",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 5,
+            "duration": 4.8,
+            "gesture": "smell-roses",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8
+          }
+        },
+        {
+          "id": "lavender",
+          "text": "Escucha cómo se mueve la lavanda.",
+          "speaker": "taupe",
+          "acting": "listen-lavender",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 9.8,
+            "duration": 4.8,
+            "gesture": "listen-lavender",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.8
+          }
+        },
+        {
+          "id": "daisies",
+          "text": "¡Las margaritas siguen la luz!",
+          "speaker": "pink",
+          "acting": "follow-daisies",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 14.6,
+            "duration": 4.5,
+            "gesture": "follow-daisies",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.5
+          }
+        },
+        {
+          "id": "notice",
+          "speaker": "taupe",
+          "text": "El hada vio un destello entre las raíces. Rosa, mira aquí.",
+          "acting": "notice-the-gift",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 19.1,
+            "duration": 5.2,
+            "gesture": "notice-the-gift",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5.2,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "gift-choice",
+          "speaker": "pink",
+          "text": "¿Qué llevamos con cuidado?",
+          "acting": "choose-garden-relic",
+          "kind": "choice",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 24.3,
+            "duration": 0,
+            "gesture": "choose-garden-relic",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 0,
+            "actionCompletion": "world-score-complete"
+          },
+          "choiceId": "garden-gift"
+        },
+        {
+          "id": "gift-result",
+          "text": "Algo brilla debajo de la tierra. Te ayudamos a descubrirlo.",
+          "speaker": "taupe",
+          "acting": "dig-together",
+          "kind": "result",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 24.3,
+            "duration": 2.4,
+            "gesture": "dig-together",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 2.4
+          },
+          "choiceId": "garden-gift",
+          "interaction": {
+            "target": "garden-gift",
+            "label": "Apartar la tierra",
+            "hint": "Acaricia la tierra de lado a lado. Después aflojaremos el recuerdo y lo levantaremos juntos."
+          }
+        },
+        {
+          "id": "garden-care",
+          "speaker": "taupe",
+          "text": "Lo cuidaremos hasta volver a la caja.",
+          "acting": "carry-the-living-keepsake",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 26.7,
+            "duration": 4.5,
+            "gesture": "carry-the-living-keepsake",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4.5,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "leave",
+          "speaker": null,
+          "text": "",
+          "acting": "continue-through-the-garden",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 31.2,
+            "duration": 4,
+            "gesture": "continue-through-the-garden",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 4,
+            "actionCompletion": "world-score-complete"
+          },
+          "departure": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "un-lirio-para-ti",
+      "title": "Un lirio para ti",
+      "line": "Cada flor tiene una pequeña forma de decirte algo.",
+      "action": "Elegir otro lirio",
+      "mode": "petal",
+      "world": "garden",
+      "biome": 1,
+      "hold": 17,
+      "beats": [
+        {
+          "id": "lily",
+          "speaker": null,
+          "text": "Un lirio para detener el mundo un momento.",
+          "acting": "watch",
+          "view": "original",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "soundCue": null,
+          "close": "next",
+          "replay": true,
+          "editorialHold": true
+        },
+        {
+          "id": "offer",
+          "speaker": "pink",
+          "text": "¿Lo cuidamos juntos?",
+          "acting": "offer-petal",
+          "view": "treasure",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "soundCue": null,
+          "close": "next",
+          "replay": true,
+          "editorialHold": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "nuestro-retrato",
+      "title": "Nuestro retrato",
+      "line": "Dos personas. Un perrito. Un recuerdo que vuelve a tomar forma.",
+      "action": "Contemplar el recuerdo",
+      "mode": "memory",
+      "memory": 0,
+      "world": "memory",
+      "biome": 0,
+      "hold": 16,
+      "beats": [
+        {
+          "id": "found",
+          "speaker": "pink",
+          "text": "Hay algo debajo…",
+          "acting": "nose-leaf",
+          "view": "discovery",
+          "kind": "speech",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        },
+        {
+          "id": "portrait-choice",
+          "speaker": "pink",
+          "text": "¿Lo vemos?",
+          "acting": "watch",
+          "view": "discovery",
+          "kind": "choice",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "portrait-reveal",
+          "editorialHold": true
+        },
+        {
+          "id": "portrait-result",
+          "speaker": null,
+          "text": "",
+          "acting": "watch",
+          "view": "reveal",
+          "kind": "result",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "portrait-reveal",
+          "editorialHold": true
+        },
+        {
+          "id": "portrait-rest",
+          "speaker": null,
+          "text": "Un retrato para mirar sin prisa.",
+          "acting": "quiet",
+          "view": "photo",
+          "kind": "narration",
+          "emotion": "gentle",
+          "look": "photo",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "editorialHold": true
+        },
+        {
+          "id": "dog",
+          "speaker": "pink",
+          "text": "¡Hay un perrito! Alguien me dijo que se llama Almendrita.",
+          "acting": "sniff-photo",
+          "view": "reaction",
+          "kind": "speech",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "gain": "portrait"
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "un-instante",
+      "title": "Un instante",
+      "line": "No para quedarnos en el pasado. Para llevar con cariño lo que fue nuestro.",
+      "action": "Quedarse aquí",
+      "mode": "memory",
+      "memory": 2,
+      "world": "memory",
+      "biome": 0,
+      "hold": 16,
+      "beats": [
+        {
+          "id": "quiet",
+          "speaker": null,
+          "text": "Hay instantes que no necesitan decir nada.",
+          "acting": "rest-together",
+          "view": "rest",
+          "kind": "narration",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        },
+        {
+          "id": "quiet-choice",
+          "speaker": "taupe",
+          "text": "¿Cómo lo acompañamos?",
+          "acting": "watch",
+          "view": "quiet-glow",
+          "kind": "choice",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "quiet-memory",
+          "editorialHold": true
+        },
+        {
+          "id": "quiet-result",
+          "speaker": null,
+          "text": "",
+          "acting": "watch",
+          "view": "quiet-glow",
+          "kind": "result",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "quiet-memory",
+          "editorialHold": true
+        },
+        {
+          "id": "quiet-rest",
+          "speaker": null,
+          "text": "Puedes quedarte aquí.",
+          "acting": "quiet",
+          "view": "photo",
+          "kind": "narration",
+          "emotion": "gentle",
+          "look": "photo",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "editorialHold": true
+        },
+        {
+          "id": "envelope",
+          "speaker": "taupe",
+          "text": "Es para Valerie.",
+          "acting": "find-envelope",
+          "view": "envelope",
+          "kind": "speech",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "gain": "envelope"
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "una-carta-para-ti",
+      "title": "Una carta para ti",
+      "line": "Lo que quiero decirte.",
+      "action": "Leer con calma",
+      "mode": "letter",
+      "world": "letter",
+      "biome": 0,
+      "hold": 16,
+      "beats": [
+        {
+          "id": "offer",
+          "speaker": "pink",
+          "text": "Esta sí es para ti.",
+          "acting": "offer-envelope",
+          "view": "envelope",
+          "kind": "speech",
+          "emotion": "curious",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "gain": "envelope"
+        },
+        {
+          "id": "seal-choice",
+          "speaker": "taupe",
+          "text": "¿Qué dejamos en el sobre?",
+          "acting": "watch",
+          "view": "envelope",
+          "kind": "choice",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "letter-seal",
+          "editorialHold": true
+        },
+        {
+          "id": "seal-result",
+          "speaker": null,
+          "text": "",
+          "acting": "watch",
+          "view": "envelope",
+          "kind": "result",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true,
+          "choiceId": "letter-seal",
+          "editorialHold": true
+        },
+        {
+          "id": "read",
+          "speaker": null,
+          "text": "",
+          "acting": "quiet",
+          "view": "read",
+          "kind": "narration",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "reader",
+          "replay": true,
+          "editorialHold": true
+        },
+        {
+          "id": "after",
+          "speaker": null,
+          "text": "Hay palabras que merecen un momento de silencio.",
+          "acting": "rest-together",
+          "view": "envelope",
+          "kind": "narration",
+          "emotion": "gentle",
+          "look": "partner",
+          "lightCue": "warm",
+          "close": "next",
+          "replay": true
+        }
+      ],
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "la-caja-rosa",
+      "title": "La caja rosa",
+      "line": "El camino nos trajo de vuelta. Había algo esperándote aquí.",
+      "action": "Acercar la luz",
+      "mode": "case",
+      "world": "ceremony",
+      "biome": 0,
+      "hold": 16,
+      "set": "alcove",
+      "beats": [
+        {
+          "id": "recognize",
+          "speaker": "pink",
+          "text": "La misma piedra, el mismo camino… ¡volvimos!",
+          "acting": "return-to-the-landmark",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 5.0,
+            "gesture": "return-to-the-landmark",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "autoplay": true,
+            "minReadableDuration": 4.4
+          }
+        },
+        {
+          "id": "forest",
+          "speaker": "taupe",
+          "text": "Esta luz nos enseñó a escuchar. Va aquí.",
+          "acting": "offer-forest-relic",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 5.0,
+            "duration": 6.0,
+            "gesture": "offer-forest-relic",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "autoplay": true,
+            "minReadableDuration": 4
+          }
+        },
+        {
+          "id": "sky",
+          "speaker": "pink",
+          "text": "Y este deseo es el que Valerie dejó en el cielo.",
+          "acting": "offer-sky-relic",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 11.0,
+            "duration": 6.2,
+            "gesture": "offer-sky-relic",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "autoplay": true,
+            "minReadableDuration": 4
+          }
+        },
+        {
+          "id": "garden",
+          "speaker": "taupe",
+          "text": "El último lo sacamos de la tierra… juntos.",
+          "acting": "offer-garden-relic",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 17.2,
+            "duration": 6.0,
+            "gesture": "offer-garden-relic",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "autoplay": true,
+            "minReadableDuration": 4
+          }
+        },
+        {
+          "id": "place",
+          "speaker": null,
+          "text": "",
+          "acting": "place-the-three-relics",
+          "kind": "silence",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 23.2,
+            "duration": 2.4,
+            "gesture": "place-the-three-relics",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "autoplay": true,
+            "minReadableDuration": 5.6
+          },
+          "departure": true
+        }
+      ],
+      "engine": "journey",
+      "sceneStage": "ceremony",
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "algo-que-guarde",
+      "title": "Algo que guardé",
+      "line": "Dos pequeños cómplices. Una sorpresa. Y algo que quiero preguntarte.",
+      "action": "Contemplar la sorpresa",
+      "mode": "ceremony",
+      "world": "ceremony",
+      "biome": 0,
+      "hold": 17,
+      "set": "alcove",
+      "beats": [
+        {
+          "id": "opening",
+          "speaker": "pink",
+          "text": "Yo abro el cierre… ¿sujetas la tapa?",
+          "acting": "grip-and-open",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 8.2,
+            "gesture": "grip-and-open",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "autoplay": true,
+            "minReadableDuration": 5.8
+          },
+          "interaction": {
+            "label": "Abrir el broche",
+            "hint": "Las tres señales abren la caja. Su secreto sigue cubierto.",
+            "target": "box"
+          }
+        },
+        {
+          "id": "unveil",
+          "speaker": "taupe",
+          "text": "La sostengo. Despacio, Rosa.",
+          "acting": "remove-the-lining",
+          "kind": "speech",
+          "view": "original",
+          "close": "action",
+          "actionPlan": {
+            "start": 8.2,
+            "duration": 7.0,
+            "gesture": "remove-the-lining",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "autoplay": true,
+            "minReadableDuration": 3.4
+          },
+          "interaction": {
+            "label": "Descubrir el secreto",
+            "hint": "La tapa está abierta. Solo tú decides cuándo apartar el forro.",
+            "target": "lining"
+          }
+        },
+        {
+          "id": "contemplate",
+          "speaker": "pink",
+          "text": "Aquí está. Es para ti.",
+          "acting": "receive-the-real-ring",
+          "kind": "speech",
+          "view": "revealed",
+          "close": "action",
+          "actionPlan": {
+            "start": 15.2,
+            "duration": 3,
+            "gesture": "receive-the-real-ring",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 3,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "jewel",
+          "speaker": null,
+          "text": "Míralo de cerca, sin prisa.",
+          "acting": "contemplate-the-ring",
+          "kind": "silence",
+          "view": "macro",
+          "close": "action",
+          "actionPlan": {
+            "start": 18.2,
+            "duration": 2,
+            "gesture": "contemplate-the-ring",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 2,
+            "actionCompletion": "world-score-complete"
+          }
+        },
+        {
+          "id": "witness",
+          "speaker": "taupe",
+          "text": "Nos queda una última cosa para ti.",
+          "acting": "return-to-the-guardians",
+          "kind": "speech",
+          "view": "return",
+          "close": "action",
+          "actionPlan": {
+            "start": 20.2,
+            "duration": 2,
+            "gesture": "return-to-the-guardians",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 2,
+            "actionCompletion": "world-score-complete"
+          }
+        }
+      ],
+      "engine": "journey",
+      "sceneStage": "ceremony",
+      "dialogueStyle": "thought"
+    },
+    {
+      "id": "una-nueva-pagina",
+      "title": "Una nueva página",
+      "line": "La historia sigue aquí, contigo.",
+      "action": "Volver a contemplar",
+      "mode": "finale",
+      "world": "finale",
+      "biome": 0,
+      "hold": 17,
+      "set": "alcove",
+      "beats": [
+        {
+          "id": "question",
+          "speaker": null,
+          "text": "Valerie, ¿quieres ser mi novia?",
+          "acting": "letters-from-inside-the-box",
+          "kind": "silence",
+          "view": "question",
+          "close": "action",
+          "actionPlan": {
+            "start": 0,
+            "duration": 5.4,
+            "gesture": "letters-from-inside-the-box",
+            "focus": "pair",
+            "completion": "landed-and-settled"
+          },
+          "playback": {
+            "minReadableDuration": 5.4,
+            "actionCompletion": "world-score-complete"
+          }
+        }
+      ],
+      "engine": "journey",
+      "sceneStage": "ceremony",
+      "dialogueStyle": "thought"
+    }
+  ],
+  "choices": {
+    "leaf-holder": {
+      "choiceId": "leaf-holder",
+      "chapter": "te-abro-el-camino",
+      "prompt": "¿Quién sostiene la hoja para que pasen?",
+      "preconditions": [],
+      "rejoinNode": "leaf-reply",
+      "options": [
+        {
+          "id": "rosa",
+          "label": "Rosa sostiene; Beige pasa primero",
+          "accessibilityLabel": "Rosa sostiene; Beige pasa primero",
+          "immediateAction": "leaf-pink",
+          "sceneVariant": "pink-canopy",
+          "stateEffects": {
+            "canopy": "pink"
+          },
+          "resultDialogue": "Yo sostengo. Beige, pasa primero.",
+          "futureDialogue": {},
+          "speaker": "pink"
+        },
+        {
+          "id": "beige",
+          "label": "Beige sostiene; Rosa pasa primero",
+          "accessibilityLabel": "Beige sostiene; Rosa pasa primero",
+          "immediateAction": "leaf-taupe",
+          "sceneVariant": "taupe-canopy",
+          "stateEffects": {
+            "canopy": "taupe"
+          },
+          "resultDialogue": "Rosa, pasa. Yo no suelto la hoja.",
+          "futureDialogue": {},
+          "speaker": "taupe"
+        }
+      ]
+    },
+    "forest-way": {
+      "choiceId": "forest-way",
+      "chapter": "el-bosque-escucha",
+      "prompt": "¿Por dónde descubren el camino?",
+      "preconditions": [],
+      "rejoinNode": "forest-together",
+      "options": [
+        {
+          "id": "firefly",
+          "label": "Seguir a la luciérnaga",
+          "accessibilityLabel": "Seguir a la luciérnaga",
+          "immediateAction": "follow-spark",
+          "sceneVariant": "lantern-path",
+          "stateEffects": {
+            "forestLight": "gold"
+          },
+          "resultDialogue": "Solo voy a mirarla… un poquito más cerca.",
+          "futureDialogue": {
+            "el-museo-de-la-noche": {
+              "beatId": "stir",
+              "speaker": "taupe",
+              "text": "Nuestra luciérnaga encontró una puerta."
+            }
+          },
+          "speaker": "pink"
+        },
+        {
+          "id": "tree",
+          "label": "Escuchar al árbol antiguo",
+          "accessibilityLabel": "Escuchar al árbol antiguo",
+          "immediateAction": "listen-tree",
+          "sceneVariant": "listening-grove",
+          "stateEffects": {
+            "forestLight": "mint"
+          },
+          "resultDialogue": "No ronca. ¡Nos estaba escuchando!",
+          "futureDialogue": {
+            "el-museo-de-la-noche": {
+              "beatId": "stir",
+              "speaker": "taupe",
+              "text": "La pista del árbol termina aquí."
+            }
+          },
+          "speaker": "taupe"
+        }
+      ]
+    },
+    "museum-sky": {
+      "choiceId": "museum-sky",
+      "chapter": "dentro-del-cuadro",
+      "prompt": "¿Cómo abrirán el cielo del cuadro?",
+      "preconditions": [],
+      "rejoinNode": "earned",
+      "options": [
+        {
+          "id": "paint",
+          "label": "Dibuja tu deseo",
+          "accessibilityLabel": "Dibuja tu deseo libremente sobre la pintura",
+          "immediateAction": "free-paint",
+          "sceneVariant": "painted-sky",
+          "stateEffects": {
+            "skyMotif": "brush-star"
+          },
+          "resultDialogue": "Este cielo tiene espacio para tu propio deseo.",
+          "futureDialogue": {
+            "un-deseo-para-dos": {
+              "beatId": "wish",
+              "speaker": "pink",
+              "text": "Tu estrella todavía tiene ese trazo."
+            }
+          },
+          "speaker": "pink"
+        },
+        {
+          "id": "constellation",
+          "label": "Unir las luces",
+          "accessibilityLabel": "Une las luces para formar V más J",
+          "immediateAction": "join-vj",
+          "sceneVariant": "connected-sky",
+          "stateEffects": {
+            "skyMotif": "constellation"
+          },
+          "resultDialogue": "Estas luces quieren escribir algo juntas.",
+          "futureDialogue": {
+            "un-deseo-para-dos": {
+              "beatId": "wish",
+              "speaker": "pink",
+              "text": "¡Nuestro dibujo está en el cielo!"
+            }
+          },
+          "speaker": "taupe"
+        }
+      ]
+    },
+    "garden-gift": {
+      "choiceId": "garden-gift",
+      "chapter": "entre-lirios-y-alas",
+      "prompt": "¿Qué podrán cuidar en el camino?",
+      "preconditions": [],
+      "rejoinNode": "garden-care",
+      "options": [
+        {
+          "id": "petal",
+          "label": "Guardar el pétalo rosado",
+          "accessibilityLabel": "Guardar el pétalo rosado",
+          "immediateAction": "keep-petal",
+          "sceneVariant": "petal-cradle",
+          "stateEffects": {
+            "gardenRelic": "rose-petal"
+          },
+          "resultDialogue": "Hay un pétalo protegido ahí dentro. Vamos despacito.",
+          "futureDialogue": {
+            "una-carta-para-ti": {
+              "beatId": "offer",
+              "speaker": "pink",
+              "text": "El pétalo puede cuidar estas palabras."
+            },
+            "la-caja-rosa": {
+              "beatId": "near",
+              "speaker": "taupe",
+              "text": "El pétalo encontró su sitio."
+            }
+          },
+          "speaker": "pink"
+        },
+        {
+          "id": "flower",
+          "label": "Proteger la pequeña flor de luz",
+          "accessibilityLabel": "Proteger la pequeña flor de luz",
+          "immediateAction": "keep-bloom",
+          "sceneVariant": "flower-cradle",
+          "stateEffects": {
+            "gardenRelic": "light-flower"
+          },
+          "resultDialogue": "La flor sigue encendida bajo la tierra. Hay que liberarla.",
+          "futureDialogue": {
+            "una-carta-para-ti": {
+              "beatId": "offer",
+              "speaker": "pink",
+              "text": "La flor quiere alumbrar estas palabras."
+            },
+            "la-caja-rosa": {
+              "beatId": "near",
+              "speaker": "taupe",
+              "text": "La flor reconoce esta luz."
+            }
+          },
+          "speaker": "pink"
+        }
+      ]
+    },
+    "portrait-reveal": {
+      "choiceId": "portrait-reveal",
+      "chapter": "nuestro-retrato",
+      "prompt": "¿Cómo descubren lo que se esconde?",
+      "preconditions": [],
+      "rejoinNode": "portrait-rest",
+      "options": [
+        {
+          "id": "leaf",
+          "label": "Levantar la hoja entre los dos",
+          "accessibilityLabel": "Levantar la hoja entre los dos",
+          "immediateAction": "lift-leaf-pair",
+          "sceneVariant": "leaf-curtain",
+          "stateEffects": {
+            "portraitRoute": "leaf"
+          },
+          "resultDialogue": "Yo este lado. Tú el otro.",
+          "futureDialogue": {},
+          "speaker": "taupe"
+        },
+        {
+          "id": "glow",
+          "label": "Pedirle luz a la luciérnaga",
+          "accessibilityLabel": "Pedirle luz a la luciérnaga",
+          "immediateAction": "invite-photo-light",
+          "sceneVariant": "light-curtain",
+          "stateEffects": {
+            "portraitRoute": "glow"
+          },
+          "resultDialogue": "¡Mira! Nos encontró otra vez.",
+          "futureDialogue": {},
+          "speaker": "pink"
+        }
+      ]
+    },
+    "album-space": {
+      "choiceId": "album-space",
+      "chapter": "dos-sonrisas",
+      "prompt": "¿Cómo miran juntos esta página?",
+      "preconditions": [],
+      "rejoinNode": "contemplate",
+      "options": [
+        {
+          "id": "space",
+          "label": "Rosa le hace sitio a Beige",
+          "accessibilityLabel": "Rosa le hace sitio a Beige",
+          "immediateAction": "room-for-partner",
+          "sceneVariant": "shared-album",
+          "stateEffects": {
+            "albumRoute": "space"
+          },
+          "resultDialogue": "Ahora sí cabemos los dos.",
+          "futureDialogue": {},
+          "speaker": "taupe"
+        },
+        {
+          "id": "page",
+          "label": "Beige ayuda a pasar la página",
+          "accessibilityLabel": "Beige ayuda a pasar la página",
+          "immediateAction": "turn-cloth-page",
+          "sceneVariant": "turning-album",
+          "stateEffects": {
+            "albumRoute": "page"
+          },
+          "resultDialogue": "Ah… estaba del otro lado.",
+          "futureDialogue": {},
+          "speaker": "pink"
+        }
+      ]
+    },
+    "quiet-memory": {
+      "choiceId": "quiet-memory",
+      "chapter": "un-instante",
+      "prompt": "¿Cómo acompañan este instante?",
+      "preconditions": [],
+      "rejoinNode": "quiet-rest",
+      "options": [
+        {
+          "id": "light",
+          "label": "Sostenerlo con una lucecita",
+          "accessibilityLabel": "Sostenerlo con una lucecita",
+          "immediateAction": "share-photo-glow",
+          "sceneVariant": "light-aperture",
+          "stateEffects": {
+            "quietRoute": "light"
+          },
+          "resultDialogue": "Un poquito para ti. Otro para mí.",
+          "futureDialogue": {},
+          "speaker": "pink"
+        },
+        {
+          "id": "close",
+          "label": "Quedarse acurrucados",
+          "accessibilityLabel": "Quedarse acurrucados",
+          "immediateAction": "sit-by-partner",
+          "sceneVariant": "quiet-seat",
+          "stateEffects": {
+            "quietRoute": "close"
+          },
+          "resultDialogue": "Aquí. No hace falta decir nada.",
+          "futureDialogue": {},
+          "speaker": "taupe"
+        }
+      ]
+    },
+    "letter-seal": {
+      "choiceId": "letter-seal",
+      "chapter": "una-carta-para-ti",
+      "prompt": "¿Qué detalle acompañará la carta?",
+      "preconditions": [],
+      "rejoinNode": "read",
+      "options": [
+        {
+          "id": "sky",
+          "label": "La estrella de nuestro cielo",
+          "accessibilityLabel": "La estrella de nuestro cielo",
+          "immediateAction": "seal-sky",
+          "sceneVariant": "sky-envelope",
+          "stateEffects": {
+            "sealStyle": "sky"
+          },
+          "resultDialogue": "Que esta luz cuide las palabras.",
+          "futureDialogue": {},
+          "speaker": "taupe"
+        },
+        {
+          "id": "garden",
+          "label": "Un lirio del jardín",
+          "accessibilityLabel": "Un lirio del jardín",
+          "immediateAction": "seal-garden",
+          "sceneVariant": "garden-envelope",
+          "stateEffects": {
+            "sealStyle": "garden"
+          },
+          "resultDialogue": "Así viajará con ellas.",
+          "futureDialogue": {},
+          "speaker": "pink"
+        }
+      ]
+    },
+    "guide-way": {
+      "choiceId": "guide-way",
+      "chapter": "dos-miradas",
+      "prompt": "La pequeña guía se enredó en la cinta. ¿La ayudamos?",
+      "preconditions": [],
+      "rejoinNode": "reply",
+      "options": [
+        {
+          "id": "lift",
+          "label": "Rosa levanta la cinta",
+          "accessibilityLabel": "Rosa levanta la cinta para que el hada pase por arriba",
+          "speaker": "pink",
+          "immediateAction": "lift-ribbon",
+          "sceneVariant": "over-vine",
+          "stateEffects": {
+            "guideFlight": "high"
+          },
+          "resultDialogue": "¡Por arriba! Yo te hago un huequito.",
+          "futureDialogue": {}
+        },
+        {
+          "id": "shelter",
+          "label": "Beige le ofrece refugio",
+          "accessibilityLabel": "Beige recoge la cinta y ofrece una patita al hada",
+          "speaker": "taupe",
+          "immediateAction": "shelter-fairy",
+          "sceneVariant": "palm-refuge",
+          "stateEffects": {
+            "guideFlight": "low"
+          },
+          "resultDialogue": "Aquí puedes descansar. Nosotros esperamos.",
+          "futureDialogue": {}
+        }
+      ]
+    }
+  },
+  "connections": {
+    "antes-del-primer-pasito>dos-miradas": "vine-passage",
+    "dos-miradas>te-abro-el-camino": "vine-passage",
+    "te-abro-el-camino>una-patita-mas": "path-dissolve",
+    "una-patita-mas>el-tiempo-de-los-dos": "water-reflection",
+    "el-tiempo-de-los-dos>un-secreto-para-ti": "spatial-passage",
+    "un-secreto-para-ti>tras-la-luz": "spatial-passage",
+    "tras-la-luz>el-bosque-escucha": "spatial-passage",
+    "el-bosque-escucha>donde-apuntan-las-raices": "forest-canopy",
+    "donde-apuntan-las-raices>la-casa-de-las-ventanas": "vine-passage",
+    "la-casa-de-las-ventanas>el-vestibulo-de-las-historias": "doorway",
+    "el-vestibulo-de-las-historias>el-museo-de-la-noche": "follow-cast",
+    "el-museo-de-la-noche>dos-sonrisas": "follow-cast",
+    "dos-sonrisas>la-noche-en-la-pared": "follow-cast",
+    "la-noche-en-la-pared>dentro-del-cuadro": "frame-match",
+    "dentro-del-cuadro>un-deseo-para-dos": "follow-cast",
+    "un-deseo-para-dos>el-jardin-despierta": "petal-match",
+    "el-jardin-despierta>entre-lirios-y-alas": "petal-match",
+    "entre-lirios-y-alas>un-lirio-para-ti": "spatial-passage",
+    "un-lirio-para-ti>nuestro-retrato": "petal-match",
+    "nuestro-retrato>un-instante": "page-turn",
+    "un-instante>una-carta-para-ti": "page-turn",
+    "una-carta-para-ti>la-caja-rosa": "page-turn",
+    "la-caja-rosa>algo-que-guarde": "follow-cast",
+    "algo-que-guarde>una-nueva-pagina": "follow-cast"
+  },
+  "landmark": {
+    "set": "alcove",
+    "stone": {
+      "u": 0.49,
+      "v": 0.543
+    },
+    "source": "assets/journey/alcove.png"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "generator": "Built-in image_gen, existing clearing as style reference only; no character regeneration",
+  "assets": {
+    "alcove": {
+      "file": "assets/journey/alcove.webp",
+      "original": "assets/journey/alcove.png",
+      "sha256": "ec55ae47e8b8cda0370ace6cc458c956b57977f69638bc2c9d15797dba7e7376",
+      "originalSha256": "78185d4a7a7eb6b4fed5150ad6fcb4cdf387f25782d9c74fd8cfed56eed198d3",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 721656,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "arch": {
+      "file": "assets/journey/arch.webp",
+      "original": "assets/journey/arch.png",
+      "sha256": "e08490186e7402f25f18cda977575e1647cb7e56e62cac1a34914a69f82a2350",
+      "originalSha256": "af64e735387574a10ad8ea6cd5241c5ee0730572a9e5011cb27484f4d8601f56",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 740350,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "creek": {
+      "file": "assets/journey/creek.webp",
+      "original": "assets/journey/creek.png",
+      "sha256": "ea170ab26466da5d45a2c590a7b38f8333dd627a370fd848bdf1afeebacb9aa8",
+      "originalSha256": "f99ee29b2fc4f1f4d3093259a69414603ead40ba87c842573a06718c9df1f4d9",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 817408,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "glasshouse": {
+      "file": "assets/journey/glasshouse.webp",
+      "original": "assets/journey/glasshouse.png",
+      "sha256": "910b1ec3d7bfa0db2d3c02d9cd6dfe183333230d30076f75923ff69ed7042f3b",
+      "originalSha256": "3e685cd7c475c95ff986dab51fd89101c213ff43ceb7bd99c59d5aa56081b954",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 764720,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "pergola": {
+      "file": "assets/journey/pergola.webp",
+      "original": "assets/journey/pergola.png",
+      "sha256": "2cb382b1ccaaf02f4a387f0dd1118f635a0805d01fceb0acfb33d629a603b4e0",
+      "originalSha256": "323129385c509ed767f611feee5c07a0e58bd6a2fa5c77d932606322cc707eec",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 794860,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "roots": {
+      "file": "assets/journey/roots.webp",
+      "original": "assets/journey/roots.png",
+      "sha256": "dab22a566484da86cd7f2c3bb762f370cede89cd88cd8fa8580f65d4613bf6ff",
+      "originalSha256": "745d3d5882e28b8e372b44556cfa48fe8641dd04c352368ac98030d6e02b050a",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 805626,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "rose": {
+      "file": "assets/journey/rose.webp",
+      "original": "assets/journey/rose.png",
+      "sha256": "86d8686bdfc7a1372dbc961efb267abad214c1fa30713f2ed08968dedba7ae34",
+      "originalSha256": "78abe38d250875cf312389d55e5b47ce37a9f0cf35f9e35a1692ead66111116f",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 747392,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "rows": {
+      "file": "assets/journey/rows.webp",
+      "original": "assets/journey/rows.png",
+      "sha256": "13fa70536cc2519c80cadff15483e28c898364c8486b5f6a34d42b77f92e8a06",
+      "originalSha256": "a2717c5ca64869154b7ba02f6e22340c9992ac4e9565b0c032df69b612e701ba",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 743440,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "tunnel": {
+      "file": "assets/journey/tunnel.webp",
+      "original": "assets/journey/tunnel.png",
+      "sha256": "7b097e73a1be5d7c67dee1c61c922cc24c4579d129034179fd094cf0dd61eed5",
+      "originalSha256": "2fc416d5e309b77f23365b48f017e847a1ec98be68eecc2161c51cdb8d0b5d4d",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 779080,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "vestibule": {
+      "file": "assets/journey/vestibule.webp",
+      "original": "assets/journey/vestibule.png",
+      "sha256": "cd96bacbb1282018ce27bd33f2a9afa289f997456f02b33586a70bf3738167b3",
+      "originalSha256": "82c6f3da309f63fa72c6a35e3bbca22a3264f926bf6488df2baa17056610d3b5",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 680406,
+      "mime": "image/webp",
+      "runtimeQuality": 93
+    },
+    "fairy": {
+      "file": "assets/journey/fairy.webp",
+      "original": "assets/journey/fairy.png",
+      "sha256": "e0bb178b368eec051e9bf9d03302de9d115a6afe708ffd659966891b0a5bd449",
+      "originalSha256": "35b2b402eb5fe3d8ebdd0c8cb3ab15f81dea810ccdfd3477d9a7634e91383e1b",
+      "width": 1024,
+      "height": 1536,
+      "mime": "image/webp",
+      "bytes": 494352
+    },
+    "gallery": {
+      "file": "assets/journey/gallery.webp",
+      "original": "assets/journey/gallery.png",
+      "sha256": "90a318d6bc14318ea8dde6a93a00282a1537a035c273a21ffbb118aab16541c4",
+      "originalSha256": "fb993b1dffaa84be7e390b54772a27af3602b82201a89b562762675541b468ff",
+      "width": 1942,
+      "height": 809,
+      "mime": "image/webp",
+      "bytes": 605702
+    },
+    "scream": {
+      "file": "assets/museum-authentic/the-scream.webp",
+      "original": "assets/museum-authentic/the-scream.png",
+      "sha256": "e48fdb83fe8beb24c275925dfb43a3c8f0ab665389f452abeacfb076e9369b6f",
+      "originalSha256": "cab58fe8467f180a51b10bd6a94626924e4f2cf946e9ad51b708745f7dd5edb2",
+      "width": 1024,
+      "height": 692,
+      "mime": "image/webp",
+      "bytes": 874766,
+      "provenance": "Exact supplied original PNG retained; runtime WebP has identical decoded RGBA pixels.",
+      "rgbaExact": true
+    },
+    "starry": {
+      "file": "assets/museum-authentic/starry-night.webp",
+      "original": "assets/museum-authentic/starry-night.png",
+      "sha256": "de80dd5dbd3236e5e8dbaf22fb4bfe873dba9283010f72bb24a36fdb40af8acd",
+      "originalSha256": "cac481a3d630db7b064715e96e5e883db07624ad7e9a0d13e595ec713a9cd278",
+      "width": 1280,
+      "height": 1029,
+      "mime": "image/webp",
+      "bytes": 1958612,
+      "provenance": "Exact supplied original PNG retained; runtime WebP has identical decoded RGBA pixels.",
+      "rgbaExact": true
+    },
+    "garden-walk": {
+      "file": "assets/journey/garden-walk.webp",
+      "original": "assets/journey/garden-walk.png",
+      "mime": "image/webp",
+      "width": 2172,
+      "height": 724,
+      "bytes": 765454,
+      "sha256": "61afe5bc302ac5a4990b98bc3e9ed83654b2eb478acfddf218ae98bb5f9d43df",
+      "originalSha256": "02eb741a60667103c8a9dcdae90656bdb76343f0cdc64bfc9b5f4e07cb4e5b9e",
+      "source": "F24.4 original illustration; approved garden reference retained."
+    },
+    "relics": {
+      "file": "assets/journey/relics.webp",
+      "original": "assets/journey/relics.png",
+      "mime": "image/webp",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 505738,
+      "sha256": "4ea93fa914db91b145e964d561ea4d981286a9e9b8d726d68d89dec41a5bf4ba",
+      "originalSha256": "e05203912d7425cd544f53e00c87b926d0706024c3024004ee984efd418413a2",
+      "source": "F24.4 original illustration; approved garden reference retained."
+    },
+    "soil-bed": {
+      "file": "assets/journey/soil-bed.png",
+      "original": "assets/journey/soil-bed.png",
+      "sha256": "2291ba612fdf344a54c0130d98c3bf55fa4a3d0ba95cd60c5eedc4993f6ddf49",
+      "originalSha256": "2291ba612fdf344a54c0130d98c3bf55fa4a3d0ba95cd60c5eedc4993f6ddf49",
+      "width": 2172,
+      "height": 724,
+      "bytes": 2655393,
+      "mime": "image/png"
+    }
+  }
+}

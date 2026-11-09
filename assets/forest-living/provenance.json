@@ -1,0 +1,34 @@
+{
+  "tool": "OpenAI built-in image_gen.imagegen",
+  "mode": "reference-driven original supplemental illustration",
+  "generatedLocalDate": "2026-10-28",
+  "references": [
+    {
+      "file": "assets/art/forest-path.png",
+      "sha256": "54e82953e73ec6c7c201602fc67fd23c2a52d3df87a9a721a726695dd0fca0b7",
+      "role": "style and palette reference only; not replaced"
+    },
+    {
+      "file": "assets/art/foliage-atlas.png",
+      "sha256": "bb981299224b5b834de0b6857142e6defa70a2c77e0140e560ae8e6d44cea0c1",
+      "role": "style and palette reference only; not replaced"
+    }
+  ],
+  "promptFile": "prompt.txt",
+  "preservation": "Original generated PNG copied byte-for-byte. Existing art, reference plushes and human photographs were not modified. No third-party stock asset or licence attribution introduced.",
+  "use": "Project-specific supplementary forest layer requested by author; generated output governed by applicable OpenAI terms, no separate stock licence asserted.",
+  "additionalAssets": {
+    "clearing": {
+      "file": "firefly-clearing-v1.png",
+      "tool": "OpenAI built-in image_gen.imagegen",
+      "promptFile": "clearing-prompt.txt",
+      "transparentBackground": false,
+      "references": [
+        "assets/art/forest-path.png"
+      ],
+      "preservation": "Original generation copied byte-for-byte; source reference untouched.",
+      "generatedLocalDate": "2026-10-28",
+      "sha256": "c07c8499c653b601b8fe871d83c3132f267b8b548802cd6f6662473bd1e116a1"
+    }
+  }
+}

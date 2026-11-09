@@ -1,0 +1,207 @@
+[
+  {
+    "path": "src/album-object.js",
+    "sha256": "39263e720c87a50c8656132c6d411fd20b019b5b9b66daf0fd9503c4194b01c6",
+    "status": "changed"
+  },
+  {
+    "path": "src/bubble-director.js",
+    "sha256": "0161eac95db20e878b4004dacb04b82e5b2aab938ec0fbabd0896dc0254baf6e",
+    "status": "changed"
+  },
+  {
+    "path": "src/ceremony-theatre.js",
+    "sha256": "5fae894619f0c0405a482acafb875dabf079b8e007f39eed944a60c9bf44a64a",
+    "status": "changed"
+  },
+  {
+    "path": "src/cinematic-hud.js",
+    "sha256": "7e4bc1070c2fe1380865b6b25697b021dc8e4e41a6ad1d9696c4274982264159",
+    "status": "changed"
+  },
+  {
+    "path": "src/director.js",
+    "sha256": "efe9c3de3f5094cd63305f20964724112035cb30532dd435b2c2b89b70beaebc",
+    "status": "changed"
+  },
+  {
+    "path": "src/film-script.js",
+    "sha256": "fc2a0842923b6bd6db72aef746f076fb84392d7281a56b74f2a97ed7d4025653",
+    "status": "changed"
+  },
+  {
+    "path": "src/film-script.json",
+    "sha256": "bd29cf52277f7491911c9e4dd7480ee5d7d66dc700447f83db9b6101457a087d",
+    "status": "changed"
+  },
+  {
+    "path": "src/film.css",
+    "sha256": "61cc389d53dd22b11773bbcb60b325cf7c63ea9a08da0977ebef40615a65b5cf",
+    "status": "changed"
+  },
+  {
+    "path": "src/gallery-theatre.js",
+    "sha256": "4a45e960bfd2adacb187e4aee6e517610b39c2831988af19cb4193e047358eff",
+    "status": "changed"
+  },
+  {
+    "path": "src/garden-dig.js",
+    "sha256": "eb2b0b1fe79b878154ce807d4f3d31db9d360c7a6f5ff4bddf411700a60598ae",
+    "status": "changed"
+  },
+  {
+    "path": "src/garden-promenade.js",
+    "sha256": "114d07355263cd8afe3bb644e5675fdee0c27e8a8fc36a3e64f1243fa6d5b797",
+    "status": "changed"
+  },
+  {
+    "path": "src/garden-soil.js",
+    "sha256": "05d0bcaec5acad0d8bd41348cafd8c3f9af4126dd252db3f23f55494b2f7f2b7",
+    "status": "new"
+  },
+  {
+    "path": "src/index.html",
+    "sha256": "784ccf039bca269a443d1ad0e2e5df9dd086d5835b49324c6c283806c03993da",
+    "status": "changed"
+  },
+  {
+    "path": "src/living-stage.js",
+    "sha256": "a4ec6ff8f0f3589d29e0ec07b6fa231c13d95b613261285c6ff87c2405facbc8",
+    "status": "changed"
+  },
+  {
+    "path": "src/path-depth.js",
+    "sha256": "3a27377390d145dc9184dea175bd071563d9f702a86d35f167823b4434da0737",
+    "status": "changed"
+  },
+  {
+    "path": "src/session.js",
+    "sha256": "db789856ba32eafb5bf1432068d344fdb478ab9bb92bc91f45410b66b1d4a864",
+    "status": "changed"
+  },
+  {
+    "path": "src/sound.js",
+    "sha256": "20cd7a9b2ca53c2f21c23ea1e994ea38df80c7f4b722a45d3a80d496bd200a9e",
+    "status": "changed"
+  },
+  {
+    "path": "src/transition-director.js",
+    "sha256": "4eb1a60267bef05540d50d6b30cb711497158de5d20a578b10798eb24287bd2c",
+    "status": "changed"
+  },
+  {
+    "path": "src/vineyard-scene.js",
+    "sha256": "01c9d7337e840df67cc5bf67ce0ed8ce8377288b272cd371342d1a302941ffc8",
+    "status": "changed"
+  },
+  {
+    "path": "src/world-path.js",
+    "sha256": "58f2bbe2a962de5f538470bb90cc2fe16f402a921511acbb232c617c84028b56",
+    "status": "changed"
+  },
+  {
+    "path": "scripts/package.mjs",
+    "sha256": "1f0bdca5c2822913338eb1a168f59ac721d419ab59ad37f539f58d585da4a43a",
+    "status": "changed"
+  },
+  {
+    "path": "scripts/qa-f246.py",
+    "sha256": "98cf72bf9cb8323b8e0b1d202451b4c0301308594aacf86a3781b74da86dd3a5",
+    "status": "new"
+  },
+  {
+    "path": "scripts/serve.mjs",
+    "sha256": "9ec2b175514cd51656816c36719eaee39b51adabe8b16b0268670437965cd770",
+    "status": "changed"
+  },
+  {
+    "path": "scripts/verify.mjs",
+    "sha256": "461e9a546c71b2b655541074bf0504245681e0dfedd4b6882e9545865a515f33",
+    "status": "changed"
+  },
+  {
+    "path": "tests/audio-f246.cjs",
+    "sha256": "fbb91588fa8a78ac6867404941379114f94cacf616ae2f218b943c0e3f0292b9",
+    "status": "new"
+  },
+  {
+    "path": "tests/forest-session.test.mjs",
+    "sha256": "a05d19d5446399c415b87ce7bd1460c69928080e407636c3ede448309304835d",
+    "status": "changed"
+  },
+  {
+    "path": "tests/journey-f246.cjs",
+    "sha256": "e83d32b782e44aea245b80df5faf8f35d5011f53a462320b270b371b03f8878e",
+    "status": "new"
+  },
+  {
+    "path": "tests/journey-migration.test.mjs",
+    "sha256": "f1037b80f3625aef6f110a685882b32bcd07d916a2c950306b84f7cfe5447a38",
+    "status": "changed"
+  },
+  {
+    "path": "tests/living-tale-runtime.cjs",
+    "sha256": "ea01cd828b93a414f6095fcbf22e3cdf79f3eeaf2b952c98cf32395834252044",
+    "status": "changed"
+  },
+  {
+    "path": "tests/refinement.test.mjs",
+    "sha256": "a3796a5dd969462ef46ef65c481c811bfe1d28cee799a2034bb0fbb7718def2a",
+    "status": "changed"
+  },
+  {
+    "path": "tests/soak-f246.cjs",
+    "sha256": "8f152e843d3cfa5641d73059574c59259bf955637d314464e7cf3a9fee9379fa",
+    "status": "new"
+  },
+  {
+    "path": "tests/stability-runtime.cjs",
+    "sha256": "c3896442e20c41e87f80596081651d4c1afe51cc85bbcb88899a6cc02d37c808",
+    "status": "new"
+  },
+  {
+    "path": "tests/stability.test.mjs",
+    "sha256": "b6e2f57c26108dac7c124ea729a55d99e5f276089678eba470f171c8fb5aeedd",
+    "status": "new"
+  },
+  {
+    "path": "tests/transitions-f24.test.mjs",
+    "sha256": "8d6c58b18d5e8fad83b00b7cb89e5dff6d2dab153ef3b31ca96cd2e8406d96c9",
+    "status": "changed"
+  },
+  {
+    "path": "tests/vertical-cut.test.mjs",
+    "sha256": "0789805f56432e36a7e6c67c4a09dd5ff38e7fc68220d70293366ff191a897bb",
+    "status": "changed"
+  },
+  {
+    "path": "brief/F24_6/VALERIE_F24_6_AUDITORIA_PROFESIONAL.md",
+    "sha256": "9041a9f066874091d53985c5689bf5256b3825aee9da4d4962e40563009ff838",
+    "status": "new"
+  },
+  {
+    "path": "brief/F24_6/VALERIE_F24_6_MATRIZ_QA_ACEPTACION.md",
+    "sha256": "787738cab33770099749902162703c6de0b2b0b6b55d53189a6a5e3de31da37c",
+    "status": "new"
+  },
+  {
+    "path": "brief/F24_6/VALERIE_F24_6_PROMPT_MAESTRO_CODEX.txt",
+    "sha256": "33ca7af114733dadb0af6ddba505ff1f17a481cc36da38254318069bc87fc6ac",
+    "status": "new"
+  },
+  {
+    "path": "release.json",
+    "sha256": "6ee6f54140d580b7d2c536b0a4b81c576f26af0b53920846238ff7f6e26ea2f6",
+    "status": "changed"
+  },
+  {
+    "path": "package.json",
+    "sha256": "cf000851c65f0ccc5ecce344886dccaa9d9ca035e8d027308fd84b548267139b",
+    "status": "changed"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "ee06cd6b5d0474ce2e420d662c989348ac7d77febf769c7eff0b5e63f539b437",
+    "status": "changed"
+  }
+]

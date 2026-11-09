@@ -1,0 +1,45 @@
+VALERIE — DOS CONEJITOS Y EL SECRETO DEL JARDÍN
+AUDITORÍA INDEPENDIENTE F17 Y VISIÓN DE EVOLUCIÓN
+Fecha de revisión: 27 octubre 2026
+Fuente: VALERIE_DOS_CONEJITOS_F17_COMPLETO.zip aportado por el autor
+
+RESUMEN EJECUTIVO
+F17 constituye una evolución funcional genuina respecto a la narrativa fundamentalmente lineal de F12: incorpora ocho elecciones reversibles (16 opciones), burbujas sobre los personajes, consecuencias locales en animación, objetos y diálogos, tres variantes de recuerdos y personalización de la carta. Los peluches reales y la estética ilustrada están preservados. No he reproducido un error JavaScript crítico en los recorridos examinados. No obstante, el viaje todavía depende de numerosos avances manuales y las decisiones convergen rápidamente, con un impacto limitado sobre los acontecimientos posteriores. No certificar aún la experiencia como definitiva.
+
+VERIFICACIONES INDEPENDIENTES REALIZADAS
+1. ZIP: leído y extraído; 290 entradas, tamaño comprimido aproximado 93,3 MB, descomprimido 112 MB. HTML sin conexión incluido, aproximadamente 27,5 MB. Incluye archivos personales y versiones anteriores: no publicar ZIP editable.
+2. npm test: 18/18 pruebas PASS sobre ZIP completamente extraído. Una extracción parcial inicial omitió deliberadamente legacy y produjo un error ENOENT que desapareció al extraer todos los archivos. NO es un defecto del ZIP.
+3. npm run build: PASS. Mensaje de verificación de nueve motores originales y seis referencias.
+4. Chromium headless, HTML offline inyectado en página aislada: inicializa, carga ambos peluches y muestra burbuja de pensamiento de Rosa, sin errores JS observados. Navegación directa del verificador para los capítulos 0–15; los capítulos 16–18 permanecen protegidos hasta completar la carta, según política prevista.
+5. Ocho decisiones: llegué a cada pregunta con botones Anterior/Siguiente y seleccioné la primera opción de cada una. Resultado: 8/8 opciones seleccionadas y persistidas en el estado; 8/8 paneles con las dos alternativas correctas. Las segundas alternativas tienen contratos automatizados, pero no se ejecutaron aquí las 8 rutas visuales alternativas completas; distinguir cobertura.
+6. Viewports 320x568, 390x844, 568x320, 844x390 y 1440x900: botones del panel de elección de hoja visibles, sus centros pulsables, sin overflow horizontal en esas comprobaciones. Navegación inferior de 48 px en pantalla móvil comprobada.
+7. De carta a desenlace en la versión offline: tres folios navegados, capítulos de caja y anillo recorridos, pregunta final alcanzada en Chromium; sin errores JS. Los avances de folios no cambian el índice de beat y no deben confundirse con un bloqueo.
+8. Se revisaron módulos de historia, decisiones, burbujas, memoria, final, animación y privacidad. No hubo pruebas físicas de iOS Safari ni Android, ni evaluación de audio con altavoces reales, ni medición certificada de FPS o consumo térmico.
+
+HALLAZGOS — DEFECTOS FUNCIONALES CONFIRMADOS
+En la cobertura anterior no se reprodujo una falla crítica bloqueante. No inventar defectos ni atribuir a F17 los problemas de F8 o F12 sin nueva reproducción.
+
+HALLAZGOS — DEUDA DE EXPERIENCIA (P1)
+UX-01: La progresión exige un número elevado de pulsaciones (el informe interno habla de tres recorridos de 85 pasos, entre capítulos, diálogos, opciones, carta y ceremonia). La acción repetida de Siguiente puede volver tediosa una historia que debería respirarse. Validar en uso real y diseñar ritmo: menos pulsaciones sin ocultar ni expirar textos. Proponer modo Cine opcional frente a lectura manual, con pausas obligatorias en opciones, fotos, carta y anillo.
+UX-02: En la apertura se muestran simultáneamente la burbuja de Rosa y el subtítulo inferior con el mismo texto. Esto es deliberado por accesibilidad, pero aumenta el ruido visual en 390x844. Mantener contenido accesible sin duplicación visual innecesaria; diferenciar modo de lectura, ajustar prioridad del subtítulo o reducir la ocupación gráfica.
+UX-03: Hay ocho decisiones con respuestas distintas, pero la estructura narrativa reconverge rápidamente y conserva el mismo orden de 19 capítulos y la misma pregunta. Correcto para evitar caminos fallidos; limitado para sorprender. Incluir consecuencias perceptibles en escenas posteriores, gestos recordados y retorno de elecciones en el clímax, sin cambiar la propuesta final.
+ART-01: Los personajes ahora dialogan, pero varios tramos siguen siendo series de líneas y pequeñas reacciones sobre el mismo encuadre. Hacer que los planos cuenten acontecimientos: mover/descubrir/proteger/colaborar, luego mirar y dialogar; cada conversación necesita actuación visible.
+ART-02: La misión de los tres destellos aparece en el guion, pero la progresión neutra puede continuar sin recoger nada. No es bug —se hizo accesible deliberadamente—, aunque conviene representar visualmente cómo la cooperación produce los tres símbolos y dar un cierre coherente incluso sin optar por elecciones.
+ART-03: El final es bonito y legible, con caja rosada, dos peluches y pregunta correcta. Pero la devolución de decisiones está concentrada en símbolos y unos segundos de morphing. Pedir consecuencias más visibles: gesto, objeto elegido, microplano del recuerdo y variación de montaje final, sin distorsionar la foto ni modificar la pregunta.
+ART-04: Los tres recuerdos ya son distintos a nivel de transición; falta verificar que cada uno sea una microhistoria emotiva propia, no una fotografía enmarcada con una variante de máscara. Narrativa original de los peluches, nunca inventar acontecimientos o emociones de los humanos fotografiados.
+MOBILE-01: 27,5 MB de HTML autónomo y ~93 MB de ZIP suponen un peso relevante. La carga en un navegador móvil real y RAM/temperatura son riesgos pendientes. Mantener offline, optimizar cargas, memoria de texturas, recursos y fuentes sin degradar el arte aprobado.
+PRIV-01: Archivos y fotografías privadas requieren protección en TODAS las rutas. El HTML offline y el ZIP no son recursos públicos. El hosting/QR debe aplazarse hasta validación del usuario, HTTPS y autenticación verificada externamente.
+
+CASOS DE REGRESIÓN OBLIGATORIOS PARA LA SIGUIENTE REVISIÓN
+- Salto: ambas patas comparten transformación raíz del torso durante despegue, vuelo y aterrizaje; sin pies clavados en suelo ni deformaciones antinaturales.
+- Reentrada tras pausa y rotación; scroll nunca hace avanzar historia; controles permanentes.
+- Cambiar una decisión, volver atrás, recargar y reproducir el resultado alternativo sin acumular efectos viejos.
+- Omisión neutral de cada decisión permite llegar a carta, anillo y final; la opción elegida NO se inventa.
+- Fotografías originales íntegras (proporción, caras, nitidez), sin máscaras/títulos/burbujas que las tapen durante contemplación; horizontal corto.
+- Carta accesible y sin temporizador, tres folios, texto intacto, firma editable; caja/anillo no se omiten accidentalmente.
+- Burbujas que no cubran rostros, orejas, fotos, opciones o controles; fallback disponible.
+- Falta de almacenamiento o una textura no debe bloquear el regalo; recuperación y reintento.
+- Mobile Safari físico, Android físico, volumen/audio, modo reducido y carga en móvil real pendientes.
+
+VEREDICTO
+La ingeniería de F17 es más sólida y la aventura ganó participación real. Apruebo F17 como BASE DE EVOLUCIÓN ARTÍSTICA, no como release final/QR. No recomendar reescribir la arquitectura ni cambiar de estilo. La próxima iteración debe centrarse en ritmo, contraste entre escenas, consecuencias evidentes, intimidad de los recuerdos y un desenlace que recuerde la ruta elegida. QA funcional anterior PASS en cobertura enumerada; no implica aprobación emocional o móvil físico.

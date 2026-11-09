@@ -1,0 +1,53 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "width": 320,
+      "maxHandError": 6.355287432313019e-14,
+      "flagPixels": [
+        167,
+        155,
+        188
+      ],
+      "physicalHop": true,
+      "macroDepth": true,
+      "wordsFromFlags": true,
+      "reload": true,
+      "drawMs": 7.13295,
+      "p95": 0,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "maxHandError": 1.1368683772161603e-13,
+      "flagPixels": [
+        172,
+        169,
+        152
+      ],
+      "physicalHop": true,
+      "macroDepth": true,
+      "wordsFromFlags": true,
+      "reload": true,
+      "drawMs": 7.283170000000001,
+      "p95": 0,
+      "errors": []
+    },
+    {
+      "width": 430,
+      "maxHandError": 1.2710574864626038e-13,
+      "flagPixels": [
+        174,
+        168,
+        157
+      ],
+      "physicalHop": true,
+      "macroDepth": true,
+      "wordsFromFlags": true,
+      "reload": true,
+      "drawMs": 7.1917300000000015,
+      "p95": 0,
+      "errors": []
+    }
+  ]
+}

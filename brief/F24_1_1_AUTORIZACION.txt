@@ -1,0 +1,99 @@
+Sí, autorizo la implementación completa de **VALERIE F24.1.1 — Mobile Vertical Cinematic Polish**, trabajando sobre una copia independiente y manteniendo F24.1 completamente intacta.
+
+Quiero que ejecutes **todo el alcance del prompt integral y la matriz de QA adjuntos**, sin omitir requisitos ni limitarte a corregir los errores más evidentes.
+
+## PRIORIDAD ABSOLUTA: MOBILE FIRST VERTICAL
+
+**No estamos optimizando solamente para Safari. Estamos desarrollando una experiencia cinematográfica premium diseñada para teléfonos móviles en general.**
+
+La aplicación debe funcionar correctamente en:
+
+- iPhone con Safari y navegadores compatibles.
+- Android con Chrome, Samsung Internet y otros navegadores relevantes.
+- Pantallas pequeñas, medianas y grandes.
+- Diferentes proporciones, resoluciones y densidades de píxeles.
+- Dispositivos con distintas capacidades de procesamiento y memoria.
+
+El diseño debe ser verdaderamente adaptable, no una interfaz de escritorio reducida.
+
+### 1. Interfaz móvil impecable
+
+Corregir definitivamente el HUD que se abre involuntariamente, textos que parpadean o desaparecen, desbordamientos y conflictos entre gestos, toques y controles.
+
+Respetar las áreas seguras, esquinas, barras del navegador y zonas táctiles de cada dispositivo.
+
+Todos los controles deben ser cómodos, accesibles, consistentes y visualmente integrados con la película.
+
+### 2. Experiencia cinematográfica extraordinaria
+
+Mejorar las actuaciones de Rosa y Beige, los movimientos naturales, sus expresiones, saltitos, reacciones, animaciones ambientales, transiciones y movimientos de cámara.
+
+Quiero abundante animación e interactividad, pero con intención artística y narrativa. Evitar movimientos genéricos, teletransportaciones, cortes injustificados y escenas rígidas.
+
+### 3. Interactividad significativa
+
+Conservar las decisiones e interacciones que ya funcionan y me gustaron, especialmente cuando Valerie debe presionar una opción para provocar una actuación.
+
+Mejorar la presentación, claridad y consecuencias visuales de cada decisión.
+
+El botón «Siguiente» solo debe aparecer cuando sea realmente necesario. Nunca debe competir con las opciones de una decisión activa.
+
+### 4. Introducción cinematográfica
+
+Crear un prólogo que presente naturalmente a Rosa y Beige, explique qué tipo de aventura experimentará Valerie y le permita comenzar mediante una interacción bonita.
+
+Debe sentirse como el inicio de un cuento animado, no como un tutorial o una pantalla convencional de bienvenida.
+
+### 5. Pulido integral de escenarios
+
+Mejorar el cruce del agua, la hoja y sus transiciones, mostrar claramente la flor mencionada en el guion, corregir assets defectuosos del entorno, enriquecer el museo con una decoración apropiada y construir una ambientación reconocible para la escena de la caja.
+
+Conservar y mejorar las interacciones existentes sin reconstruir innecesariamente los escenarios ya aprobados.
+
+### 6. Protección del contenido personal
+
+Conservar fotografías, recuerdos, personajes, carta, regalo, anillo, sorpresas y ceremonia.
+
+Cambiar únicamente la referencia indicada de «lirios» por «rosas» en la carta.
+
+**No modificar ni sustituir la animación de los lirios del jardín.**
+
+### 7. Rendimiento real en celulares
+
+Optimizar el uso de CPU, GPU, memoria, Canvas, imágenes, temporizadores y animaciones.
+
+Buscar fluidez y estabilidad durante toda la experiencia, no solamente en los primeros capítulos.
+
+Evitar ralentizaciones progresivas, bloqueos, fugas de memoria, recargas inesperadas y consumo excesivo de batería.
+
+Utilizar carga inteligente de recursos y técnicas de renderizado eficientes sin sacrificar la calidad visual.
+
+### 8. QA móvil multiplataforma
+
+Ejecutar pruebas automatizadas y funcionales sobre distintas configuraciones móviles, incluyendo:
+
+- iOS/WebKit y Android/Chromium cuando sea posible.
+- Resoluciones verticales representativas, incluyendo 320, 375, 390, 412 y 430 píxeles de ancho.
+- Navegación táctil, decisiones, HUD y gestos.
+- Legibilidad y posicionamiento de diálogos.
+- Orientación vertical y cambios de tamaño del viewport.
+- Rendimiento prolongado y restauración de sesión.
+- Ausencia de elementos recortados, superpuestos o inaccesibles.
+
+Las pruebas con emulación no deben presentarse como equivalentes a pruebas en dispositivos físicos.
+
+Yo haré la evaluación visual final en mi teléfono. No generes capturas, videos ni paquetes de evidencias visuales.
+
+## Requisitos de implementación
+
+Trabaja preferentemente con un único agente, utiliza solamente las skills pertinentes y evita repetir análisis o reconstruir componentes que ya funcionan correctamente.
+
+No considero terminada una corrección simplemente porque compile. Debes resolver la causa real del problema, verificar la funcionalidad y preservar la calidad cinematográfica.
+
+**Entregable:** ZIP completo, independiente y actualizado de F24.1.1, con resumen de cambios, pruebas ejecutadas, resultados y limitaciones pendientes.
+
+No avances todavía a nuevos escenarios ni dediques recursos al diseño de escritorio, horizontal o SEO.
+
+**Comienza la implementación completa ahora, sin solicitar más confirmaciones.**
+
+Nuestro objetivo es que VALERIE se sienta como una película interactiva de altísima calidad en cualquier celular moderno, con controles impecables, personajes vivos, escenarios ricos, muchísima interactividad y una experiencia emocional continua.

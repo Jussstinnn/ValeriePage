@@ -1,0 +1,133 @@
+{
+  "longTasks": {
+    "count": 5,
+    "maxMs": 93
+  },
+  "jsHeapBytesProxy": 6391958,
+  "stability": [
+    {
+      "cycle": 1,
+      "estimatedResidentBytes": 53417340,
+      "compressedResources": {
+        "images": 42,
+        "bytes": 13727188
+      }
+    },
+    {
+      "cycle": 2,
+      "estimatedResidentBytes": 53417340,
+      "compressedResources": {
+        "images": 42,
+        "bytes": 13727188
+      }
+    },
+    {
+      "cycle": 3,
+      "estimatedResidentBytes": 53417340,
+      "compressedResources": {
+        "images": 42,
+        "bytes": 13727188
+      }
+    },
+    {
+      "cycle": 4,
+      "estimatedResidentBytes": 53417340,
+      "compressedResources": {
+        "images": 42,
+        "bytes": 13727188
+      }
+    }
+  ],
+  "label": "F24.3 modular desktop emulation",
+  "conditions": "Edge headless, 390x844, DPR2, desktop CPU, 2s per scene, callback cost includes rendering and editorial; no GPU or physical-phone claim",
+  "firstUsefulFrameMs": 404.7000000476837,
+  "transferredBytes": 32111664,
+  "scenes": [
+    {
+      "index": 0,
+      "shot": "antes-del-primer-pasito",
+      "seconds": 2.005399999976158,
+      "observedCompositionFPS": 60.3370898581024,
+      "nativeRAFFrequency": 239.85239852683682,
+      "drawCallsPerSecond": 60.3370898581024,
+      "callbackP50ms": 0.5,
+      "callbackP95ms": 0.7000000476837158,
+      "estimatedDecodedBytes": 44302522,
+      "assetImages": 1
+    },
+    {
+      "index": 3,
+      "shot": "una-patita-mas",
+      "seconds": 2.0095,
+      "observedCompositionFPS": 59.716347350087084,
+      "nativeRAFFrequency": 239.86066185618313,
+      "drawCallsPerSecond": 59.716347350087084,
+      "callbackP50ms": 0.40000009536743164,
+      "callbackP95ms": 0.8999999761581421,
+      "estimatedDecodedBytes": 44383532,
+      "assetImages": 1
+    },
+    {
+      "index": 4,
+      "shot": "el-tiempo-de-los-dos",
+      "seconds": 2.0166999999284743,
+      "observedCompositionFPS": 59.99900828298283,
+      "nativeRAFFrequency": 239.9960331319313,
+      "drawCallsPerSecond": 59.99900828298283,
+      "callbackP50ms": 0.5999999046325684,
+      "callbackP95ms": 1,
+      "estimatedDecodedBytes": 53209817,
+      "assetImages": 2
+    },
+    {
+      "index": 7,
+      "shot": "el-bosque-escucha",
+      "seconds": 2.0040999999046325,
+      "observedCompositionFPS": 60.376228733974315,
+      "nativeRAFFrequency": 240.00798364497228,
+      "drawCallsPerSecond": 60.376228733974315,
+      "callbackP50ms": 0.6000000238418579,
+      "callbackP95ms": 1.399999976158142,
+      "estimatedDecodedBytes": 81138310,
+      "assetImages": 3
+    },
+    {
+      "index": 8,
+      "shot": "donde-apuntan-las-raices",
+      "seconds": 2.0085,
+      "observedCompositionFPS": 59.74607916355489,
+      "nativeRAFFrequency": 239.9800846402788,
+      "drawCallsPerSecond": 59.74607916355489,
+      "callbackP50ms": 0.5,
+      "callbackP95ms": 1.100000023841858,
+      "estimatedDecodedBytes": 51675160,
+      "assetImages": 1
+    },
+    {
+      "index": 11,
+      "shot": "el-museo-de-la-noche",
+      "seconds": 2.0087999999523163,
+      "observedCompositionFPS": 59.73715651276807,
+      "nativeRAFFrequency": 239.94424532628506,
+      "drawCallsPerSecond": 59.73715651276807,
+      "callbackP50ms": 0.3999999761581421,
+      "callbackP95ms": 0.8000000715255737,
+      "estimatedDecodedBytes": 60745653,
+      "assetImages": 1
+    },
+    {
+      "index": 14,
+      "shot": "dentro-del-cuadro",
+      "seconds": 2.016399999976158,
+      "observedCompositionFPS": 60.007934934254465,
+      "nativeRAFFrequency": 240.03173973701786,
+      "drawCallsPerSecond": 60.007934934254465,
+      "callbackP50ms": 0.8999999761581421,
+      "callbackP95ms": 1.6999999284744263,
+      "estimatedDecodedBytes": 66306522,
+      "assetImages": 3
+    }
+  ],
+  "runtimeSha256": "756d652ea8f70d7996107c568a04da12860b4b5172e384006ea6538bbeca8543",
+  "samplingNote": "Modular desktop sample. Initial prepare() metric excludes document parsing before prepare starts. No physical device claim."
+}

@@ -1,0 +1,197 @@
+# VALERIE F24.1.1 — DIRECTOR'S CUT · IOS VERTICAL / POLISH INTEGRAL
+## PROMPT DE IMPLEMENTACIÓN PARA CODEX — VERSIÓN CONSOLIDADA Y AUTÓNOMA
+
+INSTRUCCIÓN: IMPLEMENTA. NO RESPONDAS CON OTRA PROPUESTA, ROADMAP O PREGUNTA DE CONFIRMACIÓN.
+
+Trabaja sobre el contenido real de `VALERIE_F24_1_VERTICAL_DIRECTORS_CUT_COMPLETO.zip`. Haz una copia de trabajo independiente llamada `VALERIE_F24_1_1_IOS_VERTICAL_POLISH`; no sobrescribas F24, F24.1 ni F23. Conserva el código fuente y los recursos existentes que sean válidos. Al terminar, entrega un ZIP COMPLETO de F24.1.1, ejecutable y reproducible, con los cambios implementados, no solo instrucciones.
+
+### 0. Visión irrenunciable y contexto de aceptación
+
+El autor probó la experiencia COMPLETA en un iPhone y confirma que la dirección general, las decisiones donde Valerie debe tocar para hacer que algo ocurra, el bosque, el museo, el recorrido y varios momentos de la película LE ENCANTAN. Conserva y potencia esos aciertos. Sin embargo, detectó errores y momentos artísticamente básicos que impiden dar la revisión por terminada.
+
+Prioridad ABSOLUTA: iPhone + Safari, orientación VERTICAL, composición cinematográfica 9:16. Si el tamaño real no es exactamente 9:16, adapta con áreas seguras sin distorsionar arte ni cuerpos. Concentrar el esfuerzo en esta experiencia. Horizontal y escritorio deben seguir sin romperse, pero NO invertir esfuerzo en pulirlos en esta fase. NO hacer SEO; no fue solicitado (se pidió revisar el ZIP). No publicar ni indexar ni desplegar nada.
+
+El resultado NO debe sentirse como una página web tiesa o una sucesión de diapositivas. Debe parecer una película interactiva ilustrada: personajes que actúan físicamente, cámara motivada, movimientos expresivos, ambientales vivos, continuidad espacial, decisiones claras y participación con consecuencias. No basta con agregar partículas o keyframes genéricos. Tampoco basta con que compile o que las suites unitarias pasen: la ejecución real móvil tiene prioridad de aceptación.
+
+Restricciones críticas: conservar las identidades y anatomía APROBADAS de los dos peluches (Rosa pequeño rosa pastel, orejas erguidas, hocico claro; Beige más grande gris topo/beige, orejas caídas, nariz rosa), los paisajes y arte existente aprobado, tres fotos, recuerdos, carta personal salvo cambio exacto solicitado, regalo, anillo, revelaciones, pregunta final y privacidad. NO inventar recuerdos o confesiones personales. No sustituir la animación de los lirios del jardín. No avanzar todavía a escenas nuevas de playa, honguitos o cabaña: pertenecen al plan maestro futuro, no a la reparación F24.1.1. Sí pulir todos los escenarios YA existentes que el usuario completó, incluido museo, jardín, recuerdos, carta y caja.
+
+### 1. DIAGNÓSTICO INICIAL CORTO, CONCRETO Y SIN REHACER EL PROYECTO
+
+1. Extrae el ZIP, lee `CHECKPOINT.md`, `release.json`, `package.json` y los módulos implicados. Reutiliza los contratos existentes de F24.1 y sus tests. Identifica el director, HUD, rendering, narración, opciones, fotos, cartas y assets. Prioriza `src/director.js`, `src/cinematic-hud.js`, `src/bubble-director.js`, `src/film.css`, `src/index.html`, `src/vertical-script.js`, `src/vineyard-scene.js`, `src/environment.js`, `src/transition-director.js`, `src/personal-content.js`, `src/session.js` y los módulos específicos de museo/caja. Consulta otros archivos solo cuando la dependencia lo justifique.
+2. Lee los informes existentes si se proporcionan, pero verifica con código y pruebas los puntos que vayas a modificar. Distingue defecto confirmado, hipótesis y validación pendiente. No repitas auditorías ya cerradas ni crees subagentes paralelos; avanza con un agente principal.
+3. Respeta las ocho decisiones existentes con sus ID: `leaf-holder`, `forest-way`, `museum-sky`, `garden-gift`, `portrait-reveal`, `album-space`, `quiet-memory`, `letter-seal`. Preserva valores/contratos guardados, rutas, finales y consecuencias. No reinicies la historia ni elimines capítulos existentes.
+
+### 2. P0: CORREGIR EL BUG DE LOS TOQUES QUE ABREN EL MENÚ EN SAFARI
+
+INCIDENCIA REPORTADA: en iOS, al tocar repetidamente la película o zonas del escenario, aparece el menú hamburguesa/controles aunque NO se haya pulsado el botón del HUD.
+
+PISTA VERIFICADA EN CÓDIGO F24.1: `src/director.js` tiene `canvas.addEventListener('pointerdown', ...)`; cuando el punto cae fuera de `view.frame`, hace `hud?.toggle()`. Eliminar ESA ASOCIACIÓN: tocar bandas, letterbox, fondo o canvas vacío NO significa solicitar el menú. El HUD únicamente debe abrirse mediante `#hud-toggle`, atajo accesible explícito o un comando inequívoco del usuario, nunca por un toque implícito. Revisar también posible doble activación `click`/`pointer`/`touch`, captura del pointer, bubbling, DOM overlays transparentes, `pointercancel`/`lostpointercapture`, foco, tap rápido, doble tap y desplazamiento del viewport de Safari. Los botones y gestos que sí deben funcionar (bosque, hoja, luz, personajes, museo, recuerdos) NO deben dejar de hacerlo.
+
+CRITERIO P0-A: 30 toques en distintos lugares vacíos o bandas externas al frame, 10 toques rápidos consecutivos, 3 toques fuera del objetivo durante una decisión y 5 gestos cancelados: CERO aperturas accidentales, CERO avances duplicados, CERO cambios de elección. Abrir/cerrar con botón deliberado sigue funcionando siempre; la apertura no cambia escala/encuadre. Si no puedes ejecutar Safari físico, automatiza la semántica de entrada en WebKit/Playwright disponible y deja validación física explícitamente pendiente.
+
+### 3. P0: DIÁLOGOS Y SUBTÍTULOS SIN PARPADEOS, SALTOS NI TEXTO FUERA DE LA FRANJA TURQUESA
+
+INCIDENCIAS DEL AUTOR:
+- El texto de abajo aparece/desaparece aparentemente de forma aleatoria.
+- Una zona de color turquesa difuminado está pensada para dar contraste, pero a veces los textos se dibujan encima o fuera del área de lectura.
+- Los cambios provocan distracción y dificultad para leer mientras la película se mueve.
+
+PISTAS EN CÓDIGO: `src/bubble-director.js` recalcula candidatas en cada actualización y, si la colisión impide una burbuja, la oculta con `subtitle-fallback`; `src/director.js` altera `sr-only` según visibilidad de burbuja en `draw()`. `src/film.css` define `#story {height:120px; min-height:120px; ...}` y el texto puede tener mayor altura real.
+
+Implementa una POLÍTICA DE PRESENTACIÓN por intervención/turno narrativo, NO por fotograma: un diálogo decide antes de comenzar si va en burbuja o subtítulo inferior; salvo una emergencia real sostenida, permanece allí y conserva su posición hasta terminar. Si hay burbuja, el subtítulo debe tener un fallback estable y accesible; no alternar uno y otro en frames sucesivos. Si hay texto inferior, debe entrar entero dentro de un panel turquesa/sombreado realmente alineado con su altura, padding, contraste y safe-area. Sin doble texto visible, clipping, superposición sobre personajes, opciones o controles. Respeta tamaños de letra de Safari y recalcula al cambiar contenido o viewport de forma CONTROLADA, sin medir/cambiar clases innecesariamente en cada frame. No disparar avisos de VoiceOver cada frame.
+
+Prueba múltiples longitudes de frases, 1–6 líneas, fuentes tardías, text zoom 100–150 %, safe-area/top-bottom, teclado si procede, cambios de barra dinámica de Safari, rotación accidental de vuelta a vertical y selección de modo de lectura. Verifica especialmente `320×568`, `360×800`, `375×812`, `390×844`, `430×932` (CSS px). La película no debe saltar visualmente cuando aparecen o desaparecen subtítulos. El `captionTop` de Canvas y el soporte DOM no pueden usar geometrías contradictorias. Si hay que cambiar dónde se pinta el fondo de lectura, unifica su medición y su propietario.
+
+CRITERIO P0-B: CERO parpadeos dentro de un mismo turno, CERO palabras fuera del panel, CERO texto bajo la zona del gesto/home indicator, CERO ocultación de ojos/caras de Rosa/Beige. Cuando el contenido termina, se retira suavemente, sin flicker.
+
+### 4. CONTRATO OBLIGATORIO DE CONTROLES Y DE INTERACTIVIDAD
+
+Ésta es la distinción más importante de toda la revisión. El usuario quiere MUCHÍSIMA interactividad y celebra tocar botones que desencadenan acciones; NO quiere tener que tocar «Siguiente» para pasar diálogos comunes.
+
+Estados de reproducción mínimos:
+- PLAYING / AUTO-ACTING: reproduce diálogos, movimientos y transiciones autónomamente; NO aparece «Siguiente» ni HUD grande, sólo acceso discreto voluntario a menú.
+- AWAITING_CHOICE: dos decisiones concretas y comprensibles; sólo opciones de elección y el acceso discreto de menú. NO mostrar «Siguiente», «Continuar» genérico ni botón duplicado que compita con ellas. Una elección ejecuta la acción correspondiente con feedback visual y sonido opcional; protege la animación antes de seguir.
+- AWAITING_INTERACTION: detenerse para que Valerie realmente TOQUE, ARRASTRE o pulse el botón de la acción narrativa específica. Este botón ES DESEABLE. Ejemplos: sostener hoja, acompañar salto, abrir helechos, guiar luz, unir estrellas, abrir caja. Mostrar una instrucción clara, un affordance táctil visible y alternativa de un toque para accesibilidad. No avanzar solo con temporizador mientras la acción está pendiente. El gesto tiene respuesta inmediata y finalización confirmada.
+- AWAITING_PROTECTED: fotografías, recuerdos, páginas de carta, revelaciones, regalo/anillo, ceremonia y pregunta final: la continuación aparece sólo cuando corresponde, nunca se dispara por temporizador. La pregunta final permanece hasta que Valerie responda fuera de la pantalla.
+- PAUSED: permite reanudar sin reiniciar escena ni reproducir acciones duplicadas; si se solicita, el menú se muestra con controles claros.
+- TRANSITIONING/LOADING: congelar comandos no válidos, controlar cancelación/abort de animaciones y evitar dobles navegaciones; no convertir toques residuales en comandos.
+
+Importante: NO confundir «siguiente» con «hacer que algo ocurra». El botón «Ayudar a levantar la hoja», por ejemplo, es una interacción narrativa; no debe eliminarse por una regla simplista que diga «cero botones». En la decisión `leaf-holder`, seleccionar quién actúa y el gesto posterior de ayudar son dos momentos distintos SÓLO si el segundo añade una acción visual significativa, no un clic administrativo. Mantener lo que gustó en el río, al seguir la luz y en las decisiones del museo. La pantalla no debe poner dos CTAs que hagan lo mismo. Ningún evento debe consumirse dos veces por tocar rápidamente.
+
+Revisar `cinematic-hud.js`, `ControlPolicy`, `choiceUI`, `choice-action`, `context-assist`, `context-next` y la semántica `hasNext`, `interaction`, `protectedHold`. Accesibilidad: botones ≥44×44 CSS px, foco recuperable, etiquetas y roles coherentes, VoiceOver, `prefers-reduced-motion`, área segura. Sin navegación por scroll: la experiencia sigue con cine automático e interacciones deliberadas.
+
+CRITERIO P1: para cada beat de 1–7 y todas las decisiones existentes, registrar qué estado corresponde, cuál es la única acción principal y qué indica exactamente que está completo; ninguna navegación adelantada por timeout mientras la animación sigue en curso.
+
+### 5. PRÓLOGO NUEVO, CON PERSONAJES Y EXPLICACIÓN DE LA EXPERIENCIA
+
+El autor quiere que la película EMPIECE DE OTRA MANERA. No soltar de inmediato «Dos miradas» sin contexto. Diseñar y programar «Antes de dar el primer pasito» como escena cinematográfica breve, emotiva y animada (no modal de tutorial, splash fijo ni lista de instrucciones). Debe introducir el mundo, enseñar quién es Rosa y quién es Beige y explicar naturalmente que Valerie a veces mirará y otras decidirá o ayudará. Sin spoilers de fotos, carta, caja, anillo ni pregunta final.
+
+Dirección:
+1. El viñedo despierta en vertical con encuadre íntimo; luz cálida, aire/hojas y un pequeño destello se mueven con intención. Evita pantalla negra arbitraria, fade-in genérico y scroll.
+2. Rosa entra desde un lugar físico reconocible, con saltito, impulso, orejas y mirada; Beige entra siguiéndola, con otra personalidad. No aparecen instantáneamente en una posición sin recorrido. Primera interacción de ambos: Rosa invita, Beige responde; sus gestos son parte de la conversación.
+3. Guion base (puede pulirse con criterio, SIN perder el contenido):
+   ROSA [alegre, saltando]: «¡Beige! ¿Ya llegó?»
+   BEIGE [cerca, sereno]: «Creo que sí. Pero no la apuremos.»
+   ROSA [mira a Valerie]: «Yo soy Rosa. Me gusta descubrir lo que hay después del camino.»
+   BEIGE [le ofrece la patita]: «Y yo soy Beige. Me gusta asegurarme de que nadie se quede atrás.»
+   ROSA [la luz se aleja]: «¿Nos acompañas, Valerie?»
+   BEIGE [señalando el camino]: «Aquí algunas cosas pasan solas. Otras solo suceden cuando tú nos ayudas.»
+4. ÚNICA invitación contextual y legible: «Comenzar el viaje». Es un momento protegido que espera deliberadamente a Valerie. Después del toque, los personajes CONTINÚAN desde sus posiciones y escala actuales hasta el capítulo 1; sin reinicio del rig, flash, salto de camera ni corte brutal.
+5. No obligar a pulsar un botón entre líneas. Intro breve y memorable. Controles de silencio/sonido compatibles con política de autoplay de iOS; nunca activar audio sin gesto permitido.
+6. Si existe progreso guardado, ofrecer «Continuar donde quedaste» y «Empezar desde el principio» con confirmación para borrar el progreso; no reproducir prólogo en cada recarga sin sentido. Poder repetirlo voluntariamente desde ajustes.
+7. Evitar que los toques al prólogo abran el HUD; los CTA deben quedar fuera del personaje y de su zona de hit testing.
+
+### 6. REDIRECCIÓN CINEMATOGRÁFICA DEL VIÑEDO / CAPÍTULOS 1–7
+
+La estructura existente es valiosa y ya funciona, pero hay que llevar las actuaciones a un nivel muy superior. Exigir continuidad del centro de gravedad, suelo/contactos, escala, orientación, cámara, sombras y personajes entre beats. NO teletransportes; movimientos: anticipación → impulso → trayectoria → aterrizaje → reacción → seguimiento. El movimiento de orejas, miradas, respiración y patitas cuenta la historia. Velocidades narrativas naturales, pausas con intención y coordinación entre ambos, no dos animaciones independientes sin escucha mutua. Las actuaciones deben ligarse a líneas concretas y no a simples timers.
+
+Capítulo 1, `dos-miradas`: unir entrada del prólogo con primer descubrimiento de luz. El destello se desplaza por espacio real; Rosa intenta atraparlo y Beige le ayuda. Reacción de los dos ante el mismo objeto; reflejo de luz y cámara motivados; sin «Siguiente» de cortesía. Mantener posibilidad de tocar/sostener la luz si es la acción importante.
+
+Capítulo 2, `te-abro-el-camino`: REDISEÑO PROFUNDO de la hoja en el río. El escenario actual se percibe demasiado simple: dibujar dos orillas distinguibles, agua con flujo creíble y profundidad, reflejos proporcionados, vegetación coherente, sombras de contacto y hoja con volumen/espesor y una sujeción físicamente plausible. La hoja NO debe parecer un rectángulo sin peso, ni aparecer y desaparecer entre planos. La pregunta de quién levanta la hoja debe ser sencilla de entender, y cada elección debe tener una actuación realmente distinta (posición de manos/patitas, quién sostiene, quién cruza, dónde mira el otro). Debe existir un gesto/CTA útil donde ella ayude, sin añadir clics inútiles. El agua reacciona al contacto con salpicaduras sutiles y ondas, sin efectos exagerados.
+
+Capítulo 3, `una-patita-mas`: coreografía de cruce, con anticipación, salto, acompañamiento y aterrizajes precisos. Enseñar sin ambigüedad las orillas y el obstáculo; la segunda criatura responde en pantalla. Evitar deslizamiento sin peso, patitas flotando, salpicaduras fuera del punto de contacto y reaparición súbita al otro lado. Cada rama termina con los personajes reunidos de forma coherente para el siguiente plano.
+
+TRANSICIÓN HOJA→SIGUIENTE PLANO: actualmente «más o menos» funciona, pero visualmente es fea/básica. Dirigir un plano puente real: hoja que ocupa primer plano/ocluye motivadamente, cámara que acompaña, persistencia de dirección y distancia, cambio progresivo de profundidad, luz y vegetación, y revelación del siguiente lugar. Mantener mismo objeto, orientación, escala y continuidad de Rosa/Beige; no sustituirlo por fundido negro o wipe genérico. Testear ida, retroceso, pausa en medio y repetición.
+
+Capítulo 4, `el-tiempo-de-los-dos`: error narrativo-visual comprobado. Beige dice «Porque estaba mirando cómo se movía esa flor», pero la flor dibujada en `vineyard-scene.js` puede ser diminuta. La flor debe EXISTIR visualmente, ser distinguible en pantalla vertical antes de mencionarla y merecer un plano detalle. Animar tallo, pétalos y brisa delicada; mostrar dirección de mirada de Beige, reacción de Rosa y retorno natural al plano sin teletransporte. Sin sustituir por una rosa necesariamente: el requisito específico de ROSAS corresponde a la CARTA, no a redibujar todas las flores. Que la flor realmente se pueda identificar en 390×844.
+
+Capítulo 5, `un-secreto-para-ti`: hacer que curiosidad, cuidado y confidencia sean actuaciones visibles, no sólo texto. Encadre y foco conducen hacia el secreto sin revelar regalo, anillo ni respuesta final. Una interacción breve y significativa cuando corresponda; continuidad emocional de la conversación.
+
+Capítulo 6, `tras-la-luz`: seguimiento físico de destello/luz, paso del viñedo al bosque con profundidad y cámara coherente; cuerpos no cambian de tamaño por corte, no rebobinar posiciones. Las acciones de guiar/tocar para seguir la luz que gustaron DEBEN permanecer.
+
+Capítulo 7, `el-bosque-escucha`: conservar ilustraciones y la lógica de F23, las rutas de helechos y árbol, el arroyo y sus interacciones. Dar anticipación, respuesta del bosque al toque, deformación/gestos visibles y ayudas accesibles. La decisión `forest-way` no debe perder sus rutas; quitar ayudas que quedan pulsables sin efecto. Transición de entrada/salida sin cortar a pantalla estática.
+
+En todo 1–7: trabajar encuadres 9:16 como planos cinematográficos; espacio negativo intencional para textos y decisiones; no recortar orejas/patas; movimientos ambientales (luz, aire, hojas, brillo, sombras, agua) coordinados y discretos. Alternar planos de descubrimiento, dos personajes y detalles, evitando un solo plano estático durante minutos. No llenar de efectos para disimular problemas de coreografía.
+
+### 7. DISEÑO DE LAS OCHO DECISIONES: BONITAS, NO AMBIGUAS, CON CONSECUENCIAS REALES
+
+El usuario valora profundamente las decisiones. No tocar el sistema para hacerlo menos interactivo. Diseñar tarjetas flotantes premium y claras en vertical, dos opciones de acción inequívoca, vistas previas/íconos contextuales que REPRESENTEN realmente lo que ocurrirá, animación de aparición y retiro, texto legible y zonas ≥44 px. No tirar abajo el estilo aprobado ni poner modales gigantes. Una elección ejecuta una actuación diferente; las ramas se reúnen orgánicamente y dejan un eco posterior cuando ya existe ese contrato.
+
+Revisar y mejorar copy/representación manteniendo IDs y valores existentes:
+- `leaf-holder`: «¿Quién sostiene la hoja para que pasen?» / «Rosa la levanta; Beige cruza» / «Beige la levanta; Rosa cruza». La ejecución física debe demostrar la diferencia.
+- `forest-way`: seguir la luz entre helechos o escuchar/abrir el camino del árbol; los iconos deben representar rutas reales, no opciones abstractas.
+- `museum-sky`: explicar la acción concreta para iluminar el cuadro/unir estrellas; respetar la interacción que tanto gustó al usuario.
+- `garden-gift`: elección sobre flor/pétalo, con escena y gesto específicos; mantener jardín de lirios existente.
+- `portrait-reveal`: elegir cómo revelar la fotografía, no revelar contenido fuera de fase.
+- `album-space`: gestos distintos para compartir/abrir la página, no una elección de persona favorita.
+- `quiet-memory`: dos maneras de acompañar el recuerdo, visualmente diferentes, sin inventar información de las fotos.
+- `letter-seal`: sellar la carta con el motivo de la ruta; preservar contenido y privacidad.
+
+No reescribir IDs ni inventar valores que rompan guardados. Verificar texto del grafo REAL antes de editar. Nunca mostrar «Siguiente» junto a dos opciones. Una vez elegida una opción, eliminar el panel y mostrar actuación, nunca «Elegiste X» como sustituto de la animación. Mantener posibilidad accesible de cambiar la elección si la lógica original lo permite.
+
+### 8. AUDITORÍA VISUAL DE ASSETS Y AMBIENTES: CORREGIR ERRORES, NO REEMPLAZAR ARTE
+
+El autor observó assets del environment bugueados. Identificar y corregir POR ESCENA: máscaras transparentes incorrectas, recortes, bordes, z-order, alphas, parallax, puntos de anclaje, flicker, escalado pixelado, perspectiva/oclusiones ilógicas, vegetación que se monta sobre personajes, props que flotan, transición no alineada, fallback de recursos y elementos que aparecen en mundos incorrectos.
+
+Pista concreta: `src/environment.js` en `foreground()` aplica `p.globalAlpha=.83*q+.25` incluso con `scene.biome===0`; por tanto un helecho puede continuar dibujándose al 25 % de opacidad en escenas no vegetales (p. ej. museo). Comprobar todas las llamadas y corregir por tipo de mundo/sección, no con un `if` que rompa el bosque. Revisar también atlas y assets runtime originales/derivados, sin alterar sus bytes originales cuando estén protegidos. Si un asset real está defectuoso, documentar ruta y causa y reparar su derivado o composición. No ocultar bugs con overlays opacos.
+
+MUSEO (capítulos existentes): quitar plantas y helechos incongruentes del interior, salvo vegetación que esté motivada por la escena o pertenezca a una pintura. Dar identidad a un MUSEO mágico: lámparas/apliques de pared cálidos con iluminación plausible, marcos elegantes, molduras, pedestales, profundidad, cuadros, sombras suaves y reflejos; la luz reacciona ligeramente a la pintura. Nunca colocar una lámpara flotante ni tapar la obra de la noche estrellada. Mantener la interacción de decisión y respuesta que el autor disfruta. La decoración debe ser artística y creíble, no un pack genérico de elementos.
+
+CUADRO Y CIELO: transiciones de pintura/marco con continuidad cromática y espacial; preservar luces interactivas, constelaciones y su causalidad; evitar tearing y stutter al entrar/salir.
+
+JARDÍN: NO reemplazar ni eliminar su animación de lirios. Corregir sólo defectos de composición/rendimiento, mejorar la reacción táctil si la fase lo requiere. El jardín puede seguir siendo de lirios aunque la carta mencione rosas.
+
+RECUERDOS/FOTOS: no editar, regenerar, modificar, comprimir destructivamente ni cambiar los originales personales. Mantener momentos contemplativos y controles protegidos. Los envoltorios y transiciones pueden mejorar sin modificar contenido fotográfico.
+
+CAJA / REGALO / CEREMONIA: el usuario percibe la caja en un escenario sin fondo. Verificar la composición actual: existe un fondo de claro reutilizado en `guardian-world.js`, pero no un set final suficientemente dedicado. Diseñar un ambiente propio con profundidad y vínculo emocional al viaje (motivos del viñedo, luz cálida, camino reconocido, sombra real de caja, ambientación, hojas/pétalos discretos), sin quitar ni rediseñar el objeto aprobado. Ni anillo ni pregunta final se revelan antes de su beat; la caja se abre en pasos claros que Valerie activa conscientemente. Mantener protección del macro/anillo y el final en espera indefinida de la respuesta presencial. Evitar un fondo plano, oscuridad vacía o objetos suspendidos.
+
+### 9. CAMBIO DE LA CARTA, ÚNICO Y LITERAL
+
+Archivo: `src/personal-content.js`, tercer párrafo de `VF.content.letter`.
+
+REEMPLAZAR SOLO:
+«los viñedos, los conejitos, la noche y los lirios»
+POR:
+«los viñedos, los conejitos, la noche y las rosas».
+
+Esto es importante: a Valerie le gustan muchísimo las ROSAS. NO cambiar los lirios del jardín, sus animaciones, el nombre del capítulo, las decisiones ni los assets por este motivo. NO editar el resto de la carta, fotos, memorias personales, nombres, dedicatorias, propuesta ni su puntuación salvo ajuste técnico de codificación absolutamente imprescindible. Añadir test textual que compruebe la nueva frase y que detecte modificaciones accidentales en las otras partes protegidas.
+
+### 10. RENDIMIENTO Y EXPERIENCIA SUAVE REAL EN IPHONE (SIN SACRIFICAR BELLEZA)
+
+El usuario percibe que algunas partes se vuelven lentas y pesadas. La solución es INGENIERÍA, no borrar animaciones. Diagnosticar en qué momentos: carga/cambio de escena, cuadros, bosque, fuentes, fotos, partículas, overlays, postproceso, redibujado de DOM, Canvas y transición de imagen. Mantener una experiencia fluida y consistente; evitar que el modo adaptativo cambie detalle/fps de forma repentina durante una actuación.
+
+En F24.1 el HTML offline monolítico pesa aproximadamente 34.6 MB, mientras el ZIP de desarrollo pesa ~109 MB; son métricas DIFERENTES. Analizar el paquete modular de distribución, tamaños transferidos reales de recursos, decodificación y consumo en memoria. Optimizar imágenes derivadas de arte si el original protegido permanece intacto y se valida fidelidad. Carga progresiva con precarga de escena siguiente y liberación segura de cachés antiguas; nunca parpadeos por carga tardía. Revisar DPR y resolución interna; no disparar resize de Canvas al variar momentáneamente el viewport dinámico de Safari. Reciclar gradientes/patrones y evitar mediciones DOM, mutaciones de `innerHTML`, layout thrashing o miles de asignaciones por frame. Dormir `requestAnimationFrame` cuando no hay cambios, despertar de modo fiable al tocar o reanudar. Atención a pagehide/pageshow, `visibilitychange`, memoria de Safari y restauración.
+
+Mediciones: tiempo hasta primera imagen útil, p50/p95 del tiempo de dibujo, long tasks o proxies disponibles, FPS observados, peso transferido por capítulo y número de assets decodificados. Usar objetivos (p. ej. cercano a 60 fps en equipos compatibles, degradación estética gradual y cadencia estable en dispositivos lentos) sin PROMETER mediciones que no existen. No fijar 24 fps como solución por defecto sin probar si causa brusquedad; prioriza consistencia e interpolación de animación. Mantener opciones de calidad y movimiento reducido sin alterar la historia. Si no tienes Safari físico, NO afirmar que el rendimiento de iOS está certificado.
+
+### 11. SEGURIDAD, PRIVACIDAD, HISTORIAL Y RESILIENCIA (SIN AMPLIAR ALCANCE)
+
+Es una sorpresa privada con fotos y contenidos íntimos. No añadir analytics, publicidad, telemetría, enlaces externos, indexación ni llamadas de red innecesarias. Si se usa el servidor de LAN para pruebas, restringirlo o advertir claramente que es sólo para red de confianza; no presentarlo como alojamiento público seguro. Conservar la versión offline y posibilidad de empaquetado modular. Restauración de sesión robusta; no perder elecciones/carta/posición por recarga involuntaria, ni resetear progreso por iniciar prólogo. Diferenciar `sessionStorage` de persistencia real: no proclamar que la película sobrevive cerrar Safari sin implementar/validar guardado local explícito. Mantener compatibilidad con estados antiguos donde corresponda y mecanismo claro de reinicio con confirmación. Manejar fallos de assets de manera recuperable, sin pantalla negra sin salida.
+
+### 12. QA DE ACEPTACIÓN OBLIGATORIA, NO SOLO «TESTS VERDES»
+
+Preparar PRUEBAS NUEVAS QUE REPRODUZCAN EL BUG. Comprobar con Playwright Chromium y WebKit si están disponibles; si no puedes usar WebKit, documentarlo y NO simular una aprobación de Safari real. Ejecutar suite focalizada primero, después regresión completa: `npm test`, `npm run test:vertical`, `npm run test:forest`, `npm run test:browser` si el navegador existe, `npm run build`; otras suites pertinentes para ceremonia, reproducción, assets y decisiones si la modificación las afecta. No repetir builds completos por microcambio. El usuario NO desea capturas, videos, grabaciones ni paquetes de pruebas visuales: puede realizar él mismo el visionado en su iPhone. Sí quiere QA de código serio con resultados reproducibles.
+
+MATRIZ DE ACEPTACIÓN, cumplir o dejar bloqueador explícito:
+A. iOS entrada: toques vacíos NO abren HUD; 30 taps / doble taps / pointer cancel / safe areas; el botón real sí abre/cierra siempre.
+B. Diálogos: fijación de burbuja/subtítulo durante una línea completa; zona turquesa contiene TODO texto; sin parpadeos, clipping o duplicación de VoiceOver; tamaños 320/360/375/390/430 y Dynamic Type.
+C. Reproducción: AUTO por defecto; diálogos ordinarios sin pulsar «Siguiente»; pausas interactivas sólo cuando existe motivo narrativo.
+D. Interactividad: todas las ocho decisiones son claras, cambian coreografía, se ejecutan exactamente una vez, sin navegación prematura; las interacciones de hoja/río, luz, bosque, cuadro, jardín, recuerdos y caja permanecen funcionales.
+E. Capítulos 1–7: prólogo→1 sin salto espacial; cruces con físicas y apoyos; flor visible antes del diálogo; transición hoja sin cortes bruscos; salida al bosque coherente; las 2 rutas de bosque se completan.
+F. Ambientes existentes: museo sin helechos fuera de lugar, iluminación y lámparas; cuadro no alterado; jardín intacto; caja con set propio; ninguna foto o sorpresa anticipada.
+G. Personal: sólo frase «... noche y las rosas» en carta; mantener intactos todos los demás contenidos personales.
+H. Rendimiento: reportar métricas MEDIDAS, condiciones, escenas problemáticas antes/después, explicación de cuellos y mejoras; especificar qué queda pendiente de iPhone real.
+I. Navegación: recargar en decisión, interacción, carta, caja y final; pausar/reanudar; botón atrás; cambio de capítulo; hist/`popstate`/`hashchange` sin doble navegación; restauración tras `pagehide/pageshow`; cancelar transiciones anteriores con token/abort correcto.
+J. Accesibilidad: botones táctiles ≥44 CSS px, zona segura superior/inferior, VoiceOver/labels, contraste, reduced motion, sin scroll como mecanismo de navegación.
+K. Distribución: ZIP realmente completo y reproducible, no código roto, activos derivados necesarios y versiones actualizadas; sin publicar ni activar indexación.
+
+### 13. ORDEN DE EJECUCIÓN, CALIDAD Y POLÍTICA DE EFICIENCIA
+
+Bloque 1: congelar base, reproducir bug de touch, arreglar HUD/subtítulos/franja turquesa y validar con pruebas específicas; esto es P0 y se hace PRIMERO.
+Bloque 2: construir prólogo integrado + lógica de continuar/repetir, sin romper guardado ni la cámara.
+Bloque 3: rodar de nuevo primer tramo 1–7, especialmente hoja/río, flor y transición; mejorar decisiones y mantener interacciones táctiles.
+Bloque 4: reparar assets del environment y dirección de arte de museo, cuadro, caja y los demás escenarios existentes donde haya fallos demostrados.
+Bloque 5: cambiar exactamente la carta lirios→rosas; optimizar rendimiento por medición y validar integridad.
+Bloque 6: QA funcional y regresión general, construcción, ZIP, checkpoint y entrega.
+
+Trabaja principalmente con un solo agente, sin paralelizar exploraciones especulativas. Utiliza skills instaladas SOLO si aportan valor (`impeccable` para acabado, `ui-ux-pro-max` o `design-taste-frontend` si alguna decisión de diseño realmente lo exige, `vercel-react-best-practices` NO corresponde salvo que haya React, porque este frontend está implementado en JS/Canvas). El ahorro de tokens proviene de lecturas focalizadas, contratos y pruebas eficientes, NO de eliminar animaciones, rutas o calidad.
+
+Nunca uses «se ve bien» como prueba técnica ni «pasan 31/31» como certificación de iPhone. El usuario hará la validación artística personal. Priorizar estabilidad y riqueza cinematográfica y dar solución definitiva a causas raíz en lugar de parches CSS encima de un problema estructural.
+
+### 14. ENTREGA EXACTA
+
+Produce `VALERIE_F24_1_1_IOS_VERTICAL_POLISH_COMPLETO.zip`, con fuentes, assets necesarios, `dist`/HTML offline generado si la construcción original lo exige, y documentación mínima Windows de ejecución. Incluye `CHECKPOINT.md` con base, módulos cambiados, cambios ejecutados, tests y resultados REALES, fallos pendientes, mediciones de rendimiento reales y validaciones de Safari físico pendientes. Añade resumen breve de qué mejoró VISUAL/NARRATIVAMENTE por capítulo, sin videos ni capturas. Preserva el ZIP base y todas las referencias y hashes protegidos.
+
+No respondas sólo con el plan. Comienza a CODIFICAR y continúa secuencialmente hasta entregar el paquete de F24.1.1 con los P0 resueltos y todas las mejoras razonables implementadas. Si el entorno o la cuota interrumpen el trabajo, guarda el checkpoint y el estado concreto sin borrar avances, para continuar desde ahí.
+
+CRITERIO DE ÉXITO: Al abrir en un iPhone vertical, Valerie encuentra un prólogo emotivo, conoce a dos conejitos realmente vivos, lee diálogos estables y hermosos, ayuda a que sucedan cosas con toques deliberados, toma decisiones claras, ve físicamente la hoja, el agua y la flor, recorre un museo propio, llega a una caja integrada en un mundo tangible y disfruta una película FLUIDA, sin que un toque inocente abra el menú ni que el texto aparezca y desaparezca. Las rosas están en la carta; los lirios siguen floreciendo en el jardín.

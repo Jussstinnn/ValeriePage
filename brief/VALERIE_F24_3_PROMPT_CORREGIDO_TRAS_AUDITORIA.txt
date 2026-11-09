@@ -1,0 +1,77 @@
+# VALERIE F24.3 — DIRECTOR'S CUT: RECONSTRUCCIÓN ESCÉNICA MOBILE VERTICAL
+
+## Antes de editar
+Trabaja sobre una copia independiente de `VALERIE_F24_2_CUENTO_CINEMATOGRAFICO_COMPLETO.zip` y lee el documento `VALERIE_F24_2_AUDITORIA_PROFUNDA_VERIFICADA.md` antes de modificar. Este encargo reemplaza el prompt F24.3 genérico anterior.
+
+**Tu objetivo NO es producir más commits, archivos ni tests. Es entregar una película interactiva claramente mejor a los ojos de Valerie en un celular vertical, con continuidad, ritmo, dramatización y arte a nivel profesional.** El usuario revisó todo F24.2 y encontró una calidad muy desigual. No declares éxito por compilar.
+
+## Reglas de conservación
+- Mantén identidad y anatomía aprobadas de Rosa (rosa, orejas erguidas) y Beige (topo/beige, orejas caídas); son peluches reales que acompañan un regalo físico.
+- Preserva fotos personales originales, privacidad, contenido romántico y la pregunta final; no inventes recuerdos biográficos.
+- La carta debe conservar **rosas** en la frase sobre los gustos de Valerie. No cambies ni elimines el jardín de lirios aprobado.
+- Conserva mecánicas del cruce del arroyo, observar la flor, aparición de la caja, abrir la puerta y el bosque donde ya funcionan: eleva puesta en escena sin destruirlas.
+- Móvil vertical para iOS y Android; escritorio/horizontal/SEO quedan fuera del alcance activo. Accesibilidad táctil y rendimiento siempre.
+- No encargues capturas, videos ni paquetes de evidencia visual. Documenta brevemente cambios y tests, entrega ZIP completo.
+
+## A. Reconstrucción del arranque: PROBLEMA COMPROBADO
+`src/journey-script.js`: los ocho beats previos al primer acto `lantern-release` suman **27,6 segundos nominales**; el prólogo completo suma 39,4. La primera captura móvil revela conejitos estáticos en zona central, una burbuja superior, un gran vacío turquesa inferior. `src/composition.js` reserva espacio para caption aunque `src/dialogue-layout.js` lo oculte por modo burbuja; la prueba en Chromium 390×844 arroja frame interior 346×574. Corrige la arquitectura de la composición, NO pegues un asset al pie para disimular.
+
+**Rediseño mínimo de los primeros minutos:**
+1. Apertura visual: un pequeño farol aparece en una pérgola del viñedo; Rosa entra saltando y casi lo vuelca, Beige lo estabiliza. La cámara tiene un objetivo y una trayectoria, no una posición neutra fija.
+2. En los primeros compases se entiende quién es cada peluche por actuación, no por una sucesión de presentaciones habladas. Rosa impulsiva; Beige protector, con humor suave.
+3. Primera invitación de Valerie a intervenir: ayudar a soltar el broche del farol; al tocar, el brillo cobra vida y se convierte en la guía. Debe suceder mucho antes que en F24.2 sin comprometer lectura ni actuaciones.
+4. La luz se separa, ambos reaccionan de manera distinta y salen físicamente por un camino reconocible. La cámara los acompaña hasta la siguiente ubicación.
+5. En «Dos miradas» agrega un incidente real o decisión breve que avance la misión. Evita repetir “se escapó la luz” varias veces sin nuevos hechos.
+6. En «Te abro el camino» conserva elección de quién sostiene la hoja, pero teatraliza su peso, anticipación, relevo, paso bajo la hoja y consecuencia futura. No solo intercambies textos o posiciones.
+7. «Una patita más»: conserva el cruce interactivo exitoso. Mejorar apoyo de pies, salpicaduras, continuidad de salto y perspectiva, SIN reescribir la mecánica aprobada.
+8. «El tiempo de los dos»: conservar la observación de la rosa, con acercamiento de cámara natural, viento y una reacción íntima visible; la pausa debe tener valor dramático, no ser tiempo muerto.
+9. «Un secreto para ti»: conservar la aparición de la caja. Establece espacialmente dónde está, para que al final podamos REGRESAR AL MISMO LUGAR.
+10. «Tras la luz»: la salida hacia el bosque debe ser un recorrido visible, no una sustitución brusca de imagen. El bosque aprobado sigue siendo el estándar mínimo de interactividad.
+
+**Reglas de actuaciones:** anticipación, aceleración, trayectoria, aterrizaje, peso, inercia de orejas, miradas y ajuste de cámara. Misma identidad física, sin teletransporte, sin un fundido negro como solución universal. Animación y pausa de lectura deben coordinarse; no agregar temporizadores paralelos.
+
+## B. HADA GUÍA — PERSONAJE NUEVO, NO PARTÍCULA
+En `src/adventure-world.js` el actual `stats.fairy` corresponde a un destello con elipses como alas. Diseña una **hada diminuta original, reconocible y consistente**: silueta, alas, gestos, estados (curiosidad, espera, sorpresa, señal, júbilo), trayectorias continuas y profundidad. Nace narrativamente de la luz del farol y guía sin hablar en exceso ni robar protagonismo a Rosa y Beige. Su aparición debe conectar viñedo, bosque, pasaje, museo, cuadro y regreso; que deje pequeños trazos que reaparezcan.
+
+## C. MUSEO — GALERÍA AUTÉNTICA, NO “FONDO CON MARCO”
+El `assets/art/gallery-room.png` actual muestra una pared central vacía y decorado floral. El `assets/journey/vestibule.webp` ya propone un acceso precioso con faroles y cuadro al fondo, pero no existe una visita real por obras auténticas.
+
+Conserva la arquitectura del pasaje por raíces, casa de cristal y puerta que Valerie abre. Al entrar, crea una galería con movimiento continuo de personajes y cámara; cuadros individuales **con imágenes auténticas enmarcadas y sin deformar**. Las referencias que acompaño son *El grito* y *La noche estrellada*. Usa esos archivos exactos como referencia visual y, si es técnicamente apropiado, como material de arte en las paredes. No sustituir por cuadros “parecidos” ni por un patrón generativo. Cuidar proporciones originales, textura, luces de riel/apliques, sombras físicas, marcos, cartelas discretas y separación del muro. La atención y los personajes recorren varios cuadros uno por uno en lugar de aparecer mágicamente ante el destino.
+
+**Storyboard mínimo del museo:**
+1. Entrada: el hada cruza el umbral y se posa sobre un marco. Beige espera a Rosa, ambos pisan suelo de galería visible.
+2. Primer cuadro: *El grito*. Un ligero gag de Rosa se asombra y Beige la imita tímidamente; Valerie puede tocar una lámpara/aplique para revelar luz sobre la obra. No deformar la imagen del cuadro; animar entorno y reacciones de peluches.
+3. Segundo cuadro / transición íntima: una composición de marcos conduce a un espacio para **el recuerdo personal `Dos sonrisas` ANTES de la gran escena de La noche estrellada**. La foto se descubre voluntariamente y queda tiempo para contemplarla. No se muestra de forma accidental al precargar ni se altera la imagen.
+4. Tercer cuadro: revelación progresiva de la **imagen auténtica** de *La noche estrellada* en la pared; los personajes llegan caminando y la cámara responde. Primero reconocemos el cuadro real.
+5. Solo DESPUÉS de esa contemplación, el hada invita a atravesar la frontera del marco, con una transición motivada por pinceladas/estrellas. Entonces sí entra el universo estilizado animado; `src/night-painting.js` puede servir como material *dentro* del mundo, pero no reemplazar la pintura real colgada.
+6. Momento central: Valerie pinta/toca/traza una estrella con interacción física clara, una pincelada que sigue el dedo en una superficie creíble, deformación fluida controlada por trayectorias (no mancha fea), estela, reacción de ambos conejitos y un efecto distinto según elección. El hada integra los trazos y revela que “Valerie es nuestro mayor deseo” con un diálogo emotivo y bien construido que gane su lugar en la historia.
+7. Salida lógica del museo al siguiente mundo: seguir luz y huellas, sin corte arbitrario.
+
+## D. CONSECUENCIAS VISIBLES Y MÁS INTERACTIVIDAD
+`src/reactive-quests.js` ya guarda `skyMotif`. `src/story-homecoming.js` representa motivos pequeños; no basta. Diseña consecuencias consistentes: color/forma del pétalo según la elección (también en el cierre), tipo de estrella/constelación y la ruta de luz elegida. Deben aparecer en escenas intermedias y en el final, no únicamente como texto de confirmación.
+
+Agregar interacciones donde mejoren la dramaturgia: broche del farol, guía del hada en bifurcación, iluminar un cuadro, desvelar `Dos sonrisas`, entrar/pintar en Noche estrellada, preparar caja final. Cada gesto: objetivo claro, feedback inmediato, actuación a continuación y resultado visible. NO agregar botones gratuitos ni complicar las mecánicas aprobadas. «Siguiente» solo en momentos realmente protegidos.
+
+## E. FINAL — CAJA Y ANILLO DEBEN CONSTRUIR UN VERDADERO REVEAL
+El código actual confirma el problema: `src/gift-ceremony.js:39` abre la caja por tiempo (`span(1.3,6.3,t)`) y en `:54` pinta el anillo a partir de `open > .65`, **antes de una revelación explícita controlada por Valerie**. `src/content.js` y `src/gift-ceremony.js` mantienen `placementConfirmed:false`.
+
+Sustituye por una secuencia de ESTADOS CON INTERACCIÓN: caja encontrada y cerrada -> Valerie toca el broche -> conejitos cooperan para sostener tapa -> apertura con bisagra y oclusión correcta -> revelación del anillo real (foto de referencia `assets/art/rose-ring.png`) ubicado *dentro* de la caja -> macro voluntario del anillo -> retroceso a plano íntimo -> pregunta final sin desaparición ni avance automático. Nunca renderizar el anillo antes de la revelación; no fingir oclusión con un fundido.
+
+`src/ending-theatre.js` actualmente pone el jardín como fondo del final. Cambiarlo a una versión nocturna espectacular e inequívoca del lugar original **donde hallaron la caja** (el claro/alcoba que se establezca en «Un secreto para ti»). Hacer un plano de retorno reconocible con mismas marcas espaciales y el farol/hada. La pregunta permanece hasta decisión presencial.
+
+## F. COMPOSICIÓN Y RENDIMIENTO MOBILE VERTICAL TODO EL RECORRIDO
+Unifica los contratos de `src/composition.js`, `src/dialogue-layout.js`, `src/bubble-director.js`, `src/cinematic-hud.js` y los cuatro motores de mundo. El HUD no puede verse bien en `el-bosque-escucha` y colapsar después; verifica en todos los cambios de mundo y transiciones. Burbuja/superficie de lectura deben permanecer estables mientras se pronuncia un texto y no tapar los conejitos ni interacciones. Resolver precisamente el vacío inferior de la captura (no con decoraciones de relleno).
+
+Rendimiento: edición autónoma ~42.7MB y ZIP ~169MB, sin equivaler a carga web por sí solos. Mantén WebP/runtime, caché acotada y decodificación razonable; mide (si permite entorno) frame times, memoria aproximada, decoded image cache, primera interacción y recorrido largo. No reducir caprichosamente la tasa de FPS ni quitar animaciones para lograr números superficiales. La prioridad es fluidez perceptual en celulares modernos y modestos.
+
+## G. CRITERIOS DE ACEPTACIÓN CON PUERTAS
+**Puerta 1 — Inicio:** prólogo, «Dos miradas», «Te abro el camino», río y rosa presentan cambio visible y coherente, gran vacío inferior corregido, interactividad temprana y personajes animados de verdad. NO continuar por inercia si esa parte sigue pareciendo igual.
+**Puerta 2 — Museo:** recorridos físicos, obras auténticas en marcos, `Dos sonrisas` antes de Noche estrellada, cielo interactivo y frase culminante. NO aprobar si solo se agregaron dos PNG sobre un lienzo existente.
+**Puerta 3 — Final:** mismo lugar de la caja, tapa 3D/2.5D oclusiva, anillo oculto hasta toque, macro y pregunta preservada. NO aprobar si el anillo aparece por temporizador.
+**Puerta 4 — Integración:** revisar TODO el móvil vertical (iPhone/Android y tamaños 320, 375, 390, 412, 430px), capítulo por capítulo, control contextual, elecciones, navegación, reinicio, restauración, sorpresa y rendimiento. Test automatizado no sustituye prueba física; distinguir emulación de dispositivo real.
+
+**Arquitectura:** insertar `Dos sonrisas` antes del clímax afecta índices, grafo de capítulos, historia del navegador, migración de sesiones, política de sorpresa y precarga de assets. Implementar por IDs estables, sin romper historial, fotos ni guardado. Cancelar actos/transiciones obsoletos.
+
+**Eficiencia:** agente principal, leer componentes afectados, aprovechar arte/mecánicas buenas, trabajo por tramos y pruebas focalizadas, compilación general al final, checkpoint claro. NO generar videos, capturas ni extensos paquetes de evidencia; usuario prueba visualmente. Reportar honestamente todo pendiente y entregar ZIP completo nuevo F24.3 sin tocar F24.2.
+
+**IMPORTANTE:** Este encargo se considera satisfecho solo si produce un salto artístico y funcional evidente, especialmente en los primeros minutos. No hagas otra versión cosmetizada y no declare éxito por cantidad de pruebas PASS.

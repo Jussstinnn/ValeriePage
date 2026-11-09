@@ -1,0 +1,20 @@
+const {chromium}=require(process.env.VALERIE_PLAYWRIGHT||'@playwright/test');const assert=require('node:assert/strict');
+(async()=>{const b=await chromium.launch({channel:'msedge',headless:true});const p=await b.newPage({viewport:{width:390,height:844}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
+ const settled=()=>p.waitForFunction(()=>window.Valerie&&!Valerie.state().busy);const go=async i=>{await p.evaluate(i=>Valerie.go(i,{instant:true}),i);await settled();};
+ try{
+ await p.goto(process.env.VALERIE_URL||'http://127.0.0.1:4173');await p.waitForFunction(()=>window.Valerie);await go(8);await p.evaluate(()=>{const a=document.querySelectorAll('#journey-track>div');scrollTo(0,a[8].offsetTop+a[8].offsetHeight*.99);});await p.locator('#auto').click();await p.waitForTimeout(2100);await settled();assert.equal(await p.evaluate(()=>Valerie.state().index),8,'important narration waits for voluntary continuation even in guided mode');await p.locator('#next').click();await settled();assert.equal(await p.evaluate(()=>Valerie.state().letterPage),0);await p.locator('#auto').click();await go(9);
+ for(const attempt of [async()=>p.evaluate(()=>scrollTo(0,1e7)),async()=>{await p.mouse.move(6,300);for(let n=0;n<8;n++)await p.mouse.wheel(0,500);},async()=>p.keyboard.press('End'),async()=>p.keyboard.press('PageDown'),async()=>p.evaluate(()=>location.hash='finale'),async()=>p.evaluate(()=>Valerie.go(11))]){
+  await attempt();await p.waitForTimeout(100);await settled();const s=await p.evaluate(()=>Valerie.state());assert.equal(s.index,9);assert.equal(s.letterPage,0);assert(!s.ringOpened);
+ }
+ await p.locator('#next').click();assert.equal(await p.evaluate(()=>Valerie.state().letterPage),1);await p.evaluate(()=>scrollTo(0,1e7));await p.waitForTimeout(100);assert.equal(await p.evaluate(()=>Valerie.state().index),9);
+ await p.locator('#next').click();await p.locator('#next').click();await settled();assert.equal(await p.evaluate(()=>Valerie.state().index),10);
+ await p.evaluate(()=>scrollTo(0,1e7));await p.keyboard.press('End');await p.waitForTimeout(150);assert.equal(await p.evaluate(()=>Valerie.state().index),10);
+ await p.locator('#open-ring').click();await p.locator('#next').click();await p.evaluate(()=>Valerie.go(11));await settled();assert.equal(await p.evaluate(()=>Valerie.state().index),10);
+ await p.locator('#skip-ceremony').click();await settled();assert.equal(await p.evaluate(()=>Valerie.state().index),11);
+ await go(0);await p.evaluate(()=>Valerie.seek(8));await go(11);await p.locator('#restart').click();assert.deepEqual(await p.evaluate(()=>Valerie.state().session.chapters),[]);await p.locator('#begin').click();await settled();const fresh=await p.evaluate(()=>Valerie.state());assert(fresh.time<1);assert(!fresh.paused);assert(!fresh.ringOpened);assert.equal(fresh.navigation.limit,9);assert.equal(fresh.selectedFlower,null);
+ for(const v of [{width:568,height:320},{width:844,height:390}]){await p.setViewportSize(v);await go(1);const h=await p.locator('#interact').evaluate(e=>e.getBoundingClientRect().height);assert(h>=44,h+' target');}
+ await go(9);await p.evaluate(()=>Valerie.pause());await p.locator('#chapters').click();await p.locator('#new-story').click();await p.locator('#begin').click();await settled();assert(!await p.evaluate(()=>Valerie.state().paused));assert((await p.evaluate(()=>Valerie.state().time))<1);
+ await p.emulateMedia({reducedMotion:'reduce'});await go(9);await p.locator('#skip-letter').click();await settled();await p.locator('#open-ring').click();await p.locator('#next').click();await p.locator('#next').click();await settled();assert.equal(await p.evaluate(()=>Valerie.state().index),11);
+ await p.evaluate(()=>Valerie.restart());await p.reload();await p.waitForFunction(()=>window.Valerie);assert.equal(await p.evaluate(()=>Valerie.state().index),-1);assert.deepEqual(errors,[]);console.log('RC07 A: semantic scroll/hash/End/PageDown, three folios, closed/opening ring, explicit skips, fresh reset, compact 44px targets passed.');
+ }finally{await b.close();}
+})().catch(e=>{console.error(e);process.exit(1)});

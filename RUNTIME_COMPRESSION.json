@@ -1,0 +1,9 @@
+{
+  "method": "base85 embedded binary, native approved PNG/WebP decoders",
+  "alphaAssetsRetained": 5,
+  "webpAlphaCandidate": "rejected: browser premultiplication differed from the approved PNG",
+  "baselineOfflineBytes": 27520798,
+  "currentOfflineBytes": 25977432,
+  "savedBytes": 1543366,
+  "savingPercent": 5.61
+}

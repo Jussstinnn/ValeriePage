@@ -1,0 +1,1854 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "arrival",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "lantern",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "escape",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "mission",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "leave",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "loose-light",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "steady",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "reply",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-problem",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-offer",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-reply",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "bank",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "also",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "afraid",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "landed",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "reply",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "notice",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "answer",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "flower",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "slow",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "stay",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "sleeping",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "meaning",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "all",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "together",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "wait",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "reply",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "three",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "together",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "glimmer",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "listen",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-together",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "not-end",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "signal",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "house",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "home",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "sky",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "enter",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "care",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 10,
+      "chapter": "el-vestibulo-de-las-historias",
+      "beat": "entry",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 10,
+      "chapter": "el-vestibulo-de-las-historias",
+      "beat": "wait",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "arrival",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "mimic",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "soft",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "leave",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "peek",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "space",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "laugh",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "leave",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 13,
+      "chapter": "la-noche-en-la-pared",
+      "beat": "arrival",
+      "width": 320,
+      "kind": "bubble",
+      "font": 18
+    },
+    {
+      "index": 13,
+      "chapter": "la-noche-en-la-pared",
+      "beat": "recognize",
+      "width": 320,
+      "kind": "bubble",
+      "font": 18
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "inside",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "ask",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "earned",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "wish",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 15,
+      "chapter": "un-deseo-para-dos",
+      "beat": "wish",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 15,
+      "chapter": "un-deseo-para-dos",
+      "beat": "leave",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 16,
+      "chapter": "el-jardin-despierta",
+      "beat": "ask",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "arrive",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "roses",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "lavender",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "notice",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "gift-result",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "garden-care",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 18,
+      "chapter": "un-lirio-para-ti",
+      "beat": "offer",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 19,
+      "chapter": "nuestro-retrato",
+      "beat": "found",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 19,
+      "chapter": "nuestro-retrato",
+      "beat": "dog",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 20,
+      "chapter": "un-instante",
+      "beat": "envelope",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 21,
+      "chapter": "una-carta-para-ti",
+      "beat": "offer",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "recognize",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "forest",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "sky",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "garden",
+      "width": 320,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 23,
+      "chapter": "algo-que-guarde",
+      "beat": "contemplate",
+      "width": 320,
+      "kind": "bubble",
+      "font": 18
+    },
+    {
+      "index": 23,
+      "chapter": "algo-que-guarde",
+      "beat": "witness",
+      "width": 320,
+      "kind": "bubble",
+      "font": 18
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "arrival",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "lantern",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "escape",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "mission",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "leave",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "loose-light",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "steady",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "reply",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-problem",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-offer",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-reply",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "bank",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "also",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "afraid",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "landed",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "reply",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "notice",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "answer",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "flower",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "slow",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "stay",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "sleeping",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "meaning",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "all",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "together",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "wait",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "reply",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "three",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "together",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "glimmer",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "listen",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-together",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "not-end",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "signal",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "house",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "home",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "sky",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "enter",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "care",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 10,
+      "chapter": "el-vestibulo-de-las-historias",
+      "beat": "entry",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 10,
+      "chapter": "el-vestibulo-de-las-historias",
+      "beat": "wait",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "arrival",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "mimic",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "soft",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "leave",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "peek",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "space",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "laugh",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "leave",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 13,
+      "chapter": "la-noche-en-la-pared",
+      "beat": "arrival",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 13,
+      "chapter": "la-noche-en-la-pared",
+      "beat": "recognize",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "inside",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "ask",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "earned",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "wish",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 15,
+      "chapter": "un-deseo-para-dos",
+      "beat": "wish",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 15,
+      "chapter": "un-deseo-para-dos",
+      "beat": "leave",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 16,
+      "chapter": "el-jardin-despierta",
+      "beat": "ask",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "arrive",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "roses",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "lavender",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "notice",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "gift-result",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "garden-care",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 18,
+      "chapter": "un-lirio-para-ti",
+      "beat": "offer",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 19,
+      "chapter": "nuestro-retrato",
+      "beat": "found",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 19,
+      "chapter": "nuestro-retrato",
+      "beat": "dog",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 20,
+      "chapter": "un-instante",
+      "beat": "envelope",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 21,
+      "chapter": "una-carta-para-ti",
+      "beat": "offer",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "recognize",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "forest",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "sky",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "garden",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 23,
+      "chapter": "algo-que-guarde",
+      "beat": "contemplate",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 23,
+      "chapter": "algo-que-guarde",
+      "beat": "witness",
+      "width": 390,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "arrival",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "lantern",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "escape",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "mission",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 0,
+      "chapter": "antes-del-primer-pasito",
+      "beat": "leave",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "loose-light",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "steady",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 1,
+      "chapter": "dos-miradas",
+      "beat": "reply",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-problem",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-offer",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 2,
+      "chapter": "te-abro-el-camino",
+      "beat": "leaf-reply",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "bank",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "also",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "afraid",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "offer",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "landed",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 3,
+      "chapter": "una-patita-mas",
+      "beat": "reply",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "notice",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "answer",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "flower",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "slow",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 4,
+      "chapter": "el-tiempo-de-los-dos",
+      "beat": "stay",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "sleeping",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "meaning",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "all",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 5,
+      "chapter": "un-secreto-para-ti",
+      "beat": "together",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "wait",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "reply",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "three",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 6,
+      "chapter": "tras-la-luz",
+      "beat": "together",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "glimmer",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "listen",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 7,
+      "chapter": "el-bosque-escucha",
+      "beat": "forest-together",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "not-end",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "signal",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 8,
+      "chapter": "donde-apuntan-las-raices",
+      "beat": "house",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "home",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "sky",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "enter",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 9,
+      "chapter": "la-casa-de-las-ventanas",
+      "beat": "care",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 10,
+      "chapter": "el-vestibulo-de-las-historias",
+      "beat": "entry",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 10,
+      "chapter": "el-vestibulo-de-las-historias",
+      "beat": "wait",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "arrival",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "mimic",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "soft",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 11,
+      "chapter": "el-museo-de-la-noche",
+      "beat": "leave",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "peek",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "space",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "laugh",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 12,
+      "chapter": "dos-sonrisas",
+      "beat": "leave",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 13,
+      "chapter": "la-noche-en-la-pared",
+      "beat": "arrival",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 13,
+      "chapter": "la-noche-en-la-pared",
+      "beat": "recognize",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "inside",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "ask",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "earned",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 14,
+      "chapter": "dentro-del-cuadro",
+      "beat": "wish",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 15,
+      "chapter": "un-deseo-para-dos",
+      "beat": "wish",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 15,
+      "chapter": "un-deseo-para-dos",
+      "beat": "leave",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 16,
+      "chapter": "el-jardin-despierta",
+      "beat": "ask",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "arrive",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "roses",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "lavender",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "daisies",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "notice",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "gift-result",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 17,
+      "chapter": "entre-lirios-y-alas",
+      "beat": "garden-care",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 18,
+      "chapter": "un-lirio-para-ti",
+      "beat": "offer",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 19,
+      "chapter": "nuestro-retrato",
+      "beat": "found",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 19,
+      "chapter": "nuestro-retrato",
+      "beat": "dog",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 20,
+      "chapter": "un-instante",
+      "beat": "envelope",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 21,
+      "chapter": "una-carta-para-ti",
+      "beat": "offer",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "recognize",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "forest",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "sky",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 22,
+      "chapter": "la-caja-rosa",
+      "beat": "garden",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 23,
+      "chapter": "algo-que-guarde",
+      "beat": "contemplate",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    },
+    {
+      "index": 23,
+      "chapter": "algo-que-guarde",
+      "beat": "witness",
+      "width": 430,
+      "kind": "bubble",
+      "font": 22
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "engine": "chromium",
+  "frames": 1600,
+  "phases": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "maxDraws": 1,
+  "directReturn": true,
+  "errors": []
+}

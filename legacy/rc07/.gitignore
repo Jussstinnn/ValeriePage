@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.zip
+test-results/
+history.bundle
+release-staging/
+evidence/
+VALERIE_OFFLINE.html

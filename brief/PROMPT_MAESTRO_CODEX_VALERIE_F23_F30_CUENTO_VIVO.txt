@@ -1,0 +1,179 @@
+========================================================================
+PROMPT MAESTRO — VALERIE F23–F30 · EL CUENTO QUE COBRA VIDA
+RECONSTRUCCIÓN DE EXPERIENCIA, INTERACTIVIDAD Y DIRECCIÓN CINEMATOGRÁFICA
+========================================================================
+
+DESTINATARIO: CODEX (MODO DE IMPLEMENTACIÓN REAL)
+ARCHIVOS ADJUNTOS: VALERIE_CUENTO_F22_COMPLETO.zip +
+ VALERIE_F22_AUDITORIA_PROFUNDA_Y_REPLANTEAMIENTO_F23.txt
+PRIORIDAD: EXPERIENCIA MOBILE-FIRST, EXTRAORDINARIA Y PROFUNDAMENTE INTERACTIVA.
+
+0. AUTORIZACIÓN Y DIAGNÓSTICO
+
+Te autorizo a ejecutar la siguiente evolución de Valerie desde la base real F22 y conservar F22 absolutamente intacta. El proyecto ha mejorado desde ASCII a una película ilustrada, pero NO está al nivel definitivo. Mi problema actual no es que «falte pulido»: demasiadas escenas son estáticas, parecidas, poco entretenidas y las decisiones se sienten superficiales. Quiero que deje de parecer una secuencia de fondos con conejitos, bocadillos y Siguiente. Quiero un CUENTO INTERACTIVO que SUCEDE en tiempo real y responde a las manos de Valerie.
+
+EL ESTÁNDAR ARTÍSTICO ES «EL JARDÍN DESPIERTA»: lo impresionante es que las flores REALMENTE CRECEN, se desarrollan, se abren y transforman el paisaje. Quiero ese nivel de transformación y cuidado técnico en bosque, viñedo, museo, cielo, recuerdos, carta, caja y desenlace, con mecánicas y lenguaje visual únicos en cada uno. No quiero 14 jardines diferentes ni poner partículas sin sentido: quiero 14 IDEAS DIFERENTES igual de bien ejecutadas.
+
+No te limites a leer la lista de funcionalidades. ABRE el código, ejecuta el HTML en navegador, recorre las escenas y analiza qué ve una persona que NO ha leído el código. Compara lo que encuentres con el informe de auditoría adjunto. Si una afirmación del informe no coincide con el código, verifica y corrige el diagnóstico. Toma decisiones informadas por la implementación real.
+
+INNEGOCIABLE:
+- Los protagonistas son los peluches REALES aprobados: rosa pequeño de orejas erguidas y beige/taupe grande de orejas largas caídas. NO los rediseñes ni alteres su identidad visual ni los conviertas en humanos.
+- Navegación narrativa principal por botones Anterior/Siguiente SIEMPRE VISIBLES. NO navegación por scroll. Puede haber gestos dentro de escenas, con alternativas accesibles mediante botones.
+- Arte ilustrado 2D/2.5D, íntimo, cinematográfico, no plantilla de juego, no interfaz corporativa, no infantilización exagerada.
+- Fotos personales originales intactas. No animar rostros, no inventar nombres/lugares/fechas/recuerdos reales. Si falta un detalle sentimental, mantener texto editable, no fabricarlo.
+- Carta original conservada; pregunta final EXACTA: «Valerie, ¿quieres ser mi novia?»; respuesta personal/presencial, nunca formulario digital.
+- La caja rosa física, banderines/luces y anillo rosa oro rosado con piedra central rosa permanecen como referencias. No inventar una joya distinta.
+- Conservar copias, motores originales, licencia de assets, privacidad y modo offline.
+- No «aprobar» la calidad artística por pasar tests. No gastar la cuota en dashboards, grabaciones o capturas como ENTREGABLES. Sí debes inspeccionar internamente el navegador durante el desarrollo: es obligatorio.
+
+1. HALLAZGOS TÉCNICOS QUE DEBES COMPRENDER
+
+A) src/lily-garden.js: desarrollo procedural de 14 lirios y 11 capullos (crecimiento, apertura, curvas y textura). Éste es el ejemplo de transformación visual orgánica que quiero multiplicar en otros mundos.
+B) src/story-graph.js, src/choice-director.js, src/reactive-quests.js, src/consequence-theatre.js, src/story-homecoming.js: ocho decisiones reversibles, efectos inmediatos y ecos; hay que evolucionar de decisiones cortas a miniaventuras diferentes, sin crear rutas infinitas.
+C) src/adventure-stage.js / src/adventure-world.js / src/cinematic-stage.js / src/cinematic-world.js: se usan escenarios y actuaciones, pero todavía no son una producción con transformaciones contundentes de mundo.
+D) src/guardian-acting.js / src/character-score.js / src/rig.js / src/animation.js: mejorar movimientos, interacciones físicas y contacto sin deformar los peluches ni despegar patas.
+E) src/guardian-world.js / src/memory-theatre.js / src/memory-shortfilms.js: reconstruir los recuerdos con recursos específicos y actuaciones que acompañen cada foto.
+F) src/director.js: separar progresivamente la gestión de gestos/acciones/decisiones de la navegación y el render. Mantener un único estado canónico para evitar restauraciones inconsistentes.
+G) src/story-homecoming.js, src/final-ceremony.js: la culminación debe hacer visible el viaje y las elecciones, no simplemente dibujar símbolos diminutos.
+
+No implementes otro sistema global sobre 30 capas de parches sin evaluar la arquitectura actual: reduce envoltorios y duplicación donde sea seguro. Separa StoryState, SceneAction, InteractionController, SceneDirector, WorldRenderer y Puppetry/Rig mediante contratos claros. MIGRACIÓN INCREMENTAL: mantener lo que funciona, tests de regresión, jamás reescribir todo por impulso.
+
+2. UN CAMBIO DE CONCEPTO: DE «ESPECTADORA» A «COMPAÑERA DE AVENTURA»
+
+La historia se titulará provisionalmente «Los dos conejitos y la luz que faltaba». No es necesario cambiar el título público sin autorización. Los protagonistas encuentran una luz que parece pertenecer a una sorpresa. A lo largo del camino deben descubrir cómo cuidarla, dónde puede vivir y por qué tres cosas —curiosidad, cuidado, recuerdos— la hacen brillar. No son puntos ni coleccionables gamificados: son símbolos emocionales de acontecimientos vividos.
+
+La historia tendrá 3 actos, cada uno con causa y consecuencia:
+I. El encuentro / la luz perdida: Rosa intenta resolverlo todo deprisa; Beige la acompaña y protege.
+II. La aventura / descubrimientos: bosque, museo, estrellas, jardín, recuerdos. Las decisiones producen pequeñas rutas diferentes y transformaciones del mundo.
+III. La entrega / la sorpresa: los conejitos comprenden que no era solo encontrar una luz, sino compartir lo descubierto con Valerie, hasta llegar a la caja y la pregunta.
+
+Personalidades:
+ROSA: curiosa, juguetona, impulsiva, tierna; pequeñas equivocaciones divertidas; NO caminata humana.
+BEIGE: amable, paciente, un poco tímido, también se sorprende y aprende; NO sermonea ni se limita a explicar.
+Valerie: nunca recibe órdenes ni castigos. Las decisiones expresan curiosidad y cariño, no habilidad ni conocimiento.
+
+Guion: menos frases genéricas abstractas, más diálogo sobre lo que acaba de ocurrir en el escenario. Un pensamiento conduce a una acción, la acción cambia el mundo, la reacción revela personalidad. Alternar momentos de humor pequeño, exploración, contemplación y emoción. Silencios intencionales. Burbujas junto al personaje o subtítulo accesible cuando no cabe. No repetir textos en dos lugares visuales.
+
+3. EL NUEVO CONTRATO DE INTERACTIVIDAD — NO MÁS BOTONES DECORATIVOS
+
+Cada escena interactiva importante tendrá: (1) objetivo visual claro (2) objeto reconocible y estado inicial (3) gesto de Valerie o alternativa accesible (4) feedback CONTINUO bajo el dedo (5) transformación visible de 2–8 segundos o más si la escena lo requiere (6) actuación física de ambos conejitos (7) consecuencia reutilizada posteriormente (8) modo de contemplación y replay.
+
+Debes implementar múltiples mecánicas DISTINTAS, no repetir «tocar para iluminar» en todos lados. Ejemplos orientativos, a mejorar:
+- Tap sensible / pulsación sostenida: sostener una luz frágil hasta que deje de temblar; también botón accesible «Ayudar».
+- Drag con atracción suave: guiar una luciérnaga hacia una flor o árbol, con trayectoria que reacciona; sin precisión frustrante.
+- Arrastrar una hoja-puente y ver que EL ESCENARIO CAMBIA, creando un paso nuevo para los peluches.
+- Trazos libres simplificados en el museo: dibujar una curva/pincelada que DEFORMA y ABRE físicamente la pintura (fallback un toque).
+- Conectar estrellas imantadas en un cielo de profundidad, formando una constelación sin error posible.
+- Jardín ampliado: cuidar una semilla/lirio con luz y ver etapas de crecimiento distintas, pétalos y polen; conservar el renderer de 14 flores.
+- Interactuar con un álbum tangible: sujetar una tapa, abrir una página, apartar un pétalo, sin manipular/alterar las fotos.
+- Abrir un sobre y desplegar una carta con papel/luces/gestos, dejando después la lectura completamente quieta.
+- Deslizar/tocar la tapa de la caja con bisagra ilustrada, luz interior y verdadera secuencia de revelación, SIN requerir gesto difícil.
+
+Las microinteracciones no deben obstaculizar Anterior/Siguiente. Un gesto opcional siempre tiene alternativa mediante botón, reduced motion y teclado. Nunca preguntar «¿acertaste?» o crear fracaso.
+
+4. NUEVAS SECUENCIAS CON VALOR ARTÍSTICO — NO DECORACIÓN
+
+VIÑEDO / PRIMEROS 5 PLANOS (ACTO I): hacer que el escenario despierta: niebla suave, viento que mueve realmente capas de viñas/hojas, luz que reacciona al toque, río iluminado, hoja que cae e interfiere el paso. Primer plano de Rosa, ayuda de Beige, contacto físico real, salto sin piernas zafadas. Un plano de descubrimiento genuino y otro de acercamiento al rostro; no mantener cinco fondos casi idénticos. Crear arte por capas nuevo si es necesario (no basta un gradiente sobre el JPG).
+
+BOSQUE (F23–F24): escena prioritaria para probar la nueva dirección. Dos mini-rutas de 2–3 momentos diferentes: «seguir luciérnaga» conduce al claro vivo con insectos y paso lumínico; «escuchar árbol» abre un tronco/ramaje ilustrado que revela un mapa botánico. Las dos opciones deben mostrar DIBUJO Y ACTUACIÓN distintos, no solo color. Rosa se entusiasma, Beige ayuda, ambos usan el descubrimiento después. Que el mundo altere vegetación, luz, profundidad y sendero de forma evidente. El gesto debe ser intuitivo en móvil.
+
+MUSEO (F25): conservar la dirección artística hermosa; reconstruir el cuadro como elemento vivo, con capas de pinceladas, campo de flujo, respuesta a trazos, distorsión local y un portal que cambia de composición. Valerie participa en la transformación de la pintura y NO solo observa una máscara que se expande. No romper la legibilidad de los conejitos. Un momento de silencio tras cruzar.
+
+CIELO/ESTRELLAS (F25): constelación libre y amable. Las estrellas responden al toque/trazo, forman caminos, provocan desplazamiento real de cámara y luego se convierten en la luz que desciende al jardín. Diferencia visible entre estrella solitaria y constelación, con una consecuencia posterior.
+
+JARDÍN (F26): conservar exactamente lo que funciona en src/lily-garden.js y AMPLIARLO, no sustituirlo. Diseñar una interacción auténtica con flor (luz, riego metafórico, viento, germinación), primeros planos botánicos ricos y reacciones físicas de los peluches. Algunas flores individuales reconocen su toque, con ritmos y dedicatorias distintas; quince oportunidades no implican quince repeticiones mecánicas. Fondo y flores se mueven coherentemente.
+
+RECUERDOS (F27): tres cortometrajes DIFERENTES. Fotografía 1: descubrimiento entre hojas, perrito respetado como parte de foto, diálogo y marco sostenido por ambos. Fotografía 2: álbum lúdico con página/cubierta real, humor tierno, cámara que se acerca, fotografía completa. Fotografía 3: escena íntima con luz, pausa larga y hallazgo del sobre. Las fotos conservan proporciones, píxeles, caras e identidad. Los personajes tienen actuaciones visibles antes y después de la contemplación; durante la contemplación deben retirarse para dejar foto grande. Evitar 3 veces la misma plantilla. Los detalles personales son editables y NUNCA inventados.
+
+CARTA (F28): sobre encontrado y físicamente abierto por los conejitos, sello que reconoce elecciones anteriores, carta que sale de la escena, páginas legibles con avance manual, sin temporizador, tipografía elegante. Nada cubre ni interrumpe la lectura. Conservar texto auténtico.
+
+CAJA/ANILLO (F28–F29): reconstruir ceremonia completa, no poner un PNG ampliado. Caja rosa basada en video real, luces cálidas, banderines y forma real; jerarquía de cámara de conjunto → detalle → apertura con bisagra → luz interior → anillo fiel. El anillo NO ocupa la pantalla antes de la anticipación y nunca tapa la escena arbitrariamente. Los conejitos colaboran y reaccionan con ternura. Abrir por botón y gesto opcional.
+
+FINAL (F29): las decisiones previas alteran secuencias reconocibles (qué trae Rosa, qué trae Beige, cómo entran los destellos, cómo se reconstruye el cielo) y NO solamente la posición de 3 iconos. El final sigue siendo la misma pregunta exacta, siempre alcanzable sin elegir. La cámara, luz, recuerdos (con respeto), ambos peluches y motivos del viaje construyen un crescendo visual. Al asentarse, dejar contemplación ilimitada, controles y una salida/reinicio claros; nunca pedir respuesta digital.
+
+5. DECISIONES CON CONSECUENCIAS DE VERDAD
+
+De las 8 decisiones actuales, conserva la compatibilidad del estado para F22. Evoluciona al menos 4 a ramas de contenido con duración, actuación y COMPOSICIÓN distintas (no solo textos o efectos): bosque, museo/cielo, jardín y álbum/carta. Cada rama debe contener 2–3 mini-escenas propias antes de converger y al menos dos ecos posteriores visualmente inequívocos. El resto puede seguir siendo detalle corto, siempre honesto. Repetir/editar debe sustituir consecuencias, no acumular símbolos ni romper la línea temporal. Ruta neutral completa. Las elecciones no deben cambiar la pregunta ni la sorpresa real.
+
+Ejemplo de diseño aceptable:
+A) «Seguir a la luciérnaga»: Rosa la pierde entre ramas, Beige levanta una hoja, ambos abren un túnel de luz; en museo, la luciérnaga enciende el borde del marco.
+B) «Escuchar al árbol»: Beige percibe una vibración, Rosa descubre el hueco, la corteza se abre y un mapa de raíces se dibuja; en museo, ese mapa forma la entrada al cuadro.
+NO ACEPTABLE: mismo fotograma con pequeño punto dorado vs punto verde y frase distinta.
+
+6. ANIMACIÓN DE PERSONAJES — OBJETIVOS FÍSICOS
+
+Mantener rig y atlas aprobados, pero desarrollar «acciones largas»: investigar, tropezar suavemente, ayudarse, cargar hoja, apartar ramas, sentarse, curiosear, acariciar una flor, descubrir un retrato, asomarse a un marco, abrir sobre, custodiar caja, celebrar en silencio.
+
+Cada acción debe tener anticipación → intención → contacto con objeto → consecuencia → reacción de pareja → recuperación. No sustituir acción por inclinación de cabeza con otra burbuja. El saltito no puede dejar patas clavadas al suelo; todo el cuerpo, patas y sombra deben participar como una unidad durante el vuelo y recuperar apoyo al aterrizar. No brazos humanos, no partes separadas ni gestos inquietantes. Las piezas nunca deben ocultar la cara de forma absurda ni estirarse.
+
+Las burbujas se posicionan según personaje, cara/orejas, cámara y fotografía; deben evitar objetos protagonistas, botones y safe areas. Subtítulos accesibles por defecto alternativos; no duplicación visual permanente. La lectura respeta el ritmo de Valerie.
+
+7. CÁMARA Y DIRECCIÓN ARTÍSTICA
+
+Diseña por cada momento: storyboard compacto de plano A (establish), B (acción), C (reacción), D (consecuencia) y E (salida), solo los que aportan. Cambios de escala reales, máscaras, oclusión, travelling y parallax 2.5D fundamentados. No zoom por zoom, no acercamientos que corten orejas, flores, foto o cajita.
+
+Crear/retocar recursos visuales ORIGINALES cuando el mundo lo necesite. Si existe una capacidad de imagegen en tu entorno, úsala con criterio para arte específico; de lo contrario, aprovecha recursos aprobados y código procedural. No confundir generar una imagen bonita con animarla; preparar capas/parallax/oclusiones, recortes y textura coherente. No añadir fondos genéricos que contradigan la estética aprobada. Preserva fuentes originales y manifest de procedencia.
+
+8. PRODUCCIÓN EN FASES Y PUERTAS DE CALIDAD
+
+F23 — AUDITORÍA DEL FILM Y NUEVO «VERTICAL SLICE» BOSQUE: inspeccionar el código/navegador, definir storyboard y construir BOSQUE verdaderamente interactivo con dos rutas y resultados visibles. Conservar F22. ENTREGA: ZIP F23 (o carpeta + checkpoint en la sesión) que se puede abrir inmediatamente. No avanzar si sigue pareciendo el bosque anterior con otra frase.
+F24 — ACTING PROFUNDO + VIÑEDO: biblioteca de acciones cooperativas, mejora escenas iniciales y transición al bosque; QA de pies y anatomía.
+F25 — MUSEO VIVO Y CIELO: pintura interactiva y constelaciones, dos mecánicas diferentes, transición físicamente coherente al jardín.
+F26 — JARDÍN MAESTRO: expandir el florecimiento existente, interacción avanzada, detalle floral, conexión con pétalo/flor elegido.
+F27 — RECUERDOS CON DRAMATURGIA: tres escenas diferenciadas y fotos originales, integración de objetos y reacciones.
+F28 — CARTA Y REGALO: sobre físico, lectura protegida, caja rosa fiel, coordinación de personajes.
+F29 — CEREMONIA Y GRAN FINAL: anillo, clímax, consecuencias inequívocas, contemplación, nuevas sorpresas opcionales que no resten intimidad.
+F30 — HARDENING/QA/ENTREGA: móvil físico, Safari, Android, orientación, rendimiento, batería, carga, a11y, calidad visual, offline, privacidad y preparación de hosting HTTPS/QR sin publicar sin autorización.
+
+Se permite trabajo autónomo por fases, pero cada una debe terminar con un hito REAL y checkpoint recuperable. No pases de F23 a producir otras 60 escenas hasta comprobar que el estándar nuevo está en pantalla. Si una etapa no logra diferencia artística importante, profundiza el trabajo en esa misma etapa. Cuando se agote cuota, dejar la copia local íntegra y checkpoint preciso; no reiniciar ni duplicar.
+
+9. HERRAMIENTAS, AGENTES Y REVISIÓN VISUAL — OBLIGATORIO
+
+Esto es un encargo de implementación visual. No basta inspección estática de código ni test unitario. Usa el navegador local de tu entorno (Playwright, Chromium/Edge o herramienta equivalente) durante el desarrollo, abriendo la web real en móvil y escritorio y verificando cada mecánica en movimiento. LAS CAPTURAS SON INSTRUMENTOS INTERNOS DE DIAGNÓSTICO, NO ENTREGABLES. Puedes generarlas temporalmente para inspeccionar y descartar, pero no entregues videos, galerías, dashboards ni cientos de capturas. La revisión visual interna sí es esencial.
+
+Antes de declarar una escena terminada, comprueba A) estado inicial B) gesto/decisión C) punto medio D) transformación completa E) retorno/reingreso F) variante alternativa G) modo reduced motion. Realizar una comparación real lado a lado con F22, para evitar «mil líneas de código, misma imagen».
+
+Si tu instancia de Codex permite subagentes/agents, delega en paralelo tareas delimitadas: auditoría de experiencia/narrativa, ingeniería de interacción/arquitectura, dirección visual/artistas de capas, y QA de navegador. Integra mediante una rama/copia controlada. NO afirmes usar agentes si tu configuración no los soporta; no te detengas por ausencia de agentes. Si las tienes instaladas, usa solamente skills pertinentes (ui-ux-pro-max y design-taste-frontend para composiciones nuevas, impeccable para polish, web-design-guidelines para accesibilidad, vercel-react-best-practices SOLO si realmente hay React en esta rama); no cargarlas todas por costumbre. La calidad se verifica viendo el resultado, no invocando una skill.
+
+10. PRUEBAS DE ACEPTACIÓN POR MECÁNICA
+
+- Gesto finger/touch responde sin latencia evidente y con feedback antes de soltar. Alternativa tap/botón siempre funciona.
+- Tres dimensiones de impacto: transformación de escenario, actuación visible, cambio narrativo; al menos dos por secuencia grande.
+- Cada decisión importante produce dos mini-rutas distinguibles incluso ocultando sus textos.
+- La consecuencia reaparece de forma reconocible más tarde, con evento y no solo un pequeño icono.
+- Los conejitos no dejan extremidades despegadas, no se mueven como humanos y nunca desaparecen accidentalmente.
+- La cámara no recorta personajes, pétalos, fotos, cajas, labios/ojos ni la pregunta.
+- Lecturas completas, sin caducidad; narración hablada opcional, no reemplaza texto.
+- No desbordamiento, hitboxes suficientes, gestos que no secuestran Anterior/Siguiente, safe areas.
+- Estados de navegación: retroceder, avanzar, repetir, cambiar opción, recargar, almacenamiento bloqueado y modo Cine (si existe) producen resultado coherente.
+- Recuento de FPS y memoria en móviles reales; optimizar draw calls/capas mediante medidas; no asumir 60 FPS garantizados.
+- Audio siempre opcional; prueba real de silencios, cambios de mundo y pausa; sin uso obligatorio de música comercial.
+- Offline verdadero sin dependencias de red, y build reproducible; separar peso de ZIP de legado, runtime y hosting.
+- Prohibido editar o publicar fotos privadas de manera innecesaria. Proteger el hosting privado HTTPS antes de generar QR.
+
+11. ENTREGA
+
+Cada hito significativo debe generar una copia nueva y un ZIP íntegro, ejecutable en Windows, con fuentes y recursos, HTML offline funcional, instrucciones breves, CAMBIOS y CHECKPOINT. No basta enlazar C:\\...: devolver ruta verificable del archivo entregado en el entorno de Codex. No generar publicaciones, dominio ni QR sin aprobación.
+
+DOCUMENTACIÓN BREVE PERO CONCRETA:
+- qué escenas se transformaron y cómo verificarlo con una acción,
+- cuáles son las nuevas mecánicas específicas,
+- qué decisión cambia qué secuencia, y dónde vuelve a aparecer,
+- qué bugs se encontraron y solucionaron,
+- qué está probado en navegador y qué NO está probado en móvil físico,
+- en qué estado exacto continúa la siguiente fase.
+
+12. CONTRATO DE EXCELENCIA
+
+NO ACEPTAR como logro artístico:
+«añadí 12 tipos de partículas», «bajé 2 píxeles las orejas», «otra burbuja», «hice dos variantes de color», «se agregaron ocho archivos», «la suite pasó». Son detalles válidos pero NO elevan por sí solos la experiencia.
+
+SÍ ACEPTAR:
+«Valerie guía la luciérnaga; el bosque reconfigura sus capas, los conejitos cruzan una apertura física, Beige sostiene la rama y en el museo reconocemos la luz encontrada». Ese tipo de transformación, aplicada con identidad propia a cada mundo, es lo que quiero.
+
+PRINCIPIO FINAL: NO SE TRATA DE HACER MÁS PÁGINAS. SE TRATA DE HACER QUE CADA MOMENTO MEREZCA EXISTIR. La sorpresa romántica final debe sentirse ganada por la aventura compartida, no alcanzada después de pulsar Siguiente 60 veces.
+
+Autorizado comenzar F23 sin nuevas preguntas de aprobación, sobre copia independiente F22 y trabajando con toda la profundidad creativa y técnica necesaria. Prioriza el BOSQUE COMO NUEVO ESTÁNDAR, y solo después expande el lenguaje.
+========================================================================
+FIN DEL PROMPT MAESTRO.
+========================================================================

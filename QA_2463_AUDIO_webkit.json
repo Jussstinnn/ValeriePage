@@ -1,0 +1,9 @@
+{
+  "pass": false,
+  "unavailable": true,
+  "reason": "This Windows WebKit build has no offline audio renderer",
+  "capabilities": {
+    "unsupported": true,
+    "audioContext": false
+  }
+}

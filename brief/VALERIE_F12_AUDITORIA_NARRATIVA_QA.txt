@@ -1,0 +1,84 @@
+VALERIE — AUDITORÍA DE F12 | Ingeniería, narrativa y experiencia
+Revisión independiente del archivo VALERIE_ILLUSTRATED_EVOLUCION_F12_COMPLETO.zip
+Fecha: 27/10/2026
+
+1. ALCANCE Y GRADO DE VERIFICACIÓN
+- Se inspeccionó el ZIP adjunto, estructura de archivos, documentación, código fuente y release.
+- Extrayendo los recursos requeridos se ejecutó npm test: 15/15 pruebas aprobadas.
+- Se ejecutó npm run build: compilación aprobada.
+- Se cargó el HTML autónomo de 27,47 MB en Chromium (viewport 390 x 844), desde un documento en memoria para sortear una restricción de navegación a localhost del entorno. Preparación inicial correcta, pantalla inicial dibujada, sin errores JS observados en dicha apertura.
+- Un intento adicional de recorrer y capturar 19 escenas en ese entorno agotó el tiempo de ejecución al inicio de la secuencia. Por tanto, NO se certifica en esta auditoría una prueba exhaustiva visual de los 19 capítulos ni todas las animaciones en móvil físico.
+- No se modificó el ZIP ni el proyecto original.
+
+2. RESULTADOS A FAVOR
+- Base ilustrada de los dos peluches reconocible, fondo de viñedo mejor que anteriores.
+- Navegación estructurada por botones (sin scroll narrativo), control de pausa, reanudación, capítulos y sonido opcional.
+- Tres recuerdos y carta, caja y anillo integrados en la historia.
+- Progresión de microactos por capítulo y mecánica de recuerdo simbólico/pétalo/estrella existente.
+- Fuente y escenas modulares con HTML offline reconstruible.
+- Pruebas automáticas que cubren el anclaje de patas durante vuelo y seguridad de sitio privado; son positivas, pero no sustituyen validación estética.
+
+3. HALLAZGOS PRIORITARIOS
+
+P0 — DEUDA DE PRODUCTO / DE DISEÑO: HISTORIA LINEAL SIN ELECCIONES SIGNIFICATIVAS.
+Evidencia: src/narrative-director.js avanza con move(shot, +/-1), y src/director.js ofrece Anterior/Siguiente, Repetir, Pausar e Interactuar. No encontré un motor de elecciones (ID/opciones/condiciones/efectos/rutas/consecuencias) ni una interfaz de decisión. La historia sigue siendo una secuencia mayormente predeterminada.
+Impacto: Valerie observa escenas, pero rara vez toma una decisión propia. Puede sentirse repetitiva a pesar de que existan muchos planos.
+Acción: incorporar narrativa interactiva de agencia ligera: elección entre dos acciones válidas, consecuencias visibles, variación posterior, sin bloqueo ni perder el final romántico.
+
+P0 — DEUDA ARTÍSTICA: CONEJITOS NO CONVERSAN DE FORMA DIEGÉTICA.
+Evidencia: src/index.html posee #speaker y #narration en una banda inferior (#story) y el texto se intercambia desde src/director.js. No existe una capa de bocadillos anclados a personajes, globos de pensamiento diferenciados ni coreografía de turnos directamente visibles en el escenario.
+Impacto: los personajes se perciben como ilustraciones acompañadas de subtítulos, no como protagonistas que se comunican entre sí.
+Acción: bocadillos discretos, tipografía editorial, anclaje al actor, colisiones/áreas seguras, accesibilidad y opción de subtítulos de respaldo.
+
+P1 — CONTINUIDAD INSUFICIENTE DE LAS DECISIONES/RECUERDOS.
+Evidencia: src/session.js conserva keeps/symbols y src/guardian-world.js puede dibujar star y petal; src/ending-theatre.js contiene ecos visuales. Sin embargo, los capítulos no evalúan una elección del usuario para desencadenar escenas distintas. El final vuelve al mismo camino principal.
+Impacto: recoger una estrella o pétalo es agradable, pero no establece un sentido fuerte de consecuencia o personalización.
+Acción: condiciones simples por elección, cambios de actuación, objeto físico en manos, frases y montaje del final; mantener regreso común a la caja y la pregunta.
+
+P1 — MODELO DE INTERACCIÓN UNIFORME.
+Evidencia: src/director.js mapea #interact por modo a `react(kind)` y muchas respuestas son cadenas breves en #reaction (p. ej., «El bosque responde», «La flor despierta»). Hay interacción táctil opcional en Canvas, pero gran parte no plantea problema que resolver ni resultado visible que perdure.
+Acción: escenas diseñadas con verbo/objetivo/feedback/resultado: ayudar, buscar, escoger, colocar, revelar, acompañar, combinar; variaciones por mundo.
+
+P1 — DIÁLOGOS DEMASIADO BREVES PARA SOSTENER UNA AVENTURA.
+Evidencia: src/definitive-script.js define microactos de 1-3 intercambios en muchos capítulos. Funcionan como frases poéticas, pero la mayoría carece de planteamiento, complicidad, pequeño problema y resolución. La personalidad de ambos peluches se expresa poco por acciones en pantalla.
+Acción: construir guiones por secuencia dramática, no inflar texto. 2-5 turnos breves solo cuando aporten; alternar con actuaciones silenciosas y eventos.
+
+P1 — RECUERDOS AÚN CON FUNCIÓN MAYORMENTE CONTEMPLATIVA.
+Evidencia: src/definitive-script.js contempla tres ritmos 4/6/4 y escenas de foto; no hay selección interpretativa sobre cómo los guardianes encuentran los recuerdos, ni acciones previas que modifiquen el marco, revelado o detalles del montaje.
+Acción: tres cortos verdaderamente distintos con tareas sencillas de los conejitos. Mantener fotografías íntegras, no animar rostros, no inventar memoria personal; frases del autor configurables.
+
+P1 — FINALES: MÁS AGENCIA NO IMPLICA CAMBIAR LA PREGUNTA.
+La propuesta final es explícita; nunca solicitar ni guardar respuesta digital. Las decisiones previas deben modificar el camino, diálogos, símbolos y puesta en escena, pero no sustituir «Valerie, ¿quieres ser mi novia?».
+
+P2 — DISTRIBUCIÓN Y RENDIMIENTO.
+El ZIP completo pesa aproximadamente 90 MB y el HTML offline 27,47 MB. Puede ser aceptable para pruebas locales, pero no equivale a rendimiento validado en un iPhone. Separar arte de fuentes, usar WebP/AVIF cuando haya soporte y fallback, precargar según capítulo, desactivar render en reposo y probar en teléfonos físicos. Las pruebas de CPU o simulación no son certificados de fluidez.
+
+4. ASPECTOS QUE NO CONVIENE ROMPER
+- Dos personajes inspirados fielmente en peluches rosa de orejas erguidas y topo/beige de orejas largas caídas.
+- Escenarios ilustrados cinematográficos y navegación por botones permanentes. NO scroll narrativo.
+- Piezas de atlas, rig, vuelo y contacto con suelo existentes: reutilizar y mejorar solo con pruebas.
+- Tres fotografías sin alteración facial, y carta original.
+- Caja rosa y anillo rosa/oro rosado referenciados al regalo real.
+- Accesibilidad, lectura sin límite, audio opcional, reduced motion y HTML autónomo.
+
+5. PROPUESTA: TÍTULO Y ARCO NUEVO
+«VALERIE — DOS CONEJITOS Y EL SECRETO DEL JARDÍN».
+Premisa: Rosa y Beige reciben la misión de encontrar tres luces para encender la cajita del regalo. No saben todo lo que contiene; la descubren juntos. Valerie les ayuda a escoger caminos, despertar pistas y conservar pequeños símbolos. Se revela que las luces representan curiosidad, cuidado y recuerdos; al final reconocen los regalos físicos y acompañan la sorpresa real.
+Personalidades: Rosa = curioso, entusiasta y juguetón; Beige = sereno, protector y atento. Complicidad y humor tierno sin infantilismo excesivo, sin escenas que la obliguen a jugar ni digitar respuesta.
+
+6. TRES EJEMPLOS DE DECISIÓN CON CONSECUENCIA REAL
+A) En el bosque: «¿Seguimos la luciérnaga o escuchamos el árbol?» Ambas válidas. Cambia microescena, actuación, diálogo y luz recogida. Reencuentro narrativo en el museo.
+B) En el museo: «¿Tocamos una estrella o la pintamos juntos?» Cambia tratamiento gráfico de la transformación, símbolo y línea que reaparece junto a los lirios.
+C) En el jardín: «¿Guardamos el pétalo rosa o una flor de luz?» Cambia un objeto llevado en manos, un diálogo posterior y detalle de la carta/caja.
+La elección se realiza por botones; tiene feedback inmediato, reintento/opción de cambio antes de confirmar, persistencia y alternativa accesible. Ninguna opción es incorrecta. El siguiente momento esencial nunca se pierde.
+
+7. CRITERIOS PARA PRÓXIMA EDICIÓN
+- Antes de expandir los 19 capítulos: piloto interactivo de viñedo → bosque con 2 elecciones completas, 2 diálogos en bocadillos anclados y actuaciones visibles.
+- En cada elección: dos microescenas perceptiblemente diferentes, reflejo persistente y convergencia elegante.
+- Burbujas legibles, sin solapamiento con caras o controles, con fondo/acceso claro y lectura ilimitada.
+- Tres recuerdos con escenas/ritmos/distancias de cámara claramente diferentes y siempre fotos intactas.
+- Repetir, Atrás, guardar, recargar, orientación y reduced motion preservan decisiones sin romper el relato.
+- Anillo y pregunta final siguen accesibles y emocionalmente poderosos.
+- Entregar código y ZIP por fase, sin videos o capturas como entregables; QA técnica focalizada de verdad, documentación corta.
+
+Conclusión: la base técnica F12 es prometedora y compila, pero todavía es, en esencia, un recorrido ilustrado con microdiálogos y reacciones. El salto deseado no se consigue añadiendo otros diez planos; exige objetivos narrativos, decisiones con consecuencias, nuevas actuaciones y un lenguaje propio de conversación en pantalla.

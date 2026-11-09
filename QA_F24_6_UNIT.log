@@ -1,0 +1,185 @@
+
+> valerie-illustrated@24.6.0 test
+> node --test tests/contracts.test.mjs tests/animation.test.mjs tests/matte.test.mjs tests/root-motion.test.mjs tests/private.test.mjs tests/encoding.test.mjs tests/story-state.test.mjs tests/cinema.test.mjs tests/asset-codec.test.mjs
+
+✔ Each reference plush has immutable anatomy, distinct ears/proportions and reusable measured limbs (20.1308ms)
+✔ Named clips blend channels and settle without invalid poses; unknown actions are rejected (17.7148ms)
+✔ A planted foot holds world position while the body moves, and snapshots restore springs (12.9068ms)
+✔ Offline binary transport round-trips partial words, all byte values and every actual art/photo file (891.9755ms)
+✔ Corrupt embedded resources fail safely rather than producing a partly decoded image (0.4471ms)
+✔ The assembled offline HTML keeps every embedded byte, including dollar pairs in the alphabet (910.0374ms)
+✔ offline ships all prepared plush pieces while source-only atlases remain in the full project (294.6435ms)
+✔ Cinema is the default and advances complete dialogue from the renderer loop without autonomous timers (33.7343ms)
+✔ Pause, hidden tab, dialogue, loading and transitions freeze editorial time exactly (37.7335ms)
+✔ Decisions, photographs, letter folios, gift, ring and final question never expire (529.4047ms)
+✔ A reading timer cannot interrupt takeoff, flight, incomplete action or its settling interval (5.9819ms)
+✔ Manual mode is explicit, preserves elapsed reading, and replay grants a full fresh interval (9.5636ms)
+✔ Forest gestures stay optional and explicit; completing one resumes cinema only after the visible transformation settles (7.9344ms)
+✔ A physical forest crossing and constellation assistance use real completion rather than expired elapsed time (18.6585ms)
+✔ Safe capture/restore requires the exact narrative anchor and never restores a pointer or pending advance (8.1743ms)
+✔ Async navigation is issued once; replay invalidates stale promise completion and blocked loads wait for explicit recovery (16.3848ms)
+✔ Every policy exposes the complete semantic contract and a long Spanish message receives more reading time (2.2422ms)
+✔ Declared rig contract, nine originals and all six canonical references match their manifests (95.2627ms)
+✔ Pilot is independent of old engines, external services and scroll navigation (207.2162ms)
+✔ The declared pilot is nineteen held shots; surprise placement remains unconfirmed (22.4374ms)
+✔ Leaf lift precedes the crossing, actual body travels, support precedes landing, and final case is uncovered (20.057ms)
+✔ Optional help affects the articulated prop, stays bounded, and never becomes required progress (12.3803ms)
+✔ Session restore rejects corrupt data and reset is isolated from RC07 (5.5196ms)
+✔ Product source is strict UTF-8; invalid accents cannot silently enter a generated film (120.994ms)
+✔ Matte cover preserves aspect and covers every edge under pans and wide lenses (15.3321ms)
+✔ Private handler protects both document and every asset before reading, without publishing (125.8452ms)
+✔ Full crossing: first lift through apex and descent bind both paws to the pelvis in every viewport (329.6307ms)
+✔ Small guardian hops and legacy hops share the same flight space; watch never cancels another action (79.0859ms)
+✔ Root translation and posture are inherited exactly by flight paws; landing restores world support continuously (56.579ms)
+✔ Every optional branch has distinct actions and a valid, stable reconvergence (75.9474ms)
+✔ Changing a choice replaces effects, reload preserves it, history restores it, skip is honest, reset retains only reading preference (37.9609ms)
+✔ Old, unknown and corrupt session state recovers without inventing a selection (33.7389ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2258.2405
+
+> valerie-illustrated@24.6.0 test:vertical
+> node --test tests/vertical-cut.test.mjs tests/hud-contract.test.mjs tests/cinema.test.mjs tests/transitions-f24.test.mjs
+
+✔ Cinema is the default and advances complete dialogue from the renderer loop without autonomous timers (18.5865ms)
+✔ Pause, hidden tab, dialogue, loading and transitions freeze editorial time exactly (28.7605ms)
+✔ Decisions, photographs, letter folios, gift, ring and final question never expire (282.6765ms)
+✔ A reading timer cannot interrupt takeoff, flight, incomplete action or its settling interval (5.5228ms)
+✔ Manual mode is explicit, preserves elapsed reading, and replay grants a full fresh interval (5.985ms)
+✔ Forest gestures stay optional and explicit; completing one resumes cinema only after the visible transformation settles (5.1358ms)
+✔ A physical forest crossing and constellation assistance use real completion rather than expired elapsed time (16.8105ms)
+✔ Safe capture/restore requires the exact narrative anchor and never restores a pointer or pending advance (5.6653ms)
+✔ Async navigation is issued once; replay invalidates stale promise completion and blocked loads wait for explicit recovery (11.7218ms)
+✔ Every policy exposes the complete semantic contract and a long Spanish message receives more reading time (2.0202ms)
+✔ safe cinematic framing cannot change when controls, focus or playback state change (7.486ms)
+✔ requested controls have real hidden/inert state and focused transport cannot auto-close (2.9688ms)
+✔ pausing opens once and an explicit close remains respected until the next pause edge (2.2415ms)
+✔ choices exclude transport while protected continuation and a single assistance channel are delegated (2.215ms)
+✔ leaving a contextual action returns focus safely; protected final has no forced continuation (2.0028ms)
+✔ HTML preserves every old command once and provides recoverable contextual landmarks (0.7604ms)
+✔ one transition timeline freezes exactly while paused and resumes from the same cut (6.6093ms)
+✔ large frame deltas stop at the opaque transfer barrier instead of exposing a different world (12.5231ms)
+✔ a covered passage has one source and one target contract, never a second cast rendered by the transition (3.1954ms)
+✔ cancelled navigation cannot finish and a fresh transition has a distinct identity (2.6086ms)
+✔ public snapshots detach poses and camera state from observers (1.732ms)
+✔ reduced motion retains a covered transfer and coherent entry instead of skipping the gate (1.934ms)
+✔ reverse navigation uses the same temporal boundary and preserves its authored direction (2.1416ms)
+✔ rebuilt screenplay has nineteen scored scenes and preserves earlier decisions (54.7537ms)
+✔ successive turns retain exactly the same roots, scale and camera at score boundaries (98.0614ms)
+✔ all authored flight paws belong to the pelvis and every beat ends settled (1054.2028ms)
+✔ carrier changes actual blocking and stone choice changes the crossing destination (17.722ms)
+✔ semantic links survive ordinal insertion and define a real doorway and vestibule (19.1627ms)
+✔ gallery threshold rests stay planted in world space between the two hops (16.5924ms)
+✔ earlier leaf carrier changes who helps at the root fork (16.9703ms)
+✔ the rendered leaf remains continuous when the second plush takes its grip (16.0449ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1507.4812
+
+> valerie-illustrated@24.6.0 test:forest
+> node --test tests/forest-action.test.mjs tests/forest-session.test.mjs tests/forest-scene.test.mjs tests/forest-build.test.mjs
+
+✔ Idle animation time never performs a gesture or advances the story; intentional hold is separate (10.2127ms)
+✔ Firefly dragging and botanical map dragging keep normalized feedback and bounded traces (37.0751ms)
+✔ Wrong pointers, multi-touch, malformed coordinates and cancellation cannot steal or lose an action (1.6095ms)
+✔ Route editing, explicit replay, detached snapshots and browser-history restore are reversible (2.3932ms)
+✔ Omission, accessible assistance and reduced motion reach a complete neutral route without selecting a choice (2.5492ms)
+✔ Corrupt/future/old state is sanitized safely and storage failure leaves a usable local scene (4.8828ms)
+✔ Firefly shape guidance keeps its canonical map coupling and capture through repeated moves (3.1866ms)
+✔ forest distribution preserves native PNGs, metadata and resource versions (35.4885ms)
+✔ offline forest descriptor resolves through existing codec without network files (249.6319ms)
+✔ first visible forest framing stays full-size and stable before either physical crossing (30.4692ms)
+✔ both plushes carry their flight paws with the pelvis through takeoff, travel and landing (58.1624ms)
+✔ the physical creek crossing begins and ends on opposing painted banks (7.117ms)
+✔ tree listening target stays outside the original face and within the real forepaw reach (7.0745ms)
+✔ F22 migration is copy-only and restart cannot resurrect the legacy progress after reload (7.8112ms)
+✔ Canonical forest actions recover safely from incomplete or future session envelopes (11.0496ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 471.7688
+
+> valerie-illustrated@24.6.0 test:cut
+> node --test tests/directors-cut.test.mjs tests/journey-migration.test.mjs
+
+✔ no amount of elapsed or reduced-motion time can authorize a closed box (43.3181ms)
+✔ opening and revealing are two independent authorizations with an indefinitely opaque lining (17.5954ms)
+✔ caption growth and HUD do not change the scenic viewport or actor frame (16.3156ms)
+✔ gallery chronology protects the private album before the authentic night and painted desire (17.5377ms)
+✔ F24.2 sessions migrate by ID without granting their old temporal reveal (17.1949ms)
+✔ supplied paintings are exact local bytes in both source and distribution (24.8613ms)
+✔ legacy positions migrate by original ID before four chapter insertions (5.436ms)
+✔ new snapshots prefer named chapters over stale ordinal numbers (1.0289ms)
+✔ restart cannot resurrect a migrated session and preserves old envelope (1.2411ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 246.3257
+
+> valerie-illustrated@24.6.0 test:refinement
+> node --test tests/refinement.test.mjs
+
+✔ digging is three meaningful actions; strokes immediately move soil, pause and reload preserve partial work (46.1673ms)
+✔ scattered lights are not the answer geometry and no instruction anticipates the letters (22.8696ms)
+✔ a finished painting has a short explicit completion interval instead of another full reading delay (18.8488ms)
+✔ one front-plane box geometry owns slots and clasp, and the two protected authorizations remain independent (15.0254ms)
+✔ approved threshold, river, original lily growth and personal words remain protected; garden has distinct stations (17.914ms)
+✔ the final keeps the completed ceremony clock when its chapter clock starts again at zero (16.9122ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 257.4738
+
+> valerie-illustrated@24.6.0 test:stability
+> node --test tests/stability.test.mjs
+
+✔ every adjacent chapter owns an explicit cut and unknown jumps use a color ribbon, never the generic leaf (41.791ms)
+✔ plush perspective is applied once by WorldPath and every airborne paw inherits its root (19.7333ms)
+✔ legacy eight-turn dig migrates copy-only, future data cannot reveal a relic and the new gesture is not a timer (21.6166ms)
+✔ the prologue names the protected box and its three closures without anticipating the secret (21.1872ms)
+✔ opening cannot authorize the jewel and reduced motion respects the independent reveal (20.1178ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 225.0277
+
+> valerie-illustrated@24.6.0 test:polish
+> node --test tests/personal-polish.test.mjs
+
+✔ the only personal-text change is the authorized roses phrase (3.0069ms)
+✔ garden/model/physics stay original and the documented rig cache path is pinned (5.0466ms)
+✔ rig modification is limited to the cache constructor path; original drawing code is preserved (1.2189ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.7645

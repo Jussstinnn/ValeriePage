@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readdir,readFile} from 'node:fs/promises';
+test('Product source is strict UTF-8; invalid accents cannot silently enter a generated film',async()=>{for(const dir of ['src','scripts'])for(const name of await readdir(new URL('../'+dir+'/',import.meta.url))){if(!/\.(js|mjs|css|html)$/.test(name))continue;const data=await readFile(new URL('../'+dir+'/'+name,import.meta.url));assert.doesNotThrow(()=>new TextDecoder('utf-8',{fatal:true}).decode(data),dir+'/'+name);}});

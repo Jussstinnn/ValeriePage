@@ -1,0 +1,12 @@
+const {chromium}=require(process.env.VALERIE_PLAYWRIGHT||'@playwright/test'),assert=require('node:assert/strict');
+(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true}),base=process.env.VALERIE_URL||'http://127.0.0.1:4188',routes=[];try{
+ for(const route of ['skip','first','second']){const p=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'}),errors=[],chapters=new Set(),photos=new Set(),folios=new Set();let peak=0,steps=0;p.on('pageerror',e=>errors.push(e.stack));await p.goto(base);await p.waitForFunction(()=>window.Valerie?.state().ready);
+  while(steps++<160){const s=await p.evaluate(()=>Valerie.state());chapters.add(s.index);peak=Math.max(peak,s.metrics.estimatedDecodedBytes);if(s.narrative.view==='photo'){photos.add(s.index);assert(s.world.photo.clean);assert.equal(s.actors.length,0);}if(s.reader.active){assert(s.reader.allTextPreserved);folios.add(s.reader.anchor.folio);}for(const id of ['previous','next','pause','chapters','sound','replay']){const r=await p.locator('#'+id).boundingBox();assert(r&&r.width>=44&&r.height>=44&&r.x>=0&&r.x+r.width<391,id);}
+   if(s.index===18&&s.narrative.view==='question')break;
+   if(s.narrative.kind==='choice'&&route!=='skip'){const options=p.locator('#choice-options button');await options.nth(route==='first'?0:1).click();}
+   else{assert(await p.locator('#next').isEnabled(),JSON.stringify({chapter:s.shot,beat:s.narrative.id}));await p.locator('#next').click();}await p.waitForTimeout(465);
+  }
+  assert(steps<160);const s=await p.evaluate(()=>Valerie.state());assert.equal(chapters.size,19);assert.equal(photos.size,3);assert.equal(folios.size,3);assert(s.reader.complete&&s.ceremonyReleased);assert(s.world.question.persistent&&s.world.question.integratedWorld);assert.equal(s.narrative.text,'Valerie, ¿quieres ser mi novia?');assert.equal(await p.locator('#next').isEnabled(),false);assert.equal(route==='skip'?s.story.skipped.length:Object.keys(s.story.choices).length,8);assert(peak<125*1024*1024);assert.deepEqual(errors,[]);routes.push({route,steps,chapters:chapters.size,peakEstimatedSurfaceBytes:peak,montage:s.world.storyMontage});console.log(JSON.stringify(routes.at(-1)));await p.close();
+ }
+ assert.notEqual(routes[1].montage.sky,routes[2].montage.sky);assert.notEqual(routes[1].montage.garden,routes[2].montage.garden);assert(routes[0].montage.neutralComplete);console.log('Three complete routes converge, without a digital answer or compulsory choice.');
+ }finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});

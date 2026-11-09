@@ -1,0 +1,98 @@
+[
+  {
+    "path": "src/bubble-director.js",
+    "sha256": "89bf27474d21bf799158dab018ea0f8e6c9e0274daaeb086f21a5f2ae451dbcb"
+  },
+  {
+    "path": "src/ceremony-theatre.js",
+    "sha256": "6787043e0f525da0e5775c3fd6969de22eed98e0f3e73abf60f879a025ace5b3"
+  },
+  {
+    "path": "src/dialogue-layout.js",
+    "sha256": "a15edbcbd25a2e0c701194e560b9c63e39d11143c04cb901de5117f997ace6b6"
+  },
+  {
+    "path": "src/director.js",
+    "sha256": "7f8584a14d624bb6446a0733c97b3a0a82225188f6a5986e1a6a98f1d54865ee"
+  },
+  {
+    "path": "src/fairy-guide.js",
+    "sha256": "0c630630bbff398a49958c12f272c1e7cf556082a685fc82825bbd7e55e77b99"
+  },
+  {
+    "path": "src/film.css",
+    "sha256": "c10ae9f546c1b5115fe0b2c862fe22d72885035cea291f7788d91c49069d13c2"
+  },
+  {
+    "path": "src/garden-promenade.js",
+    "sha256": "6a5dac68f0a37e40909220d4808c48969cf039eb053f32e9c28f8aeeab0148b6"
+  },
+  {
+    "path": "src/garden-soil.js",
+    "sha256": "208540d02ae8dd1afc96220cbf7408350cc5ce19e3e0221cc1c0658cc15aa330"
+  },
+  {
+    "path": "src/gift-ceremony.js",
+    "sha256": "ff28eb47c73a2bad2a072680eeca8c2e3190be09253c2cf1ad7f95766e79a7be"
+  },
+  {
+    "path": "src/index.html",
+    "sha256": "46dde9ca3b10ed65a90e76f4acea13886e432f43909c326d14e7fab8750f19b6"
+  },
+  {
+    "path": "src/session.js",
+    "sha256": "bae8fd7c99d25b74f28367d070366b224ca741229c2d2f29bf5e9dbd81c90697"
+  },
+  {
+    "path": "src/sound.js",
+    "sha256": "1ea0f35692317e96534b4ef08e30121964d1709fc167a1ec55b2d8920f911f1c"
+  },
+  {
+    "path": "src/transition-director.js",
+    "sha256": "068dd04e12f622e0dfb22da4a148e05b0a156a97edc2c39c4e46a6f97576bf0f"
+  },
+  {
+    "path": "src/vineyard-scene.js",
+    "sha256": "73be08799f21d2e07093f28519ab61776b4e17d082f9702da16abdb199716945"
+  },
+  {
+    "path": "scripts/package.mjs",
+    "sha256": "ada219c9212f3e82d7a36b862f9ac38ea886b479bc04c3afb52a7e8c6011aa83"
+  },
+  {
+    "path": "scripts/serve.mjs",
+    "sha256": "c2094e772ed5fd153d56fce825755ff4a0c3efbed6cbfd5ebc63d3b40458d0c0"
+  },
+  {
+    "path": "tests/audio-f246.cjs",
+    "sha256": "fb62be49c189ce098e558b5e7104b0b924bf18180295bd78d7aa8e8658b9e4d8"
+  },
+  {
+    "path": "tests/box-lifecycle-2462.cjs",
+    "sha256": "14a0bb5ce71be9efbff0aea6e5cff3081b891c3a129fc2ee7c90156627779022"
+  },
+  {
+    "path": "tests/branches-2462.cjs",
+    "sha256": "3334708c952a27904d1b945b9a171516e7aef96bc03b6ed23536dfd439426d5f"
+  },
+  {
+    "path": "tests/captions-2462.cjs",
+    "sha256": "76ee8a28bc0ef897cc20313263c4c8ae0d30c19e98e0fe607f613027251a2f02"
+  },
+  {
+    "path": "tests/forest-session.test.mjs",
+    "sha256": "01941c0a5f1bd5db1d4e7fe51e7fa628ab2fb9a66a11e5d30eade94bdebe6675"
+  },
+  {
+    "path": "tests/journey-migration.test.mjs",
+    "sha256": "a900d9fc74467ff6bee52e9beb781eacc8900e55e342cfe6276eb5add2700de5"
+  },
+  {
+    "path": "tests/revision-2461.cjs",
+    "sha256": "eba92fe2c064a0d5a5095ca4a33b24c144335646c80715bef88279f58ca327c4"
+  },
+  {
+    "path": "tests/stability-runtime.cjs",
+    "sha256": "88d0d39b9aa8f4e7bb184dad0a69e00697e9f1b20f63d8cf8268f01e349c262b"
+  }
+]

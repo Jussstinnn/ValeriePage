@@ -1,0 +1,276 @@
+{
+  "pass": true,
+  "measured": [
+    {
+      "kind": "soil",
+      "played": true,
+      "rms": 0.03331259593124409,
+      "peak": 0.8143232464790344,
+      "active": 25373,
+      "material": "earth"
+    },
+    {
+      "kind": "crackle",
+      "played": true,
+      "rms": 0.047773451296177924,
+      "peak": 0.7685027122497559,
+      "active": 30410,
+      "material": "root"
+    },
+    {
+      "kind": "pebble",
+      "played": true,
+      "rms": 0.049663373018298936,
+      "peak": 0.7396755814552307,
+      "active": 17769,
+      "material": "gravel"
+    },
+    {
+      "kind": "lift",
+      "played": true,
+      "rms": 0.040699923132629795,
+      "peak": 0.683214545249939,
+      "active": 30966,
+      "material": "lift"
+    },
+    {
+      "kind": "brush",
+      "played": true,
+      "rms": 0.05059471955677023,
+      "peak": 0.7883366346359253,
+      "active": 30114,
+      "material": "brush"
+    },
+    {
+      "kind": "step",
+      "played": true,
+      "rms": 0.019520697710078177,
+      "peak": 0.34343311190605164,
+      "active": 12749,
+      "material": "plush"
+    },
+    {
+      "kind": "grass",
+      "played": true,
+      "rms": 0.047063486058345205,
+      "peak": 0.6337352395057678,
+      "active": 35916,
+      "material": "grass"
+    },
+    {
+      "kind": "leaf",
+      "played": true,
+      "rms": 0.052743502421913245,
+      "peak": 0.7171620726585388,
+      "active": 35342,
+      "material": "leaf"
+    },
+    {
+      "kind": "twig",
+      "played": true,
+      "rms": 0.024974571321216037,
+      "peak": 0.3298519253730774,
+      "active": 13474,
+      "material": "wood"
+    },
+    {
+      "kind": "wood",
+      "played": true,
+      "rms": 0.02594906895401431,
+      "peak": 0.338836669921875,
+      "active": 16002,
+      "material": "wood"
+    },
+    {
+      "kind": "knock",
+      "played": true,
+      "rms": 0.02642238246772959,
+      "peak": 0.34689000248908997,
+      "active": 16082,
+      "material": "knock"
+    },
+    {
+      "kind": "water",
+      "played": true,
+      "rms": 0.056925349121956424,
+      "peak": 0.6168973445892334,
+      "active": 43447,
+      "material": "splash"
+    },
+    {
+      "kind": "ripple",
+      "played": true,
+      "rms": 0.05700084244151076,
+      "peak": 0.45088598132133484,
+      "active": 60005,
+      "material": "water"
+    },
+    {
+      "kind": "drip",
+      "played": true,
+      "rms": 0.039943441178560156,
+      "peak": 0.6168026924133301,
+      "active": 34436,
+      "material": "drop"
+    },
+    {
+      "kind": "wind",
+      "played": true,
+      "rms": 0.04823746787400265,
+      "peak": 0.37740427255630493,
+      "active": 68955,
+      "material": "wind"
+    },
+    {
+      "kind": "insect",
+      "played": true,
+      "rms": 0.028933003448143937,
+      "peak": 0.37721681594848633,
+      "active": 15013,
+      "material": "insect"
+    },
+    {
+      "kind": "door",
+      "played": true,
+      "rms": 0.10371782208785973,
+      "peak": 0.6952568292617798,
+      "active": 61913,
+      "material": "door"
+    },
+    {
+      "kind": "hinge",
+      "played": true,
+      "rms": 0.10018603069527529,
+      "peak": 0.5885613560676575,
+      "active": 68389,
+      "material": "hinge"
+    },
+    {
+      "kind": "latch",
+      "played": true,
+      "rms": 0.021995373377979553,
+      "peak": 0.3872438073158264,
+      "active": 21050,
+      "material": "latch"
+    },
+    {
+      "kind": "clasp",
+      "played": true,
+      "rms": 0.021722319594793545,
+      "peak": 0.3845464885234833,
+      "active": 20989,
+      "material": "metal"
+    },
+    {
+      "kind": "paper",
+      "played": true,
+      "rms": 0.06354247168998395,
+      "peak": 0.775780439376831,
+      "active": 46517,
+      "material": "paper"
+    },
+    {
+      "kind": "ribbon",
+      "played": true,
+      "rms": 0.04913763424255412,
+      "peak": 0.6749362945556641,
+      "active": 37644,
+      "material": "silk"
+    },
+    {
+      "kind": "cloth",
+      "played": true,
+      "rms": 0.05620401137995993,
+      "peak": 0.743445634841919,
+      "active": 37930,
+      "material": "cloth"
+    },
+    {
+      "kind": "swish",
+      "played": true,
+      "rms": 0.06780133974544605,
+      "peak": 0.5544173717498779,
+      "active": 58476,
+      "material": "paint"
+    },
+    {
+      "kind": "paint",
+      "played": true,
+      "rms": 0.03325556571103662,
+      "peak": 0.4828788638114929,
+      "active": 20036,
+      "material": "paint"
+    },
+    {
+      "kind": "wings",
+      "played": true,
+      "rms": 0.03043712737115679,
+      "peak": 0.5152115225791931,
+      "active": 28141,
+      "material": "wings"
+    },
+    {
+      "kind": "chime",
+      "played": true,
+      "rms": 0.08431820750491702,
+      "peak": 0.6211857199668884,
+      "active": 95361,
+      "material": "glass"
+    },
+    {
+      "kind": "jewel",
+      "played": true,
+      "rms": 0.10747644414634923,
+      "peak": 0.7173677682876587,
+      "active": 102046,
+      "material": "jewel"
+    },
+    {
+      "kind": "bloom",
+      "played": true,
+      "rms": 0.08713485143293637,
+      "peak": 0.6600125432014465,
+      "active": 91327,
+      "material": "bloom"
+    },
+    {
+      "kind": "breath",
+      "played": true,
+      "rms": 0.023334141360867727,
+      "peak": 0.3057107925415039,
+      "active": 32395,
+      "material": "breath"
+    }
+  ],
+  "audio": {
+    "enabled": true,
+    "allowed": true,
+    "ambient": "wind",
+    "ambientActive": true,
+    "voices": 7,
+    "state": "running",
+    "field": "vineyard",
+    "level": 0.3,
+    "masterGain": 0.949999988079071,
+    "musicGain": 0.8072079420089722,
+    "environmentGain": 0.6499999761581421,
+    "materialCount": 30,
+    "cachedBytes": 2720648,
+    "cues": 7,
+    "maxVoices": 14,
+    "volume": 1,
+    "foleyGain": 1.149999976158142,
+    "sfx": {
+      "bird": 1,
+      "soil": 1,
+      "door": 1,
+      "paper": 1,
+      "swish": 1,
+      "water": 1,
+      "cloth": 1
+    },
+    "noiseBuffers": 6
+  },
+  "muted": true,
+  "initiallySilent": true
+}

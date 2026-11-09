@@ -1,0 +1,149 @@
+{
+  "base": {
+    "edition": "RC07",
+    "zip": "C:\\Users\\justi\\Documents\\Codex\\2026-10-24\\files-mentioned-by-the-user-valerie\\outputs\\VALERIE_CINEMATIC_REBIRTH_RC07_COMPLETO.zip",
+    "sha256": "7d70c4f012fe1978d627469819a01f5d7a1381ae9b1bde6fefacce98fe45ca87"
+  },
+  "references": [
+    {
+      "file": "references/image(20261027-023349).png",
+      "sha256": "803f7b1381c92c3fdf3584ea76a8152db568d7912fbcc1a044ee779a7ec4f3a1",
+      "bytes": 1807613,
+      "source": "User-supplied reference kit",
+      "rights": "Provided for this private project; no separate public licence asserted"
+    },
+    {
+      "file": "references/image(20261027-023411).png",
+      "sha256": "90265990e54cc1c24e8558a3bb4b526550acae4614c17319f7f2342ad1680375",
+      "bytes": 2375971,
+      "source": "User-supplied reference kit",
+      "rights": "Provided for this private project; no separate public licence asserted"
+    },
+    {
+      "file": "references/image(20261027-023429).png",
+      "sha256": "4bf2d07d5665d2c37b3aba34915a8f30e605e269b0873172724b7850488d4180",
+      "bytes": 67128,
+      "source": "User-supplied reference kit",
+      "rights": "Provided for this private project; no separate public licence asserted"
+    },
+    {
+      "file": "references/INSTRUCCIONES_CODEX_VALERIE_CONEJITOS_2_5D.txt",
+      "sha256": "d4f87e17295aee4270ee92681cb47c204b5d620bbd0918d8b001472bc71cd853",
+      "bytes": 9116,
+      "source": "User-supplied reference kit",
+      "rights": "Provided for this private project; no separate public licence asserted"
+    },
+    {
+      "file": "references/VALERIE_PLAN_MAESTRO_2_5D_CONEJITOS_Y_ANILLO.pdf",
+      "sha256": "d09645c48d4634208788bf114bf01f03ca8e7ded026f373312167ce4dc7f1ddc",
+      "bytes": 12255410,
+      "source": "User-supplied reference kit",
+      "rights": "Provided for this private project; no separate public licence asserted"
+    },
+    {
+      "file": "references/WhatsApp Video 2026-10-26 at 8.32.21 PM.mp4",
+      "sha256": "9c87dde970fffa502a3ab1684a9c0ea0e025aa3255a3304277d0835ad2cf474f",
+      "bytes": 2613284,
+      "source": "User-supplied reference kit",
+      "rights": "Provided for this private project; no separate public licence asserted"
+    }
+  ],
+  "originals": {
+    "vineyard": {
+      "file": "engines/vineyard/index.html",
+      "sha256": "d540c23c8a74483444518b8ffa0969441af0697fb531df385ff2881f74a6f430",
+      "bytes": 32761
+    },
+    "rabbit": {
+      "file": "engines/rabbit/index.html",
+      "sha256": "a9d232fd9a3cdbaebff32feb27d3e0d62489739088a9a1c3519ec792c7adba04",
+      "bytes": 34663
+    },
+    "mushroom": {
+      "file": "engines/mushroom/index.html",
+      "sha256": "b08432a8059cd8b0daacefb27351652c77d3cf69f467689d7e8cd5deeaeb1cc7",
+      "bytes": 31286
+    },
+    "museum": {
+      "file": "engines/museum/index.html",
+      "sha256": "40bcb1351d0c479d2e0e71c73dc00028a37527e0e6ee48bd2d55e7d1642a74ea",
+      "bytes": 35987
+    },
+    "couple": {
+      "file": "engines/couple/index.html",
+      "sha256": "19686259f92ee7c7dd594777a2cde35bc1fed695295af229176796c6d057b20b",
+      "bytes": 28874
+    },
+    "lily": {
+      "file": "engines/lily/index.html",
+      "sha256": "77123ddab8cd854d31ee95b0af06a58c58136457927d913ac51268e8fb4871fb",
+      "bytes": 38661
+    },
+    "memory07": {
+      "file": "memories/07_retrato/index.html",
+      "sha256": "ce79f35736e99cddf1b6adc0cb72818bb59e7b50460a1f716c9e6579af5a29fe",
+      "bytes": 150611
+    },
+    "memory08": {
+      "file": "memories/08_dos_sonrisas/index.html",
+      "sha256": "71d7812c001d20da2b0c384ac697ba8737b1a816874ae41e38f57ddaa81dbd6e",
+      "bytes": 209749
+    },
+    "memory09": {
+      "file": "memories/09_un_instante/index.html",
+      "sha256": "a2f8fa63bb72aefe98ba0895ad29966e1ab4e2a358ffb5ff85274acbcbc15d46",
+      "bytes": 461728
+    }
+  },
+  "observations": {
+    "pink": {
+      "file": "references/image(20261027-023349).png",
+      "observed": "Small pastel-pink plush, upright ears with unequal inclination/projected length, ivory muzzle, broad pink nose and glossy black bead eyes. Paler chest/feet. No invented name."
+    },
+    "taupe": {
+      "file": "references/image(20261027-023411).png",
+      "observed": "Larger warm taupe/grey plush. Broad rounded head, black bead eyes, small pink nose, long broad hanging ears, soft limbs; no white muzzle patch."
+    },
+    "ring": {
+      "file": "references/image(20261027-023429).png",
+      "observed": "Rose-tone narrow band, pink heart-like central stone, bright small stones around setting and shoulders. No physical size, metal certification or exact model inferred. F6 not implemented."
+    },
+    "box": {
+      "file": "references/WhatsApp Video 2026-10-26 at 8.32.21 PM.mp4",
+      "observedFrom": "Four existing embedded reference images on page 5 of user PDF; original video retained unchanged. No new video or screen capture generated.",
+      "observed": "Pink hinged box, warm lights, dark letter pennants, large taupe plush on left and pink plush on right in supplied open-box views. Ring placement unconfirmed."
+    }
+  },
+  "existingPdfReferenceImages": [
+    {
+      "file": "references/pdf-existing-frames/FormXob.153accd1b41a3d8cb5dff2131f059696.png",
+      "sha256": "deec7217342b125ea4ad87fc2f75b2f379c2d39add1d4a9417dbc187a4e0c441",
+      "provenance": "Existing embedded image, supplied master PDF page 5; read-only reference extraction, not a generated capture"
+    },
+    {
+      "file": "references/pdf-existing-frames/FormXob.48ebf2b401a63bc458a7be9489c41efc.png",
+      "sha256": "10f1406bf3d21e0c9847bcb77b0ac7e028c65a4c3129ede48a57fff494485b90",
+      "provenance": "Existing embedded image, supplied master PDF page 5; read-only reference extraction, not a generated capture"
+    },
+    {
+      "file": "references/pdf-existing-frames/FormXob.8c2c1ee3969c1791fcb57f9df46dfff1.png",
+      "sha256": "b34aac3b1aff71c95b6f7f5ea2a10f42a64aefdd9eb2738aef3cc5ad96dc0225",
+      "provenance": "Existing embedded image, supplied master PDF page 5; read-only reference extraction, not a generated capture"
+    },
+    {
+      "file": "references/pdf-existing-frames/FormXob.9c80fd3fee6edecdbbd2211b95d31644.png",
+      "sha256": "cbd8143bb69fbbd4486585ce7c7ae0f9019a68b5248696fb4a89c71f4cd6d7c1",
+      "provenance": "Existing embedded image, supplied master PDF page 5; read-only reference extraction, not a generated capture"
+    }
+  ],
+  "productionArtwork": {
+    "method": "Original Canvas paths, deterministic curved-fibre textures, articulated rig and procedural scenery; no generated bitmap pack or external runtime service",
+    "sources": [
+      "src/rig.js",
+      "src/environment.js",
+      "src/stage.js"
+    ],
+    "referencesPubliclyServed": false,
+    "fonts": "Local Cormorant Garamond and DM Sans, OFL texts in assets/fonts"
+  }
+}

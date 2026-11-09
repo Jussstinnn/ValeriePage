@@ -1,0 +1,70 @@
+VALERIE — INSTRUCCIÓN MAESTRA PARA CODEX
+REMODELACIÓN ILUSTRADA 2D/2.5D CON LOS DOS CONEJITOS REALES Y EL ANILLO
+
+Lee el PDF adjunto «VALERIE_PLAN_MAESTRO_2_5D_CONEJITOS_Y_ANILLO.pdf» COMPLETO. Es el Plan Maestro y la especificación de dirección artística, técnica, UX, narrativa, fases y aceptación. Este TXT es la orden operativa que lo acompaña. No lo sustituyas por un resumen, una propuesta o una discusión de alternativas.
+
+ATENCIÓN: CAMBIO DEFINITIVO RESPECTO A PLANES ANTERIORES
+
+LA NAVEGACIÓN NO SERÁ POR SCROLL. Retiro explícitamente cualquier requisito anterior de scrollytelling, wheel, swipe vertical o desplazamiento para pasar capítulos. La experiencia se recorre con botones permanentes y bien diseñados «Anterior» y «Siguiente», además de Pausa/Reanudar, sonido, capítulos y repetir cuando corresponda. Los gestos táctiles SOLO pueden usarse para interactuar opcionalmente con personajes, estrellas, flores u objetos, NUNCA para sustituir el avance y retroceso. No ocultes los controles automáticamente. La carta se lee por folios, sin que los mensajes desaparezcan apresuradamente.
+
+MATERIAL VISUAL REAL — MÁXIMA PRIORIDAD
+
+Además del PDF, recibirás:
+1. image(20261027-023349).png — Conejito pequeño rosa pastel, hocico claro, nariz rosada, ojos negros y orejas levantadas.
+2. image(20261027-023411).png — Conejito más grande de pelaje gris topo/beige, orejas largas caídas, ojos negros y nariz rosa.
+3. image(20261027-023429).png — Imagen del anillo comprado: aro en tono oro rosado, piedra central rosa y detalles brillantes.
+4. WhatsApp Video 2026-10-26 at 8.32.21 PM.mp4 — Video REAL de la caja rosa personalizada. Al abrirse se aprecian ambos conejitos, luces cálidas y banderines negros con letras. Usa el video para entender la revelación física de la sorpresa, no para inventar elementos que no se observan.
+5. El ZIP de la revisión técnica más reciente de VALERIE que esté realmente disponible en esta sesión. Confirma la versión antes de empezar; nunca presumas que una RC07 existe si no fue entregada.
+
+LOS DOS CONEJITOS SON LOS PROTAGONISTAS ABSOLUTOS.
+No me hagas un conejo genérico. Tampoco dejes al segundo como decoración. Ambos personajes tienen que ser claramente reconocibles por sus colores, orejas, proporciones, facciones, textura y silueta y deben actuar durante la película, compartir momentos y conducirla hacia la sorpresa. Pueden recibir ilustración 2D, rigging, poses, iluminación, animación 2.5D y expresividad propia, pero deben seguir pareciendo MIS peluches reales. No les inventes nombres o personalidad biográfica que yo no haya aportado; puedes asignarles comportamientos artísticos diferenciados sin alterar su identidad.
+
+EL ANILLO TAMBIÉN DEBE SER RECONOCIBLE.
+No uses el icono o render genérico de las revisiones ASCII. Recrea de forma estilizada y fiel la geometría visible de la fotografía, sus tonos rosados, la gema rosa y los pequeños detalles brillantes. No supongas un tamaño, modelo exacto ni ubicación del anillo en la caja que no estén confirmados por la referencia. Deja configurable su colocación física en la escena de la caja.
+
+LA DIRECCIÓN VISUAL CAMBIA POR COMPLETO.
+Queremos una película romántica interactiva con ilustraciones originales, personajes 2D articulados, ambientes 2.5D con profundidad y parallax, luz y vegetación procedural, cámaras dirigidas, transiciones naturales, museo vivo, flores animadas, recuerdos personales y una ceremonia de revelación inolvidable. NO queremos ASCII como estilo principal. Conserva los nueve motores originales, fotografías y archivos heredados como respaldo o legado, sin borrar ni alterar los originales; diseña nuevos derivados ilustrados independientes.
+
+EVITA REPETIR RC04: no basta con añadir capas de partículas, mover las orejas tres píxeles, subir contraste o renombrar sistemas. Las innovaciones deben producir planos y actuaciones visiblemente diferentes desde los primeros segundos de móvil. No prometas calidad de película profesional solo porque el código compile: el arte deberá pasar mi revisión personal.
+
+ORDEN DE TRABAJO OBLIGATORIO:
+
+F0 — Resguardo + referencias. Extrae y verifica la base real; conserva el proyecto original, las nueve obras y las fotos; identifica las rutas, el build y bugs críticos; prepara la estructura de arte nuevo y el manifiesto de referencias.
+
+F1 — PILOTO DE ALTA CALIDAD, AHORA. Construye el nuevo recorrido con AMBOS conejitos y los escenarios de viñedo y bosque. Debe sentirse como un cuento ilustrado precioso, con color, volumen visual, profundidad, dirección de cámara, actuaciones completas, interacciones delicadas y navegación por BOTONES. Haz que los personajes se miren, reaccionen, caminen, esperen y guíen. Trabaja primero el vertical móvil (alrededor de 390 px) y luego horizontal/escritorio. No construyas versiones superficiales de las diez fases para declararlas completas. Profundiza en F1 hasta tener un piloto realmente distintivo, coherente y funcional.
+
+GATE DE APROBACIÓN: después de F1, entrégame el proyecto completo para que YO pruebe y apruebe la dirección artística antes de expandirla a F2-F9. No declares unilateralmente aprobado el piloto ni migres masivamente el resto de las escenas. El PDF detalla todas las fases posteriores; consérvalas en el checkpoint.
+
+TECNOLOGÍA: puedes elegir SVG, Canvas 2D, PixiJS/WebGL, rigging 2D, GSAP (sin ScrollTrigger para navegación), Three.js puntual para la caja/anillo y shaders originales cuando aporten valor real. No instales todo por moda; mide tamaño y rendimiento. Si Codex puede crear los assets originales con código vectorial y capas ilustradas, hazlo. Si necesita recursos de arte externos que no están disponibles, documenta el bloqueo y construye una alternativa propia viable; no mientas sobre fidelidad o resultados. No reproduzcas una estética de propiedad intelectual ajena como clon.
+
+ESTÁNDAR MOBILE-FIRST:
+- Pantalla inmersiva vertical con figuras grandes y encuadres propios; escritorio bien adaptado.
+- Personajes y objetos importantes dentro de zonas seguras.
+- Botones Anterior y Siguiente siempre presentes y accesibles, también en horizontal.
+- Mensajes románticos visibles por defecto y permanencia suficiente para leer.
+- Pausa, retorno, repetición, audio y restauración de estado sin fallas.
+- Sin saltos de escala al cargar escenas por primera vez, sin flashes blancos, sin bordes de iframes.
+- Sin avanzar carta/anillo accidentalmente con doble toque, scroll, historia del navegador o cargas tardías.
+- Animaciones orgánicas sin agotar innecesariamente la batería; degradación elegante si hay poco rendimiento.
+- Respetar prefers-reduced-motion y permitir recorrido completo sin interacción compleja.
+
+HISTORIA: la película irá de una invitación poética y el encuentro de los dos peluches a un viñedo, bosque, museo, cielo, lirios, recuerdos reales, carta, caja rosa con luces y banderines, anillo rosado y finalmente la frase «Valerie, ¿quieres ser mi novia?». No fuerces un botón de respuesta digital. La pregunta debe mantenerse en pantalla.
+
+METODOLOGÍA YA ACORDADA:
+- NO me pidas videos, grabaciones, capturas, contact sheets ni informes de evidencia visual. YO probaré la estética y la experiencia móvil.
+- Realiza sí builds, checks de integridad y tests focalizados que mantengan estable el código.
+- No dediques horas a repetir auditorías ya aprobadas o a producir reportes visuales.
+- Puedes trabajar con prompts grandes y mucho código; prioriza calidad efectiva, no métricas de líneas o cantidad de efectos.
+- Guarda avances por fase y CHECKPOINT para continuar si se interrumpe el contexto o la cuota.
+- No me hagas preguntas triviales ni pidas autorización a cada paso. Las decisiones artísticas concretas están en el PDF; ejecútalas.
+
+ENTREGA DE ESTA PRIMERA ITERACIÓN:
+1. «VALERIE_ILLUSTRATED_F1_PILOTO_COMPLETO.zip» con TODO el código fuente, assets, scripts, configuración, versión ejecutable y referencias necesarias (sin node_modules ni cachés). Si F0 forma parte de F1, inclúyela dentro del mismo paquete.
+2. «CAMBIOS_F1.md» breve y preciso.
+3. «CHECKPOINT.md» con estado real, pendientes F2-F9 y punto exacto de continuación.
+4. «README_WINDOWS.md» con pasos exactos para ejecutar localmente en Windows.
+5. Indica qué partes están implementadas de verdad y cuáles quedan pendientes; no declares una migración completa de toda la película antes de que yo haya aprobado el piloto.
+
+REGLA DE ORO: si la foto del peluche rosa, la foto del peluche grande y la animación del teléfono no parecen mostrar a los MISMOS personajes, F1 no cumple. Si la experiencia avanza por scroll, F1 no cumple. Si el cambio se parece visualmente a RC06 con algunos filtros, F1 no cumple. Si el piloto es extraordinario y fiel a los regalos, tenemos la base correcta para completar todo el Plan Maestro.
+
+Comienza inmediatamente F0 y F1 sobre una copia separada del último ZIP real. El PDF es la especificación principal. Construye el piloto y entrégame su ZIP completo para evaluación.

@@ -1,0 +1,9 @@
+{
+  "src/lily-garden.js": "6c7970845e90ffd2ca93f8428155d661adc2328c256bd9aa341836ef4dc09337",
+  "src/character-models.js": "2cdbf3ba3fbbdeb6580995799c39617ec59c96d9041ef5341936e03ea343dac6",
+  "src/kinematics.js": "7c6fcf363986c077563aaa40b399ddec504010bd0621404abf0182fbbda2fc0e",
+  "src/animation.js": "65c976a4c5b0ef976e8f6fddfb1affa66513590b497ec089e02cc84ecedeeca6",
+  "src/rig.js": "06f26890371e41925c0c7cf191c78a8b9dec926eb43bb0fc31a1f53e2b6867b4",
+  "src/personal-notes.js": "df3b8b58375f3331a87528bd426d9026c292db5f7c6d6d7d518ee535a55e7dbf",
+  "PERSONAL_ASSETS.json": "735208eb9769debc40e411c369939b4d6b198a56cb25ab2dad7670616ebc91d2"
+}

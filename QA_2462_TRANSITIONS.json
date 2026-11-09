@@ -1,0 +1,231 @@
+{
+  "pass": true,
+  "matte": [
+    {
+      "kind": "vine-passage",
+      "direction": -1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "vine-passage",
+      "direction": 1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "water-reflection",
+      "direction": -1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "water-reflection",
+      "direction": 1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "spatial-passage",
+      "direction": -1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "spatial-passage",
+      "direction": 1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "doorway",
+      "direction": -1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "doorway",
+      "direction": 1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "path-dissolve",
+      "direction": -1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "path-dissolve",
+      "direction": 1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "page-turn",
+      "direction": -1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "page-turn",
+      "direction": 1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "petal-match",
+      "direction": -1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    },
+    {
+      "kind": "petal-match",
+      "direction": 1,
+      "first": [
+        224,
+        139,
+        50,
+        255
+      ],
+      "last": [
+        35,
+        78,
+        149,
+        255
+      ]
+    }
+  ],
+  "errors": [],
+  "notes": "14 pixel endpoint checks and 16 actual navigations; desktop Chromium mobile emulated."
+}

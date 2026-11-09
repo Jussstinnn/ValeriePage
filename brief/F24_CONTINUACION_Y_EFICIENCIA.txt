@@ -1,0 +1,408 @@
+# VALERIE F24 — Continuación, integración final y política de eficiencia
+
+## INSTRUCCIÓN PRINCIPAL
+
+Continúa el desarrollo de **VALERIE F24 — Dirección Cinematográfica Continua** exactamente desde el punto donde se interrumpió la ejecución anterior debido al límite de uso de Codex.
+
+**NO reinicies el proyecto, NO reconstruyas F24 desde cero, NO vuelvas a extraer F23 y NO repitas las implementaciones que ya estén correctamente terminadas.**
+
+El objetivo es recuperar el estado real, completar los componentes pendientes, integrar todos los sistemas y entregar una versión F24 completa, funcional y cinematográficamente coherente.
+
+A partir de este momento, también deberás aplicar permanentemente la **Política de Eficiencia y Calidad** descrita al final de este prompt.
+
+---
+
+# PARTE I — RECUPERACIÓN DEL TRABAJO EXISTENTE
+
+## 1. Proyecto y ubicación
+
+La ejecución anterior trabajó en:
+
+`work/VALERIE_F24_CINE_CONTINUO`
+
+La base utilizada fue:
+
+`outputs/VALERIE_BOSQUE_VIVO_F23_COMPLETO.zip`
+
+Ya se creó una copia separada de F23 para trabajar en F24.
+
+**Continúa directamente sobre la carpeta F24 existente.**
+
+No modifiques el ZIP F23 original.
+
+Antes de programar, inspecciona brevemente el estado del workspace y determina qué partes ya están integradas, cuáles quedaron incompletas y cuáles necesitan correcciones.
+
+Prioriza revisar los archivos modificados o creados durante la ejecución anterior. Evita analizar otra vez todo el proyecto.
+
+## 2. Trabajos reportados antes de la interrupción
+
+La ejecución anterior lanzó tres trabajos:
+
+- `F24 playback`: reportó finalización.
+- `F24 vineyard`: reportó finalización.
+- `F24 hud`: comenzó, pero su finalización quedó sin confirmar.
+
+También se reportaron:
+
+- Nuevo motor cinematográfico basado en estados.
+- Política editorial de reproducción.
+- Director de transiciones.
+- Sistema de continuidad del viñedo.
+- HUD contextual.
+- Composición independiente de los controles.
+- Pruebas focalizadas y compilaciones.
+
+Estos resultados son reportes de la ejecución anterior, **no una garantía de que todos los sistemas estén integrados y funcionando correctamente**.
+
+Verifica lo necesario sin reconstruir implementaciones válidas.
+
+## 3. Archivos y componentes prioritarios
+
+Localiza y comprueba los módulos relevantes, incluyendo los que existan de:
+
+- `cinema-clock.js`
+- `editorial-policy.js`
+- `director.js`
+- `transition-director.js`
+- `vineyard-scene.js`
+- `cinematic-hud.js`
+- `composition.js`
+- `index.html`
+- `film.css`
+
+Revisa sus conexiones, contratos y dependencias.
+
+No vuelvas a cargar archivos enormes cuando una búsqueda específica permita encontrar las funciones necesarias.
+
+---
+
+# PARTE II — FINALIZAR F24
+
+## 4. Reproducción cinematográfica continua
+
+La experiencia predeterminada debe ser cinematográfica.
+
+Valerie no debería necesitar presionar continuamente «Siguiente» para escuchar diálogos, observar actuaciones ni avanzar entre momentos narrativos ordinarios.
+
+Implementa o termina de integrar:
+
+- Reproducción automática de diálogos.
+- Duraciones de lectura naturales.
+- Actuaciones coordinadas con el avance narrativo.
+- Pausas automáticas en decisiones importantes.
+- Espera hasta que termine una acción física antes de avanzar.
+- Transiciones sincronizadas con el movimiento.
+- Pausa y reanudación coherentes.
+- Restauración correcta después de recargar la página.
+
+**Importante:** revisa especialmente que la función de reinicio no devuelva innecesariamente la reproducción al modo manual.
+
+El modo manual puede mantenerse como alternativa, pero el modo cinematográfico debe ser el predeterminado.
+
+No utilices temporizadores independientes capaces de avanzar la historia mientras una actuación, transición o interacción sigue incompleta.
+
+## 5. Continuidad física de Rosa y Beige
+
+Los dos conejitos son protagonistas de una película interactiva, no elementos decorativos que aparecen en posiciones diferentes.
+
+La nueva experiencia debe procurar:
+
+- Movimientos naturales mediante saltitos y pequeños desplazamientos.
+- Anticipación antes de cada movimiento.
+- Impulso, trayectoria y aterrizaje.
+- Reacciones entre Rosa y Beige.
+- Miradas y movimientos de orejas.
+- Conservación de la posición espacial entre actuaciones relacionadas.
+- Continuidad de escala, orientación y apoyo sobre el suelo.
+- Movimientos de cámara que acompañen sus acciones.
+
+**Queda prohibida la teletransportación visual injustificada.**
+
+Cuando la historia requiera cambiar de escenario o posición, utiliza transiciones cinematográficas motivadas: desplazamiento de cámara, oclusión por vegetación, cambios de plano o elementos del escenario.
+
+No intentes ocultar cualquier error utilizando un fundido negro genérico.
+
+Conserva la anatomía, proporciones, identidad y apariencia aprobadas de ambos peluches.
+
+## 6. Viñedo y entrada al bosque
+
+Finaliza la integración de los primeros capítulos:
+
+1. Dos miradas.
+2. Te abro el camino.
+3. Una patita más.
+4. El tiempo de los dos.
+5. Un secreto para ti.
+6. Tras la luz.
+7. El bosque escucha.
+
+Estos capítulos deben sentirse conectados, no como pantallas independientes.
+
+El viñedo debe establecer una dirección de movimiento clara. Los conejitos deben recorrerlo de forma natural, reaccionar entre sí y llegar al bosque mediante una transición visual coherente.
+
+La entrada al bosque debe respetar los sistemas y las ilustraciones existentes en F23.
+
+**No reconstruyas el bosque ni sustituyas su dirección artística aprobada.**
+
+Conserva las interacciones con los helechos, el árbol, el arroyo y las rutas narrativas.
+
+## 7. HUD flotante y contextual
+
+Completa el rediseño de los controles.
+
+La interfaz no debe parecer un reproductor tradicional con una barra permanente ocupando parte de la película.
+
+Durante las escenas automáticas:
+
+- Mantén el escenario despejado.
+- Oculta los controles secundarios.
+- Conserva los subtítulos y elementos narrativos necesarios.
+- Evita elementos decorativos que distraigan.
+
+Cuando Valerie tenga que participar:
+
+- Muestra controles flotantes elegantes.
+- Integra las opciones en la composición de la escena.
+- Utiliza animaciones de entrada y salida delicadas.
+- No tapes a los protagonistas ni los elementos interactivos importantes.
+- Haz que las opciones sean claras y cómodas de utilizar en celular.
+
+Debe existir una forma discreta, accesible y recuperable de abrir controles para pausar, retroceder, repetir o acceder a capítulos.
+
+Los controles no deben cambiar la escala ni desplazar el encuadre cuando aparezcan.
+
+Respeta las áreas táctiles del bosque y evita conflictos con los gestos narrativos.
+
+Conserva navegación por botones y controles contextuales; **no conviertas la historia en navegación por scroll**.
+
+## 8. Decisiones y momentos protegidos
+
+La película debe avanzar automáticamente salvo cuando exista una razón narrativa para esperar.
+
+Protege especialmente:
+
+- Decisiones de Valerie.
+- Interacciones que requieren su participación.
+- Fotografías y recuerdos.
+- Lectura de la carta.
+- Revelaciones importantes.
+- La caja del regalo.
+- El anillo.
+- La ceremonia y pregunta final.
+
+Estos momentos no deben avanzar por un temporizador.
+
+Cuando corresponda, muestra un botón contextual para continuar.
+
+La pregunta final debe permanecer hasta que Valerie decida responder en persona.
+
+No modifiques el contenido romántico ni reveles anticipadamente elementos que deben permanecer como sorpresa.
+
+---
+
+# PARTE III — INTEGRACIÓN Y VALIDACIÓN
+
+## 9. Integración técnica
+
+Comprueba la comunicación entre:
+
+- Director narrativo.
+- Motor cinematográfico.
+- Política editorial.
+- Director de transiciones.
+- Actuación de los personajes.
+- Motor de renderizado.
+- HUD contextual.
+- Sistema de decisiones.
+- Guardado y restauración.
+
+Presta especial atención a condiciones de carrera, navegación duplicada, estados congelados y cambios de escena mientras una animación sigue ejecutándose.
+
+Las transiciones deben poder cancelarse o invalidarse cuando Valerie navega manualmente hacia otro capítulo.
+
+Verifica que las sustituciones automáticas realizadas durante la ejecución anterior no hayan dejado inconsistencias de código.
+
+No reescribas módulos completos si basta con integrar o corregir funciones concretas.
+
+## 10. Pruebas eficientes
+
+Primero ejecuta únicamente las pruebas relevantes para los componentes modificados.
+
+Comprueba especialmente:
+
+- Reproducción automática.
+- Pausa y reanudación.
+- Reinicio.
+- Navegación manual.
+- Transiciones.
+- Finalización de actuaciones.
+- Decisiones.
+- HUD contextual.
+- Restauración de sesión.
+- Funcionamiento del bosque.
+
+Después de integrar, realiza una verificación general razonable y la compilación final.
+
+No repitas compilaciones completas después de cada modificación pequeña.
+
+Si hay pruebas que ya pasaron y sus dependencias no cambiaron, no es necesario repetirlas salvo que una modificación posterior pueda afectarlas.
+
+No declares aprobadas pruebas que no ejecutaste.
+
+## 11. Protección de las siguientes fases
+
+F24 establece la arquitectura cinematográfica que utilizarán las siguientes fases del proyecto.
+
+Mantén la compatibilidad con el museo, la noche estrellada, el jardín, los recuerdos, la carta y la ceremonia.
+
+No reconstruyas esos escenarios fuera del alcance de F24.
+
+Limítate a realizar las adaptaciones necesarias para que los sistemas existentes sigan funcionando correctamente.
+
+No avances a F25 hasta completar F24.
+
+---
+
+# PARTE IV — POLÍTICA PERMANENTE DE EFICIENCIA Y CALIDAD
+
+A partir de este momento, aplica las siguientes instrucciones durante el desarrollo de este proyecto.
+
+## Objetivo
+
+**Maximizar la calidad del software y el progreso real por unidad de consumo de Codex.**
+
+La eficiencia nunca debe conseguirse sacrificando funcionalidad, arquitectura, seguridad, estabilidad, mantenibilidad ni calidad visual.
+
+## 1. Agentes y razonamiento
+
+Trabaja preferentemente con un único agente principal.
+
+Para esta continuación de F24, **no lances subagentes paralelos**. Integra los resultados ya existentes de manera secuencial.
+
+En futuras tareas, utiliza subagentes únicamente cuando exista una necesidad técnica clara y una ventaja sustancial frente al desarrollo secuencial.
+
+Resuelve cada problema con el razonamiento necesario, evitando exploraciones especulativas extensas cuando exista una solución verificable.
+
+No reduzcas artificialmente la profundidad técnica si el problema realmente necesita un análisis avanzado.
+
+## 2. Gestión inteligente del contexto
+
+Antes de investigar, identifica qué archivos, funciones y módulos están directamente relacionados con el objetivo.
+
+Utiliza búsquedas específicas y lecturas por fragmentos en lugar de cargar archivos completos innecesariamente.
+
+No vuelvas a leer documentación, módulos o archivos previamente analizados si no han cambiado y el contexto disponible sigue siendo suficiente.
+
+Reutiliza los contratos existentes, las decisiones arquitectónicas y los avances documentados.
+
+Carga únicamente las skills pertinentes para la tarea actual.
+
+En F24, utiliza `impeccable` solo cuando sea necesario para completar o pulir la interfaz. No cargues otras skills sin una necesidad específica.
+
+No repitas auditorías, análisis o diagnósticos que ya se hayan completado satisfactoriamente, salvo que nuevas modificaciones los invaliden.
+
+Evita emitir salidas extensas de consola cuando un resumen o una consulta focalizada permita obtener la información necesaria.
+
+## 3. Desarrollo eficiente
+
+Prioriza la implementación funcional sobre los análisis repetitivos.
+
+Divide internamente las tareas complejas en unidades coherentes, pero no interrumpas innecesariamente el trabajo para solicitar confirmaciones.
+
+Conserva toda implementación válida y evita reconstruir módulos sin necesidad.
+
+Prefiere modificaciones precisas sobre reescrituras completas, excepto cuando la arquitectura existente impida cumplir correctamente el objetivo.
+
+Evita generar documentación extensa durante cada pequeña modificación.
+
+No confundas rapidez con calidad: una corrección bien implementada es preferible a varias soluciones superficiales.
+
+## 4. Verificación inteligente
+
+Realiza pruebas focalizadas sobre los componentes modificados y sus dependencias relevantes.
+
+No ejecutes repetidamente pruebas completas sin cambios que lo justifiquen.
+
+Cuando la integración esté lista, ejecuta las verificaciones generales necesarias.
+
+Nunca omitas pruebas críticas para aparentar un menor consumo.
+
+Si una prueba falla, investiga y corrige la causa real antes de volver a ejecutarla.
+
+No utilices ciclos de prueba y corrección innecesariamente repetitivos cuando se pueda identificar primero la causa del problema.
+
+## 5. Continuidad del proyecto
+
+Mantén un checkpoint breve y actualizado que incluya:
+
+- Estado real del proyecto.
+- Componentes terminados.
+- Componentes pendientes.
+- Archivos afectados.
+- Errores conocidos.
+- Próximo paso concreto.
+
+Si la ejecución se interrumpe, continúa desde el estado existente.
+
+No reconstruyas el proyecto, no repitas tareas terminadas y no vuelvas a analizar todo desde cero.
+
+Deja información suficiente para que una futura ejecución pueda reanudar el trabajo sin una exploración costosa.
+
+## 6. Calidad visual y artística
+
+En Valerie, conserva el objetivo cinematográfico y la calidad de sus escenarios, animaciones, personajes y transiciones.
+
+No simplifiques las animaciones ni elimines detalles visuales simplemente para ahorrar tokens.
+
+La eficiencia debe venir de una mejor organización del desarrollo, no de producir un resultado inferior.
+
+Prioriza animaciones con intención narrativa, movimiento natural, continuidad visual y una experiencia emotiva.
+
+La experiencia debe sentirse como un cuento cinematográfico interactivo, no como una presentación de diapositivas.
+
+Para otros proyectos como TicoMotors, aplica el mismo principio de eficiencia conservando la calidad profesional de la interfaz, el comportamiento responsive y las reglas de negocio.
+
+## 7. Entregables
+
+Durante el desarrollo, trabaja sobre la versión activa del proyecto.
+
+Genera el ZIP completo y actualizado cuando corresponda entregar una revisión final, no después de cada modificación interna.
+
+No generes capturas, videos, grabaciones, comparativas visuales ni paquetes de evidencias. El usuario realizará personalmente la evaluación visual.
+
+Al finalizar, proporciona un resumen conciso de:
+
+- Cambios implementados.
+- Componentes integrados.
+- Pruebas realizadas y resultados.
+- Limitaciones o problemas pendientes.
+- Nombre y ubicación del ZIP final.
+
+**Principio obligatorio: ahorrar trabajo redundante, no ahorrar calidad.**
+
+---
+
+# PARTE V — INSTRUCCIÓN FINAL DE EJECUCIÓN
+
+Ahora continúa trabajando directamente sobre F24.
+
+No necesito otra planificación extensa ni una nueva investigación global del proyecto.
+
+El plan de implementación ya existe y el desarrollo anterior dejó código aprovechable.
+
+Tu prioridad es:
+
+1. Recuperar el estado real de F24.
+2. Integrar el trabajo existente.
+3. Completar las partes pendientes.
+4. Corregir problemas funcionales y de continuidad.
+5. Validar la integración de forma eficiente.
+6. Generar el ZIP final completo de F24.
+
+Si la cuota o el entorno interrumpen nuevamente la ejecución, deja un checkpoint preciso que permita continuar sin pérdida de trabajo ni repetición de análisis.
+
+**Criterio de éxito:** F24 debe ofrecer una experiencia cinematográfica mayormente automática, con movimientos y transiciones fluidas, controles flotantes contextuales y decisiones interactivas, preservando completamente la historia y los personajes existentes.
+
+No declares la fase completa hasta que el trabajo esté integrado y validado.
+
+**Continúa la implementación ahora, utilizando eficientemente los recursos disponibles y manteniendo la máxima calidad posible.**

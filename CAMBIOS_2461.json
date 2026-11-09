@@ -1,0 +1,70 @@
+[
+  {
+    "path": "src/director.js",
+    "sha256": "15c36e06aeadcbd54a5876ebb7b3c64eb00503efe07fadc0a43f6e07a45782ed"
+  },
+  {
+    "path": "src/film.css",
+    "sha256": "6b0af6b75e1f4ba23e276e6a0017471e43062eecf2e58b8e5803b774da55177f"
+  },
+  {
+    "path": "src/garden-promenade.js",
+    "sha256": "68480ac9a48b4f26f3f498d1d767c8d4f1873238e367085c38c7170d9b00dced"
+  },
+  {
+    "path": "src/garden-soil.js",
+    "sha256": "a0bb88c9004f31d8759cabdcc8b5e95db94db019e733ebbb3c703af6ef47930a"
+  },
+  {
+    "path": "src/journey-assets.js",
+    "sha256": "7fc38891f929178f51c81b33ee1956413d15a0541aa347d4d1e2b9879a62e4e4"
+  },
+  {
+    "path": "src/session.js",
+    "sha256": "855cec27b00ec84ffc2ec64971892ee1b3690111f2aceeb88ea63ef6f6c7680a"
+  },
+  {
+    "path": "src/sound.js",
+    "sha256": "40b814e57d4d886a195bed1ed45f6b977db0d56012ae81cd695a42994ea0fba4"
+  },
+  {
+    "path": "src/transition-director.js",
+    "sha256": "60ef9afd85e810e5c1a0b9d1aed66cf323c54212876f7a8e6e0c0f47d8a1aefa"
+  },
+  {
+    "path": "src/vineyard-scene.js",
+    "sha256": "e96769c35161f587240b2fc8b8dcf5dd64c11b3d50efa80e2c207dc45922cd8b"
+  },
+  {
+    "path": "scripts/package.mjs",
+    "sha256": "07e61cd7678b9cfcad559257b9fb9847e25d4bd4565218ed14438cc4250af9fe"
+  },
+  {
+    "path": "scripts/serve.mjs",
+    "sha256": "f8f2e8ed2f349bae390d921f1bc34fa95bbb1cebe3c8cd356f6e0a9ba27e3c1c"
+  },
+  {
+    "path": "tests/audio-f246.cjs",
+    "sha256": "9ad1a4832c1215fd6e531c8d201071b76eab82664c5264c21c9a3957b86f8109"
+  },
+  {
+    "path": "tests/forest-session.test.mjs",
+    "sha256": "fb98c488032d79585ecb9fcd6da28cd817ffaea8a50f83d6d1a15c223c1a3447"
+  },
+  {
+    "path": "tests/journey-migration.test.mjs",
+    "sha256": "27b2abe34e126c654f0d118e221e3fea7c13e0586f63ca81f19c041076b95c6f"
+  },
+  {
+    "path": "tests/revision-2461.cjs",
+    "sha256": "dbc9fad275036aff75115c65b2ddf67aebb4a780f00c372c0a1ff9b2513336f6"
+  },
+  {
+    "path": "assets/journey/manifest.json",
+    "sha256": "f40334680314142365bbaba0987eae0820b01a21a5919572e03febd4443f7eb7"
+  },
+  {
+    "path": "assets/journey/soil-bed.png",
+    "sha256": "2291ba612fdf344a54c0130d98c3bf55fa4a3d0ba95cd60c5eedc4993f6ddf49"
+  }
+]

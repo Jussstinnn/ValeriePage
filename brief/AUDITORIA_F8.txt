@@ -1,0 +1,78 @@
+# VALERIE — QA intensivo independiente (F8.5: Los guardianes de nuestros recuerdos)
+**Fecha:** 27 de octubre de 2026  
+**Material auditado:** `VALERIE_ILLUSTRATED_F8_EVOLUCION_NARRATIVA_COMPLETO.zip` (249 entradas; ~93,3 MB).  
+**Enfoque:** estabilidad, narrativa, fotos, conejitos, botones, carta, ceremonia, compatibilidad móvil, distribución y rendimiento.
+
+## 1. Resumen ejecutivo
+**Estado: CANDIDATA FUNCIONAL, TODAVÍA NO APTA PARA PUBLICAR EL QR.** Hay avances reales en los recuerdos y la narración: los tres recuerdos ahora tienen cinco momentos dirigidos (descubrimiento, revelación, contemplación, reacción y cierre); cada fotografía puede mostrarse completa sin personajes tapándola y los conejitos vuelven en los momentos de reacción. La carta y el anillo mantienen barreras de navegación que funcionaron en los recorridos realizados. No se reprodujeron excepciones JavaScript durante esas pruebas.
+
+**Defectos comprobados:** (A) `npm test` falla en el ZIP tal como está por una ruta/nombre de HTML obsoleto; (B) la fotografía de un recuerdo se oscurece excesivamente por una máscara de primer plano en móvil horizontal, incluso durante contemplación. Ambos merecen corrección antes de dar por cerrada la revisión.
+
+**Brechas de calidad:** solo 10 de 19 planos tienen guiones específicos de varios actos; los restantes usan el texto genérico de respaldo. El clímax conserva una composición escueta; la presencia de los conejitos y los ecos de fotos no llega al nivel cinematográfico aspirado. El paquete es voluminoso para acceso mediante QR.
+
+## 2. Cómo se verificó
+- Se extrajo el ZIP real y se comprobó su integridad CRC: sin miembros corruptos.
+- `npm run build`: APROBADO. Genera `VALERIE_F8_EVOLUCION_NARRATIVA.html` y `dist/`.
+- `npm test`: **9 de 10 pruebas aprobadas** tal como viene el ZIP. Una falla por nombre de archivo incorrecto en la prueba; ver incidencia QA-01.
+- En copia TEMPORAL y sin modificar la entrega: al copiar el HTML actual con el nombre antiguo esperado por el test, `npm test` pasa **10 de 10**. Esto demuestra que la falla del test es de referencia de archivo, no de los demás contratos.
+- Chromium 144 en entorno Linux, HTML autónomo cargado desde `page.set_content` (la configuración de navegación de este entorno bloquea las URL `file://` y localhost). Carga y renderizado efectivos; no debe equipararse a una certificación de apertura directa en iOS/Safari.
+- Recorridos de los recuerdos 12, 13 y 14: cinco estados narrativos por recuerdo, transiciones por botones, contemplación con fotografías completas y proporción preservada, reacción de los conejitos y alternativa de botón de foto.
+- Recorrido de la carta (tres folios), descubrimiento de la caja, ceremonia con macro y retorno, pregunta final y reinicio. Bloqueos narrativos y restauración lógica básica comprobados en el navegador.
+- Seis viewports: 320×568, 375×667, 390×844, 430×932, 844×390 y 1440×900. Controles principales >=44px, centrados en áreas clicables y sin desbordamiento horizontal en los estados ensayados.
+- Prueba sintética de CPU ralentizada 4×: ~21–25 fps en cuatro muestras del entorno (inicio, museo, jardín, recuerdo). NO equivale a rendimiento de teléfonos físicos. Según el medidor de la aplicación, memoria decodificada estimada ~34–65 MB en esas muestras; NO es consumo total de RAM.
+- No se probaron dispositivos físicos, audio escuchado ni HTTPS publicado. Las acciones de error de red y las pruebas E2E originales dependientes de `@playwright/test` quedaron sin ejecutar por ausencia de esa dependencia local; se realizó una batería independiente con Playwright para Python.
+
+## 3. Bugs confirmados
+
+### QA-01 · PRIORIDAD ALTA DE ENTREGA · Comando de pruebas roto desde ZIP limpio
+**Reproducción:** extraer el ZIP; en la carpeta raíz ejecutar `npm test`.  
+**Observado:** `tests/contracts.test.mjs` intenta leer `VALERIE_ILLUSTRATED_F8.html`, que no existe. El archivo real y declarado en `release.json` es `VALERIE_F8_EVOLUCION_NARRATIVA.html`. Se produce `ENOENT`; el resultado es 9/10.  
+**Esperado:** `npm test` debe pasar inmediatamente tras extraer, sin crear alias manuales.  
+**Corrección:** actualizar el test para leer `release.json.offline` o el nombre actual, preferiblemente sin duplicar nombres literales. Ejecutar `npm run build && npm test` desde extracción limpia. No declarar que toda la batería pasó sin resolverlo.  
+**Ubicación:** `tests/contracts.test.mjs`; `release.json`.
+
+### QA-02 · PRIORIDAD ALTA DE EXPERIENCIA MÓVIL · Máscara oscurece la foto en horizontal
+**Reproducción:** abrir en viewport 844×390; ir a `nuestro-retrato` y pulsar `Siguiente` dos veces hasta el acto `contemplate` (vista `photo`).  
+**Observado:** la imagen queda entera, pero gran parte de su mitad inferior está cubierta por una superposición oscura, perjudicando justo el momento en que debería contemplarse sin obstáculos. El problema también puede afectar a las otras fotos de relación similar según la posición final.  
+**Esperado:** fotografía completa con contraste natural y rostros legibles en toda su extensión.  
+**Causa encontrada:** `src/guardian-world.js`, método `foreground()` aplica un degradado vertical desde `v.captionTop-24` hacia el borde inferior incluso cuando `s.chapter==='memory'` y la vista es `photo`. En formato horizontal, la foto y ese degradado se superponen.  
+**Corrección:** en `photo` usar máscara adaptada a la región de lectura (preferible lateral en horizontal), no cubrir el bounding box de `s.page`/`this.stats.photo`; conservar legibilidad de controles y subtítulos mediante fondos locales independientes. Verificar 844×390 y 667×375, y los tres recuerdos.
+
+## 4. Áreas por mejorar (no clasificadas como bugs confirmados)
+
+### QA-03 · PRIORIDAD MEDIA · Cobertura narrativa desigual
+`src/guardian-script.js` define 10 capítulos con libreto dedicado (35 declaraciones de beats); la película contiene 19 planos. Los otros **9 planos** dependen del `silent` fallback de `src/narrative-director.js`. No todos los planos necesitan diálogo, pero la promesa de que los protagonistas cuenten la historia aún no está realizada de modo uniforme. Seleccionar escenas de transición importantes y escribir actuaciones/diálogos verdaderamente situacionales, dejando silencios donde aportan.
+
+### QA-04 · PRIORIDAD MEDIA · Recuerdos demasiado parecidos en estructura
+Sí hay diferencias entre revelaciones y fondos y se preservan las fotos. Sin embargo, los tres comparten el esquema de cinco momentos y una distribución de descubrimiento/reacción muy similar; el retorno a los conejitos tiende a mostrar de nuevo una foto pequeña. Proponer tres lenguajes: (a) retrato con perrito — descubrimiento a dúo; (b) dos sonrisas — encuentro juguetón, sin exageración humana; (c) un instante — contemplación silenciosa y hallazgo de sobre. Variar cámaras, distancia y actuación, no solo el texto.
+
+### QA-05 · PRIORIDAD MEDIA · El desenlace aún es visualmente austero
+Revisión del plano final en 390×844: excelente legibilidad de la pregunta, pero conejitos pequeños próximos al borde inferior, un adorno discreto y gran separación vacía entre elementos. `src/guardian-world.js` dibuja ecos de tres fotografías con aparición temporal limitada; no basta para darle continuidad emocional al desenlace. Recomiendo una secuencia de revelación mejor coreografiada con ambos peluches y objetos conseguidos, sin sobrecargar ni presionar a Valerie para responder.
+
+### QA-06 · PRIORIDAD MEDIA · Entrega y carga
+El HTML offline pesa ~27,44 MB; ZIP completo ~93,3 MB por contener fuentes, `dist`, recursos fuente y `legacy` (incluye archivos anteriores). Esto no implica que el sitio privado modular deba publicar todos esos respaldos; comprobar que `sitio/` solo incluya activos necesarios. Medir carga en iPhone real, optimizar compresión y precarga por escena; mantener el HTML autónomo de respaldo. No comprimir con pérdida las fotografías personales ni alterar sus píxeles sin aprobación.
+
+### QA-07 · PRIORIDAD MEDIA · Privacidad antes del QR
+`noindex` no evita acceso a fotografías. `HOSTING_PRIVADO.md` lo documenta correctamente. Antes del QR debe existir control de acceso real sobre TODAS las rutas, incluidas imágenes, y HTTPS. No compartir un enlace público no protegido. Pendiente por diseño; no es un bug de la ejecución local.
+
+### QA-08 · PRIORIDAD BAJA · Texto del indicador de progreso truncado
+En viewport estrecho aparece `Nuestro re...` / `Fin de este re...`. No bloquea navegación, pero desmerece la presentación editorial. Preferible mostrar `13 / 19` y una etiqueta legible o ampliar el espacio disponible.
+
+## 5. Fortalezas comprobadas
+- 19 planos listados, fuentes artísticas y tres fotografías incluidas en el ZIP; la prueba de hashes del proyecto conserva los originales.
+- Los tres recuerdos implementan realmente cinco beats cada uno; foto completa en contemplación (sin actores delante, sin deformación del aspecto); botón alternativo regresa a la contemplación.
+- La carta contiene íntegramente sus tres textos y se navega folio por folio con `Siguiente`/`Anterior`.
+- La navegación normal respeta apertura y contemplación del anillo; la pregunta solo aparece después del recorrido.
+- El reinicio restablece índice, progreso de carta y ceremonia, y recuerdos coleccionados en las pruebas realizadas.
+- Controles principales accesibles por tamaño en los seis viewports probados, sin overflow horizontal ni excepciones JS observadas en la batería.
+- El estilo ilustrado de los dos peluches se conserva y el trabajo se apoya en una evolución real de la narrativa, no en cambios de CSS.
+
+## 6. Recomendación de aceptación
+**NO publicar el QR todavía.** Autorizar una revisión correctiva corta **F8.6** antes de F9, en copia independiente y sin rediseñar los protagonistas. Condiciones mínimas:
+1. `npm run build && npm test` pasa desde una extracción completamente limpia.
+2. En 844×390 (y formatos equivalentes) las tres fotos son completamente legibles en contemplación, sin capas oscuras encima.
+3. Completar escenas de diálogo/actuación donde aporten valor, sin obligar a que todos los planos hablen.
+4. Dar a los tres recuerdos una dirección más individualizada y elevar el final sin ocultar la pregunta ni la navegación.
+5. Validar iPhone/Android físico, rotación, pérdida de foco, acceso privado HTTPS y carga real antes de imprimir QR.
+
+**Nota metodológica:** el entorno usado permitió `page.set_content` del HTML offline y navegación del DOM mediante Playwright, pero bloqueó las rutas localhost y `file://` desde Chromium. Por tanto, no atribuir certificación física ni de servidor real a esas comprobaciones. Los hallazgos QA-01 y QA-02 sí son reproducibles con el ZIP y el código real.

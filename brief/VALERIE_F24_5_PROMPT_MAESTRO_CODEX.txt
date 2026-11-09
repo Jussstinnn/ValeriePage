@@ -1,0 +1,146 @@
+# VALERIE F24.5 — CORRECCIÓN DE CONTINUIDAD Y DIRECCIÓN MOBILE VERTICAL
+## IMPLEMENTACIÓN AUTORIZADA, SIN MÁS CONFIRMACIONES
+
+Implementa esta revisión directamente sobre una **COPIA INDEPENDIENTE** de `VALERIE_F24_4_CUENTO_VIVO_COMPLETO.zip`. Conserva F24.4 sin cambios y entrega un ZIP completo de F24.5. Toma como especificaciones adjuntas `VALERIE_F24_5_AUDITORIA_F24_4.md` y `VALERIE_F24_5_DIRECCION_NARRATIVA.md`, además de esta instrucción. La información del QA del autor es el criterio de experiencia: no la descartes porque las pruebas automatizadas pasen.
+
+## 0. PROPÓSITO Y ESTÁNDAR DE EJECUCIÓN
+
+El autor recorrió F24.4 y vio mejoras importantes, pero detectó cortes de continuidad, objetos que se teletransportan, paneles mal alineados, transiciones pobres, texto que tapa la acción, símbolos equivocados, problemas de ritmo y una propuesta final que no coincide con su intención. **NO es una petición de nuevos efectos decorativos genéricos.** Exige resolver problemas REALES de dirección, arquitectura, renderizado, interacción y narrativa, haciendo que todas las escenas alcancen el nivel de inmersión del museo y de la hoja ya corregida.
+
+Mobile vertical REAL es la prioridad exclusiva (iPhone y Android, distintos tamaños y DPR). Nada de SEO ni trabajo cosmético de escritorio/horizontal. No convertir la historia en scroll. Manten la experiencia de cuento continuo con participación significativa, sin Siguiente innecesario.
+
+**No sacrificar lo aprobado:** cruce profundo de la hoja (ambas ramas), salto del río como mecánica, escena de la rosa, floración original del jardín, la llegada y el paseo por el museo, abrir la puerta con profundidad, cuadros reales, la foto personal, interacción del árbol antiguo y desplazamiento/interacción del bosque, la pintura libre sobre la obra, el anillo ya protegido por autorización y la carta original. Los peluches deben conservar la identidad/anatomía real aprobada. No sustituir la animación de los lirios del jardín. La carta conserva la frase personal con «rosas».
+
+## 1. FUENTE DE VERDAD Y PREVENCIÓN DE CAMBIOS FANTASMA
+
+Antes de editar, identifica el orden real de carga del proyecto. `src/film-script.json` es el guion canónico actualmente instalado/congelado por `src/film-script.js`. Hay muchos módulos históricos que contienen textos y decisiones antiguos: NO cambies un archivo heredado y declares éxito si no es el que se ejecuta. Verifica el guion ejecutado, sus decisiones, su ruta y sus enlaces de mundo.
+
+Implementa una sola fuente de verdad para el inventario narrativo y para las superficies de escena. Evita duplicar objetos con capas que no comparten transformaciones. Respeta los IDs de capítulos estables y las sesiones existentes, con migraciones seguras cuando cambien secuencias.
+
+## 2. PRÓLOGO / PRESENTACIÓN: UN ÚNICO PANEL PREMIUM ALINEADO
+
+Se introdujo una presentación, pero el autor observó un fondo translúcido desalineado respecto al texto y el botón. Corrige su geometría y estilo con una retícula compartida: fondo uniforme y delimitado, texto con padding coherente, botones alineados al ancho disponible y safe areas respetadas. Puede ser sólido o semitransparente de contraste consistente; nunca un parche flotante de diferentes anchos que deje ver el escenario de forma desordenada. Control de alto dinámico, viewport en movimiento, 320–430 px de ancho, tipografías cargadas y diferentes tamaños del texto.
+
+El prólogo debe establecer naturalmente que Rosa y Beige son guardianes de la caja, que el farol contiene una luz que despierta cuando Valerie participa, que el hada guía conoce las tres señales (bosque, deseo, jardín) y por qué emprenden el recorrido. El comienzo debe ser conciso y activo, no una lectura excesivamente lenta sobre imágenes planas. No introducir frases sin que sus acciones estén representadas.
+
+## 3. PRIMER ACTO CON VERDADERA PROFUNDIDAD
+
+El tramo anterior a la hoja sigue plano, aunque la rama «Beige sostiene; Rosa pasa primero» YA TIENE profundidad y gusta. Conservar esa escena y usarla como umbral de calidad. En los pasos previos implementar movimiento del mismo espacio: coordenadas de mundo coherentes, cámara que sigue, parallax de varias capas, cambios de escala dependientes de z/profundidad, oclusión creíble por vides/hojas/muros, pies apoyados, anticipaciones y aterrizajes. No simplemente interpolar x en pantalla ni acercar una ilustración plana con zoom.
+
+En `te-abro-el-camino` preservar las dos decisiones y la coreografía lograda. En la escena de piedras del río, corregir **zoom que recorta o descuadra la acción**; mantener claridad de piedras, pies y destino del salto. Elegir una gramática de globos y subtítulos por plano, sin cambiar arbitrariamente de «globo» a texto suelto en mitad del diálogo. El panel debe apartarse de los protagonistas, especialmente cuando saltan.
+
+## 4. DIÁLOGOS: NO PUEDE HABER REFERENCIAS A ACCIONES QUE NO EXISTEN
+
+Revisar el texto de `tras-la-luz > wait`: «Iba a salir corriendo otra vez… pero te esperé». El espectador no recuerda verla salir corriendo otra vez. Mostrar **ANTES** una pequeña acción motivada que haga comprensible la línea (Rosa se adelanta impulsivamente, ve que Beige se queda atrás, vuelve y espera), o reescribir con causalidad clara: «Esta vez miré atrás antes de seguir» y después Beige «Lo vi. Gracias por esperarme». Sin inventar retrospectivamente algo nunca mostrado. Auditar los demás diálogos de F24.4 con el mismo criterio: qué ocurre, quién lo ve, por qué lo dice, consecuencia física y continuidad.
+
+El gesto «Guiar la luz entre las ramas» debe tener una consecuencia visible de apertura del umbral, o transformarse en interacción que efectivamente cambie el escenario. Caminar por el túnel con cambio gradual de profundidad.
+
+## 5. TRANSICIONES — CORREGIRLAS DE VERDAD, NO TAPAR LOS SALTOS
+
+Las transiciones son una de las grandes debilidades señaladas. Auditar todos los enlaces, especialmente bosque → raíces → casa/galería, intro → viñedo → hoja → río. Las transiciones deben ser motivadas por movimientos/objetos/obstáculos reales (hoja colorida que atraviesa la cámara, rama, apertura de puerta, reflejo, destello del hada, pétalo), con fuente y destino presentes en coordenadas coherentes, no una cortinilla repetitiva ni fundido negro universal.
+
+La transición de hoja colorida que al autor le gustó puede servir como REFERENCIA DE CALIDAD, pero no repetirse idéntica siempre. Construir variantes con composición de color sólida, timing agradable y entradas fluidas. El antiguo bosque no debe seguir dibujando haces, capas ni residuos después de entrar en otro mundo: invalidar `branchTransition`, `branchOrigin`, animator/capas activas cuando corresponda, coordinando `src/forest-scene.js` y `src/transition-director.js`. Las cancelaciones por retroceso o navegación manual no dejan capas huérfanas. Probar justamente el primer frame del mundo nuevo.
+
+## 6. «DOS SONRISAS»: UN SOLO OBJETO QUE EXISTE EN EL MUNDO
+
+La foto/álbum en la galería no puede desaparecer del banco y reaparecer delante de los conejitos. En `src/gallery-theatre.js`, la actual rama `s.memory===1` dibuja un álbum en posición de galería y luego la foto ampliada en una superficie distinta. Reconstruir la transición como un objeto con **identidad persistente**: se ve sobre el banco, los conejitos lo descubren, uno lo recoge o levanta mientras el otro ayuda, sus patas hacen contacto y se ve una apertura física animada; la cámara lo sigue y solo después ocupa el plano de contemplación. Ni respawn ni cambio abrupto de escala/posición. Conservar la foto PERSONAL original, las opciones y el tiempo ilimitado de lectura. No generes fotos sustitutas.
+
+## 7. PINTURA Y CONSTELACIÓN: PRESERVAR LA SORPRESA «V + J»
+
+`src/director.js`, `paintControls()`, muestra literalmente «V + J · N de 20 luces unidas» y el botón «Ayuda: unir V + J». CORREGIR. Durante la experiencia, mostrar únicamente **«N de 20 luces unidas»**. La ayuda, etiquetas, aria-labels, títulos y cualquier pista visible/audible NO pueden revelar V + J hasta que las 20 luces estén conectadas. Solo entonces aparece un reveal satisfactorio de las letras «V + J» construidas por las luces. Mantener esta elección diferente a «Dibuja tu deseo» (dibujo libre con dedo y hada): el usuario elige entre dos acciones reales, no dos animaciones decorativas.
+
+Tras pulsar **Terminar mi deseo** u otra confirmación de dibujo, la experiencia no puede quedarse “pensando” demasiado. Instrumentar el tiempo entre toque, feedback, guardado, final de animación y llegada al siguiente beat. Separar demora técnica (Canvas/recalcular overlay, almacenamiento, carga) de duración editorial (esperas del guion). Precalcular/cachar buffers y recursos; dar respuesta inmediata; hacer que el próximo momento comience con fluidez. Mantener las comprobaciones de seguridad para trazos, puntero cancelado, pausas, recarga y navegación; NO borrar los trazos del usuario. Nunca tapar o deformar de manera indeseada la reproducción auténtica del cuadro.
+
+## 8. JARDÍN EXTENDIDO, FLORES DISTINTAS Y EXCAVACIÓN INTERACTIVA
+
+El paseo `src/garden-promenade.js` ya tiene un panorama desplazable y mariposas: es BUENO y debe ampliarse, no sustituirse. Continuar caminando por el mismo jardín con cámara que acompaña; incluir distintas especies claramente reconocibles y distintas reacciones de Rosa y Beige (rosas, lirios, lavanda, margaritas, etc.). No repetir sprites idénticos cambiando el tono. Mantener la floración anterior intacta y respetar el paisaje sin solapamientos grotescos con los actores.
+
+A continuación, añadir una escena/beat verdaderamente especial: encuentran un último recuerdo **semienterrado**. Rosa y Beige, por ser conejitos, excavan juntos. Animación auténtica y escalonada: detectan una pista (hada/luz), agachan orejas, apoyan patas, excavan por turnos, partículas de tierra y montículo cambian de volumen, surge progresivamente el objeto, lo liberan, lo limpian y lo toman. La intervención de Valerie debe ser significativa, táctil y visualmente agradecida; no un único clic que produzca instantáneamente el objeto. Mantener el suelo, las patas y la escala en un espacio continuo.
+
+**Consistencia narrativa obligatoria:** ya existen tres objetos para tres cierres. La excavación debe desembocar en el tercero del jardín, NO añadir una cuarta llave sin explicación. Que el recuerdo excavado proteja o contenga la variante elegida por Valerie: pétalo rosado o flor de luz, de modo que la elección esté integrada y tenga consecuencias. Conservar las rutas y escenas de recuerdos originales más adelante.
+
+## 9. SELLO DE LA CARTA: QUE LO SELECCIONADO APAREZCA EN LA CARTA
+
+`letter-seal` actualmente ofrece estrella del cielo o lirio del jardín. El autor comprobó que el elemento elegido NO aparece de forma evidente en la carta. Resolver la cadena estado→persistencia→representación real: en el sobre Y en el lector de la carta debe aparecer un adorno visible, bonito, que corresponda exactamente a la elección, sin alterar el texto personal. No basta un iconito de 10 px fuera de la hoja ni una línea de diálogo que lo mencione. Mantener la carta intacta, el lirio físico del jardín y «rosas» en la frase sobre los gustos personales. Probar ambas elecciones, vuelta atrás, restauración y cambio de decisión.
+
+## 10. TRES RECUERDOS: ICONOGRAFÍA Y PLANOS COHERENTES
+
+Los tres objetos del broche DEBEN ser exactamente los ganados en bosque/cielo/jardín, con el color/forma/variante de cada elección. El plano de repaso no debe mostrar los símbolos antiguos genéricos ni duplicar inventarios de `session.symbols` frente a `session.relics`. Definir una representación visual canónica que se reutilice en recogida, transporte, plano, broches y final.
+
+Diseñar los objetos con una escala que permita reconocerlos; Rosa no puede quedar tapada por el plano flotante. Mejor una presentación integrada a la caja, con foco de cámara y espacio negativo, que un HUD grande que se impone a las caras. Las decisiones anteriores deben tener continuidad visual real.
+
+## 11. COLOCACIÓN EN LA CAJA: MANO → ENGASTE, SIN ATRAVESAR LA CAJA
+
+En `src/ceremony-theatre.js`, la interpolación de recuerdos desde `hand` hasta `L.project(slot)` está separada del camino de los peluches. Rehacer coreografía con puntos reales en el mismo sistema de proyección. Desde el INICIO del regreso, orientar a Rosa y Beige hacia las ranuras en el frente del broche. Deben aproximarse por delante, enseñar cada recuerdo, extender patas, llevarlo hasta su engaste, soltarlo y reaccionar. Los objetos no deben esperar a que ambos se sitúen detrás, ni atravesar paredes/tapa ni cambiar de opacidad para disimular colisiones.
+
+Alinear físicamente todos los broches, ranuras, cierre central y manos con los vértices de la caja. Introducir una fuente geométrica única para caja y puntos de agarre, evitando coordenadas dibujadas de manera independiente. Comprobar con ambas variantes de cada objeto y con distintos tamaños de pantalla. Las patitas y la caja se ocultan correctamente según el orden de profundidad, nunca por transparencia oportunista.
+
+## 12. ANILLO: NO ROMPER LA REVELACIÓN PROTEGIDA
+
+`src/reveal-director.js` ya separa CLOSED, UNLATCHED, OPEN_HIDDEN, REVEAL, CONTEMPLATE y QUESTION. Conservar la protección: el anillo no existe visualmente antes de la segunda autorización «Descubrir el secreto». Mantener las dos acciones con lenguaje consistente. Corregir la colisión de «Puedes quedarte aquí todo el tiempo que quieras» con el anillo durante la vista de acercamiento: ubicar texto legible en una zona protegida por geometría, no sobre rostros, anillo ni la caja. Cuando se contempla no hay prisa; el control de continuar aparece solo cuando el usuario lo pide.
+
+Eliminar botones repetidos que prometen descubrir algo que ya está descubierto. Distintos estados ofrecen distintas acciones significativas, sin saltos automáticos que rompan la sorpresa.
+
+## 13. ÚLTIMA ESCENA: EL TEXTO SURGE DE LA CAJA ABIERTA, NO DE OTRA PANTALLA
+
+Esta instrucción es CRÍTICA porque F24.4 todavía interpreta mal el pedido:
+
+- La caja está abierta en el MISMO lugar, mismo plano físico, anillo visible y bien iluminado. Rosa y Beige siguen presentes y no desaparecen sin razón.
+- Las letras están inicialmente integradas a pequeños banderines/ornamentos DENTRO de la cajita abierta (parte interna de la tapa) y son parte tangible de su diseño.
+- En el último momento, las letras se liberan de esos banderines y viajan mediante una animación elegante de origen a destino; los banderines no se convierten en la pantalla final ni permanecen como un cartelito legible minúsculo.
+- Las letras se reordenan y componen una **pregunta grande y plenamente legible** dentro del mismo encuadre cinematográfico, coexistiendo con la **caja ABIERTA y el ANILLO a la vista**: **«Valerie, ¿quieres ser mi novia?»**.
+- Nada de cortar a otra escena de banderines; no mover el anillo fuera de encuadre; no taparlo con la pregunta; no poner fondo negro nuevo. Usar cámara que abra espacio para el texto, y posicionamiento adaptable a vertical.
+- La pregunta permanece indefinidamente hasta una respuesta EN PERSONA. Sin botones de Sí/No. Accesibilidad y contraste garantizados.
+
+En el código hay `QuestionLetters` en `src/ceremony-theatre.js`, con textura 840×560, filas en banderines y cambio de zoom durante `finale`. Ajusta/reestructura ese módulo para cumplir la secuencia descrita, evitando crear un segundo sistema paralelo. Conserva el punto original y el lugar de la caja.
+
+**Grafía del nombre:** los assets originales, carta y proyecto usan «Valerie». El autor pronunció/escribió «Valery» una vez en el dictado. Mantener «Valerie» conforme al contenido personal canónico salvo corrección explícita posterior; no alterar fotografía, carta ni nombre por inferencia.
+
+## 14. UNIFICACIÓN DE UI, CÁMARA Y TEXTO EN TODO EL RECORRIDO
+
+Los globos/títulos/controles deben tener zonas seguras según escena; no tapar Rosa/Beige, rostros, manos, flores, pasos, la carta, el anillo o el cuadro. El texto debe quedar dentro de una superficie de lectura alineada y estable, sin desbordarse ni alternar de presentación a mitad del mismo parlamento. Cuando la cámara realiza zoom, los globos no deben quedar anclados a una posición incorrecta. También respetar viewport visual y safe area dinámicos de Chrome Android y Safari iOS. Mantener botones explícitos para decisiones y acciones protegidas, navegación secundaria discreta y visible cuando se solicita.
+
+## 15. FLUIDEZ / EFICIENCIA SIN REDUCIR CALIDAD
+
+La mejora debe sentirse fluida. No recortar movimientos importantes para acelerar artificialmente. Medir carga inicial, latencia de interacciones (dibujo/elecciones/transiciones), rendimiento del jardín y ceremonia, tamaños de buffer y picos de memoria, sobre todo al reutilizar imágenes y overlays de Canvas. Usar recursos bajo demanda con precarga de la siguiente escena, desactivación correcta de efectos al abandonar mundos, caching seguro y cancelación de operaciones obsoletas. Comparar con `PERF_F24_4.json` cuando corresponda, aclarando que es escritorio y no móvil físico. No inventar FPS de iPhone o Android.
+
+## 16. EJECUCIÓN INTELIGENTE (NO OTRA HORA DE PARCHEO SIN IMPACTO)
+
+Trabaja preferentemente con un agente; módulos relevantes primero. No lances subagentes por rutina. Orden obligatorio:
+
+A. Diagnóstico focalizado + mapa de estados/propiedades de las escenas afectadas.
+B. UI del prólogo, primer acto plano, zoom/diálogos y limpieza bosque→raíces.
+C. Continuidad de «Dos sonrisas», revelación V+J y respuesta inmediata de pintura.
+D. Jardín ampliado y excavación del tercer recuerdo.
+E. Carta, inventario, broches, coreografía de tres objetos.
+F. Anillo, textos, pregunta final y regresión completa.
+
+Integrar por cortes coherentes y probar los módulos afectados antes de seguir; evita compilaciones completas innecesarias. Si se interrumpe la ejecución deja un checkpoint preciso de qué sí está implementado y qué falta. No presentes código muerto o prototipos como funcionalidades entregadas.
+
+## 17. QA DE ACEPTACIÓN — OBLIGATORIO Y BASADO EN EXPERIENCIA
+
+Además de ejecutar suites existentes, escribe casos nuevos para:
+
+- Prologue UI a 320/375/390/412/430 de ancho: panel y botón alineados; sin clipping ni fondo suelto.
+- Cámara en sendero anterior a la hoja y en piedras: profundidad y escala coherentes, pies presentes, zoom sin truncamiento y globos en superficie estable.
+- Dos ramas de hoja protegidas, árbol y puerta sin regresiones.
+- Bosque→raíces→museo: sin residuos gráficos ni animadores pendientes tras cambiar de mundo y tras retroceso.
+- «Dos sonrisas»: álbum del banco hasta mano/primer plano con identidad y trayectoria continua, foto original intacta y pausa ilimitada.
+- Elección constelación: en 0/20, 10/20 y 19/20 no se muestra ni se anuncia V+J; solo en 20/20 se descubre, incluyendo texto de ayuda y lectura accesible.
+- Pintura libre: trazos bajo el dedo; pulsación de terminar produce feedback inmediato sin bloquear; pausas, cancelación, recarga y deshacer.
+- Jardín: paseo extendido, variedades reconocibles, excavación en estados visibles y desbloqueo del tercero únicamente tras terminarla.
+- Carta: ambas opciones se ven en sobre Y carta, y persisten al navegar y reabrir.
+- Caja: símbolos exactamente iguales a inventario, Rosa siempre visible, tres objetos pasan de manos a ranuras SIN atravesar el cuerpo de la caja; broches alineados.
+- Revelación: sin anillo antes de segundo gesto, texto de contemplación fuera de su área y estado idempotente.
+- Pregunta final: caja abierta + anillo + pregunta grande coexistiendo en MISMA composición y permaneciendo sin límite de tiempo.
+- Niveles y rendimiento: prueba de recorrido completo con perfil móvil realista/emulado, sin errores JS ni degradación progresiva.
+
+No confundas pruebas de estructura con aceptación artística. Si el navegador o dispositivos físicos no están disponibles, dilo; yo haré el QA visual en teléfono. **No te pido capturas, videos, grabaciones ni paquetes visuales de evidencias**. Documenta comandos, resultados, métricas medidas y limitaciones; no inventes evidencia visual.
+
+## 18. ENTREGA
+
+Entregar `VALERIE_F24_5_MOBILE_CINEMATIC_REFINEMENT_COMPLETO.zip` (nombre orientativo: puede ser uno equivalente) con proyecto COMPLETO, fuente, assets personales intactos, scripts y HTML ejecutable. Incluir `CAMBIOS_F24_5.md`, `CHECKPOINT_F24_5.md` y una matriz de los puntos 01–23 de la auditoría, marcados RESUELTO / PARCIAL / PENDIENTE con indicación del archivo y prueba, sin falsos aprobados. Un resumen conciso es suficiente; no contaminar el paquete con respaldos duplicados innecesarios.
+
+**CRITERIO DE ÉXITO FINAL:** Los primeros minutos son más inmersivos y tridimensionales; el bosque cambia limpiamente al museo; Dos sonrisas no se teletransporta; las 20 luces ocultan el V+J hasta la revelación; pintar y continuar no espera inútilmente; el jardín realmente se explora y se excava el tercer recuerdo; el adorno aparece en la carta; tres reliquias verdaderas encajan en la caja sin clipping ni tapar personajes; el anillo solo se revela cuando Valerie lo solicita; y la pregunta sale de los banderines DE LA MISMA CAJA ABIERTA mientras el anillo permanece visible. No declares terminado el hito mientras cualquiera de estas experiencias esenciales siga rota.
+
+COMIENZA A IMPLEMENTAR AHORA, SIN PEDIR OTRA CONFIRMACIÓN Y SIN REHACER LAS PARTES APROBADAS.

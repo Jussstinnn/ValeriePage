@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "assets": {
+    "treeGate": {
+      "file": "assets/forest-living/tree-gate-atlas-v1.png",
+      "sha256": "f0a81477792250136687d50324c6248d8b133c56b83514da25e3c4a50aabe291",
+      "mime": "image/png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 3272346,
+      "mode": "RGBA",
+      "alpha": true,
+      "crops": {
+        "left": [
+          0,
+          0,
+          768,
+          1024
+        ],
+        "right": [
+          768,
+          0,
+          768,
+          1024
+        ]
+      },
+      "normalizedCrops": {
+        "left": [
+          0,
+          0,
+          0.5,
+          1
+        ],
+        "right": [
+          0.5,
+          0,
+          0.5,
+          1
+        ]
+      },
+      "alphaBounds16": {
+        "left": [
+          10,
+          7,
+          718,
+          1015
+        ],
+        "right": [
+          25,
+          6,
+          761,
+          1014
+        ]
+      },
+      "innerAnchor": {
+        "left": [
+          0.8,
+          0.48
+        ],
+        "right": [
+          0.2,
+          0.48
+        ]
+      },
+      "footLine": 0.98,
+      "alphaMax": 254,
+      "provenance": "provenance.json"
+    },
+    "clearing": {
+      "file": "assets/forest-living/firefly-clearing-v1.png",
+      "sha256": "c07c8499c653b601b8fe871d83c3132f267b8b548802cd6f6662473bd1e116a1",
+      "mime": "image/png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 3501736,
+      "mode": "RGB",
+      "alpha": false,
+      "normalizedRegions": {
+        "creek": [
+          0,
+          0.626,
+          1,
+          0.145
+        ],
+        "nearLanding": [
+          0.2,
+          0.8,
+          0.6,
+          0.16
+        ],
+        "farLanding": [
+          0.28,
+          0.55,
+          0.44,
+          0.055
+        ],
+        "canopyOpening": [
+          0.4,
+          0.08,
+          0.24,
+          0.31
+        ]
+      },
+      "crossingAnchors": {
+        "near": [
+          0.5,
+          0.79
+        ],
+        "far": [
+          0.5,
+          0.61
+        ]
+      },
+      "note": "Region estimates measured on full uncropped plate; reproject with actual cover transform. Creek center near y.70, not originally requested y.79.",
+      "provenance": "provenance.json"
+    }
+  }
+}

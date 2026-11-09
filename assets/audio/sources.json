@@ -1,0 +1,82 @@
+{
+  "woodland": {
+    "source": "https://bigsoundbank.com/forest-4-s2749.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/2749.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Forest #4 — Free Download WAV & MP3 | BigSoundBank",
+    "original": "assets/audio/originals/woodland.mp3",
+    "bytes": 5422688
+  },
+  "creek": {
+    "source": "https://bigsoundbank.com/small-stream-4-s1354.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/1354.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Small Stream #4 — Free Download WAV & MP3 | BigSoundBank",
+    "original": "assets/audio/originals/creek.mp3",
+    "bytes": 4198308
+  },
+  "paper": {
+    "source": "https://bigsoundbank.com/turned-page-s0164.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/0164.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Turned Page — Free Download WAV & MP3 | BigSoundBank",
+    "original": "assets/audio/originals/paper.mp3",
+    "bytes": 11183
+  },
+  "cloth": {
+    "source": "https://bigsoundbank.com/cloth-s0013.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/0013.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Cloth — Free Download WAV & MP3 | BigSoundBank",
+    "original": "assets/audio/originals/cloth.mp3",
+    "bytes": 120896
+  },
+  "latch": {
+    "source": "https://bigsoundbank.com/interior-door-lock-s0037.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/0037.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Interior door lock — Free Sound Effect Download | BigSoundBank",
+    "original": "assets/audio/originals/latch.mp3",
+    "bytes": 33124
+  },
+  "leaves": {
+    "source": "https://bigsoundbank.com/feet-in-leaves-s0137.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/0137.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Feet in Leaves #1 — Free Download WAV & MP3 | BigSoundBank",
+    "original": "assets/audio/originals/leaves.mp3",
+    "bytes": 1337302
+  },
+  "night": {
+    "source": "https://bigsoundbank.com/campaign-at-night-1-s0110.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/0110.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Campaign at night #1 — Free Sound Effect Download | BigSoundBank",
+    "original": "assets/audio/originals/night.mp3",
+    "bytes": 3024171
+  },
+  "door": {
+    "source": "https://bigsoundbank.com/creaking-door-8-s3211.html",
+    "download": "https://bigsoundbank.com/UPLOAD/mp3/3211.mp3",
+    "author": "Joseph SARDIN / BigSoundBank",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Creaking Door #8 — Free Download WAV & MP3 | BigSoundBank",
+    "original": "assets/audio/originals/door.mp3",
+    "bytes": 101133
+  }
+}

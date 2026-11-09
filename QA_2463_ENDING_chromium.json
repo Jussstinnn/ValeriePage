@@ -1,0 +1,34 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "width": 320,
+      "pages": 4,
+      "sequence": [
+        "una-carta-para-ti",
+        "la-caja-rosa",
+        "algo-que-guarde",
+        "una-nueva-pagina"
+      ],
+      "errors": []
+    },
+    {
+      "width": 390,
+      "pages": 3,
+      "sequence": [
+        "una-carta-para-ti",
+        "la-caja-rosa",
+        "algo-que-guarde",
+        "una-nueva-pagina"
+      ],
+      "errors": []
+    },
+    {
+      "legacyFactsRestored": true
+    },
+    {
+      "missingObjectExplicitHold": true,
+      "reload": true
+    }
+  ]
+}

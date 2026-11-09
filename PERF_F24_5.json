@@ -1,0 +1,113 @@
+{
+  "phase": "F24.5",
+  "date": "2026-10-30T03:35:05.794Z",
+  "environment": "Windows, Chromium/Edge headless; 390x844, DPR3 emulado; equipo de escritorio",
+  "physicalPhone": false,
+  "syntheticClock": false,
+  "limits": "FPS de composición presentada; memoria estimada del runtime, no RSS ni medición térmica de teléfono. Los nueve motores ASCII son respaldos y no se ejecutan en esta rama.",
+  "samples": [
+    {
+      "chapter": "antes-del-primer-pasito",
+      "intervalMs": 3235.7999999523163,
+      "presentedFPS": 58.71809135385373,
+      "drawMsEMA": 0.7995490438167966,
+      "drawMsP95": 1.100000023841858,
+      "estimatedResidentBytes": 52021700,
+      "peakEstimatedBytes": 52021700,
+      "approximateJSHeapBytes": 5303110,
+      "dpr": 1.8,
+      "backingStoreStable": true
+    },
+    {
+      "chapter": "dentro-del-cuadro",
+      "intervalMs": 3224.899999976158,
+      "presentedFPS": 60.156904090494045,
+      "drawMsEMA": 0.6923331759019535,
+      "drawMsP95": 0.8999999761581421,
+      "estimatedResidentBytes": 55781302,
+      "peakEstimatedBytes": 55781302,
+      "approximateJSHeapBytes": 5995298,
+      "dpr": 1.8,
+      "backingStoreStable": true
+    },
+    {
+      "chapter": "entre-lirios-y-alas",
+      "intervalMs": 3224.899999976158,
+      "presentedFPS": 60.156904090494045,
+      "drawMsEMA": 0.8342417209454595,
+      "drawMsP95": 1,
+      "estimatedResidentBytes": 62901482,
+      "peakEstimatedBytes": 62901482,
+      "approximateJSHeapBytes": 5052955,
+      "dpr": 1.8,
+      "backingStoreStable": true
+    },
+    {
+      "chapter": "algo-que-guarde",
+      "intervalMs": 3215.2999999523163,
+      "presentedFPS": 0,
+      "drawMsEMA": 0.5669489670547296,
+      "drawMsP95": 3.799999952316284,
+      "estimatedResidentBytes": 68545763,
+      "peakEstimatedBytes": 68545763,
+      "ringVisible": true,
+      "dpr": 1.8
+    },
+    {
+      "chapter": "algo-que-guarde:opening-active",
+      "intervalMs": 3224.600000023842,
+      "presentedFPS": 60.162500774845135,
+      "drawMsEMA": 1.2842158164647268,
+      "drawMsP95": 1.6999999284744263,
+      "estimatedResidentBytes": 65334499,
+      "ringVisible": false,
+      "openProgress": 0.773190911455072
+    }
+  ],
+  "nativePaintingLatency": {
+    "touchAt": 27384.299999952316,
+    "filmTime": 13.17969999999999,
+    "feedbackMs": 2.200000047683716,
+    "savedMs": 2.5,
+    "nextBeatMs": 1036.3000000715256
+  },
+  "baseline": [
+    {
+      "chapter": "antes-del-primer-pasito",
+      "intervalMs": 3212.7999999523163,
+      "presentedFPS": 59.138446216017165,
+      "drawMsEMA": 0.5886699610041738,
+      "drawMsP95": 0.8000000715255737,
+      "estimatedResidentBytes": 52021700,
+      "peakEstimatedBytes": 52021700,
+      "approximateJSHeapBytes": 5611210,
+      "dpr": 1.8,
+      "backingStoreStable": true
+    },
+    {
+      "chapter": "dentro-del-cuadro",
+      "intervalMs": 3223.5999999046326,
+      "presentedFPS": 60.181163917899035,
+      "drawMsEMA": 0.5455020950763854,
+      "drawMsP95": 0.6000000238418579,
+      "estimatedResidentBytes": 55781302,
+      "peakEstimatedBytes": 55781302,
+      "approximateJSHeapBytes": 5903844,
+      "dpr": 1.8,
+      "backingStoreStable": true
+    },
+    {
+      "chapter": "entre-lirios-y-alas",
+      "intervalMs": 3220.100000023842,
+      "presentedFPS": 59.93602683102109,
+      "drawMsEMA": 0.7356061972496759,
+      "drawMsP95": 1.0999999046325684,
+      "estimatedResidentBytes": 62517482,
+      "peakEstimatedBytes": 62517482,
+      "approximateJSHeapBytes": 4599403,
+      "dpr": 1.8,
+      "backingStoreStable": true
+    }
+  ],
+  "notes": "Mismas tres muestras que F24.4; se conserva el archivo original de comparación."
+}

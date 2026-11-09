@@ -1,0 +1,294 @@
+{
+  "pass": true,
+  "width": 320,
+  "results": [
+    {
+      "choice": "leaf-holder",
+      "option": "rosa",
+      "beat": "leaf-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "leaf-holder",
+      "option": "rosa",
+      "beat": "leaf-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "leaf-holder",
+      "option": "rosa",
+      "beat": "leaf-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "leaf-holder",
+      "option": "beige",
+      "beat": "leaf-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "leaf-holder",
+      "option": "beige",
+      "beat": "leaf-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "leaf-holder",
+      "option": "beige",
+      "beat": "leaf-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "forest-way",
+      "option": "firefly",
+      "beat": "forest-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "forest-way",
+      "option": "firefly",
+      "beat": "forest-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "forest-way",
+      "option": "firefly",
+      "beat": "forest-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "forest-way",
+      "option": "tree",
+      "beat": "forest-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "forest-way",
+      "option": "tree",
+      "beat": "forest-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "forest-way",
+      "option": "tree",
+      "beat": "forest-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "museum-sky",
+      "option": "paint",
+      "beat": "sky-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "museum-sky",
+      "option": "paint",
+      "beat": "sky-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "museum-sky",
+      "option": "paint",
+      "beat": "sky-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "museum-sky",
+      "option": "constellation",
+      "beat": "sky-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "museum-sky",
+      "option": "constellation",
+      "beat": "sky-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "museum-sky",
+      "option": "constellation",
+      "beat": "sky-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "garden-gift",
+      "option": "petal",
+      "beat": "gift-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "garden-gift",
+      "option": "petal",
+      "beat": "gift-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "garden-gift",
+      "option": "petal",
+      "beat": "gift-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "garden-gift",
+      "option": "flower",
+      "beat": "gift-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "garden-gift",
+      "option": "flower",
+      "beat": "gift-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "garden-gift",
+      "option": "flower",
+      "beat": "gift-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "portrait-reveal",
+      "option": "leaf",
+      "beat": "portrait-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "portrait-reveal",
+      "option": "leaf",
+      "beat": "portrait-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "portrait-reveal",
+      "option": "glow",
+      "beat": "portrait-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "portrait-reveal",
+      "option": "glow",
+      "beat": "portrait-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "album-space",
+      "option": "space",
+      "beat": "album-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "album-space",
+      "option": "space",
+      "beat": "album-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "album-space",
+      "option": "space",
+      "beat": "album-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "album-space",
+      "option": "page",
+      "beat": "album-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "album-space",
+      "option": "page",
+      "beat": "album-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "album-space",
+      "option": "page",
+      "beat": "album-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "quiet-memory",
+      "option": "light",
+      "beat": "quiet-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "quiet-memory",
+      "option": "light",
+      "beat": "quiet-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "quiet-memory",
+      "option": "close",
+      "beat": "quiet-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "quiet-memory",
+      "option": "close",
+      "beat": "quiet-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "letter-seal",
+      "option": "sky",
+      "beat": "seal-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "letter-seal",
+      "option": "sky",
+      "beat": "seal-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "letter-seal",
+      "option": "garden",
+      "beat": "seal-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "letter-seal",
+      "option": "garden",
+      "beat": "seal-result",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "guide-way",
+      "option": "lift",
+      "beat": "together",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "guide-way",
+      "option": "lift",
+      "beat": "together",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "guide-way",
+      "option": "lift",
+      "beat": "together",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "guide-way",
+      "option": "shelter",
+      "beat": "together",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "guide-way",
+      "option": "shelter",
+      "beat": "together",
+      "presentation": "bubble"
+    },
+    {
+      "choice": "guide-way",
+      "option": "shelter",
+      "beat": "together",
+      "presentation": "bubble"
+    }
+  ]
+}

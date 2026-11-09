@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T08:27:49.532494+00:00",
+  "title": "Design System: Valerie — Entre hojas y promesas",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0277 70.95)",
+          "oklch(26% 0.0277 70.95)",
+          "oklch(38% 0.0277 70.95)",
+          "oklch(49% 0.0277 70.95)",
+          "oklch(61% 0.0277 70.95)",
+          "oklch(72% 0.0277 70.95)",
+          "oklch(84% 0.0277 70.95)",
+          "oklch(95% 0.0277 70.95)"
+        ]
+      },
+      "muted": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "muted",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0215 106.83)",
+          "oklch(26% 0.0215 106.83)",
+          "oklch(38% 0.0215 106.83)",
+          "oklch(49% 0.0215 106.83)",
+          "oklch(61% 0.0215 106.83)",
+          "oklch(72% 0.0215 106.83)",
+          "oklch(84% 0.0215 106.83)",
+          "oklch(95% 0.0215 106.83)"
+        ]
+      },
+      "ground": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "ground",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0308 209.42)",
+          "oklch(26% 0.0308 209.42)",
+          "oklch(38% 0.0308 209.42)",
+          "oklch(49% 0.0308 209.42)",
+          "oklch(61% 0.0308 209.42)",
+          "oklch(72% 0.0308 209.42)",
+          "oklch(84% 0.0308 209.42)",
+          "oklch(95% 0.0308 209.42)"
+        ]
+      },
+      "warm": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "warm",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0536 54.79)",
+          "oklch(26% 0.0536 54.79)",
+          "oklch(38% 0.0536 54.79)",
+          "oklch(49% 0.0536 54.79)",
+          "oklch(61% 0.0536 54.79)",
+          "oklch(72% 0.0536 54.79)",
+          "oklch(84% 0.0536 54.79)",
+          "oklch(95% 0.0536 54.79)"
+        ]
+      },
+      "hover-ink": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "hover ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0147 80.71)",
+          "oklch(26% 0.0147 80.71)",
+          "oklch(38% 0.0147 80.71)",
+          "oklch(49% 0.0147 80.71)",
+          "oklch(61% 0.0147 80.71)",
+          "oklch(72% 0.0147 80.71)",
+          "oklch(84% 0.0147 80.71)",
+          "oklch(95% 0.0147 80.71)"
+        ]
+      },
+      "dialog": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "dialog",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0323 189.47)",
+          "oklch(26% 0.0323 189.47)",
+          "oklch(38% 0.0323 189.47)",
+          "oklch(49% 0.0323 189.47)",
+          "oklch(61% 0.0323 189.47)",
+          "oklch(72% 0.0323 189.47)",
+          "oklch(84% 0.0323 189.47)",
+          "oklch(95% 0.0323 189.47)"
+        ]
+      },
+      "error": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "error",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0314 186.31)",
+          "oklch(26% 0.0314 186.31)",
+          "oklch(38% 0.0314 186.31)",
+          "oklch(49% 0.0314 186.31)",
+          "oklch(61% 0.0314 186.31)",
+          "oklch(72% 0.0314 186.31)",
+          "oklch(84% 0.0314 186.31)",
+          "oklch(95% 0.0314 186.31)"
+        ]
+      },
+      "progress-track": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "progress track",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0316 163.34)",
+          "oklch(26% 0.0316 163.34)",
+          "oklch(38% 0.0316 163.34)",
+          "oklch(49% 0.0316 163.34)",
+          "oklch(61% 0.0316 163.34)",
+          "oklch(72% 0.0316 163.34)",
+          "oklch(84% 0.0316 163.34)",
+          "oklch(95% 0.0316 163.34)"
+        ]
+      },
+      "progress-value": {
+        "rampNote": "Synthesized OKLCH metadata only; the frontmatter source color is normative. Browser gamut mapping may reduce chroma at extremes.",
+        "displayName": "progress value",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0506 57.19)",
+          "oklch(26% 0.0506 57.19)",
+          "oklch(38% 0.0506 57.19)",
+          "oklch(49% 0.0506 57.19)",
+          "oklch(61% 0.0506 57.19)",
+          "oklch(72% 0.0506 57.19)",
+          "oklch(84% 0.0506 57.19)",
+          "oklch(95% 0.0506 57.19)"
+        ]
+      },
+      "set-ground": {
+        "role": "neutral",
+        "displayName": "set ground",
+        "tonalRamp": [
+          "oklch(15% 0.0307 185.41)",
+          "oklch(26% 0.0307 185.41)",
+          "oklch(38% 0.0307 185.41)",
+          "oklch(49% 0.0307 185.41)",
+          "oklch(61% 0.0307 185.41)",
+          "oklch(72% 0.0307 185.41)",
+          "oklch(84% 0.0307 185.41)",
+          "oklch(95% 0.0307 185.41)"
+        ],
+        "rampNote": "Synthesized preview; frontmatter source is normative."
+      },
+      "reading-plane": {
+        "role": "neutral",
+        "displayName": "reading plane",
+        "tonalRamp": [
+          "oklch(15% 0.0313 212.93)",
+          "oklch(26% 0.0313 212.93)",
+          "oklch(38% 0.0313 212.93)",
+          "oklch(49% 0.0313 212.93)",
+          "oklch(61% 0.0313 212.93)",
+          "oklch(72% 0.0313 212.93)",
+          "oklch(84% 0.0313 212.93)",
+          "oklch(95% 0.0313 212.93)"
+        ],
+        "rampNote": "Synthesized preview; frontmatter source is normative."
+      },
+      "thread-core": {
+        "role": "neutral",
+        "displayName": "thread core",
+        "tonalRamp": [
+          "oklch(15% 0.0412 95.11)",
+          "oklch(26% 0.0412 95.11)",
+          "oklch(38% 0.0412 95.11)",
+          "oklch(49% 0.0412 95.11)",
+          "oklch(61% 0.0412 95.11)",
+          "oklch(72% 0.0412 95.11)",
+          "oklch(84% 0.0412 95.11)",
+          "oklch(95% 0.0412 95.11)"
+        ],
+        "rampNote": "Synthesized preview; frontmatter source is normative."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Dedicatoria",
+        "purpose": "Encabezado permanente; Cormorant Garamond local bajo alias FilmSerif."
+      },
+      "dialog-title": {
+        "displayName": "Título del recorrido",
+        "purpose": "Título serif del diálogo nativo."
+      },
+      "body": {
+        "displayName": "Acciones",
+        "purpose": "DM Sans local bajo alias FilmSans."
+      },
+      "narration": {
+        "displayName": "Voz sostenida",
+        "purpose": "Párrafo visible sin caducidad; max-width 37ch y anuncios polite/atomic."
+      },
+      "label": {
+        "displayName": "Etiqueta discreta",
+        "purpose": "Acciones secundarias."
+      }
+    },
+    "shadows": [
+      {
+        "value": "none",
+        "purpose": "La interfaz no usa box-shadow. La profundidad del escenario se pinta en Canvas.",
+        "name": "ui-flat"
+      }
+    ],
+    "motion": [
+      {
+        "value": "1.1s",
+        "purpose": "Mezcla de composición con VF.math.ease; inmediata con pausa o movimiento reducido.",
+        "name": "shot-transition"
+      },
+      {
+        "value": "450ms",
+        "purpose": "Intervalo mínimo entre entradas de navegación aceptadas.",
+        "name": "navigation-acceptance"
+      },
+      {
+        "value": "complete still hold frame",
+        "purpose": "Sin bucle continuo, transición, respiración, parpadeo o balanceo; interacciones actualizan una composición quieta.",
+        "name": "reduced-motion"
+      },
+      {
+        "value": "pause on hidden, dialog or pagehide",
+        "purpose": "Suspender actuación y sonido. pagehide siempre pausa y libera el gesto activo; pageshow desde caché recalcula el encuadre y espera reanudación explícita.",
+        "name": "background-policy"
+      }
+    ],
+    "breakpoints": [
+      {
+        "value": "max-width:350px",
+        "name": "narrow"
+      },
+      {
+        "value": "min-width:900px and min-height:551px",
+        "name": "desktop-css"
+      },
+      {
+        "value": "orientation:landscape and max-height:550px",
+        "name": "short-landscape"
+      }
+    ],
+    "responsiveGeometry": {
+      "landscape": "Artwork starts at max(35vw, actual header.left) and ends at actual header.right; narration width 29%; icon targets 44px.",
+      "targetPolicy": "48px standard targets; 44px compact icon targets; 2px focus outline and 4px offset.",
+      "portrait": "Artwork takes actual header.left and header.width between header and narration; safe-area-aware minimum gutters 22px, or 16px up to 350px.",
+      "desktop": "Artwork starts at 33vw and ends at min(97vw, actual header.right); narration 6vw, min(550px,45vw); controls max-width 680px.",
+      "touchPolicy": "Canvas touch-action:pinch-zoom permits browser pinch zoom and optional light drag; gestures never navigate."
+    },
+    "renderingBudget": {
+      "fps": 30,
+      "gentleFps": 24,
+      "dpr": 1.8,
+      "gentleDpr": 1.25,
+      "decodedArtBytes": 31453104,
+      "articulatedAtlasBytes": 6153664,
+      "physicalDeviceCertified": false
+    },
+    "provenance": {
+      "revision": "F3-ANATOMIA-02",
+      "buildPath": "dist/index.html",
+      "sources": [
+        "src/film.css",
+        "src/rig.js",
+        "src/character-models.js",
+        "src/cinematic-stage.js",
+        "src/cinematic-world.js",
+        "assets/art/manifest.json",
+        "assets/art/prompts.json"
+      ],
+      "method": "Direct documentation closure after documenter usage-limit failure; source-based merge; no screenshots."
+    },
+    "canvasStaging": {
+      "parts": 18,
+      "paintedFaces": true,
+      "earUnits": {
+        "taupe": 221,
+        "pink": [
+          139,
+          110
+        ]
+      },
+      "lenses": [
+        1.12,
+        1.4,
+        0.94,
+        1.63,
+        1.16
+      ],
+      "gift": "Large rectangular pink gift, dark trim, foreground, CLOSED. Open atlas resource only.",
+      "ocular": "Localized painted texture mesh, blink/eyeOpen, matching light and no alpha holes.",
+      "revision": "F3-ANATOMIA-02",
+      "limbs": "Continuous textile sleeves with buried shoulder roots; connected haunches; per-sole shadows."
+    },
+    "documentationAudit": {
+      "status": "Focused anatomy refinement; existing illustrated direction retained; no new visual audit or style.",
+      "unrepairedDrift": "Existing CSS typography/color advisories; no general UI redesign."
+    }
+  },
+  "components": [
+    {
+      "css": ".ds-button{color:#fff0df;background:none;border:0;min-height:48px;min-width:48px;padding:8px 0;cursor:pointer;font:13px FilmSans,system-ui,sans-serif;touch-action:manipulation;}.ds-button:hover:not(:disabled){color:#fff9ef}.ds-button:focus-visible{outline:2px solid #e4bfa7;outline-offset:4px;border-radius:0}.ds-button:active:not(:disabled){transform:translateY(1px)}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button:active:not(:disabled){transform:none}}.ds-quiet{display:inline-flex;align-items:center;justify-content:center;gap:10px}.ds-quiet svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}",
+      "name": "Quiet interaction",
+      "description": "Acción HTML opcional para responder al escenario.",
+      "kind": "button",
+      "html": "<button class=\"ds-button ds-quiet\">Acercar la luz<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 3v5m0 8v5M3 12h5m8 0h5M6 6l3 3m6 6 3 3M6 18l3-3m6-6 3-3\"/></svg></button>",
+      "refersTo": "button-quiet"
+    },
+    {
+      "css": ".ds-button{color:#fff0df;background:none;border:0;min-height:48px;min-width:48px;padding:8px 0;cursor:pointer;font:13px FilmSans,system-ui,sans-serif;touch-action:manipulation;}.ds-button:hover:not(:disabled){color:#fff9ef}.ds-button:focus-visible{outline:2px solid #e4bfa7;outline-offset:4px;border-radius:0}.ds-button:active:not(:disabled){transform:translateY(1px)}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button:active:not(:disabled){transform:none}}.ds-icon{display:inline-grid;place-content:center;width:48px;height:48px;padding:12px}.ds-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round}.ds-icon:focus-visible{border-radius:0}@media(max-width:350px){.ds-icon{min-width:44px;min-height:44px;width:44px;height:44px;padding:10px}}",
+      "name": "Icon control",
+      "description": "Pausa, sonido o repetición con nombre accesible y objetivo generoso.",
+      "kind": "button",
+      "html": "<button class=\"ds-button ds-icon\" aria-label=\"Pausar\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 5v14M16 5v14\"/></svg></button>",
+      "refersTo": "button-icon"
+    },
+    {
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegación de la película\"><button class=\"ds-button\" disabled>Anterior</button><div class=\"ds-centre\"><button class=\"ds-button\" aria-label=\"Repetir este plano\">Repetir</button><button class=\"ds-button\" aria-label=\"Pausar\">Pausa</button></div><button class=\"ds-button\">Siguiente</button></nav>",
+      "kind": "nav",
+      "css": ".ds-button{color:#fff0df;background:none;border:0;min-height:48px;min-width:48px;padding:8px 0;cursor:pointer;font:13px FilmSans,system-ui,sans-serif;touch-action:manipulation;font-size:14px;white-space:nowrap}.ds-button:hover:not(:disabled){color:#fff9ef}.ds-button:focus-visible{outline:2px solid #e4bfa7;outline-offset:4px;border-radius:0}.ds-button:active:not(:disabled){transform:translateY(1px)}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button:active:not(:disabled){transform:none}}.ds-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:58px;max-width:680px}.ds-centre{display:flex;align-items:center;gap:0}",
+      "description": "Anterior y Siguiente rodean repetición y pausa en el pie.",
+      "name": "Permanent navigation"
+    },
+    {
+      "css": ".ds-narration{margin:0;font-family:FilmSerif,Georgia,serif;font-size:clamp(22px,6vw,27px);line-height:1.22;font-weight:500;max-width:37ch;text-wrap:pretty;color:#fff0df}@media(min-width:900px) and (min-height:551px){.ds-narration{font-size:31px;line-height:1.24}}@media(orientation:landscape) and (max-height:550px){.ds-narration{font-size:21px}}",
+      "name": "Held narration",
+      "description": "Voz visible del plano; el lector conserva el tiempo.",
+      "kind": "custom",
+      "html": "<p class=\"ds-narration\" aria-live=\"polite\" aria-atomic=\"true\">Una mirada. Después, otra. A veces, acompañarse empieza así.</p>",
+      "refersTo": "narration"
+    },
+    {
+      "css": ".ds-progress-row{display:flex;align-items:center;gap:18px;min-height:25px;font:12px FilmSans,system-ui,sans-serif;color:#d9d9c9}.ds-progress-row span{white-space:nowrap}.ds-progress{appearance:none;height:3px;width:100%;border:0;background:#52685d;border-radius:0}.ds-progress::-webkit-progress-bar{background:#52685d}.ds-progress::-webkit-progress-value{background:#e8c6ae}.ds-progress::-moz-progress-bar{background:#e8c6ae}",
+      "name": "Shot progress",
+      "description": "Trazo plano con valor accesible del plano actual de F3.",
+      "kind": "custom",
+      "html": "<div class=\"ds-progress-row\"><span>Dos miradas</span><progress class=\"ds-progress\" max=\"5\" value=\"1\" aria-label=\"Progreso del recorrido\" aria-valuetext=\"1 de 5: Dos miradas\"></progress></div>",
+      "refersTo": "progress"
+    },
+    {
+      "html": "<div class=\"ds-route\"><button class=\"ds-button ds-shot\" aria-current=\"step\">Dos miradas</button><button class=\"ds-button ds-shot\">Te abro el camino</button></div>",
+      "kind": "button",
+      "css": ".ds-button{color:#fff0df;background:none;border:0;min-height:48px;min-width:48px;padding:8px 0;cursor:pointer;font:13px FilmSans,system-ui,sans-serif;touch-action:manipulation;}.ds-button:hover:not(:disabled){color:#fff9ef}.ds-button:focus-visible{outline:2px solid #e4bfa7;outline-offset:4px;border-radius:0}.ds-button:active:not(:disabled){transform:translateY(1px)}.ds-button:disabled{opacity:.4;cursor:default}@media(prefers-reduced-motion:reduce){.ds-button:active:not(:disabled){transform:none}}.ds-route{background:#213b39;padding:24px;max-width:560px}.ds-shot{display:block;width:100%;text-align:left;font-size:15px;line-height:1.25;padding:10px 4px;color:#d9d9c9}.ds-shot[aria-current=step]{color:#fff1d8;font-weight:600}.ds-shot[aria-current=step]::before{content:\"\";display:inline-block;width:6px;height:6px;border-radius:50%;background:#e4bfa7;vertical-align:middle;margin-right:12px}",
+      "description": "Fila del recorrido con punto, tinta y peso como estado actual.",
+      "name": "Current shot in route"
+    }
+  ],
+  "narrative": {
+    "northStar": "Los peluches de Valerie, dentro del cuento",
+    "overview": "Se conserva la dirección ilustrada actual. Anatomía02 refina uniones, silueta y apoyo sobre el suelo sin nuevos PNG, escenario, capítulos o F4. La valoración visual corresponde al usuario.",
+    "keyCharacteristics": [
+      "Dos atlas nuevos y dieciocho piezas articuladas, con caras completas que mantienen los ojos y hocicos de la ilustración de referencia.",
+      "Pintura de viñedo, vides, musgo y hoja separados para componer profundidad; cinco planes de cámara distintos.",
+      "Regalo rectangular rosa en primer término; caja cerrada y sorpresa final reservada.",
+      "Botones permanentes, narración sin caducidad, silencio inicial y gestos opcionales."
+    ],
+    "rules": [
+      {
+        "section": "colors",
+        "name": "The Reference Identity Rule",
+        "body": "Los pigmentos de los protagonistas proceden de sus ilustraciones de referencia; cambiar una paleta no sustituye su anatomía."
+      },
+      {
+        "section": "typography",
+        "name": "The Held Voice Rule",
+        "body": "La narración permanece hasta cambiar de plano; no caduca por temporizador ni depende del sonido."
+      },
+      {
+        "section": "layout",
+        "name": "The Chosen Pace Rule",
+        "body": "Anterior, Siguiente y el recorrido eligen el plano; scroll, rueda y gestos sobre el arte no navegan."
+      }
+    ],
+    "dos": [
+      "**Do** Conservar la identidad de las fotos y la asimetría de ambos peluches.",
+      "**Do** Mantener mensajes sin caducidad y controles de 44–48 px, incluidos horizontal y safe areas.",
+      "**Do** Preparar imágenes, piezas y primer fotograma antes de revelar el escenario.",
+      "**Do** Preservar los PNG originales y las fotografías; limpiar máscaras únicamente en buffers derivados."
+    ],
+    "donts": [
+      "**Don't** No tratar F1/F2/F3 anteriores ni esta revisión como artísticamente aprobadas.",
+      "**Don't** No sustituir ojos, hocicos u orejas por rasgos genéricos.",
+      "**Don't** No avanzar por scroll ni iniciar F4.",
+      "**Don't** No confundir pruebas numéricas con aprobación visual ni producir capturas o grabaciones de QA."
+    ]
+  }
+}

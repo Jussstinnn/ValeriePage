@@ -1,0 +1,29 @@
+/* RC04 extends the existing night/ivory visual world. */
+#scene-error{position:absolute;left:var(--gutter);right:var(--gutter);top:34%;padding:20px;background:var(--surface);z-index:4}#scene-error p{font-size:16px;line-height:1.6;max-width:50ch}#scene-error button{margin-top:16px;margin-right:16px;text-decoration:underline;text-underline-offset:6px}#skip-ceremony{display:block;font-size:12px;margin-top:4px;text-align:left}.ceremony-action{z-index:3}#letter-back:disabled{opacity:.5}
+
+.ceremony-action{min-height:160px}#skip-ceremony[hidden]{display:block!important;visibility:hidden;pointer-events:none}
+
+:root{--safe-left:env(safe-area-inset-left,0px);--safe-right:env(safe-area-inset-right,0px)}
+.frame-top,#controls{left:max(var(--gutter),var(--safe-left));right:max(var(--gutter),var(--safe-right))}
+#scene-error{max-height:calc(60dvh - var(--transport) - var(--safe-bottom));overflow-y:auto;overscroll-behavior:contain}
+@media(orientation:landscape) and (max-height:550px){
+ #art-hint{display:none}.ceremony-action{top:auto;bottom:calc(70px + var(--safe-bottom));min-height:144px;width:28%}.ceremony-action p{min-height:32px}#skip-ceremony{font-size:12px;margin-top:0;padding-top:4px;padding-bottom:4px}
+ #letter{padding-top:52px;padding-bottom:72px}.letter-folio{font-size:12px;margin-bottom:4px}.letter-page h3{font-size:22px;margin-bottom:6px}.letter-actions{margin-top:8px}.letter-reading{min-height:74px}#letter-scroll-note{margin-top:3px;font-size:12px}
+ .frame-top,#controls{left:max(16px,var(--safe-left));right:max(16px,var(--safe-right))}
+}
+@media(orientation:landscape) and (max-height:350px){.ceremony-copy{top:52px}.ceremony-copy h2{font-size:24px}.ceremony-action{min-height:132px}.ceremony-action p{font-size:12px;min-height:24px}.ceremony-action .text-action{font-size:14px}#letter{padding-top:49px;padding-bottom:68px;gap:20px}.letter-heading h2{font-size:26px}.letter-folio{font-size:11px}.letter-page h3{font-size:18px;margin-bottom:2px}#letter-text{font-size:18px}.letter-actions{margin-top:4px}#letter-scroll-note{display:none}}
+
+.letter-line{display:block}.letter-fragment{margin-bottom:.95em}#full-bouquet{font-size:12px;text-decoration:underline;text-underline-offset:5px;min-height:44px;padding-left:6px;padding-right:6px}body[data-flower-selected=true] #art-hint{display:none}body[data-scene=lily] .interaction{gap:8px}body[data-layout=memory] .scene-line{max-width:54ch}body[data-scene=memory09] #scene-title{font-style:normal;color:var(--ink)}
+
+.volume-control{display:flex;align-items:center;justify-content:center;width:50px;min-width:50px;height:44px}#volume{width:48px;height:44px;margin:0;accent-color:var(--accent);cursor:pointer;touch-action:pan-x}.progress-row{gap:12px}#volume:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media(orientation:landscape) and (max-height:550px){#volume-control{position:fixed;top:3px;left:48%;height:44px;width:50px}}
+
+@media(orientation:landscape) and (max-height:550px){
+ #finale{display:grid;grid-template-columns:30% 1fr;grid-template-rows:auto auto 44px;column-gap:24px;row-gap:8px;align-content:center;align-items:center;text-align:left;padding:58px max(20px,var(--safe-right)) 78px max(20px,var(--safe-left))}
+ .finale-preface{grid-column:1;grid-row:1;font-size:12px;line-height:1.55;margin:0;max-width:none}#finale-title{grid-column:2;grid-row:1/4;font-size:42px;line-height:1.02;text-align:center}#finale-title span:first-child{font-size:.72em;margin-bottom:12px}.finale-note{grid-column:1;grid-row:2;font-size:11px;line-height:1.5;margin:0}#restart{grid-column:1;grid-row:3;font-size:12px;margin:0;text-align:left;justify-self:start}
+}
+@media(orientation:landscape) and (max-height:350px){#finale{padding-bottom:78px;row-gap:5px}#finale-title{font-size:37px}.finale-preface{font-size:11px}.finale-note{font-size:11px}#finale-title span:first-child{margin-bottom:10px}}
+
+body[data-fonts-ready=false] #film-title{visibility:hidden}
+
+@media(orientation:landscape) and (max-height:550px){.ceremony-action{height:140px;min-height:140px;display:flex;flex-direction:column;gap:4px}.ceremony-action p{height:44px;min-height:44px;margin:0;overflow-y:auto;font-size:12px;line-height:1.5}#open-ring{height:44px;min-height:44px;padding-top:0;padding-bottom:0;font-size:14px}#skip-ceremony{height:44px;min-height:44px;margin:0;font-size:12px}.finale-preface,.finale-note{font-size:12px}}

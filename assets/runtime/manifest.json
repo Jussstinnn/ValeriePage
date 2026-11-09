@@ -1,0 +1,88 @@
+{
+  "foliage-atlas.png": {
+    "file": "assets/art/foliage-atlas.png",
+    "sourceSha256": "bb981299224b5b834de0b6857142e6defa70a2c77e0140e560ae8e6d44cea0c1",
+    "sha256": "bb981299224b5b834de0b6857142e6defa70a2c77e0140e560ae8e6d44cea0c1",
+    "mime": "image/png",
+    "rgbaExact": true,
+    "width": 1254,
+    "height": 1254,
+    "reason": "Original alpha atlas retained: identical browser premultiplication at cut edges."
+  },
+  "forest-path.png": {
+    "file": "assets/runtime/forest-path.webp",
+    "sourceSha256": "54e82953e73ec6c7c201602fc67fd23c2a52d3df87a9a721a726695dd0fca0b7",
+    "sha256": "f65905d1e83764de49f11a2eda5d964013d60b20ef20f1ea303231988a6d4da1",
+    "mime": "image/webp",
+    "rgbaExact": true,
+    "width": 1536,
+    "height": 1024
+  },
+  "gallery-room.png": {
+    "file": "assets/runtime/gallery-room.webp",
+    "sourceSha256": "1cade65a60fb7a0f7a07a6805acbb9e2a67d25d0113b9753a9a79edf100d1852",
+    "sha256": "f8327154807a45077eefae05905c531fa6910bfc4f848faa1b323e09643d2df1",
+    "mime": "image/webp",
+    "rgbaExact": true,
+    "width": 1536,
+    "height": 1024
+  },
+  "gift-atlas.png": {
+    "file": "assets/art/gift-atlas.png",
+    "sourceSha256": "c8f006935fffb1754c4c6d715c49f39d26e49b9f76195ed8ef6b7a2da3f7b61a",
+    "sha256": "c8f006935fffb1754c4c6d715c49f39d26e49b9f76195ed8ef6b7a2da3f7b61a",
+    "mime": "image/png",
+    "rgbaExact": true,
+    "width": 1024,
+    "height": 1536,
+    "reason": "Original alpha atlas retained: identical browser premultiplication at cut edges."
+  },
+  "moon-garden.png": {
+    "file": "assets/runtime/moon-garden.webp",
+    "sourceSha256": "4eba7e5eaaf5204eb781c6005cc49dfa15efb46e0a7c899b049ce69f97aae466",
+    "sha256": "0ccd7e0ecac6e7bce6ffecdfff44111a9da5ba08323185afb387d71d7fb1b5d3",
+    "mime": "image/webp",
+    "rgbaExact": true,
+    "width": 1536,
+    "height": 1024
+  },
+  "pink-atlas.png": {
+    "file": "assets/art/pink-atlas.png",
+    "sourceSha256": "f3a4ec932f219ea6d65ebc198c75b2fb260530be62020f9f3bed13cdcfef5d15",
+    "sha256": "f3a4ec932f219ea6d65ebc198c75b2fb260530be62020f9f3bed13cdcfef5d15",
+    "mime": "image/png",
+    "rgbaExact": true,
+    "width": 1254,
+    "height": 1254,
+    "reason": "Original alpha atlas retained: identical browser premultiplication at cut edges."
+  },
+  "rose-ring.png": {
+    "file": "assets/art/rose-ring.png",
+    "sourceSha256": "7a92acc2f78cd36170927b0854212d3dde83b51e57bd733451ac4409e09a2f97",
+    "sha256": "7a92acc2f78cd36170927b0854212d3dde83b51e57bd733451ac4409e09a2f97",
+    "mime": "image/png",
+    "rgbaExact": true,
+    "width": 1086,
+    "height": 1448,
+    "reason": "Original alpha atlas retained: identical browser premultiplication at cut edges."
+  },
+  "taupe-atlas.png": {
+    "file": "assets/art/taupe-atlas.png",
+    "sourceSha256": "dcda7024592ead18c18969f403cfdbc669743db14c6ea13537e323313e17f63e",
+    "sha256": "dcda7024592ead18c18969f403cfdbc669743db14c6ea13537e323313e17f63e",
+    "mime": "image/png",
+    "rgbaExact": true,
+    "width": 1254,
+    "height": 1254,
+    "reason": "Original alpha atlas retained: identical browser premultiplication at cut edges."
+  },
+  "vineyard-clearing.png": {
+    "file": "assets/runtime/vineyard-clearing.webp",
+    "sourceSha256": "912283a7401873c1dbb12704bc2dc66649551f9dfc18d11da0d688b97923bb81",
+    "sha256": "114ad48cf06b28d4b194ebb0886c6f79353b2356e03c99a6b4ff53d7d84d89db",
+    "mime": "image/webp",
+    "rgbaExact": true,
+    "width": 1536,
+    "height": 1024
+  }
+}
