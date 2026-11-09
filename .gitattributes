@@ -3,3 +3,8 @@ legacy/rc07/engines/** -text
 legacy/rc07/memories/** -text
 references/** -text
 assets/** -text
+src/character-models.js -text
+src/rig.js -text
+src/animation.js -text
+src/kinematics.js -text
+brief/RIG_F24_1_ORIGINAL.js -text

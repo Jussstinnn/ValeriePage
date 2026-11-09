@@ -31,11 +31,11 @@ jobs:
 
       # Los scripts de compilación y las 35 pruebas usan Node.js nativo.
       # No se necesita npm install ni Playwright para el despliegue.
-      - name: Comprobar proyecto (35 pruebas)
-        run: npm test
-
       - name: Construir el sitio estático
         run: npm run build
+
+      - name: Comprobar proyecto (35 pruebas)
+        run: npm test
 
       - name: Desactivar Jekyll
         run: touch dist/.nojekyll
