@@ -10,7 +10,7 @@
     "build": "node scripts/build.mjs",
     "start": "node scripts/serve.mjs",
     "phone": "node scripts/serve.mjs --lan",
-    "test": "node --test tests/contracts.test.mjs tests/animation.test.mjs tests/matte.test.mjs tests/root-motion.test.mjs tests/private.test.mjs tests/encoding.test.mjs tests/story-state.test.mjs tests/cinema.test.mjs tests/asset-codec.test.mjs tests/ceremony-2464.test.mjs",
+    "test": "node --test tests/contracts.test.mjs tests/animation.test.mjs tests/matte.test.mjs tests/root-motion.test.mjs tests/private.test.mjs tests/encoding.test.mjs tests/story-state.test.mjs tests/cinema.test.mjs tests/asset-codec.test.mjs tests/ceremony-2464.test.mjs tests/fresita-lio.test.mjs",
     "test:browser": "node scripts/verify.mjs",
     "package": "node scripts/package.mjs",
     "package:site": "node scripts/package-site.mjs",

@@ -34,7 +34,7 @@ jobs:
       - name: Construir el sitio estático
         run: npm run build
 
-      - name: Comprobar proyecto (35 pruebas)
+      - name: Comprobar proyecto (pruebas automatizadas)
         run: npm test
 
       - name: Desactivar Jekyll

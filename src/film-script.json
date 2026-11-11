@@ -1,6 +1,6 @@
 {
   "version": 4,
-  "source": "F24.4 narrative bible",
+  "source": "F24.6.4 · Guion integrado de Fresita y Lio",
   "chapters": [
     {
       "id": "antes-del-primer-pasito",
@@ -19,7 +19,7 @@
         {
           "id": "arrival",
           "speaker": "pink",
-          "text": "¡Soy Rosa! Beige y yo guardamos una caja muy especial para ti, Valerie.",
+          "text": "¡Valerie! ¡Llegaste! Yo soy Fresita, y él es Lio. Tenemos algo para vos… pero todavía es un secreto.",
           "acting": "guardian-preparations",
           "kind": "speech",
           "view": "original",
@@ -39,7 +39,7 @@
         {
           "id": "lantern",
           "speaker": "taupe",
-          "text": "Tiene tres pequeños cierres. Solo responden a recuerdos que encontremos contigo.",
+          "text": "Lo guardamos en una caja con tres broches. Para abrirlos, necesitamos encontrar tres pequeñas señales.",
           "acting": "check-the-lantern",
           "kind": "speech",
           "view": "original",
@@ -84,7 +84,7 @@
         {
           "id": "escape",
           "speaker": "pink",
-          "text": "¡El hada conoce el camino! Sabe dónde encontrar la primera señal.",
+          "text": "¡Mirá, Lio! El hada se despertó. Creo que quiere enseñarnos por dónde empezar.",
           "acting": "greet-the-guide",
           "kind": "speech",
           "view": "original",
@@ -104,7 +104,7 @@
         {
           "id": "mission",
           "speaker": "taupe",
-          "text": "Una luz del bosque, un deseo tuyo y un recuerdo del jardín. Juntos abrirán nuestra caja.",
+          "text": "Una luz del bosque, un deseo del cielo y un recuerdo del jardín. Cada uno nos acercará un poquito más.",
           "acting": "show-the-three-signs",
           "kind": "speech",
           "view": "original",
@@ -124,7 +124,7 @@
         {
           "id": "leave",
           "speaker": "pink",
-          "text": "¿Nos acompañas? Esta vez miraré por dónde salto.",
+          "text": "¿Venís con nosotros, Valerie? Prometo no salir corriendo… bueno, no tanto.",
           "acting": "follow-with-purpose",
           "kind": "speech",
           "view": "original",
@@ -161,7 +161,7 @@
         {
           "id": "loose-light",
           "speaker": "pink",
-          "text": "¡Se quedó atrapada! Si tiro de la cinta…",
+          "text": "¡Ay, Lio! Se le enredaron las alitas en la cinta. Si la jalo un poquito…",
           "acting": "notice-snag",
           "kind": "speech",
           "view": "original",
@@ -181,7 +181,7 @@
         {
           "id": "steady",
           "speaker": "taupe",
-          "text": "Espera. Podemos ayudarla sin lastimarle las alas.",
+          "text": "Esperá, Fresita. Mejor levantemos la cinta con cuidado, así no se lastima.",
           "acting": "hold-ribbon",
           "kind": "speech",
           "view": "original",
@@ -201,13 +201,13 @@
         {
           "id": "escape",
           "speaker": "pink",
-          "text": "Valerie, ¿le prestamos una patita?",
+          "text": "Valerie, ¿nos ayudás? Yo puedo levantarla. Esta vez, despacito.",
           "acting": "ask-guide",
           "kind": "choice",
           "view": "original",
           "close": "action",
           "actionPlan": {
-            "start": 7.0,
+            "start": 7,
             "duration": 0,
             "gesture": "ask-guide",
             "focus": "pair",
@@ -228,7 +228,7 @@
           "view": "original",
           "close": "action",
           "actionPlan": {
-            "start": 7.0,
+            "start": 7,
             "duration": 6.2,
             "gesture": "guide-rescue",
             "focus": "pair",
@@ -243,7 +243,7 @@
         {
           "id": "reply",
           "speaker": "taupe",
-          "text": "Ahora sí. Tú nos muestras por dónde.",
+          "text": "Eso es, pequeña. Ya está libre. Ahora sí, mostranos el camino.",
           "acting": "release-guide",
           "kind": "speech",
           "view": "original",
@@ -300,7 +300,7 @@
         {
           "id": "leaf-problem",
           "speaker": "pink",
-          "text": "¡La hoja cerró el camino! No veo detrás.",
+          "text": "¡Uy! Esta hoja nos tapó todo el camino. ¿Y ahora cómo pasamos?",
           "acting": "inspect-blocked-threshold",
           "kind": "speech",
           "view": "original",
@@ -320,7 +320,7 @@
         {
           "id": "leaf-offer",
           "speaker": "taupe",
-          "text": "Uno la sostiene. El otro pasa y ayuda desde el otro lado.",
+          "text": "Podemos hacerlo juntos: uno la sostiene y el otro cruza para ayudar desde allá.",
           "acting": "test-the-anchored-leaf",
           "kind": "speech",
           "view": "original",
@@ -340,7 +340,7 @@
         {
           "id": "leaf-choice",
           "speaker": "pink",
-          "text": "¿Quién abre el camino?",
+          "text": "Valerie, ¿quién sostiene la hoja primero?",
           "acting": "choose-holder",
           "kind": "choice",
           "view": "original",
@@ -387,7 +387,7 @@
         {
           "id": "leaf-reply",
           "speaker": "pink",
-          "text": "¡Ya estamos los dos del otro lado!",
+          "text": "¡Lo logramos! Y esta vez no perdimos a nadie por el camino.",
           "acting": "reunite-in-depth",
           "kind": "speech",
           "view": "original",
@@ -413,7 +413,7 @@
           "view": "original",
           "close": "action",
           "actionPlan": {
-            "start": 25.0,
+            "start": 25,
             "duration": 2.5,
             "gesture": "leave-the-threshold",
             "focus": "pair",
@@ -444,7 +444,7 @@
         {
           "id": "bank",
           "speaker": "pink",
-          "text": "Desde aquí parece lejísimos.",
+          "text": "Lio… el otro lado se ve demasiado lejos.",
           "kind": "speech",
           "view": "original",
           "acting": "peer-water",
@@ -464,7 +464,7 @@
         {
           "id": "also",
           "speaker": "taupe",
-          "text": "No hace falta hacerlo de un solo salto.",
+          "text": "No tenemos que saltar todo de una vez. Mirá esa piedra: parece firme.",
           "kind": "speech",
           "view": "original",
           "acting": "test-stone",
@@ -484,7 +484,7 @@
         {
           "id": "afraid",
           "speaker": "pink",
-          "text": "¿Y si resbalo?",
+          "text": "¿Y si me resbalo?",
           "kind": "speech",
           "view": "original",
           "acting": "small-recoil",
@@ -504,7 +504,7 @@
         {
           "id": "offer",
           "speaker": "taupe",
-          "text": "Entonces te espero. Mira, esta es firme.",
+          "text": "Te espero aquí. Si te da miedo, me das una patita y probamos juntos.",
           "kind": "speech",
           "view": "original",
           "acting": "offer-stone",
@@ -549,7 +549,7 @@
         {
           "id": "landed",
           "speaker": "pink",
-          "text": "¡Sigo teniendo las dos patas!",
+          "text": "¡Llegué! ¡Y todavía tengo mis dos patitas!",
           "kind": "speech",
           "view": "original",
           "acting": "shake-droplet",
@@ -569,7 +569,7 @@
         {
           "id": "reply",
           "speaker": "taupe",
-          "text": "Y yo sigo teniendo las dos orejas.",
+          "text": "Y yo mis dos orejas. Aunque una casi se queda nadando.",
           "kind": "speech",
           "view": "original",
           "acting": "check-ears",
@@ -626,7 +626,7 @@
         {
           "id": "notice",
           "speaker": "pink",
-          "text": "¿Por qué te paraste?",
+          "text": "¿Por qué paraste, Lio? La luz sigue por allá.",
           "kind": "speech",
           "view": "original",
           "acting": "return-for-beige",
@@ -646,7 +646,7 @@
         {
           "id": "answer",
           "speaker": "taupe",
-          "text": "Porque esa rosa se inclinó… y pareció saludarnos.",
+          "text": "Porque mirá esa rosa… se inclinó como si quisiera saludarnos.",
           "kind": "speech",
           "view": "original",
           "acting": "notice-rose",
@@ -666,7 +666,7 @@
         {
           "id": "flower",
           "speaker": "pink",
-          "text": "¡No la había visto!",
+          "text": "¡Es cierto! Estaba justo aquí y ni la había visto.",
           "kind": "speech",
           "view": "original",
           "acting": "lean-to-rose",
@@ -686,7 +686,7 @@
         {
           "id": "slow",
           "speaker": "taupe",
-          "text": "A veces lo bonito nos espera cuando bajamos el paso.",
+          "text": "A veces, cuando corremos mucho, se nos escapan las cosas más bonitas.",
           "kind": "speech",
           "view": "original",
           "acting": "petal-ear",
@@ -706,7 +706,7 @@
         {
           "id": "stay",
           "speaker": "pink",
-          "text": "Entonces esperamos… pero solo un poquito.",
+          "text": "Bueno… nos quedamos un ratito. Pero después corrés conmigo.",
           "kind": "speech",
           "view": "original",
           "acting": "snuggle-pause",
@@ -732,7 +732,7 @@
           "acting": "shared-silence",
           "close": "action",
           "actionPlan": {
-            "start": 20.0,
+            "start": 20,
             "duration": 4.2,
             "gesture": "shared-silence",
             "focus": "pair",
@@ -783,7 +783,7 @@
         {
           "id": "sleeping",
           "speaker": "pink",
-          "text": "Aquí está. La hemos cuidado todo este tiempo.",
+          "text": "¡Aquí está nuestra caja! ¿Ves, Valerie? Sigue justo donde la dejamos.",
           "acting": "recognize-our-secret",
           "kind": "speech",
           "view": "original",
@@ -803,7 +803,7 @@
         {
           "id": "meaning",
           "speaker": "taupe",
-          "text": "Mira el broche: tres lugares vacíos.",
+          "text": "Sí. Y mirá sus tres broches: todavía falta algo para que puedan abrirse.",
           "acting": "inspect-three-recesses",
           "kind": "speech",
           "view": "original",
@@ -823,7 +823,7 @@
         {
           "id": "all",
           "speaker": "pink",
-          "text": "Luz del bosque, un deseo del cielo y algo que crezca con cariño…",
+          "text": "Una luz, un deseo y algo que haya crecido con cariño… ¡ya entendí!",
           "acting": "read-the-signs",
           "kind": "speech",
           "view": "original",
@@ -843,7 +843,7 @@
         {
           "id": "together",
           "speaker": "taupe",
-          "text": "Volveremos con los tres. Entonces podrá abrirse.",
+          "text": "Volvamos cuando tengamos los tres. Algunas sorpresas merecen un poquito de paciencia.",
           "acting": "promise-to-return",
           "kind": "speech",
           "view": "original",
@@ -919,7 +919,7 @@
         {
           "id": "wait",
           "speaker": "pink",
-          "text": "Esta vez miré atrás antes de seguir.",
+          "text": "¡Lio, mirá! Esta vez me detuve para esperarte.",
           "kind": "speech",
           "view": "original",
           "acting": "scout-and-return",
@@ -939,7 +939,7 @@
         {
           "id": "reply",
           "speaker": "taupe",
-          "text": "Lo vi. Gracias por esperarme.",
+          "text": "Lo noté, Fresita. Me gusta más el camino cuando lo recorremos juntos.",
           "kind": "speech",
           "view": "original",
           "acting": "beige-catches-up",
@@ -959,7 +959,7 @@
         {
           "id": "three",
           "speaker": "pink",
-          "text": "¿Entramos?",
+          "text": "Está un poquito oscuro… ¿entramos?",
           "kind": "speech",
           "view": "original",
           "acting": "ask-threshold",
@@ -979,7 +979,7 @@
         {
           "id": "together",
           "speaker": "taupe",
-          "text": "Si vamos juntos, sí.",
+          "text": "Claro. Yo voy a tu lado.",
           "kind": "speech",
           "view": "original",
           "acting": "threshold-pair",
@@ -1037,7 +1037,7 @@
         {
           "id": "glimmer",
           "speaker": "pink",
-          "text": "¡Está haciendo una señal!",
+          "text": "¡Lio! Esa lucecita acaba de guiñarnos.",
           "acting": "hear-light",
           "view": "original",
           "kind": "speech",
@@ -1050,7 +1050,7 @@
         {
           "id": "listen",
           "speaker": "taupe",
-          "text": "O quizás el bosque está intentando decirnos algo.",
+          "text": "Tal vez es una luciérnaga… o el bosque intentando decirnos algo.",
           "acting": "hear-light",
           "view": "original",
           "kind": "speech",
@@ -1063,7 +1063,7 @@
         {
           "id": "forest-choice",
           "speaker": "pink",
-          "text": "¿Qué hacemos, Valerie?",
+          "text": "Valerie, ¿seguimos la luz o nos quedamos a escuchar?",
           "acting": "listen",
           "view": "original",
           "kind": "choice",
@@ -1091,7 +1091,7 @@
         {
           "id": "forest-together",
           "speaker": "taupe",
-          "text": "Solo estaba esperando que escucháramos.",
+          "text": "¿Ves? No hacía falta correr. Solo escuchar un poquito mejor.",
           "acting": "share-light",
           "view": "original",
           "kind": "speech",
@@ -1121,7 +1121,7 @@
         {
           "id": "not-end",
           "speaker": "pink",
-          "text": "¡No era el final del bosque!",
+          "text": "¡Mirá! Pensé que aquí terminaba el bosque.",
           "kind": "speech",
           "view": "original",
           "acting": "fork-and-check",
@@ -1141,7 +1141,7 @@
         {
           "id": "signal",
           "speaker": "taupe",
-          "text": "Es una señal. Mira las ventanas.",
+          "text": "Las raíces siguen hacia allá. ¿Ves esas ventanas entre los árboles?",
           "kind": "speech",
           "view": "original",
           "acting": "trace-root",
@@ -1186,7 +1186,7 @@
         {
           "id": "house",
           "speaker": "pink",
-          "text": "Parece una casa hecha para guardar estrellas.",
+          "text": "Parece una casita que guarda pedacitos de cielo.",
           "kind": "speech",
           "view": "original",
           "acting": "window-reaction",
@@ -1212,7 +1212,7 @@
           "acting": "root-passage",
           "close": "action",
           "actionPlan": {
-            "start": 18.0,
+            "start": 18,
             "duration": 4,
             "gesture": "root-passage",
             "focus": "pair",
@@ -1244,7 +1244,7 @@
         {
           "id": "home",
           "speaker": "pink",
-          "text": "¿Aquí vive la luz?",
+          "text": "¿Y si la luciérnaga vive aquí?",
           "kind": "speech",
           "view": "original",
           "acting": "approach-glass",
@@ -1264,7 +1264,7 @@
         {
           "id": "sky",
           "speaker": "taupe",
-          "text": "No lo sé… pero alguien guardó el cielo detrás de ese vidrio.",
+          "text": "No lo sé, pero alguien dejó un pedazo de noche brillando detrás del vidrio.",
           "kind": "speech",
           "view": "original",
           "acting": "recognize-window",
@@ -1284,7 +1284,7 @@
         {
           "id": "enter",
           "speaker": "pink",
-          "text": "¿Entramos?",
+          "text": "¿Entramos a ver?",
           "kind": "speech",
           "view": "original",
           "acting": "touch-handle",
@@ -1304,7 +1304,7 @@
         {
           "id": "care",
           "speaker": "taupe",
-          "text": "Primero abramos la puerta, sin romper nada.",
+          "text": "Sí. Solo abramos con cuidado: no queremos despertar las historias de golpe.",
           "kind": "speech",
           "view": "original",
           "acting": "support-door",
@@ -1387,7 +1387,7 @@
         {
           "id": "entry",
           "speaker": "pink",
-          "text": "¡Aquí el suelo devuelve nuestros pasitos!",
+          "text": "¡Lio, escuchá! Mis pasitos hacen eco. ¡Hola, eco!",
           "acting": "gallery-entry",
           "kind": "speech",
           "view": "original",
@@ -1407,7 +1407,7 @@
         {
           "id": "wait",
           "speaker": "taupe",
-          "text": "Ven. Hay sitio para los dos.",
+          "text": "Y los míos también. Vení, hay espacio para los dos.",
           "acting": "gallery-wait",
           "kind": "speech",
           "view": "original",
@@ -1433,7 +1433,7 @@
           "view": "original",
           "close": "action",
           "actionPlan": {
-            "start": 8.0,
+            "start": 8,
             "duration": 4.6,
             "gesture": "walk-to-scream",
             "focus": "pair",
@@ -1463,7 +1463,7 @@
         {
           "id": "arrival",
           "speaker": "pink",
-          "text": "¡Ah! ¿También se le escapó una luciérnaga?",
+          "text": "¡Ay! Ese cuadro me asustó un poquito, Lio.",
           "acting": "scream-surprise",
           "kind": "speech",
           "view": "original",
@@ -1483,7 +1483,7 @@
         {
           "id": "mimic",
           "speaker": "taupe",
-          "text": "O quizá le faltó alguien con quien mirarla.",
+          "text": "Mirálo bien. Tal vez no está asustado; tal vez tiene mucho que contar.",
           "acting": "shy-mimic",
           "kind": "speech",
           "view": "original",
@@ -1528,7 +1528,7 @@
         {
           "id": "soft",
           "speaker": "pink",
-          "text": "Así da menos susto.",
+          "text": "Tenés razón… así ya no me da tanto miedo.",
           "acting": "relieved-ears",
           "kind": "speech",
           "view": "original",
@@ -1548,7 +1548,7 @@
         {
           "id": "leave",
           "speaker": "taupe",
-          "text": "Mira… esa página nos está esperando.",
+          "text": "Y mirá aquella página. Creo que nos estaba esperando.",
           "acting": "walk-to-album",
           "kind": "speech",
           "view": "original",
@@ -1585,7 +1585,7 @@
         {
           "id": "peek",
           "speaker": "pink",
-          "text": "Hay algo guardado aquí. Esta vez no voy a tirar de la cinta.",
+          "text": "¡Un álbum! Esta vez no voy a abrirlo de golpe, lo prometo.",
           "acting": "album-peek",
           "kind": "speech",
           "view": "original",
@@ -1605,7 +1605,7 @@
         {
           "id": "space",
           "speaker": "taupe",
-          "text": "Está justo aquí, sobre el banco. Abrámoslo despacito.",
+          "text": "Mejor sentémonos un momento. Los recuerdos también merecen su espacio.",
           "acting": "album-offer",
           "kind": "speech",
           "view": "original",
@@ -1625,7 +1625,7 @@
         {
           "id": "album-choice",
           "speaker": "pink",
-          "text": "¿Cómo descubrimos lo que guarda este banco?",
+          "text": "Valerie, ¿cómo querés que descubramos esta página?",
           "acting": "album-seat",
           "kind": "choice",
           "view": "original",
@@ -1672,13 +1672,13 @@
         {
           "id": "contemplate",
           "speaker": null,
-          "text": "Dos sonrisas. Todo el tiempo para mirarlas.",
+          "text": "Dos sonrisas guardadas en un mismo recuerdo.",
           "acting": "quiet-photo",
           "kind": "silence",
           "view": "photo",
           "close": "action",
           "actionPlan": {
-            "start": 12.0,
+            "start": 12,
             "duration": 2.2,
             "gesture": "quiet-photo",
             "focus": "pair",
@@ -1692,7 +1692,7 @@
         {
           "id": "laugh",
           "speaker": "pink",
-          "text": "Ahora también me dan ganas de sonreír.",
+          "text": "No sé por qué, Lio… pero mirarlas me dan ganas de abrazar a alguien.",
           "acting": "soft-hop",
           "kind": "speech",
           "view": "reaction",
@@ -1712,7 +1712,7 @@
         {
           "id": "leave",
           "speaker": "taupe",
-          "text": "Nos llevamos esa luz.",
+          "text": "Entonces quedémonos un ratito más. Hay recuerdos que se sienten como un abrazo.",
           "acting": "walk-to-night",
           "kind": "speech",
           "view": "original",
@@ -1746,7 +1746,7 @@
         {
           "id": "arrival",
           "speaker": "pink",
-          "text": "Beige… aquí la noche no está dormida.",
+          "text": "Lio… ¿esa noche se está moviendo? Pensé que los cuadros se quedaban quietitos.",
           "acting": "reach-starry-night",
           "kind": "speech",
           "view": "original",
@@ -1766,7 +1766,7 @@
         {
           "id": "recognize",
           "speaker": "taupe",
-          "text": "Mira sus remolinos. Parece que todo el cielo respira.",
+          "text": "Parece que las estrellas siguen girando. Como si el cielo todavía tuviera algo que contar.",
           "acting": "look-at-authentic-work",
           "kind": "speech",
           "view": "original",
@@ -1845,7 +1845,7 @@
         {
           "id": "inside",
           "speaker": "pink",
-          "text": "La noche se quedó quieta para escucharte.",
+          "text": "Qué bonito… parece que las estrellas nos estaban esperando.",
           "acting": "approach-the-real-painting",
           "kind": "speech",
           "view": "original",
@@ -1865,7 +1865,7 @@
         {
           "id": "ask",
           "speaker": "taupe",
-          "text": "Tu deseo puede dejar una huella en ella.",
+          "text": "Hay un lugarcito vacío en el cielo. Podés dejar ahí un deseo, si querés.",
           "acting": "offer-the-artwork",
           "kind": "speech",
           "view": "original",
@@ -1885,7 +1885,7 @@
         {
           "id": "sky-choice",
           "speaker": "pink",
-          "text": "Valerie, ¿cómo quieres dejarlo?",
+          "text": "Valerie, ¿querés dibujarlo o unir las luces?",
           "acting": "choose-the-mark",
           "kind": "choice",
           "view": "original",
@@ -1933,7 +1933,7 @@
         {
           "id": "earned",
           "speaker": "taupe",
-          "text": "Lo que dibujaste ya tiene un lugar entre nuestras señales.",
+          "text": "Ya está. Tu deseo también forma parte de esta historia.",
           "acting": "receive-the-wish",
           "kind": "speech",
           "view": "original",
@@ -1953,7 +1953,7 @@
         {
           "id": "wish",
           "speaker": "pink",
-          "text": "Valerie es nuestro mayor deseo.",
+          "text": "¿Sabés cuál es el deseo más bonito, Lio? Que Valerie siempre tenga motivos para sonreír.",
           "acting": "share-the-wish",
           "kind": "speech",
           "view": "original",
@@ -2010,7 +2010,7 @@
         {
           "id": "wish",
           "speaker": "taupe",
-          "text": "Llevamos tu huella. Ahora nos falta algo que cuidar.",
+          "text": "Ya llevamos una señal del cielo. Ahora necesitamos algo que podamos cuidar.",
           "acting": "keep-the-sky-sign",
           "kind": "speech",
           "view": "original",
@@ -2030,7 +2030,7 @@
         {
           "id": "leave",
           "speaker": "pink",
-          "text": "El hada conoce un jardín que todavía está despertando.",
+          "text": "¡El hada conoce un jardín! Vamos, Lio. Quizá allí nos espera lo que falta.",
           "acting": "follow-the-garden-light",
           "kind": "speech",
           "view": "original",
@@ -2067,7 +2067,7 @@
         {
           "id": "bloom",
           "speaker": null,
-          "text": "El jardín estaba esperando una luz.",
+          "text": "El jardín despertó despacito, siguiendo una pequeña luz.",
           "acting": "watch",
           "view": "original",
           "kind": "narration",
@@ -2080,7 +2080,7 @@
         {
           "id": "ask",
           "speaker": "pink",
-          "text": "¡Mira cuánto puede crecer algo cuando lo cuidan!",
+          "text": "¡Lio, mirá! Todo esto estaba esperando un poquito de cariño.",
           "acting": "wonder",
           "view": "original",
           "kind": "speech",
@@ -2108,7 +2108,7 @@
         {
           "id": "arrive",
           "speaker": "pink",
-          "text": "¡Las mariposas también conocen el camino!",
+          "text": "¡Mariposas! ¿Viste, Lio? Parece que también nos están acompañando.",
           "acting": "walk-between-lilies",
           "kind": "speech",
           "view": "original",
@@ -2127,7 +2127,7 @@
         },
         {
           "id": "roses",
-          "text": "Estas se parecen a una pequeña espiral.",
+          "text": "Estas rosas se enroscan como si estuvieran bailando.",
           "speaker": "pink",
           "acting": "smell-roses",
           "kind": "speech",
@@ -2146,7 +2146,7 @@
         },
         {
           "id": "lavender",
-          "text": "Escucha cómo se mueve la lavanda.",
+          "text": "¿Escuchás la lavanda? Con el viento parece que nos habla bajito.",
           "speaker": "taupe",
           "acting": "listen-lavender",
           "kind": "speech",
@@ -2165,7 +2165,7 @@
         },
         {
           "id": "daisies",
-          "text": "¡Las margaritas siguen la luz!",
+          "text": "¡Y las margaritas no dejan de buscar el sol! Las entiendo.",
           "speaker": "pink",
           "acting": "follow-daisies",
           "kind": "speech",
@@ -2185,7 +2185,7 @@
         {
           "id": "notice",
           "speaker": "taupe",
-          "text": "El hada vio un destello entre las raíces. Rosa, mira aquí.",
+          "text": "Fresita, mirá entre esas raíces. El hada encontró un brillito.",
           "acting": "notice-the-gift",
           "kind": "speech",
           "view": "original",
@@ -2205,7 +2205,7 @@
         {
           "id": "gift-choice",
           "speaker": "pink",
-          "text": "¿Qué llevamos con cuidado?",
+          "text": "Valerie, ¿qué te gustaría que cuidáramos?",
           "acting": "choose-garden-relic",
           "kind": "choice",
           "view": "original",
@@ -2225,7 +2225,7 @@
         },
         {
           "id": "gift-result",
-          "text": "Algo brilla debajo de la tierra. Te ayudamos a descubrirlo.",
+          "text": "Hay algo escondido bajo la tierra. Vamos a descubrirlo sin lastimarlo.",
           "speaker": "taupe",
           "acting": "dig-together",
           "kind": "result",
@@ -2251,7 +2251,7 @@
         {
           "id": "garden-care",
           "speaker": "taupe",
-          "text": "Lo cuidaremos hasta volver a la caja.",
+          "text": "Lo llevaremos con cuidado. Todavía tiene un lugar esperándonos en la caja.",
           "acting": "carry-the-living-keepsake",
           "kind": "speech",
           "view": "original",
@@ -2305,7 +2305,7 @@
         {
           "id": "lily",
           "speaker": null,
-          "text": "Un lirio para detener el mundo un momento.",
+          "text": "Hay flores que nos invitan a quedarnos un momento más.",
           "acting": "watch",
           "view": "original",
           "emotion": "gentle",
@@ -2319,7 +2319,7 @@
         {
           "id": "offer",
           "speaker": "pink",
-          "text": "¿Lo cuidamos juntos?",
+          "text": "¿Cuidamos este lirio juntos, Valerie?",
           "acting": "offer-petal",
           "view": "treasure",
           "emotion": "curious",
@@ -2347,7 +2347,7 @@
         {
           "id": "found",
           "speaker": "pink",
-          "text": "Hay algo debajo…",
+          "text": "Lio… creo que hay algo escondido debajo de esta hoja.",
           "acting": "nose-leaf",
           "view": "discovery",
           "kind": "speech",
@@ -2360,7 +2360,7 @@
         {
           "id": "portrait-choice",
           "speaker": "pink",
-          "text": "¿Lo vemos?",
+          "text": "Valerie, ¿lo descubrimos?",
           "acting": "watch",
           "view": "discovery",
           "kind": "choice",
@@ -2390,7 +2390,7 @@
         {
           "id": "portrait-rest",
           "speaker": null,
-          "text": "Un retrato para mirar sin prisa.",
+          "text": "Un retrato para mirar con calma y una sonrisa.",
           "acting": "quiet",
           "view": "photo",
           "kind": "narration",
@@ -2404,7 +2404,7 @@
         {
           "id": "dog",
           "speaker": "pink",
-          "text": "¡Hay un perrito! Alguien me dijo que se llama Almendrita.",
+          "text": "¡Ay, mirá ese perrito! ¿Se llama Almendrita? Qué nombre más lindo.",
           "acting": "sniff-photo",
           "view": "reaction",
           "kind": "speech",
@@ -2432,7 +2432,7 @@
         {
           "id": "quiet",
           "speaker": null,
-          "text": "Hay instantes que no necesitan decir nada.",
+          "text": "Hay recuerdos que hablan bajito, sin decir una sola palabra.",
           "acting": "rest-together",
           "view": "rest",
           "kind": "narration",
@@ -2445,7 +2445,7 @@
         {
           "id": "quiet-choice",
           "speaker": "taupe",
-          "text": "¿Cómo lo acompañamos?",
+          "text": "¿Nos quedamos aquí un momentito?",
           "acting": "watch",
           "view": "quiet-glow",
           "kind": "choice",
@@ -2475,7 +2475,7 @@
         {
           "id": "quiet-rest",
           "speaker": null,
-          "text": "Puedes quedarte aquí.",
+          "text": "No hace falta seguir todavía.",
           "acting": "quiet",
           "view": "photo",
           "kind": "narration",
@@ -2489,7 +2489,7 @@
         {
           "id": "envelope",
           "speaker": "taupe",
-          "text": "Es para Valerie.",
+          "text": "Fresita, hay una carta. Esta es para Valerie.",
           "acting": "find-envelope",
           "view": "envelope",
           "kind": "speech",
@@ -2516,7 +2516,7 @@
         {
           "id": "offer",
           "speaker": "pink",
-          "text": "Esta sí es para ti.",
+          "text": "Valerie, esta carta es tuya. Hay cosas bonitas que se dicen mejor por escrito.",
           "acting": "offer-envelope",
           "view": "envelope",
           "kind": "speech",
@@ -2530,7 +2530,7 @@
         {
           "id": "seal-choice",
           "speaker": "taupe",
-          "text": "¿Qué dejamos en el sobre?",
+          "text": "¿Con qué pequeño recuerdo la acompañamos?",
           "acting": "watch",
           "view": "envelope",
           "kind": "choice",
@@ -2574,7 +2574,7 @@
         {
           "id": "after",
           "speaker": null,
-          "text": "Hay palabras que merecen un momento de silencio.",
+          "text": "Tomate el tiempo que necesités. Estas palabras te esperan.",
           "acting": "rest-together",
           "view": "envelope",
           "kind": "narration",
@@ -2601,14 +2601,14 @@
         {
           "id": "recognize",
           "speaker": "pink",
-          "text": "La misma piedra, el mismo camino… ¡volvimos!",
+          "text": "¡Lio, volvimos! ¡Y esta vez sí me acordé de todo el camino!",
           "acting": "return-to-the-landmark",
           "kind": "speech",
           "view": "original",
           "close": "action",
           "actionPlan": {
             "start": 0,
-            "duration": 5.0,
+            "duration": 5,
             "gesture": "return-to-the-landmark",
             "focus": "pair",
             "completion": "landed-and-settled"
@@ -2621,14 +2621,14 @@
         {
           "id": "forest",
           "speaker": "taupe",
-          "text": "Esta luz nos enseñó a escuchar. Va aquí.",
+          "text": "La luz del bosque nos enseñó a escuchar. Va en el primer broche.",
           "acting": "offer-forest-relic",
           "kind": "speech",
           "view": "original",
           "close": "action",
           "actionPlan": {
-            "start": 5.0,
-            "duration": 6.0,
+            "start": 5,
+            "duration": 6,
             "gesture": "offer-forest-relic",
             "focus": "pair",
             "completion": "landed-and-settled"
@@ -2641,13 +2641,13 @@
         {
           "id": "sky",
           "speaker": "pink",
-          "text": "Y este deseo es el que Valerie dejó en el cielo.",
+          "text": "Aquí va el deseo que dejaste brillando entre las estrellas, Valerie.",
           "acting": "offer-sky-relic",
           "kind": "speech",
           "view": "original",
           "close": "action",
           "actionPlan": {
-            "start": 11.0,
+            "start": 11,
             "duration": 6.2,
             "gesture": "offer-sky-relic",
             "focus": "pair",
@@ -2661,14 +2661,14 @@
         {
           "id": "garden",
           "speaker": "taupe",
-          "text": "El último lo sacamos de la tierra… juntos.",
+          "text": "Y aquí, lo que cuidamos en el jardín. Ya tenemos las tres señales.",
           "acting": "offer-garden-relic",
           "kind": "speech",
           "view": "original",
           "close": "action",
           "actionPlan": {
             "start": 17.2,
-            "duration": 6.0,
+            "duration": 6,
             "gesture": "offer-garden-relic",
             "focus": "pair",
             "completion": "landed-and-settled"
@@ -2718,7 +2718,7 @@
         {
           "id": "opening",
           "speaker": "pink",
-          "text": "Yo abro el cierre… ¿sujetas la tapa?",
+          "text": "Lio… me tiemblan un poquito las patitas. ¿Sostenés la tapa?",
           "acting": "grip-and-open",
           "kind": "speech",
           "view": "original",
@@ -2743,14 +2743,14 @@
         {
           "id": "unveil",
           "speaker": "taupe",
-          "text": "La sostengo. Despacio, Rosa.",
+          "text": "Claro, Fresita. Estoy aquí. Abrila cuando estés lista.",
           "acting": "remove-the-lining",
           "kind": "speech",
           "view": "original",
           "close": "action",
           "actionPlan": {
             "start": 8.2,
-            "duration": 7.0,
+            "duration": 7,
             "gesture": "remove-the-lining",
             "focus": "pair",
             "completion": "landed-and-settled"
@@ -2768,7 +2768,7 @@
         {
           "id": "contemplate",
           "speaker": "pink",
-          "text": "Aquí está. Es para ti.",
+          "text": "Aquí está, Valerie. Lo guardamos con muchísimo cariño para vos.",
           "acting": "receive-the-real-ring",
           "kind": "speech",
           "view": "revealed",
@@ -2788,7 +2788,7 @@
         {
           "id": "jewel",
           "speaker": null,
-          "text": "Míralo de cerca, sin prisa.",
+          "text": "Mirálo de cerca. No hay ninguna prisa.",
           "acting": "contemplate-the-ring",
           "kind": "silence",
           "view": "macro",
@@ -2808,7 +2808,7 @@
         {
           "id": "witness",
           "speaker": "taupe",
-          "text": "Nos queda una última cosa para ti.",
+          "text": "Nos queda una última pregunta. Y la respuesta solo puede ser tuya.",
           "acting": "return-to-the-guardians",
           "kind": "speech",
           "view": "return",
@@ -2844,7 +2844,7 @@
         {
           "id": "question",
           "speaker": null,
-          "text": "Valerie, ¿quieres ser mi novia?",
+          "text": "Valerie, ¿querés ser mi novia?",
           "acting": "letters-from-inside-the-box",
           "kind": "silence",
           "view": "question",
@@ -2871,33 +2871,33 @@
     "leaf-holder": {
       "choiceId": "leaf-holder",
       "chapter": "te-abro-el-camino",
-      "prompt": "¿Quién sostiene la hoja para que pasen?",
+      "prompt": "¿Quién sostiene la hoja primero?",
       "preconditions": [],
       "rejoinNode": "leaf-reply",
       "options": [
         {
           "id": "rosa",
-          "label": "Rosa sostiene; Beige pasa primero",
-          "accessibilityLabel": "Rosa sostiene; Beige pasa primero",
+          "label": "Fresita sostiene; Lio cruza primero",
+          "accessibilityLabel": "Fresita sostiene; Lio cruza primero",
           "immediateAction": "leaf-pink",
           "sceneVariant": "pink-canopy",
           "stateEffects": {
             "canopy": "pink"
           },
-          "resultDialogue": "Yo sostengo. Beige, pasa primero.",
+          "resultDialogue": "Yo la sostengo, Lio. ¡Pasá! No voy a soltarla.",
           "futureDialogue": {},
           "speaker": "pink"
         },
         {
           "id": "beige",
-          "label": "Beige sostiene; Rosa pasa primero",
-          "accessibilityLabel": "Beige sostiene; Rosa pasa primero",
+          "label": "Lio sostiene; Fresita cruza primero",
+          "accessibilityLabel": "Lio sostiene; Fresita cruza primero",
           "immediateAction": "leaf-taupe",
           "sceneVariant": "taupe-canopy",
           "stateEffects": {
             "canopy": "taupe"
           },
-          "resultDialogue": "Rosa, pasa. Yo no suelto la hoja.",
+          "resultDialogue": "Andá, Fresita. Yo la sostengo hasta que estés del otro lado.",
           "futureDialogue": {},
           "speaker": "taupe"
         }
@@ -2906,7 +2906,7 @@
     "forest-way": {
       "choiceId": "forest-way",
       "chapter": "el-bosque-escucha",
-      "prompt": "¿Por dónde descubren el camino?",
+      "prompt": "¿Cómo descubrimos por dónde seguir?",
       "preconditions": [],
       "rejoinNode": "forest-together",
       "options": [
@@ -2919,12 +2919,12 @@
           "stateEffects": {
             "forestLight": "gold"
           },
-          "resultDialogue": "Solo voy a mirarla… un poquito más cerca.",
+          "resultDialogue": "Vamos detrás de esa lucecita. ¡Pero sin asustarla!",
           "futureDialogue": {
             "el-museo-de-la-noche": {
               "beatId": "stir",
               "speaker": "taupe",
-              "text": "Nuestra luciérnaga encontró una puerta."
+              "text": "¿Te acordás de nuestra luciérnaga? Creo que nos trajo hasta aquí."
             }
           },
           "speaker": "pink"
@@ -2938,12 +2938,12 @@
           "stateEffects": {
             "forestLight": "mint"
           },
-          "resultDialogue": "No ronca. ¡Nos estaba escuchando!",
+          "resultDialogue": "Esperá… ¿escuchaste eso? Creo que el árbol nos está mostrando el camino.",
           "futureDialogue": {
             "el-museo-de-la-noche": {
               "beatId": "stir",
               "speaker": "taupe",
-              "text": "La pista del árbol termina aquí."
+              "text": "El árbol tenía razón: el camino nos estaba llevando a este lugar."
             }
           },
           "speaker": "taupe"
@@ -2953,44 +2953,44 @@
     "museum-sky": {
       "choiceId": "museum-sky",
       "chapter": "dentro-del-cuadro",
-      "prompt": "¿Cómo abrirán el cielo del cuadro?",
+      "prompt": "¿Cómo dejamos nuestro deseo en el cielo?",
       "preconditions": [],
       "rejoinNode": "earned",
       "options": [
         {
           "id": "paint",
-          "label": "Dibuja tu deseo",
-          "accessibilityLabel": "Dibuja tu deseo libremente sobre la pintura",
+          "label": "Dibujar un deseo",
+          "accessibilityLabel": "Dibujar un deseo",
           "immediateAction": "free-paint",
           "sceneVariant": "painted-sky",
           "stateEffects": {
             "skyMotif": "brush-star"
           },
-          "resultDialogue": "Este cielo tiene espacio para tu propio deseo.",
+          "resultDialogue": "Dibujá lo que te nazca, Valerie. Aquí no hay formas equivocadas.",
           "futureDialogue": {
             "un-deseo-para-dos": {
               "beatId": "wish",
               "speaker": "pink",
-              "text": "Tu estrella todavía tiene ese trazo."
+              "text": "Mirá, Valerie… el trazo de tu deseo todavía brilla."
             }
           },
           "speaker": "pink"
         },
         {
           "id": "constellation",
-          "label": "Unir las luces",
-          "accessibilityLabel": "Une las luces para formar V más J",
+          "label": "Unir las estrellas",
+          "accessibilityLabel": "Unir las estrellas",
           "immediateAction": "join-vj",
           "sceneVariant": "connected-sky",
           "stateEffects": {
             "skyMotif": "constellation"
           },
-          "resultDialogue": "Estas luces quieren escribir algo juntas.",
+          "resultDialogue": "Mirá cómo se acercan las luces. Parece que juntas cuentan algo bonito.",
           "futureDialogue": {
             "un-deseo-para-dos": {
               "beatId": "wish",
               "speaker": "pink",
-              "text": "¡Nuestro dibujo está en el cielo!"
+              "text": "¡Lio, mirá! Las estrellas siguen juntitas, como las dejamos."
             }
           },
           "speaker": "taupe"
@@ -3000,7 +3000,7 @@
     "garden-gift": {
       "choiceId": "garden-gift",
       "chapter": "entre-lirios-y-alas",
-      "prompt": "¿Qué podrán cuidar en el camino?",
+      "prompt": "¿Qué pequeño tesoro cuidamos del jardín?",
       "preconditions": [],
       "rejoinNode": "garden-care",
       "options": [
@@ -3013,41 +3013,41 @@
           "stateEffects": {
             "gardenRelic": "rose-petal"
           },
-          "resultDialogue": "Hay un pétalo protegido ahí dentro. Vamos despacito.",
+          "resultDialogue": "Es tan delicado… lo voy a guardar como si fuera una cosita de cristal.",
           "futureDialogue": {
             "una-carta-para-ti": {
               "beatId": "offer",
               "speaker": "pink",
-              "text": "El pétalo puede cuidar estas palabras."
+              "text": "Voy a poner este pétalo junto a la carta. Así también viaja con ella."
             },
             "la-caja-rosa": {
               "beatId": "near",
               "speaker": "taupe",
-              "text": "El pétalo encontró su sitio."
+              "text": "El pétalo llegó hasta aquí. Lo cuidamos muy bien."
             }
           },
           "speaker": "pink"
         },
         {
           "id": "flower",
-          "label": "Proteger la pequeña flor de luz",
-          "accessibilityLabel": "Proteger la pequeña flor de luz",
+          "label": "Proteger la flor de luz",
+          "accessibilityLabel": "Proteger la flor de luz",
           "immediateAction": "keep-bloom",
           "sceneVariant": "flower-cradle",
           "stateEffects": {
             "gardenRelic": "light-flower"
           },
-          "resultDialogue": "La flor sigue encendida bajo la tierra. Hay que liberarla.",
+          "resultDialogue": "Lio, ¡todavía está brillando! Ayudémosla a salir sin lastimarla.",
           "futureDialogue": {
             "una-carta-para-ti": {
               "beatId": "offer",
               "speaker": "pink",
-              "text": "La flor quiere alumbrar estas palabras."
+              "text": "Esta pequeña flor puede iluminar las palabras sin decir nada."
             },
             "la-caja-rosa": {
               "beatId": "near",
               "speaker": "taupe",
-              "text": "La flor reconoce esta luz."
+              "text": "¿Ves? La flor de luz también encontró su lugar."
             }
           },
           "speaker": "pink"
@@ -3057,7 +3057,7 @@
     "portrait-reveal": {
       "choiceId": "portrait-reveal",
       "chapter": "nuestro-retrato",
-      "prompt": "¿Cómo descubren lo que se esconde?",
+      "prompt": "¿Cómo descubrimos el retrato?",
       "preconditions": [],
       "rejoinNode": "portrait-rest",
       "options": [
@@ -3070,20 +3070,20 @@
           "stateEffects": {
             "portraitRoute": "leaf"
           },
-          "resultDialogue": "Yo este lado. Tú el otro.",
+          "resultDialogue": "Yo levanto este lado, Fresita. Vos agarrá el otro.",
           "futureDialogue": {},
           "speaker": "taupe"
         },
         {
           "id": "glow",
-          "label": "Pedirle luz a la luciérnaga",
-          "accessibilityLabel": "Pedirle luz a la luciérnaga",
+          "label": "Pedir ayuda a la luciérnaga",
+          "accessibilityLabel": "Pedir ayuda a la luciérnaga",
           "immediateAction": "invite-photo-light",
           "sceneVariant": "light-curtain",
           "stateEffects": {
             "portraitRoute": "glow"
           },
-          "resultDialogue": "¡Mira! Nos encontró otra vez.",
+          "resultDialogue": "¡Mirá, Lio! ¡Nuestra amiga volvió a encontrarnos!",
           "futureDialogue": {},
           "speaker": "pink"
         }
@@ -3092,33 +3092,33 @@
     "album-space": {
       "choiceId": "album-space",
       "chapter": "dos-sonrisas",
-      "prompt": "¿Cómo miran juntos esta página?",
+      "prompt": "¿Cómo abrimos esta página juntos?",
       "preconditions": [],
       "rejoinNode": "contemplate",
       "options": [
         {
           "id": "space",
-          "label": "Rosa le hace sitio a Beige",
-          "accessibilityLabel": "Rosa le hace sitio a Beige",
+          "label": "Fresita le hace espacio a Lio",
+          "accessibilityLabel": "Fresita le hace espacio a Lio",
           "immediateAction": "room-for-partner",
           "sceneVariant": "shared-album",
           "stateEffects": {
             "albumRoute": "space"
           },
-          "resultDialogue": "Ahora sí cabemos los dos.",
+          "resultDialogue": "Gracias, Fresita. Ahora sí podemos verla los dos.",
           "futureDialogue": {},
           "speaker": "taupe"
         },
         {
           "id": "page",
-          "label": "Beige ayuda a pasar la página",
-          "accessibilityLabel": "Beige ayuda a pasar la página",
+          "label": "Lio ayuda a pasar la página",
+          "accessibilityLabel": "Lio ayuda a pasar la página",
           "immediateAction": "turn-cloth-page",
           "sceneVariant": "turning-album",
           "stateEffects": {
             "albumRoute": "page"
           },
-          "resultDialogue": "Ah… estaba del otro lado.",
+          "resultDialogue": "Ah, Lio… ¡había otra sorpresa escondida atrás!",
           "futureDialogue": {},
           "speaker": "pink"
         }
@@ -3127,33 +3127,33 @@
     "quiet-memory": {
       "choiceId": "quiet-memory",
       "chapter": "un-instante",
-      "prompt": "¿Cómo acompañan este instante?",
+      "prompt": "¿Cómo acompañamos este recuerdo?",
       "preconditions": [],
       "rejoinNode": "quiet-rest",
       "options": [
         {
           "id": "light",
-          "label": "Sostenerlo con una lucecita",
-          "accessibilityLabel": "Sostenerlo con una lucecita",
+          "label": "Dejar una pequeña luz",
+          "accessibilityLabel": "Dejar una pequeña luz",
           "immediateAction": "share-photo-glow",
           "sceneVariant": "light-aperture",
           "stateEffects": {
             "quietRoute": "light"
           },
-          "resultDialogue": "Un poquito para ti. Otro para mí.",
+          "resultDialogue": "Una lucecita para vos… y otra para que el recuerdo nos encuentre.",
           "futureDialogue": {},
           "speaker": "pink"
         },
         {
           "id": "close",
-          "label": "Quedarse acurrucados",
-          "accessibilityLabel": "Quedarse acurrucados",
+          "label": "Quedarnos acurrucados",
+          "accessibilityLabel": "Quedarnos acurrucados",
           "immediateAction": "sit-by-partner",
           "sceneVariant": "quiet-seat",
           "stateEffects": {
             "quietRoute": "close"
           },
-          "resultDialogue": "Aquí. No hace falta decir nada.",
+          "resultDialogue": "Vení, Fresita. A veces acompañar es simplemente quedarse.",
           "futureDialogue": {},
           "speaker": "taupe"
         }
@@ -3162,20 +3162,20 @@
     "letter-seal": {
       "choiceId": "letter-seal",
       "chapter": "una-carta-para-ti",
-      "prompt": "¿Qué detalle acompañará la carta?",
+      "prompt": "¿Qué detalle acompaña la carta?",
       "preconditions": [],
       "rejoinNode": "read",
       "options": [
         {
           "id": "sky",
-          "label": "La estrella de nuestro cielo",
-          "accessibilityLabel": "La estrella de nuestro cielo",
+          "label": "Una estrella de nuestro cielo",
+          "accessibilityLabel": "Una estrella de nuestro cielo",
           "immediateAction": "seal-sky",
           "sceneVariant": "sky-envelope",
           "stateEffects": {
             "sealStyle": "sky"
           },
-          "resultDialogue": "Que esta luz cuide las palabras.",
+          "resultDialogue": "Que esta estrellita le haga compañía a las palabras.",
           "futureDialogue": {},
           "speaker": "taupe"
         },
@@ -3188,7 +3188,7 @@
           "stateEffects": {
             "sealStyle": "garden"
           },
-          "resultDialogue": "Así viajará con ellas.",
+          "resultDialogue": "Así la carta también llevará un poquito del jardín.",
           "futureDialogue": {},
           "speaker": "pink"
         }
@@ -3197,34 +3197,34 @@
     "guide-way": {
       "choiceId": "guide-way",
       "chapter": "dos-miradas",
-      "prompt": "La pequeña guía se enredó en la cinta. ¿La ayudamos?",
+      "prompt": "El hada quedó atrapada en la cinta. ¿Cómo la ayudamos?",
       "preconditions": [],
       "rejoinNode": "reply",
       "options": [
         {
           "id": "lift",
-          "label": "Rosa levanta la cinta",
-          "accessibilityLabel": "Rosa levanta la cinta para que el hada pase por arriba",
+          "label": "Fresita levanta la cinta",
+          "accessibilityLabel": "Fresita levanta la cinta",
           "speaker": "pink",
           "immediateAction": "lift-ribbon",
           "sceneVariant": "over-vine",
           "stateEffects": {
             "guideFlight": "high"
           },
-          "resultDialogue": "¡Por arriba! Yo te hago un huequito.",
+          "resultDialogue": "Listo, amiguita. Por aquí hay espacio para tus alitas.",
           "futureDialogue": {}
         },
         {
           "id": "shelter",
-          "label": "Beige le ofrece refugio",
-          "accessibilityLabel": "Beige recoge la cinta y ofrece una patita al hada",
+          "label": "Lio le ofrece un lugar seguro",
+          "accessibilityLabel": "Lio le ofrece un lugar seguro",
           "speaker": "taupe",
           "immediateAction": "shelter-fairy",
           "sceneVariant": "palm-refuge",
           "stateEffects": {
             "guideFlight": "low"
           },
-          "resultDialogue": "Aquí puedes descansar. Nosotros esperamos.",
+          "resultDialogue": "Vení, descansá aquí. Podemos esperarte el tiempo que necesités.",
           "futureDialogue": {}
         }
       ]
